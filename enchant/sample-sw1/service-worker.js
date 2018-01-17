@@ -15,6 +15,8 @@ self.oninstall = function(event) {
   );
 };
 
+
+//
 // ページヘのネットワークリクエストが来たらキャッシュにある
 // データを返す
 self.onfetch = function(event) {
