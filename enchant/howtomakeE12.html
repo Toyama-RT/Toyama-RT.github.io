@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャント文字盤のつくりかた１－２</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ul { 
+　　font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャント文字盤のつくりかた</h1>
+    <h1>第一回　ファイル操作だけでつくる方法　その２</h1>
+
+    <div style="text-align: center;"><img title="VOCA" alt="作成したVOCA" src="img/with_DROPS.png" width="300" height="250"></div>
+
+    <h2>4　ファイルの表示と確認</h2>
+
+<p>
+さてここでp-43hフォルダを開いて中を確認しましょう。
+</p><p>
+ここで一つ確認してください。
+あなたのパソコンでは一番初めのファイルが、apad.png と表示されていますかそれとも単に、apad と表示されていますか。
+
+多くの方のパソコンでは一番目のファイルは、apad.png　ではなく、apad　と表示されていると思います。
+
+apad.png　の後ろに付いている　.png　や　.mp3　は拡張子といいファイルの種類を示します。例えば　.png　は　png形式の画像ファイル、.mp3　は　mp3形式の音声ファイルです。拡張子があるとファイルの名前をみるだけで種類がわかります。
+
+もちろんアイコンでファイルの種類を見分けることもできますが、拡張子を表示させたほうが見間違いなどのミスを減らすのに役に立ちます。
+</p><p>
+パソコンを活用している人は、拡張子を表示するように設定を変更していることが多いようです。私もうっかりミスを減らすためにそのようにしております。皆さんにも設定を変えて拡張子を表示するようにお勧めしたいと思います。
+</p><p>
+拡張子の表示設定の変更方法は以下のリンクをご覧ください。
+googleで、キーワード『拡張子』と『表示設定』の両方含むサイトを検索します。
+（具体的には、キーワードを間にスペースをはさんで列記します。）
+</p>
+<a href="https://www.google.co.jp/search?q=拡張子　表示設定" target="_self">
+<p>
+google検索　キーワード『拡張子』と『表示設定』の両方を含むサイト
+</p></a>
+<p>
+ここから先はファイル名をすべて拡張子付きで記載します。
+拡張子を表示しない設定のパソコンをお使いになる方は拡張子を無視してお読みください。
+</p><p>
+さあ　p-43hフォルダを開いて中を確認しましょう。
+</p><p>
+
+そこには、
+20個のファイルとjsフォルダ。さらに
+jsフォルダの中にはmain.js とlib フォルダ。さらに
+lib フォルダの中には enchant.js と plugin フォルダ
+plugin フォルダの中には、nineleap.enchant.js  と ui.enchant.js
+
+があります。配置構造は以下のようになっています。
+
+    <p>apad.png<br>
+      end.png<br>
+      font0.png<br>
+      gameover.mp3<br>
+      icon0.png<br>
+      index.html<br>
+      jump.mp3<br>
+      kotoba1.gif<br>
+      kotoba1.mp3<br>
+      kotoba2.gif<br>
+      kotoba2.mp3<br>
+      kotoba3.gif<br>
+      kotoba3.mp3<br>
+      kotoba4.gif<br>
+      kotoba4.mp3<br>
+      kotoba5.gif<br>
+      kotoba5.mp3<br>
+      pad.png<br>
+      start.png<br>
+      start0.png<br>
+      js フォルダ<br>
+      　<span class="pun">└　</span>main.js<br>
+      　<span class="pun">└　lib フォルダ<br>
+        　　　<span class="pun">└　</span></span><span class="pun"><span class="pun">enchant.js</span>　</span><br>
+      <span class="pun">　　　└　</span>plugins フォルダ<br>
+      <span class="pun">　　　　　└　</span>nineleap.enchant.js<br>
+      <span class="pun">　　　　　└　</span>ui.enchant.js</p>
+
+<p>
+p-43hフォルダの中のファイルは間違いなくそろっているでしょうか。
+ご確認ください。全てがそろっていないと正常な動作ができません。このような細かい文字を確認する作業はパソコン仕事でつらいところです。
+</p><p>
+前回、index.html　をダブルクリックしたらエンチャント文字盤がスタートしました。この他のファイルもダブルクリックしてみましょう。
+</p><p>
+まず、gameover.mp3 をダブルクリックしてください。パソコンにインストールされている、Windows Media Player 等の音楽再生ソフトが起動し、聞き覚えのある短い音が聞こえたと思います。
+次に、start0.png をダブルクリックしてください。ペイントなどの画像ソフトが立ち上がって、これまたどこかで見たことがある画像が表示されたと思います。
+</p><p>
+
+次に
+kotoba1.gif と kotoba1.mp3 を<br>
+続いて
+kotoba2.gif と kotoba2.mp3 を<br>
+次に
+kotoba3.gif と kotoba3.mp3 を<br>
+kotoba4.gif と kotoba4.mp3 を<br>
+どれもみんな、4つのことばwith　Drops　で使われている画像と音声です。
+1は左上、2は右上、3は左下、4は左下に表示されます。
+
+そして
+kotoba5.gif と kotoba5.mp3 
+はこれから使おうとしている5番目のことばです。
+</p>
+    <h2>5　ファイルの名前を変更する方法</h2>
+<p>
+さてここから、本格的？な作業が始まります。
+まずやることは、<br>
+Ａ　kotoba1.gif　を　kotoba6.gif　に変更する。<br>
+次に<br>
+Ｂ　kotoba5.gif　を　kotoba1.gif　に変更する。<br>
+
+です。</p><p>ファイルの名前を変更する手順は<br>
+１　変更するファイルをマウスでクリックして選びます。<br>
+２　f２キー（キーボードの数字キーの上の段に、f１、f２、、、と並んでいます）を押します。ファイル名の文字が反転してカーソルも表示されます。<br>
+３　キーボードを使い新しい名前を入力します。<br>
+４　enterキーで決定します。このとき同じ名前のファイルがすでに存在するとエラーメッセージが表示されます。（拡張子が表示されていないと名前が同じか同じでないかわかりにくいですね。）<br>
+</p>
+<p>
+Ａ　kotoba1.gif　を　kotoba6.gif　に変更する。<br>
+Ｂ　kotoba5.gif　を　kotoba1.gif　に変更する。<br>
+
+ここまでできましたか？
+</p><p>
+失敗しても大丈夫。何回でもやり直しできます。（人生もこうあってほしいものです）<br>
+だれもあなたをおこりません。
+だれもあなたをせめません。<br>
+
+自分でも何がなんだかわからなくなってしまったら、まず落ち着いてください。
+そして、p-43hフォルダを削除して、ダウンロードしたファイルの展開からやり直しましょう。
+</p><p>
+さあできたでしょうか？
+</p>
+    <div style="text-align: center;"><img title="VOCA" alt="作成したVOCA" src="img/with_DROPS2.png" width="300" height="250"></div>
+<p>
+
+
+ここで、index.html　をダブルクリックしてみましょう。
+上のような画像が現れます。先ほどと比べると左上の画像が変更されています。
+kotoba5.gif　が　kotoba1.gif　の代わりに現れたのです。
+なぜか？　あなたが　kotoba5.gif　を　kotoba1.gif　に変更したからです。
+</p><p>
+つぎに左上の画像をクリックしてみましょう。<br>
+『こんにちは』と発声しますね。
+</p><p>
+そこで、次は音を変更しましょう。<br>
+Ａ　kotoba1.mp3　を　kotoba6.mp3に変更する。<br>
+Ｂ　kotoba5.mp3　を　kotoba1.mp3に変更する。<br>
+
+ここまでできましたか？
+</p><p>
+ここでみたび、index.html　をダブルクリックしてみましょう。
+今度は『おはよう』と発声したことでしょう。<br>
+『エンチャント文字盤４つのことば』は画面左上に、kotoba1.gif　という名前の画像が表示され、それをクリックするとkotoba1.mp3という名前の音が再生するようにプログラムされています。ですからそのファイルを入れ替えると、画像も音も変更できるのです。
+</p><p>
+おつかれさまでした。これであなたはファイル操作によって、
+５種類の画像と音を自由な場所に配置できるようになりました。
+</p><p>
+それでは練習問題をどうぞ。<br>
+『おはよう』を右下に表示するようにするにはどうしたらいいでしょう？
+
+</p><p>つづく
+</p>
+
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2017/06/16　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>

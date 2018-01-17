@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>enchant.js Softalkを使って声つくり</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ul { 
+　　font-size: 20px; /*リストのフォントの大きさ*/
+}
+span.samples {font-size: small; }
+-->
+</style> 
+
+</head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>Softalk で kotoba1.mp3　をつくる </h1>
+    <div style="text-align: center;"><img title="Softalk" alt="発話する文を入力しているところ" src="img/softalk.png"></div>
+    <h2>０　はじめに</h2>
+    <p>ここではダウンロードした、kotoba1.mp3 を作り変える手順について説明します。kotoba2.mp3や3,4も基本的に同じ方法で書き換えできます。
+これらの音声ファイルの作り変えができると、「こんにちは」としゃべっているenchant文字盤に違うことばをしゃべらせることもできます。つまり使う人や生活の場面によって言葉を使い分けできるようになります。</p>
+<p>これを続けると、4種類の言葉をしゃべるenchant文字盤を作りなおして、別の4種類の言葉をしゃべるenchant文字盤を作れます。これを別の名前をつけて保存すると２種類のenchant文字盤ができます。
+（ポケットをたたくと、ビスケットが二枚になります。）もう足りなくて困ることはなくなり、複数のVOCAを持ち歩く必要もなくなります。また自分で作るのですから、例えばプライベートなことばも、方言も作れます。</p>
+
+    <h2>１　使用するソフト</h2>
+<p>ここではいずれもフリーソフトで合成音声で発声、ファイル保存するsoftalkとそれをmp3に変換する、午後のこ～だを使用します。</p>
+<p>
+フリーソフトは各種の定義が存在するようですが基本的には、次のような理解が一般的と思われます。<br>
+
+『フリーソフトとは、 “ 無料 ” かつ “ 無償 ” で利用できるソフトウェアのことです。 ダウンロードする時や利用する時に、対価を支払う必要が一切ないソフトウェアのことを言います。 主に、 “ 個人で利用する場合に限り ” 無料で使えることが多いです。』<br>
+フリーソフト とは - k本的に無料ソフト・フリーソフト
+www.gigafree.net/faq/freesoft.html
+</p>
+<p>softalkは下記から<br>
+
+http://www35.atwiki.jp/softalk/pages/1.html<br>
+
+午後のこ～だは下記からダウンロードできます。<br>
+
+http://forest.watch.impress.co.jp/library/software/gogonocoda/<br>
+
+どちらのソフトも開発後長く広く使われた『老舗』ですので『softalk　使い方』『午後のこ～だ　使い方』で検索すると細かいところまで詳しい説明やあっさり簡単な説明までたくさんの説明サイトを見つけることができます。各自お好みのサイトわかりやすいサイトを参考になさってください。（ちなみに複数のキーワードをスペースで区切って検索すると、効率よく検索できます。）
+
+これらの他にもmp3ファイルを作成するソフトはいろいろあります。すでにお好みのソフト、使い慣れたソフトをお使いになっても全く問題はありません。
+
+さてダウンロードし解凍したファイルのなかにあるkotoba1.mp3を別の場所にコピーしておきましょう。こうしておけば作業に失敗しても元に戻すことができます。パソコンの作業をするときは予期しない不都合な出来事にも予め備えておくことがここでも大切ですね。</p>
+    <h2>２　softalkの操作手順</h2>
+    <div style="text-align: center;"><img title="Softalk" alt="softalkの操作" src="img/softalk2.png"></div>
+<p>softalkの最新版をダウンロード解凍し、softalk.exeを起動しするとこのページの上のような表示されます。softalkの使い方はいたって簡単です。まず発声させたい言葉を中央に入力します。そして黒三角の再生ボタン（上図黒矢印）を押すと読み上げます。音量、速度、音程はスライダで調整します。メニュバーの声（上図緑矢印）を開くと声の種類を選べます。オプションを開くと細かな設定もできますが使いこなせるようになるまではそのままで構いません。
+読み上げ文は漢字かな交じり文で構いません。他の文書からコピーペーストもできます。かなりの長文も読みます。
+ただし、音読み訓読みの区別がイマイチですので、読み間違えた部分だけかな書きに直すといいでしょう。
+下右の赤いボタン（上図赤矢印）を押すと、文章を読み上げの音声ファイル（wav形式）が、オプション>設定>保存で指定した場所に保存されます。特に指定しないとsoftalk.wavの名前で保存されます。</p>
+
+    <h2>３　午後のこ～だの操作手順</h2>
+    <div style="text-align: center;"><img title="午後のこ～だ" alt="起動時の設定画面" src="img/gogo1.png"></div>
+
+<p>午後のこ～だを起動すると、上のように表示されます。細かいな設定をしない場合はキャンセルします。起動時にこのダイアログを表示するのチェックを外すと表示されなくなります。</p>
+    <div style="text-align: center;"><img title="午後のこ～だ" alt="wavファイルの追加" src="img/gogo2.png"></div>
+
+<p> 次にこの画面が表示されます。今回はmp3ファイルを作りますので、『mp3エンコード』のタブを選択していることを確認してください。そして右上のwave追加ボタンをクリックし、softalkで作ったwavファイルの保存場所からsoftalk.wavを選びリストに登録します。次に右下のエンコード開始ボタンを押すと、</p>
+
+    <div style="text-align: center;"><img title="午後のこ～だ" alt="mp3ファイルの作成" src="img/gogo3.png"></div>
+
+<p>上の図が表示されます。エンコードが完了しました。閉じるをクリックします。この段階で標準の設定ではwavファイルと同じ場所にmp3ファイルが保存されています。</p>
+    <div style="text-align: center;"><img title="午後のこ～だ" alt="wavファイルリストの削除確認" src="img/gogo4.png"></div>
+
+<p>上の図が表示されます。エンコード作業リストからsoftalk.wavの登録を削除するか？の意味です。通常は『はい』をクリックします。</p>
+    <div style="text-align: center;"><img title="午後のこ～だ" alt="wavファイルの削除確認" src="img/gogo5.png"></div>
+
+<p>最後に上の図が表示されます。エンコードに使用したwavファイルを削除するか？の意味です。softalkで作成したファイルを残すなら『いいえ』消去するなら『はい』をクリックします。</p>
+
+<p>
+以上でwavファイルからmp3ファイル（標準設定ではsoftalk.mp3）が出来ました。このファイルの名前をkotoba1.mp3に変更（ファイルを選びf2キーでファイル名を変更）しもともとkotoba1.mp3があった場所にコピーし、index.htmlを起動し発声を確認しましょう。</p>
+
+    <h2>４　コミュニケーションエイドの声について</h2>
+
+<p>『絵や文字を書いたカードを指差せば意志が伝わるから、声を出す必要性はない』との意見もかつてありました。
+しかしすでに電子レンジや炊飯器、給湯器も声を出します。VOCAも伝の心も声を出します。またもう無料で簡単に声が出せる時代ですので、特に理由がなければ杖や車いすを使うように合成音声を利用するのがよいと思います。例えば少し離れている人やこちらに背を向けている人に呼びかけるとき、電子音よりも声をかけるほうが普通で気持ちもいいですね。またQOLも高いですね。</P>
+<P>VOCAやコミュニケーションエイドの発声を聞くのは周囲の人達です。
+よく聞こえない人たちに話しかけるときのことも考えて、十分に聞こえて内容を理解できるように音量や速さは注意して決めましょう。
+また話し手にしても自分が送り出した声に『言い間違い』がないか耳や目で確認できると言い間違えも減り、コミュニケーションがより上質になります。<br>
+さらに話す人にとって声は自分の代理ですから気に入った声を使ったほうがいいでしょう。
+またその人にふさわしい声が使えればより自然な普通のコミュニケーションの下地ができます。</p>
+
+<p>
+声はこのように道具としてしっかり役に立つことと、そのほか周囲の人を含んだ皆さんの気持ちや気分にも影響します。
+失った声を忠実に再現する取り組みでご本人もご家族もお喜びになったとのニュースも以前ありました。しかしその一方で声にはあまりこだわりがない人もいます。このように気持ちや気分や好みの問題にはいろいろと人によって違います。これらはお使いになる人と相談して決めていくのがよいでしょう。</p>
+
+<p>今回紹介したsoftalkは合成音声を使用しています。決して魅力的な声とは言えないかもしれませんが品質の安定した聴きやすい声を無料で自由に使えます。またsoftalkには何種類かの声を選べますのでお試しください。使いながら試しながら、コミュニケーションの道具を使いやすく好みにも合わせて仕上げていくためには、ここで説明したような手作りの技能が重要になってきます。ぜひ取り組んでください。</p>
+
+    <h2>５　おわりに</h2>
+<p>
+コミュニケーションエイドがあってもコミュニケーションできないこともあります。<br>
+コミュニケーションできても人間関係を作れないこともあります。</p>
+<p>本来の目的はこれらを解決することです。ここで道具は単なる手段のひとつです。<br>
+道具を使うことに一生懸命すぎて肝心の目的がなおざりになることがあります。<br>
+道具を使えば問題も解決すると思い込んでしまうこともあります。<br>
+ちっともはなしが通じない。ちっともこころが通じない。</p>
+
+<p>手段と目的をきちんと分けて考えることがここでは大切だと思います。</p>
+
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2016/06/27　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+
+<a href="p-44jt2/index.html" target="_self">
+  <p align="center">abc</p>
+  </a>
+
+  </body>
+</html>

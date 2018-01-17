@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャント文字盤のつくりかた１－１</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ul { 
+　　font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャント文字盤のつくりかた</h1>
+    <h1>第一回　ファイル操作だけでつくる方法</h1>
+
+    <div style="text-align: center;"><img title="VOCA" alt="作成したVOCA" src="img/with_DROPS.png" width="300" height="250"></div>
+
+    <h2>0　第一回の目標</h2>
+<p>
+下に青い文字で、4つのことば with Dropsと表示されています。これをクリックすると、このページの上の絵のような画面が表示されます。戻るときはブラウザの戻るをクリックしてください。それではどうぞ。
+</p>
+<p><a target="_self" title="4つのことば with Drops" href="./p-43f/index.html">4つのことば with Drops</a></p>
+
+<p>
+これは、4つの言葉　with　Dropsです。すでにサンプルとして公開しているものと同じです。画面に4種類のシンボルが表示され、クリックするとそれぞれの言葉を発声します。言葉は、「こんにちは」「さようなら」「ありがとう」「ごめんなさい」の4種類です。
+エンチャント文字盤の作り方、第一回はこの「こんにちは」を「おはよう」に変更します。
+</p>
+    <h2>1　ファイルのダウンロード</h2>
+<p>
+4つの言葉　with　Dropsを上で動かしました。この時はインターネット経由でて、24個のファイルがあなたの手元のパソコン（もしかしたらタブレット、スマホ）に送られてきてそれらが動作しました。この方法はとてもシンプルで取り扱いも楽なのですが、さらに手を加えて改善や改造をする余地がまるでありません。
+</p><p>
+そこで一式のファイルをダウンロードできるようにしました。ダウンロードとはインターネット上からファイルを取り寄せることです。
+</p><p>
+    <a target="_top" title="ダウンロード" href="p-43h.zip">4つのことば with Drops　ダウンロード</a>
+
+</p><p>
+上の青い文字、『4つのことば with Drops　ダウンロード』を左クリックしてください。
+下のような画面が表示されます。もしかしたらデザインが多少違うかもしれません。
+</P>
+<div style="text-align: center;"><img title="VOCA" alt="作成したVOCA" src="img/fig1.png" width="400" height="300"></div>
+
+<p>
+ここで、『ファイルに保存する』選んで、OKをクリックします。
+</p><p>
+次に保存する場所を指定する画面が表示されたら希望する場所に保存してください。
+このような保存場所の指定表示が出ない場合もあります。このような場合は自動的にダウンロードフォルダーへ保存されます。
+
+ダウンロードされたら、指定した場所に、p-43h　という名前のファイルがあることを確認してください。これでダウンロードができました。
+
+</p>
+    <h2>2　圧縮ファイルの展開</h2>
+<p>
+4つのことば with Dropsは24個のファイルでできているはずなのに、ダウンロードしたのは1個のファイルです。これは24個のファイルを一つにまとめ圧縮して荷造りしてあるファイルなのです。送る時の省エネになります。この荷物を開く作業を『展開』といいます。
+</p><p>
+展開には、次のいずれかの操作を行います。<br>
+方法その１　　圧縮ファイルを展開するには、ダブルクリックして、zip フォルダーを開き、中のファイルまたはフォルダーを zip フォルダーから新しい場所にドラッグします。<br>
+方法その２　　圧縮ファイルのコンテンツをすべて解凍するには、長押し (または右クリック) して [すべて展開] を選択し、指示に従って操作します。<br>
+（引用　https://support.microsoft.com/ja-jp/help/14200/windows-compress-uncompress-zip-files）<br>
+これらの作業によって、p-43hという名前のフォルダーがあらわれます。
+</p>
+    <h2>3　動作の確認</h2>
+<p>
+さてここでp-43hフォルダーを開いてください。そして中にあるindexという名前のファイルがありますのでクリックしてください。
+先ほど試した、4つの言葉　with　Drops　と同じものが動いていると思います。しかし
+今回は、インターネット経由ではなく、あなたのパソコンの中に保存されたファイルで動いています。
+</p><p>
+おつかれさまでした。ここまでで、第一回の準備ができました。しかしこの準備が実は一番の山場でした。
+</p><p>つづく
+</p>
+
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2017/06/09　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>

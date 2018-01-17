@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャント文字盤のつくりかた０</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ul { 
+　　font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャント文字盤のつくりかた</h1>
+    <h1>第零回　はじめに</h1>
+
+    <div style="text-align: center;"><img title="kimochi" alt="きもち" src="img/201024.gif" width="200" height="200"></div>
+
+    <h2>０　この取り組みの目指すもの</h2>
+    <p>エンチャント文字盤を作り始めて一年がたちました。作ったサンプルを公開して多くの人に見ていただけるようにしてから10ヶ月になります。この間、この方法で何ができるのか、どこまで出来るのかを確かめるためにいろいろな試みをしてきました。思い通りのものを作るには、まだまだ十分ではありませんがそれでもいくらか蓄積を積むことができました。
+</p><p>
+そこで次の取り組みとしてエンチャント文字盤を自分でも作ってみようとしている人のお手伝いをすることにしました。
+これまでエンチャント文字盤を紹介してお話をすると何人かのかたから、自分もやってみたいといったご意見をいただきました。
+
+なんといってもこのような道具を必要とする人とその人と日常的に接してその人の好みや習慣を理解している人たちが、相談しながら自分たちで必要なものを必要なタイミングで作り使い改善できれば、支援の量もそして質も大きな向上が期待できます。またこのような取り組みの過程自体もまた好ましい関係の形成につながるかもしれません。そしてさらに成果物を他の必要とする人にわけてあげることもできます。
+</p><p>
+このようにすれば、お金がないとか、道具がないとか、人材がいないとかいう理由であきらめてしまうことがいくらかでも減ると思います。予算も、人材も思うようにいかないなら自分で何とかしよう。そんな人たちのお手伝いをしたいと思います。
+</p>
+    <h2>１　この取り組みが対象とする人</h2>
+<p>
+まず、エンチャント文字盤に関心を持ち、自分でもやってみようとお考えの方々が対象となります。いろいろな方がおられると思いますがすべての人々にわかるように説明するのは簡単ではありませんのでいくつかの条件をくわえさせていただきます。
+</p><p>
+日常的にお仕事や趣味にパソコンを使っている人で、自分の自由になるパソコンといくらかの時間をお持ちの人を対象にしたいと思います。
+申し訳ありませんが、パソコンは初心者という方はまず基礎トレーニングと基本的取り扱い練習をお願いします。それらができた段階でご参加ください。
+</p><p>
+また使用する機器は、Windowsパソコンとさせてください。ごく普通のパソコンで結構です。タブレットやスマホでもできないことはないとは思いますが、どうせやるならやはり苦労の少ない方法と道具でおやりになることをおすすめします。
+</p><p>
+そしてこれから説明することは、『だれでもできる簡単なお仕事』ではありません。なかにはかなり苦労する人もいるかもしれません。
+しかしなんとか自分の手でできるようになりたい、なにか役に立つものを形にしたいという気持ちをお持ちの多くの方々に取り組んでいただきたいと考えています。
+</p>
+    <h2>2　この取り組みの進め方</h2>
+<p>
+まず、より多くのかたがたに取り組んでいただくために、簡単な方法の紹介からはじめたいと思います。
+随分基本的なパソコンの操作も含まれますので、じれったいと思われる方も多いかもしれません。しかし初めてお会いする方に何かを伝えようとするとき、丁寧にゆっくり始めていきたいと思います。もし待ちきれないとお考えの方々は、
+<a href="enchant1.html" target="_self">こちら</a>や
+<a href="enchant2.html" target="_self">こちら</a>や
+<a href="enchant3.html" target="_self">こちら</a>を先にご覧になってください。
+</p><p>
+</p>
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2017/06/09　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
