@@ -1,0 +1,23 @@
+    #text1 {
+        width: 90%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 8px 25px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    #selectVoice {
+        width: 200px;
+    }
