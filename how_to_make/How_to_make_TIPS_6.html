@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"> 
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css" />
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>富山県高志リハビリ病院　しゃべる文字盤のつくりかた　TIPS　第6回</title>
+
+ <style type="text/css">
+<!--
+P	{
+	LINE-HEIGHT: 1.5
+	}
+-->
+  </style>
+</head>
+
+<body style="color: black; background-color: white;" alink="#800080" link="#0000ff" vlink="#0080ff">
+<p align="center">
+<font size="3">
+<font color="#ff0000">かならずお読みください → </font>
+<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a>
+</font>
+</p>
+
+<blockquote>
+  <p align="center"><font size="5">しゃべる文字盤のつくりかた<br />
+</font></p>
+<p align="center"><font size="5">TIPS_6　エクセルから他のアプリケーションを操作する方法</font></p>
+
+<p align="center"><img alt="レッツチャット練習用しゃべる文字盤" src="img/lc7_f1.jpg"/></p>
+
+  <hr align="center" size="3" width="80%" />
+
+<p>
+しゃべる文字盤はExcelのマクロ、VBAで作られています。これまでVBAを利用してExcelのさまざまな機能を動かしていることをお話しいたしました。
+またExcelからWindowsのAPI関数を動かして音を出したり、キー操作を読み取ったりなどWindowsの機能をExcelVBAから利用する方法も説明しました。
+また合成音声のAquesTalkなどWindows標準でない機能を利用する方法については前回説明しました。<br />
+今回はExcelのVBAから、他のWindowsアプリケーション（ソフトウエア）を操作する方法について説明します。
+</p>
+<hr align="center" size="3" width="80%" />
+<p>
+レッツチャット練習用しゃべる文字盤では、作製した文字の表示に『メモ帳』を使っています。（上図参照）<br />
+
+それ以前に製作した、表示機能付きしゃべる文字盤ではワークシート上部のセルを結合して広めの表示場所をつくりここに文字列を表示しました。
+この方法自体はそこそこ有効なのですが、視力に合わせて文字の種類や大きさなど表示を変更したり、その他ファイル保存や印刷などこの先予想されるニーズにこたえるためにはさらに作りこんで、ひとつひとつの機能を追加する必要があります。<br />
+
+しかしわざわざこのようなものを作らなくても、Windowsの『メモ帳』を利用すればこれらのニーズを満足させる早道になります。またこれは作り手側だけのメリットではありません。よく知られたメモ帳を使えば、サポートする人も使う人にも取り扱いが楽になる利点があります。<br />
+
+またしゃべる文字盤は身近にあるものを利用して役に立つものをつくるのがモットーです。よってこの点からも、エクセルからメモ帳を操作するテーマに取り組む意義があります。
+</p>
+<hr align="center" size="3" width="80%" />
+<p>
+１　メモ帳を起動する方法<br />
+まず確認したいのが、通常『メモ帳』と呼んでいるアプリケーションの正式名がnotepadで、CドライブのWindowsフォルダのsystem32フォルダのなかに、notepad.exeで起動します。（<b>WinXPも7も8も同じ場所</b>です）<br />
+つぎに目的の、メモ帳を起動する方法です。アプリケーションの起動にはいくつかありますが、ここでは『プログラムを指定して開く』場合について考えます。その際は、以下のように入力します。<br />
+
+c:\windows\system32\notepad.exe<br />
+
+しゃべる文字盤で、使用する文章ファイルを、<br />
+c:\Users\Public\Documents\txt1.txt<br />
+として、これをメモ帳で開くには、<br />
+c:\windows\system32\notepad.exe c:\Users\Public\Documents\txt1.txt<br />
+と間にスペースを挟んでタイプします。
+これをいちいち手作業で入力する代わりにプログラムを書きます。
+プログラムのなかにこれと同じ文字をはめこむと自動的にメモ帳がtxt.txtを開きます。下の例をごらんください。
+ここでさらに進んで、複数の文書ファイルを使い分けたり、最後に利用したファイルを自動的に読みだすなどの機能をつけるとより使いやすくなるかもしれません。
+4種類の文書を使い分けできる『しゃべる文字盤』では次のようなコードにしました。
+</p>
+<pre class="brush: vb;">
+
+'文字列を表示するための『メモ帳』を起動する（Win７も下記と同じ場所にある）
+'OPTIONワークシート，J2を読みとるここに前回使用したテキストファイルの番号がある．
+N_txt = Worksheets("OPTION").Range("J2").Value             '"OPTION"シートのj2セルから前回使用した文書ファイル番号を読みとる
+
+If N_txt = 2 Then
+    Strtxt = "c:\windows\system32\notepad.exe C:\Users\Public\Documents\txt2.txt"
+ElseIf N_txt = 3 Then
+    Strtxt = "c:\windows\system32\notepad.exe C:\Users\Public\Documents\txt3.txt"
+ElseIf N_txt = 4 Then
+    Strtxt = "c:\windows\system32\notepad.exe C:\Users\Public\Documents\txt4.txt"
+Else
+    Strtxt = "c:\windows\system32\notepad.exe C:\Users\Public\Documents\txt1.txt"
+End If
+
+rc = Shell(Strtxt, 1)  'メモ帳起動：フォーカスを持ち、元のサイズと位置に復元されるウィンドウ
+
+Application.Wait Now() + TimeValue("00:00:01")  '起動時間のウエイト　＞ 対策を検討したがよい方法が見つからない
+'カーソルを文末に移動する
+SendKeys "^({END})", True                       'ctrl+END のキーを送る
+Worksheets("OPTION").Range("J1").Value = rc     '起動したメモ帳をフォーカス操作する際に認識するため返値をOPTIONワークシートＪ１に記録しておく
+
+</pre>
+<p>
+
+<b>3行　</b>　前回使用した文章の番号がOPTIONワークシートのJ2セルに書きこまれている（閉じる際に書きこんでおきます）ので、これを読み取ります。<br />
+<b>5‐13行　</b>　その番号にあわせて文字型変数Strtxtをセットします。<br />
+<b>15行　</b>　shell関数で、Strtxtに記入したコマンドを実行します。今回はメモ帳を起動して所定のファイルを開きますが、この方法を応用して他のプログラムを起動するなどできます。shell関数の２番目の引数に1を指定すると、前回閉じた時の同じ大きさ、同じ場所にメモ帳が開きます。コミュニケーションエイドの場合、この機能は重要なはたらきをします。<br />
+<b>17行　</b>　メモ帳を開くためにいくらか時間がかかり、パソコンの機種によってこの時間は様々です。上の例では一秒間の待ち時間を入れています。メモ帳ですからそれほど時間はかからないはずですが、お使いのパソコンによって、もっと時間がかかるかもしれません。<br />
+<b>19-20行　</b>　メモ帳が起動して前回使用したファイルが開きますがこの状態でカーソルは文頭にあります。文の続きを書き足すため文末にカーソルを移動するには、ctrl+ENDキーを押しますが、これをプログラムで実行するには、SendKeysコマンドを使います。Trueを指定すると、キーストロークが渡るまで他の処理を中断します。<br />
+</P>
+<p>
+今回はメモ帳をひとつ操作しているだけですが、いくつかのアプリケーションを起動し、これらを使い分け、sendkeyコマンドを利用する場合には、フォーカスの操作が必要になります。この際にｓｈｅｌｌ関数で起動した際の戻り値（15行目の　ｒｃ）を使います。今回はあまり出番がありません。
+</p>
+<hr align="center" size="3" width="80%" />
+<p>
+２　メモ帳に文字を入力する方法<br />
+まず入力すべき文字を文字盤から拾い出します。ひらがな文字盤の下の方にはスキャン時読み上げ文字列、その下に決定時読み上げ文字列、さらにその下に転送用文字列が配置されています。<br />
+ひらがな文字盤の『あ』を選ぶと、ひらがなワークシートのe33セルの文字列『あ』をstrSendWordに代入し、これを引数にしてサブルーチンSendWを呼んでいます。
+<pre class="brush: vb;">
+	strSendWord = Worksheets("ひらがな").Range("e33").Value
+	Call SendW(strSendWord)
+</pre>
+サブルーチンSendWは以下のようになります。
+
+<pre class="brush: vb;">
+Option Explicit
+Sub SendW(strWord As String)     '文字列送信サブルーチン　　フォーカスのあるアプリケーションにクリップボード経由で文字列を送る。
+
+Dim CB As New DataObject
+
+    With CB
+        .SetText strWord               '文字列をクリップボードに格納する。
+        .PutInClipboard
+    End With
+    Call KeyEvent(VK_CTRL, KEY_DOWN)  'コントロールキーを押下
+    Call KeyEvent(VK_V, KEY_DOWN)     '「ｖ」キー押下（貼り付け）
+    Call KeyEvent(VK_V, KEY_UP)       '「ｖ」キーを離す
+    Call KeyEvent(VK_CTRL, KEY_UP)    'コントロールキーを離す
+
+End Sub
+
+'winXPでは、関数sendkeysを使って来た。Windows7では、動作安定せず、テキスト送信の部分をこのサブルーチンに置き換えることにした。
+</pre>
+<p>
+サブルーチンSendWでは、引数の文字列をクリップボードに格納し、Ctrl+Vのキー操作（貼り付け）を（ctrlキーの押下、vキーの押下、vキーを離す、ctrlキーを離す）操作してアプリケーション（この場合フォーカスがあたっている、メモ帳）に送ります。
+WindowsXpでは、sendkeys関数を使っていたのですが、Windows7では動作が不安定になったため、このように方法を変更しました。<br />
+なお、キーイベントを送信する部分は、MTｰSoftさんのExcel自習用教材（http://mt-soft.sakura.ne.jp/）を使わせて頂きました。
+この場でお礼申し上げます。詳しいコードは、上記サイトまたはレッツチャット練習用しゃべる文字盤の標準モジュール、SENDINP内にありますのでごらんください。<br />
+上記のコメントにもありますが、sendkeysでうまく行かずほとほと困り果てているときに、MT-Softさんのサイトで、「何かと問題のあるsendkeysは使わない」と書かれているのを発見したときのことを今でも思い出します。
+</p>
+<hr align="center" size="3" width="80%" />
+<p>
+３　メモ帳の文字を消す方法<br />
+
+一文字消す場合
+<pre class="brush: vb;">
+	AppActivate rc  'メモ帳にフォーカスをうつす．エクセルにフォーカスがあった場合に自分のセルを消すトラブルを防ぐ
+	SendKeys "{BACKSPACE}", True      'BSキーを送る
+</pre>
+
+全部消す場合
+<pre class="brush: vb;">
+	AppActivate rc  'メモ帳にフォーカスをうつす．エクセルにフォーカスがあった場合に自分のセルを消すトラブルを防ぐ
+	SendKeys "%(EA)", True   'Alt+EA のキーを送る                    
+	SendKeys "{DEL}", True      'Del のキーを送る
+</pre>
+<p>
+まず起動した際の戻り値、rcを使ってフォーカスをメモ帳に移しています。
+この手順を怠ると、意図しない別物を予告なしに消去してしまう危険があります。
+そんなはずがないとは思いますが、そんなことに限ってよく起きます。<br />
+
+メモ帳に文字を書く際にはうまく動かなかった、sendkeysですが消す際にBackspaceやDELを送る場合には特に問題を起こしませんでした。注意したい箇所ではあります。
+</p>
+<hr align="center" size="3" width="80%" />
+<p>
+
+４　保存する方法<br />
+<pre class="brush: vb;">
+                       'すでに開いているメモ帳ファイルを保存する
+                        SendKeys "%(FS)", True   'Alt+FS のキーを送る（ファイル，上書き保存）
+                        'メモ帳を閉じる
+                        SendKeys "%(FX)", True   'Alt+FX のキーを送る（ファイル，終了）
+                        '文１を開く
+                        rc = Shell("c:\windows\system32\notepad.exe C:\Users\Public\Documents\txt1.txt", 1)  'メモ帳起動：フォーカスを持ち、元のサイズと位置に復元されるウィンドウ
+                        Application.Wait Now() + TimeValue("00:00:01")  '起動時間のウエイト
+                        
+                        Worksheets("OPTION").Range("J2").Value = 1           '"OPTION"シートのj2セルに使用中の文書ファイル番号を書き込む
+                        
+                        'カーソルを文末に移動する
+                        SendKeys "^({END})", True   'ctrl+END のキーを送る
+                        Worksheets("OPTION").Range("J1").Value = rc
+</pre>
+<p>
+すでに開いているファイルを上書き保存して閉じます。新たに文書ファイル１を開き、OPTIONワークシートのJ2セルに文書の番号１を書き込んでいます。これが文書ファイルを切り替える際の一連の操作です。終了すると最後に利用していたファイル番号が残り、次回の起動時にはこれを読み参照します。
+</p>
+<hr align="center" size="3" width="80%" />
+<p>
+５　読み上げの方法<br />
+
+<pre class="brush: vb;">
+	strSendWord = "　"      '文字のない状態でのクリップボード取り込みエラーを回避するためにスペースを送る
+	Call SendW(strSendWord)
+
+	SendKeys "%(EA)", True      'メモ帳のテキスト文書をクリップボードに取り込む
+	SendKeys "%(EC)", True      'Alt+EA，Alt＋Ec　を送る
+	Application.Wait Now() + TimeValue("00:00:02")  'sendkeys同期のウエイト＞ 対策を検討したがよい方法が見つからない
+                        
+	'SendKeys "%(EAEC)", True    'alt+E,A,E,C(編集，すべて選択，編集，コピーのキー操作）を送りメモ帳の内容をクリップボードにコピーする
+	SendKeys "^({END})", True                       'ctrl+END のキーを送りりメモ帳のカーソルを文末に移動する                      
+	SendKeys "{BACKSPACE}", True      '上記防止機能の後始末でＢＳを送る
+
+	strVoice = ClipBoard_GetData()  'クリップボードの内容を取り込むファンクション（標準モジュールのGETTXT参照）
+
+	'Call AQTalksync(strVoice)      'Aquestalkに同期発声させるタイプ　この方法では数字を読むとエラー発生する
+	'SofTalkの起動
+        'Call Shell("c:\softalk\softalk.exe /x:0 /w:" & strVoice)   'softalk に strvoice を引き渡す
+        Call Shell("C:\Program Files\softalk\softalk.exe /x:0 /s:80 /v:100 /w:" & strVoice)   'softalk に strvoice を引き渡す　この方法では32000字以上のtxtファイルはしりきれになる
+        'Call Shell("c:\softalk\softalk.exe c:\txt1.txt /x:0 /s:80 /v:100")      'ファイルを読み上げる方法では，吾輩は猫であるを全文読み上げできる．
+        Call Shell("C:\Program Files\softalk\softalk.exe /close")                 '読み終わったら閉じる
+                        
+        ' 読み上げ中にスキャン動作を止めておくループ
+        Do
+          DoEvents
+        Sleep 20  ' CPU負荷軽減のためSleep(20ms)AIP関数
+        If GetAsyncKeyState(vbKeyF9) <> 0 Then                  'F9キー押下したら
+        FSw = True
+        PlaySound "c:\windows\media\windows ding.wav", &H0, &H0     '同期で音を鳴らす
+        Call Shell("C:\Program Files\softalk\softalk.exe /close_now")     '読み上げを中止しすぐ閉じる
+        End If
+        If FSw = True Then
+        Exit Do            'ループから抜ける
+        End If
+        Loop
+
+</pre>
+<p>
+作成した文書を読み上げる部分です。<br />
+はじめにメモ帳の文字列をクリップボードに取り込みます。
+このとき何も書かれていない、文字のない状態でクリップボードへの取り込みを行うとエラーが発生するので、これを回避するために予め文末にスペース（空白）を入れます。<br />
+次にメモ帳にAlt+EA，Alt＋ECのキーを送り、文字列をクリップボードに取り込みます。<br />
+（メモ帳が起動した状態で、AltキーとEを同時押下すると、編集メニューが開きます。ここでAltキーを押したままAを押すと、全て選択になります。次にAltキーとEを同時押下し、続いてCを押すとコピーになり、この結果全ての文字がクリップボードに取り込まれます。キーボード操作と同じ事をプログラムで実行しようとしています。この方法を応用すれば、キーボード操作の多くをプログラムに置き換えることができます。）<br />
+
+その後、文末にカーソルを移動しBackspaceを送り、はじめに送った空白を消去して文を元に戻します。
+クリップボードには末尾に空白がついた文字列が入っていますが、これを読み上げさせても特に不具合がありませんのでこのままなにもしません。
+</p>
+<p>
+発声させる方法はいくつかあります。<br />
+まずAquesTalkで同期発生（読み上げている間、プログラムは止まる）させる方法が考えられます。しかしこの方法では文字列に数字が含まれると読み上げの際に不具合が出ます。これはAquesTalkでは高度な数字読み上げ機能を実現するため数字を読み上げる際は発音記号で指定する必要があるからです。<br />
+同じAquesTalkを利用するため同じ声を発声できるSoftalkというフリーのアプリケーションがあります。softalkは数字読み上げも問題なく出来ますので、メモ帳と同じ要領でExcelVBAからsoftalkを起動して読み上げの仕事をしてもらうことにしました。またsoftalkには読み上げ速度や声の高さも指定する機能があります。クリップボードの内容を文字型変数に入れてSoftalkに発声させる場合、文字列が32000文字以上は読み上げず尻切れになりますので、超長文を読み上げる際には注意が必要です。<br />
+大変稀なこととは思いますがこの場合、ファイル形式で読み上げ対象を指定することもできます。青空文庫の『吾輩は猫である』テキストファイルで試したところ、2時間近くかけて読み上げましたので、通常の長文ではまず問題にならないでしょう。<br />
+このようにsoftalkの読み上げ機能は通常のコミュニケーションエイドには十分すぎるほどですから、読み上げ文字列は文字型変数で指定するのがよいと思います。はじめに紹介したメモ帳を起動する方法と同様に、softalkをしゃべる文字盤のVBAから起動します。softalkが読み上げている間、しゃべる文字盤の動作は停止し読み上げの終了を待ちます。読み上げが終われば、Softalkは閉じられ、しゃべる文字盤の動作が再開されます。途中でf9キーを押すと読み上げは中断し、しゃべる文字盤の動作が再開されます。
+</p>
+<hr align="center" size="3" width="80%" />
+<p>
+６　クリップボードの内容を変数に取り込む方法<br />
+
+<pre class="brush: vb;">
+Option Explicit
+
+Declare Function OpenClipboard Lib "user32" (ByVal hWnd As Long) As Long
+Declare Function CloseClipboard Lib "user32" () As Long
+Declare Function GetClipboardData Lib "user32" (ByVal wFormat As Long) As Long
+Declare Function GlobalAlloc Lib "kernel32" (ByVal wFlags&, ByVal dwBytes As Long) As Long
+Declare Function GlobalLock Lib "kernel32" (ByVal hMem As Long) As Long
+Declare Function GlobalUnlock Lib "kernel32" (ByVal hMem As Long) As Long
+Declare Function GlobalSize Lib "kernel32" (ByVal hMem As Long) As Long
+Declare Function lstrcpy Lib "kernel32" (ByVal lpString1 As Any, ByVal lpString2 As Any) As Long
+
+Public Const GHND = &H42
+Public Const CF_TEXT = 1    'テキストデータを読み書きする場合の定数
+Public Const MAXSIZE = 4096
+
+Function ClipBoard_GetData() As String
+
+    Dim hClipMemory As Long
+    Dim lpClipMemory As Long
+    Dim MyString As String
+    Dim RetVal As Long
+    Dim MAXSIZE1 As Long
+
+    If OpenClipboard(0&) = 0 Then   'クリップボードを開く　開かなかったらfunctionから抜ける
+        MsgBox "クリップボードが開きません"
+        Exit Function
+    End If
+    
+    ' テキストを参照しているグローバル メモリのブロックへのハンドルを取得します。
+    hClipMemory = GetClipboardData(CF_TEXT)
+    If IsNull(hClipMemory) Then         'ハンドルの取得に失敗するとNULLを返す．NULLなら　"Get Out of Here!"
+        MsgBox "Could not allocate memory"
+        GoTo OutOfHere
+    End If
+    
+    ' クリップボードのメモリをロックし、実際のデータ文字列を参照します。
+    lpClipMemory = GlobalLock(hClipMemory)      'ロックして
+    
+    If Not IsNull(lpClipMemory) Then            'NULLでないなら
+        MAXSIZE1 = GlobalSize(hClipMemory) + 1   'クリップメモリの大きさ＋１をMAXSIZE1とする
+        MyString = Space$(MAXSIZE1)              'MystringをMAXSIZE個数の空白で埋めてクリアする
+        RetVal = lstrcpy(MyString, lpClipMemory) 'クリップボードのメモリポインタから文字列を取得しMystringに入れる
+        RetVal = GlobalUnlock(hClipMemory)      'アンロックする
+        
+        ' Mystringからnull 終了文字（Chr$(0)）以下を削除します。
+        MyString = Mid(MyString, 1, InStr(1, MyString, Chr$(0), 0) - 1)
+    Else
+        MsgBox "Could not lock memory to copy string from."
+    End If
+    
+OutOfHere:
+
+    RetVal = CloseClipboard()       'クリップボードを閉じる
+    ClipBoard_GetData = MyString
+
+End Function
+'参考資料　　moug モーグ　クリップボードへデータを送信する方法
+'http://www.moug.net/tech/acvba/0020004.htm
+</pre>
+<p>
+メモ帳から文字列をクリップボードに取り込むには、Ctrl+A　Ctrl+C　（または、Alt+EA　Alt+EC）でできますがクリップボードの内容を変数に取り込むのは簡単にいきません。幸いmougさんが良い方法を公開されていましたので、ありがたく使わせていただきました。どうもありがとうございます。
+</p>
+
+
+<p>
+メモ帳の内容を読み上げる課題に何種類か方法を提示出来ました。
+用途によって方法を使い分けるとより良い解決に近づけると思います。
+また、エクセルから他のソフトを利用できるといろいろと用途が広がり、開発も楽に進めることができるでしょう。<br />
+
+</p>
+  <hr align="center" size="3" width="80%" />
+<p>
+おわりに<br />
+今回はExcelVBAから、他のアプリケーションを利用する方法について説明いたしました。
+既にインストールされているソフトやフリーソフトを有効に利用できると、用途や機能が大きく広がります。
+また、パソコン経験がある患者さんから特定のソフトを利用したいなどの要望があったとしても、お応えできるかもしれません。もしこれが実現できると、使用方法など新たに覚える必要がなくなり、お使いになる方の負担は軽く、満足感は大きくなるかもしれません。<br />
+
+またこのような取り組みを重ね用途が広がると、『コミュニケーションのための道具』コミュニケーションエイドがやがて『生活のための道具』に徐々に変化していくことになります。
+そして最後には、不自由な方もそうでない方も、使う道具や方法は違っていてもそれぞれやりたいことをやりたいようにやっている、そんな夢が実現に近づいていきます。
+</p>
+夢の実現にむけて日夜がんばっておられるみなさんの、そんな取り組みの参考にこの記事がなれば幸いです。
+</p>
+
+
+<hr align="left" size="3" width="100%" /> 
+<font size="2">2014/10/3　公開 </font> 
+<a href="../index.html" target="_self"><p align="center">研究企画課リハ工学科にもどる</p></a>
+
+</blockquote>
+</body></html>

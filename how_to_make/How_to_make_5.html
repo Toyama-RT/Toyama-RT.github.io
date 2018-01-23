@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"> 
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css" />
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>富山県高志リハビリ病院　しゃべる文字盤のつくりかた　第5回</title>
+
+ <style type="text/css">
+<!--
+P	{
+	LINE-HEIGHT: 1.5
+	}
+-->
+  </style>
+</head>
+
+<body style="color: black; background-color: white;" alink="#800080" link="#0000ff" vlink="#0080ff">
+<p align="center">
+<font size="3">
+<font color="#ff0000">かならずお読みください → </font>
+<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a>
+</font>
+</p>
+
+<blockquote>
+  <p align="center"><font size="5">しゃべる文字盤のつくりかた<br />
+</font></p>
+  <p align="center"><font size="5">5　統合開発環境　VBE</font></p>
+
+<p align="center"><img alt="VBEの画面" src="img/msvbe.png"/></p>
+
+  <hr align="center" size="3" width="80%" />
+
+<p>
+プログラミング作業を効率的に進めるため色々手助けしてくれるソフトが統合開発環境です。
+開発におけるプロジェクトやバージョンの管理をはじめ、入力時のタイプミス、文法ミスの指摘や入力候補の提示など初心者にも有用な（時にはおせっかいな）機能を備え、プログラミング作業を効率的にすすめるために作られました。
+</p><p>
+Microsoft Officeをインストールすると自動的にVBAと上図のようなVBA専用の統合開発環境（VisualBasicEditor、VBE）がインストールされます。このように、ほとんどのWindowsパソコンでは、プログラミング用のソフトがもう既にインストールされていますので、準備することも特になくすぐ取り組みを始めることができます。VBEを起動するには、エクセルから、開発>VisualBasicをクリック（またはAlt+F11押下）します。
+</p><p>
+VBAやVBEの使い方などは多くのサイトで解説されています。
+そのようなサイトのひとつ、『よねさんのWordとExcelの小部屋』（http://www.eurus.dti.ne.jp/~yoneyama/）では、
+Microsoft OfficeのWord, Excel, PowerPointの基本操作・一般機能の使い方について図表や例題を使って詳細に解説しています。またVBEの基本的な使い方の記事（http://www.eurus.dti.ne.jp/~yoneyama/Excel/vba/vba_vbe.html）もあります。
+類似のサイトは他にもあります。『VBE　使い方』といったキーワードで検索するとたくさんHITします。さらに詳しくお知りになりたい方はこのような方法で勉強を進められるとよろしいと思います。
+</p>
+  <hr align="center" size="3" width="80%" />
+<p>
+しゃべる文字盤の開発を始めた時に使った、Office2000（Excel2000）には既にVBEが付属していました。もしかしたらそれ以前から付属していたのかもしれませんがよくわかりません。いずれにせよVBEは長く利用され、今ではネット上のあちこちに関係する解説記事が見られるようになりました。
+</p><p>
+VBEのような統合開発環境はかつてかなり高価で、私を含め多くのアマチュアプログラマにはなかなか手が出せないものでした。ところがVBEの他にも、2005年にマイクロソフトの製品、Visual Studioの機能を限定したExpress版が無料配布されるようになりました。
+この頃からパソコン関係の各種の開発ソフトが無料またはごく安価で利用できるようになりました。また参考書の類も多くのサイトの記事でずいぶん補えるようになって来ました。そしてパソコン自体も随分安価になり、機能も向上してきました。
+</p><p>
+もちろんこれらの多くはパソコン業界のビジネス上の目的をもって進められたものです。しかし、結果としてこのおかげで少ない費用でプログラム作りの勉強ができるようになりました。またソフトウエアの機能が向上した結果、そこそこの技能でそこそこの仕事をさせることができるようになりました。
+プロはもちろん、アマチュアにとってこの恩恵は大変大きいものです。
+</p>
+  <hr align="center" size="3" width="80%" />
+<p>
+例えば福祉機器のように、需要も用途も限られ、使う人に合わせる必要があり、採算の厳しい『ものづくり』は一般的に継続が容易ではありません。寄付や補助金をあてにできない不景気の時代には厳しさはひとしおです。昔だったらここでお手上げでしたが、今は上記のように従来なかった可能性が提供されています。
+</p><p>
+福祉機器用具が今のように豊富でなかった時代には、身の回りにある物を工夫して役に立つ道具を手作りしていました。片手が不自由でも爪が切れる爪切り、長い柄のついた背中洗いブラシ、片手で絞れるタオルしぼり、などなど皆さんご存知のとおりです。これらの品々は共通の特徴を持っています。それは、必要とされる限り滅多なことでは消えてなくならないことです。
+</p><p>
+時代は移り、生活の様子も変わりました。<br />
+昔は普通に見られたのに、今ではすっかり珍しくなったものもあります。<br />
+反対に昔は身の回りになかったのに、今では簡単に入手できるものもあります。<br />
+特にパソコンやスマホなど情報機器やインターネットに関係するもののほとんどがこれに相当します。
+</p><p>
+そしてこれらも含めて身の回りにあるありふれたものを利用して、役に立つものを作り出すことができると、
+必要とする人がいるのに経済的にペイしない取り組みが実現するかもしれません。
+また景気が悪くなっても、モノは生き残ることができるかもしれません。
+</p><p>
+問題解決のためにこれまでと違う方法を開発しておく必要を感じます。
+</p>
+  <hr align="center" size="3" width="80%" />
+<p>
+まとめ<br/>
+しゃべる文字盤の発表以来あちこちで、『私も始めた』という方とお会いしました。まったくありがたいことです。
+このような新しい取り組みから、患者さんの選択の幅が少しづつ広がることになると思います。
+</p><p>
+なぞなぞです　　つかってもつかってもなくならないものなあに？　　こたえは何でしょう
+</p><p>
+答えはわからなくてもいいんです。ただ、そんなものをつかって役に立つ道具が作れると、景気や税収や予算に関係なく必要な人に必要なだけモノとチャンスを届けることができる。これをおわかりいただければそれでいいのです。
+</p>
+
+<hr align="left" size="3" width="100%" /> 
+<font size="2">2014/05/21　公開 </font> 
+<a href="../index.html" target="_self"><p align="center">研究企画課リハ工学科にもどる</p></a>
+
+</blockquote>
+</body></html>
