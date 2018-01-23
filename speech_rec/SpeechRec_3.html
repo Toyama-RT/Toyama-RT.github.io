@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><head>
+
+  <script type="text/javascript" src="../SH/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../SH/scripts/shBrushXml.js"></script>
+  <script type="text/javascript" src="../SH/scripts/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../SH/scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../SH/scripts/shBrushVb.js"></script>
+  <link type="text/css" rel="stylesheet" href="../SH/styles/shCoreDefault.css" />
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>富山県高志リハビリ病院　音声認識をはじめましょう</title>
+  
+  <style type="text/css">
+<!--
+P	{
+	LINE-HEIGHT: 1.5
+	}
+-->
+  </style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82832782-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head><body style="color: black; background-color: white;" alink="#800080" link="#0000ff" vlink="#0080ff">
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+<blockquote>
+  <p align="center"><font size="5">音声認識、手作りのススメ<br />
+  </font></p>
+  <p align="center"><font size="5">第3回　Next Slide Please を作る<br />
+  </font></p>
+  <hr align="center" size="3" width="80%" />
+  <p align="left">はじめに</p>
+  <p align="left">ここでは、前回まで説明してきました音声認識技術の応用例を紹介することにします。従来の製品とは異なる手作り音声認識ソフトの特徴を身近な機材だけで試せる面白そうな（注　個人によって結果に差があります）ものを作ってみます。</p>
+  <p align="left">以前、ある講演会に行きましたところ、演者の先生はパワーポイントの操作を手元のリモコンで行いながら講演されました。演台のパソコンを操作する場合はその場所を離れにくいものですが、こうすれば聴衆（講義なら学生です）の間を動きまわっても話ができます。聴衆に対するパフォーマンスが発揮され、聞き手の関心を引き出すこともできる（かもしれない）いい方法だと感心しました。簡単に言えばかっこいいですね。（もちろんこの講演の中身も大変ためになるものでありました。念の為…）あとで検索してみるとこの道具はほどほど手頃な価格で流通していることもわかりました。そこで早速購入…しませんでした。もっとほかにおもしろい方法はないかと考え始める、実に困った性格です。<br />
+  <br />
+昔の学会発表や講演会ではスライド係がいて、スライド映写機を操作していました。演者は「次のスライドお願いします」などと声で合図して講演をしていました。スライド受付係は白い手袋をつけていて指紋がスライドにつかないようにしていました。時々逆さまになったり、裏返しになったり、つっかえたりひっかかったり大変でした。壇上でうろたえるのはだいたい学生さんでした。プレゼンテーションソフトを使うようになりましたので、たくさん持っていたスライドを今ではすっかり処分してしまいました。もしかしていまどきの若い人はスライドの実物を見たことないかもしれないですね。それなのに『スライドショー』という言葉が今も残っているのはなんだか不思議です。</p>
+  <p align="left">そこでパソコンに向かって何か喋るとスライドが切り替わるというのはなかなかアナクロでおもしろい。またこれで演台の前を離れることもできます。声は人類最古？の無線情報通信であると再認識するのもなかなかおもしろいですね。なによりリモコンよりもおもしろくかっこいいですね。このような小児的興味本位の理由で取り組みを開始しました。<br />
+  <br />
+お詫び：だれでも手頃に試せると思っていましたが、パワーポイントを持っていない人も多いことに後になってから気が付きました。すみません。このような場合は、パワーポイントビュアー（http://www.microsoft.com/ja-jp/download/details.aspx?id=6）またはLIBREofficeimpress（http://ja.libreoffice.org/）をお試しください。いずれも無料で利用できます。<br />
+  </p>
+  <hr style="width: 80%; height: 3px;" />
+  <p align="left">作り方<br />
+  </p>
+  <p align="left">kilalaさんのサンプルプログラムに最小限の手を加え、音声認識でパワーポイントのスライドショーを操作できるようにしました。<br />
+ご存知のようにパワーポイントは、主な操作にショートカットキーが設定してあります。スライドショー開始にはF5キー、スライドショー停止にはEscキー、スライドを進めるにはEnterキー、戻すにはbackSpaceキーを使います。これだけ覚えておけば几帳面すぎる照明係さんが会場を真っ暗にしてしまっても操作には困りません。</p>
+  <p align="left"> この４つのキー操作を、<br />
+スライドショー　はじめてください<br />
+スライドショー　終了してください<br />
+スライド　次お願いします<br />
+スライド　前へお願いします<br />
+の四種類の言葉で動かすことが今回の目標です。これらをグラマファイルに下記のように登録します。戻り値はそれぞれ、スライドショーが１００、始めてくださいが１０、終了してくださいが１１、スライドが２００、次お願いしますが１０、まえへお願いしますが１１としました。<br />
+  </p>
+  <pre class="brush: text;">
+<GRAMMAR LANGID="411">
+   <RULE NAME="PPTControl" TOPLEVEL="ACTIVE">
+      <L>
+        <P><RULEREF NAME="SlideShow"/></P>
+        <P><RULEREF NAME="Slide"/></P>
+      </L>
+   </RULE>
+   <RULE NAME="SlideShow" >
+      <L PROPNAME="SShow">
+         <P VAL="１00">/スライドショー/すらいどしょう/スライドショウ;</P>
+      </L>
+      <L PROPNAME="SSCMD">
+         <P VAL="10">/開始/はじめてください/ハジメテクダサイ;</P>
+         <P VAL="11">/終了/しゅうりょうしてください/シュウリョウシテクダサイ;</P>
+      </L>
+   </RULE>
+   <RULE NAME="Slide" >
+      <L PROPNAME="Sl">
+         <P VAL="200">/スライド/すらいど/スライド;</P>
+      </L>
+      <L PROPNAME="SlCMD">
+         <P VAL="10">/次へ/つぎおねがいします/ツギオネガイシマス;</P>
+         <P VAL="11">/前へ/まええおねがいします/マエエオネガイシマス;</P>
+      </L>
+   </RULE>
+</GRAMMAR>
+</pre>
+  
+
+  <p align="left"> この戻り値によって、特定のキーをパワーポイントに送るようにプログラムを作る。コードは以下のとおりです。</p>
+
+
+
+<pre class="brush: vb;highlight:[21,22,23,24,25,26,27,28,29,30,31,32,33,46,47,48,49];">
+Public Class Form1
+    Inherits System.Windows.Forms.Form
+ 
+ " Windows フォーム デザイナで生成されたコード "
+    Dim WithEvents Speech As SKSpeechLib.SKSpeech
+    Private Sub SKSpeechRecognitionEventHandler(ByVal sender As Object, _
+                              ByVal e As SKSpeechLib.SKSpeechEventArgs) _
+                              Handles Speech.Recognition
+        Label4.Text = ""
+        Label6.Text = ""
+        Label8.Text = e.RuleName
+ 
+        Label3.Text = e.values(0).ToString
+        Label5.Text = e.Words(0)
+        Label9.Text = e.ItemName(0)
+        If e.RecoCount > 1 Then
+            Label4.Text = e.values(1).ToString
+            Label6.Text = e.Words(1)
+            Label10.Text = e.ItemName(1)
+        End If
+        If e.values(0) = 100 And e.values(1) = 10 Then  'スライドショー開始
+            'SendKeys.SendWait("{F5}")
+            Call PPTOpen()
+        End If
+        If e.values(0) = 100 And e.values(1) = 11 Then  'スライドショー終了
+            SendKeys.SendWait("{ESC}")
+        End If
+        If e.values(0) = 200 And e.values(1) = 10 Then  'スライドー次へ
+            SendKeys.SendWait("{ENTER}")
+        End If
+        If e.values(0) = 200 And e.values(1) = 11 Then  'スライドー前へ
+            SendKeys.SendWait("{BACKSPACE}")
+        End If
+    End Sub
+ 
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Speech = New SKSpeechLib.SKSpeech("SpeechGrammer.xml")
+        Speech.Enabled = True
+        CheckBox1.Checked = Speech.Enabled
+    End Sub
+ 
+    Private Sub CheckBox1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox1.CheckedChanged
+        Speech.Enabled = CheckBox1.Checked
+    End Sub
+
+    Private Sub PPTOpen()
+        Dim rc As Integer
+        rc = Shell("C:\Program Files\Microsoft Office\Office\powerpnt.exe /s c:\filename.ppt", AppWinStyle.NormalFocus)
+    End Sub
+
+End Class
+</pre>
+
+  <p align="left">ここでは、kilalaさんのオリジナルに、21行目から33行目を書きたしました。この部分は、『スライド　次お願いします』で　enter　を、『スライド　前へお願いします』で　backspace　をパワーポイントに送ります。また『スライドショー　終了してください』で　ESCキーを送ります。スライドショー開始では、ファイルを開いたあと、F5キーを送ろうと計画していましたが、一気にスライドショーを開始するのもキビキビしていてよろしいので、パワーポイントを/sオプション、ファイルネーム指定で開くようにしました。これが46行目から49行目の部分です。<br />
+  </p>
+  <hr style="width: 80%; height: 3px;" />
+  <p align="left">グラマファイルの設定と誤認識</p>
+  <p align="left"> 音声認識には誤認識がつきものとの意見があちこちで言われています。この試みでははじめ、</p>
+  <p align="left"> 『次のスライド』と『前のスライド』</p>
+  <p align="left"> で試してみました。音声認識の予備実験では問題なく操作出来ましたが、プレゼンテーションの原稿を読みながら操作を行うと、不意に意図しない場面でスライドが動いてしまうこともありました。どうもこれは使う言葉が単純で短すぎ、しかも後ろ半分が『のスライド』と共通であるため、プレゼンテーションのなかの類似の言葉で誤認識してしまうためと考えられました。（もちろんお話などせずに黙っていれば、誤認識も起きず演者も楽なのですが、それでは世間が（座長も）許してくれません。）</p>
+  <p align="left">そこで、<br />
+『次のスライドお願いします』と『前のスライドお願いします』<br />
+に変更しました。これだけ長くなると誤認識が減りました。特に『お願いします』等プレゼンテーションでの頻度が少ない単語を使うと誤認識防止に効果があるようです。ただしお願いごとの多いプレゼンテーション（何それ？）では当然この限りではありません。<br />
+（同様に、『次のスライド　ウルトラマンシュワッチ』なども誤認識が少なくなると考えられますが、これはこれでいろいろ物議を醸すものと予想されます。）</p>
+  <p align="left">誤認識対策として、上記のように用語を長くすると誤認識と同じく正認識も低下します。とくに長い言葉を一気に発声する際の間のとり方、区切り方にコツがあるようで、認識率をあげるためには発声に苦労することになります。このように音声認識では、正認識と誤認識のほかに認識不可の３種の場合があることを念頭におく必要があります。<br />
+このような場合では、音声コマンドの多層化が効果を発揮します、<br />
+  <br />
+『スライドショー』<br />
+　『はじめてください』<br />
+　『終了してください』<br />
+  <br />
+『スライド』<br />
+　『次お願いします』<br />
+　『前へお願いします』<br />
+  <br />
+２つの言葉がいずれも正しく認識された場合のみ（AND論理）実行されるので誤認識は減ります。</p>
+  <p align="left"> 最後の手段として、コマンドの種類をへらすのも効果的です。コマンドの数が少なければ、誤認識も存在しにくくなります。<br />
+例えば、『スライドショー　終了してください』は、タイミング的に拍手等（その他、罵声、野次）の環境ノイズが上昇するために実際的には使えませんので、廃止してもそれほど困りません。必要ないなら削除と自己決定できるところが手作りの最大のメリットです。<br />
+  </p>
+  <hr style="width: 80%; height: 3px;" />音声認識のコツ<br />
+  <p align="left">はっきりした声をパソコンに入れることが基本です。そのためには、サウンドレコーダーなど録音可能なソフトを使い、自分の耳で録音ボリュームを適切に設定することをお勧めします。認識がうまくいかない原因として、マイク音量が低すぎてかすれたり、高すぎて音がわれていたりなどがよくあります。どの程度の声が人間から出てマイクに入っているかを別途検討することは重要です。<br />
+会場でマイクを使ったら認識しなくなった例もあります。音声コマンドを利用するときはマイクオフしたり、マイクを口から離すなどが有効です。また音声コマンド発生前に、２，３秒、静寂をおくと認識しやすいようです。<br />
+  </p>
+  <hr style="width: 80%; height: 3px;" />
+  <p align="left">Next Slide Please のまとめ</p>
+  <p align="left">ここで、紹介したNext Slide Please は、声でパワーポイントスライドショーを操作するものです。この方法を発展させることで、この他の用途にも応用できると思います。</p>
+  <p align="left">キーボードやマウスがうまくいかない場合に、あの道具（代替入力装置）にしようかこの道具を使おうか迷うことがあります。帯に短し襷に長しの状態では、２つを合わせて使えないことがよくあります。でも音声認識なら合わせて使えるかもしれません。例えばマウスカーソルの移動はある道具を使って、クリックは声でやるといったことができるかもしれません。</p>
+  <p align="left">きちんと認識できないから使い物にならないとのご意見もあちこちで伺いますが、なんとかとかんとかは使いよう、そして音声認識も使いようなのです。</p>
+  <hr align="left" size="3" width="100%" /> <font size="2">2013/11/14　公開 </font> <a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a></blockquote>
+
+</body></html>
