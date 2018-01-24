@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>富山県高志リハビリ病院　The Eye Mouse 開発環境</title>
+  
+<style type="text/css">
+<!--
+p	{
+	LINE-HEIGHT: 1.5
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: center;
+    }
+-->
+</style>
+</head>
+<body style="color: black; background-color: white;" alink="#800080" link="#0000ff" vlink="#0080ff">
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+<blockquote>
+
+<h1> The Eye Mouse の開発環境</h1>
+
+<hr align="center" size="3" width="80%" />
+
+<p>
+The Eye Mouse のデモ動画の再生回数が週末を含んだ3日間で約100回になりました。ご覧いただきどうもありがとうございます。<br />
+
+さて、その中にはプログラムをダウンロードして試された方も、そして自分の手を加えたいとお考えの方もおられると思います。このページでは、そのような方々のために開発環境について記します。<br />
+
+The Eye Mouse は The EyeWiter ver1.0　に改造を加え作りましたが、開発のため以下の準備を行いました。The Eye Mouse の改造や改良を行うためには同様の準備が必要となります。
+</p>
+<blockquote>
+<p>
+1、統合開発環境（IDE）のインストール<br />
+2、openFrameworks　のインストール<br />
+3、The Eye Mouse ソースコードのダウンロード<br />
+4、The Eye Mouse のコンパイル<br />
+</p>
+</blockquote>
+<p>
+（The EyeWiter ver1.0から開発する場合は、3,4の　The Eye Mouse を読み替えてください）
+</p><p>
+注　eyewriter1.0 & openframeworks0.74 & codebolocks12.11　は三者のバージョン間には、コンパイルのための互換性があることが確認されています。The Eye Mouse の開発もこの環境で行いましたので、特に事情のない限りこの組み合わせを推奨します。
+</P>
+<hr align="center" size="3" width="80%" />
+
+<h2>1, 統合開発環境（IDE）のインストール</h2>
+
+<h3>Code::Bolocksのインストール</h3>
+<p>
+統合開発環境(IDE; Integrated Development Environment) は、ソフトウェアの開発
+環境です。今回は、フリー/オープンソースでクロスプラットフォームのIDEである
+Code::Bolocksをダウンロードしインストールします。
+
+以下のサイトにアクセスして、Download the binary releaseをクリックします。<br />
+
+http://www.codeblocks.org/downloads<br />
+（一番下、macの下のNoteに古いバージョンへのリンクがあります）<br />
+
+バージョンが12.11の、GCCコンパイラが付属した、ウィンドウズ版のバイナリーファイル(codeblocks-12.11mingw-setup.exe)をダウンロードし、C:/Program Filesにインストールします。
+</p>
+<h3>追加ライブラリのインストール</h3>
+<p>
+さらに、openframeworksのコンパイルに必要な、codeblocksの追加ライブラリを以下のサイトからダウンロードします。<br />
+http://www.openframeworks.cc/content/files/codeblocks_additions.zip<br />
+追加ファイル(codeblocks_additions.zip)を解凍し出現する次の２つのフォルダ中のすべてのファイルを
+</p><p>
+add_tocodeblocks_mingw_include<br /> 
+add_tocodeblocks_mingw_lib
+</p><p>
+それぞれ、以下のフォルダに追加します。<br />
+C:/Program Files/CodeBlocks/MinGW/include<br /> 
+C:/Program Files/CodeBlocks/MinGW/lib
+</p>
+
+<h2>2, openFrameworksのインストール</h2>
+<p>
+openFrameworks（オープンフレームワークス 略称oF）とは、「創造的なコーディング」のためのC++のオープンソースツールキットと言われています。
+以下のサイトから、windows:code blocksの古いバージョン(v0074)のファイル(of_v0.7.4_win_cb_release.zip)をダウンロードします。<br />
+
+http://www.openframeworks.cc/download/older.html<br />
+
+解凍して、任意のフォルダに保存します。
+</p>
+
+<h3>openframeworksLibのインストール</h3>
+<p>
+openframeworksLibをCode:Blocksでコンパイルします。まず，Code::Blocks を起動し、
+File ＞ Open... を選び，of_v0.7.4_win_cb_release ＞ libs ＞
+openFrameworksCompiled ＞ project ＞ win_cb ＞ openFrameworksLib(.cbp) を開
+き、buildします。<br />
+
+../of_v0.7.4_win_cb_release_01/libs/openFrameworksCompiled/lib/win_cb<br />
+
+に、openFrameworks.libが作成されたことを確認します。
+</p>
+
+<h2>3, The Eye Mouse のソースコードのダウンロード</h2>
+
+<p>
+The Eye Mouse のダウンロードページにアクセスし、
+eyewriter-1.0-test8_noLED_tmp_match_debug18_2g6_tmp_closed.zip　（33.7MB）をダウンロードします。<br />
+
+解凍したフォルダを先ほどoFサイトからダウンロードした
+ファイル"of_v0.7.4_win_cb_release/apps/myApps"フォルダへ移動します。
+</p>
+
+<h2>4, The Eye Mouse のコンパイル</h2>
+
+<p>
+The Eye Mouse をCode:Blocksでコンパイルします。
+Code::Blocks を起動し、File ＞Open... を選び，of_v0.7.4_win_cb_release_01 ＞ apps ＞ myApps ＞eyewriter-1.0-master ＞ eyewriter.cbpを開き、buildします。<br />
+
+エラーが出なければコンパイル完了です。
+
+<hr align="center" size="3" width="80%" />
+<h2>付録（The EyeWriter を扱う場合の手順）</h2>
+
+<h2>3+, The EyeWriter　のソースコードをダウンロード</h2>
+
+The EyeWriter 1.0 のソースコードページにアクセスします。(必要に応じて、githubに登
+録します。)<br />
+
+https://github.com/eyewriter/eyewriter-1.0<br />
+
+eyewriter-1.0-master.zip　をクリックしてダウンロードします。<br />
+
+これを解凍したフォルダ(eyewriter-1.0-master)を先ほどoFサイトからダウンロードした
+ファイル"of_v0.7.4_win_cb_release/apps/myApps"フォルダへ移動します。
+
+</p>
+<h2>4+, The EyeWriter　のコンパイル</h2>
+<p>
+The EyeWriter　1.0 をCode:Blocksでコンパイルします。
+Code::Blocks を起動し、File ＞Open... を選び，of_v0.7.4_win_cb_release_01 ＞ apps ＞ myApps ＞eyewriter-1.0-master ＞ eyewriter.cbpを開き、buildします。<br />
+
+エラーが出なければコンパイル完了です。<br />
+
+以上で準備は完了です。
+
+</p>
+
+
+<hr align="left" size="3" width="100%" />
+<font size="2">2014/10/29　公開 </font> 
+<a href="../index.html" target="_self"><p align="center">研究企画課リハ工学科にもどる</p></a>
+</blockquote>
+
+</body></html>
