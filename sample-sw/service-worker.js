@@ -9,7 +9,7 @@ self.oninstall = function(event) {
       return cache.addAll([
         '/',
         '/page.js',
-        '/offline_icon.png',
+        //'/offline_icon.png',
         '/main.css']);
     })
   );
