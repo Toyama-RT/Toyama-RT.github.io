@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>androidタブレットでエンチャント文字盤</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+-->
+</style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82832782-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>androidタブレットでエンチャント文字盤 </h1>
+    <div style="text-align: center;"><img title="androidでエンチャント" alt="タブレットでコミュニケーションエイド" src="img/enchant on tablet.png"></div>
+<p align="center">
+<a target="_blank" href="https://www.youtube.com/watch?v=XiWi2JTGjOE&feature=youtu.be">youtubeの動画はこちら　4分30秒　音が出ます</a>
+</p>
+<h2>０　はじめに</h2>
+<p>これまでエンチャント文字盤のソフトウエアのサンプルをいくつか紹介してきましたが、今回はすこし趣向を変えてこれらのソフトウエアを動かすためのハードウエアのサンプルを作ってみました。コンセプトは低コストで融通が利くこと、そして試してみるときのバリアがとても低いことです。
+</p>
+<h2>１　コミュニケーションエイドの特徴と反省</h2>
+<p>
+コミュニケーションエイドという道具には、</p> 
+
+<ol>
+  <li>患者さんやご家族に説明する際、お話やパンフレット等資料だけではなかなかわかってもらいにくい</li>
+  <li>患者さんご本人も、実際にやってみないとできるかどうかはっきりわからない（まあ当然のことです）</li>
+  <li>さらに生活の場で話の相手となるひとといっしょに、いくらか長い間使用しないとどのように役に立つのか十分わからない。</li>
+</ol>
+<p>といった特徴があります。ところがこれらをいざ実行しようとすると、</p>
+<ol>
+  <li>試しに使う道具がない</li>
+  <li>道具の準備にはお金と時間がかかる</li>
+  <li>特殊な道具で説明がわかりにくい</li>
+  <li>操作習得がむつかしく時間がかかる、練習が進まない</li>
+</ol>
+<p>
+などいろいろな問題がおこりがちです。
+これらをまずなんとかしないと活用につなげるのは容易ではありません。
+
+このような問題や過去のうまくいかなかった経験の反省をこめて、エンチャント文字盤と今回のサンプルを企画しました。</p>
+
+<h2>２　動画で使っている道具</h2>
+<p>
+使用しているのはandroidのタブレット、ASUSのMEMOPAD、10インチです。
+スマホに比べてかなり大きいですが、たくさんの文字が表示される50音文字盤のコミュニケーションエイドとして使用するとしたらこれくらいの大きさがよいでしょう。
+</p><p>
+このタブレットは無線LANでインターネットにつながっています。動画ではグーグルクロムでエンチャント文字盤の紹介ページを表示し、ここで選んだソフトがダウンロードされ動き始めます。あらかじめブックマークに登録しておくとこのような手間がかかりません。また複数の文字盤を使い分けるのも簡単になります。
+</p><p>
+画面左上の、タブレットのMicroUSBポートにはOTGケーブルがついています。これを使うと、andoroidタブレットにパソコン用USB機器、例えばキーボードやマウスやUSBメモリなどを使用できます。マウスを接続すると自動的にマウスカーソル（矢印マーク）が表示されます。動画では文字盤の『て』の部分に黒いマウスカーソルが表示されているのが見えます。
+</p><p>
+USBマウスと同様に『らくらくマウス』や『クチマウス』などの代替マウスも使用できます。これらを使えばタッチパネルが苦手でも何とかなるかもしれません。OTGケーブルは各社から何種類か販売されていて、通販で数百円程度で購入できます。
+</p><p>
+ここで注意が必要です。人気タブレットのiPadやiphoneでも同様の機能がありますがマウスは利用できません。マウスをつないでもマウスカーソルが表示されません。そもそもマウスを使うように設計されていないのです。代替マウスも使用できません。
+</p><p>
+画面中央手前にマウスがあります。タッチパネルをタッチするかこのマウスを左クリックすると、スキャンタイプのエンチャント文字盤を操作できます。もしそのどちらも苦手な場合に外部スイッチとして特殊スイッチが使える様にマウスに細工がしてあり、動画ではジェリービーンスイッチを使っています。これと同様に『まばたきスイッチ』や『パシフィックサプライのPPSスイッチ』、『マクトスの脳波スイッチ』などの特殊操作スイッチが使用できます。
+</p><p>
+androidタブレットでは、これまでのコミュニケーション支援で開発、利用されてきた支援機器資産が利用できます。またこれから開発される代替マウスや特殊スイッチも利用できると考えられます。これらについてさらに詳しくお知りになりたい方は、ページ下の参考URLをご覧ください。
+</p>
+<h2>３　androidタブレットでエンチャント文字盤ーその特徴</h2>
+<p>
+このandroidタブレットは入手後、ネットのセットアップをし、GooglePlayからグーグルクロムをインストールしただけです。エンチャント文字盤を使うために特別に何かインストールしていません。普段は別の用事に使っていて必要に応じてエンチャント文字盤にも使っています。
+</p><p>
+他のタブレットやスマホやパソコンでも同じことができます。タブレットなら少し試してみるときに貸したり借りたり、買い換えや故障修理の代替機を準備するのも簡単です。返すときも元に戻さなければならないものは何もありません。はじめから何もしていないからです。
+</p><p>
+このように取扱と融通が楽なところが特徴のひとつです。
+またandroidタブレットの古い機種はオークションなどで安く出回っていますので、比較的高価な代替マウスや特殊スイッチのために節約できます。この点でも融通が利きます。
+</p><p>
+さらに日本のおとなの半分くらいが日常的にこのようなものを使っている時代ですので、使い方がわからないときは誰か二、三人に聞けばだいたいわかるという強みもあります。
+</p>
+<h2>４　おわりに</h2>
+<p>
+コミュニケーションエイドはむつかしくて困るという意見をよく聞きます。でもこれならずっと簡単です。インターネットをよく見ているひとなら大丈夫です。今このページを見ているあなたも大丈夫です。なにしろ、インストールなし、セットアップなし、アップデートなし、取扱説明書なし、マニュアルなしです。そして知っている人はまわりにたくさんです。
+このようなものが苦手な人にも取り組んでいただきたいと考えています。
+</p>
+<h2>参考URL</h2>
+<p>代替マウス特殊スイッチなど紹介
+<ul>
+  <li>国リハ研究所伊藤さんのページ<br>
+<a target="_blank" href="http://www.rehab.go.jp/ri/kaihatsu/itoh/mouse-key-emulate.html">http://www.rehab.go.jp/ri/kaihatsu/itoh/mouse-key-emulate.html</a></li>
+
+  <li>国立特別支援教育総合研究所<br>
+<a target="_blank" href="http://www.nise.go.jp/cms/resources/content/6905/table.pdf">http://www.nise.go.jp/cms/resources/content/6905/table.pdf</a></li>
+
+  <li>東北福祉大学教育gp<br>
+<a target="_blank" href="https://www.tfu.ac.jp/special/gp/ict/support-equipment/support-equipment2.html">https://www.tfu.ac.jp/special/gp/ict/support-equipment/support-equipment2.html</a></li>
+
+  <li>岐阜市障害者生活支援センター<br>
+<a target="_blank" href="http://www.gishousi.jp/welfare-device/">http://www.gishousi.jp/welfare-device/</a></li>
+
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2018/02/09　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
