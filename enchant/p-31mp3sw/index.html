@@ -20,7 +20,7 @@
 <script>
 
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/enchant/p-31mp3sw/sw.js')
+        navigator.serviceWorker.register('/enchant/p-31mp3sw/sw.js', { scope: '/enchant/p-31mp3sw/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
