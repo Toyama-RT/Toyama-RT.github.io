@@ -35,6 +35,13 @@ self.addEventListener('install', e => {
         `/se2.wav?timestamp=${timeStamp}`,
         `/jump.mp3?timestamp=${timeStamp}`,
         `/gameover.mp3?timestamp=${timeStamp}`,
+        `/apad.png?timestamp=${timeStamp}`,
+        `/end.png?timestamp=${timeStamp}`,
+        `/font0.png?timestamp=${timeStamp}`,
+        `/icon0.png?timestamp=${timeStamp}`,
+        `/map2.gif?timestamp=${timeStamp}`,
+        `/pad.png?timestamp=${timeStamp}`,
+        `/start.png?timestamp=${timeStamp}`,
       ])
       .then(() => self.skipWaiting());
     })
