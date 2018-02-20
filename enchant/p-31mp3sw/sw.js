@@ -21,7 +21,7 @@
 //let version = '0.6.2';
 
 
-var path = `/enchant/p-31mp3sw';
+var path = `/enchant/p-31mp3sw`;
 
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
