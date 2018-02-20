@@ -26,8 +26,8 @@ self.addEventListener('install', e => {
     caches.open('airhorner').then(cache => {
       return cache.addAll([
         `/`,
-        `/index.html?timestamp=${timeStamp}`,
-        `/js/lib/enchant.js?timestamp=${timeStamp}`,
+        `/enchant/p-31mp3sw/index.html?timestamp=${timeStamp}`,
+        `/enchant/p-31mp3sw/js/lib/enchant.js?timestamp=${timeStamp}`,
         `/js/lib/plugins/nineleap.enchant.js?timestamp=${timeStamp}`,
         `/js/lib/plugins/ui.enchant.js?timestamp=${timeStamp}`,
         `/js/main.js?timestamp=${timeStamp}`,
