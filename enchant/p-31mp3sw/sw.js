@@ -20,15 +20,18 @@
 // Version 0.6.2
 //let version = '0.6.2';
 
+
+var path = `/enchant/p-31mp3sw';
+
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
   e.waitUntil(
     caches.open('airhorner').then(cache => {
       return cache.addAll([
         `/`,
-        `/enchant/p-31mp3sw/index.html?timestamp=${timeStamp}`,
-        `/enchant/p-31mp3sw/js/lib/enchant.js?timestamp=${timeStamp}`,
-        `/enchant/p-31mp3sw/js/lib/plugins/nineleap.enchant.js?timestamp=${timeStamp}`,
+        path + `/index.html?timestamp=${timeStamp}`,
+        path + `/js/lib/enchant.js?timestamp=${timeStamp}`,
+        path + `/js/lib/plugins/nineleap.enchant.js?timestamp=${timeStamp}`,
         `/enchant/p-31mp3sw/js/lib/plugins/ui.enchant.js?timestamp=${timeStamp}`,
         `/enchant/p-31mp3sw/js/main.js?timestamp=${timeStamp}`,
         `/enchant/p-31mp3sw/chara1.gif?timestamp=${timeStamp}`,
