@@ -18,9 +18,10 @@
         </style>
 
 <script>
+var path = `/enchant/p-31mp3sw`;
 
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/enchant/p-31mp3sw/sw.js', { scope: '/enchant/p-31mp3sw/' })
+        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
