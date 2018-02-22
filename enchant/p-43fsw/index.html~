@@ -16,25 +16,6 @@
                 margin: 0;
             }
         </style>
-
-<script>
-var path = `/enchant/p-31mp3sw`;
-
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
-          .then(function(registration) {
-                console.log('Service Worker Registered');
-          });
-
-        navigator.serviceWorker.ready.then(function(registration) {
-           console.log('Service Worker Ready');
-        });
-      }
-
-</script>
-
-        <script type="text/javascript" src="../../google_analytics_tag.js"></script>
-
     </head>
     <body>
     </body>
