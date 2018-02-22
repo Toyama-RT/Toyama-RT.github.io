@@ -26,6 +26,23 @@
                 margin: 0;
             }
         </style>
+
+<script>
+var path = `/enchant/p-43fsw`;
+
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
+
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      }
+
+</script>
+
     </head>
     <body>
     </body>
