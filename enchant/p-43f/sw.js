@@ -21,7 +21,7 @@
 //let version = '0.6.2';
 
 
-var path = `/enchant/p-43fsw`;
+var path = `/enchant/p-43f`;
 
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
