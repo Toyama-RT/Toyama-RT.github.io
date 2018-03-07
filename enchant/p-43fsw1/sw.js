@@ -22,7 +22,7 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'p-43fsw1';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
 var path = `/enchant/p-43fsw1`;
 
