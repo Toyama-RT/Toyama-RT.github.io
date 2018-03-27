@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.37.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="https://toyama-rt.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="https://toyama-rt.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="https://toyama-rt.github.io/blog/css/custom.css">
+<link rel="alternate" href="https://toyama-rt.github.io/blog/index.xml" type="application/rss+xml" title="あくまでも個人的な感想です">
+<title>どうしてこうなったのか - あくまでも個人的な感想です</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="https://toyama-rt.github.io/blog/"><img src="https://toyama-rt.github.io/blog/images/logo.jpg" width="60" height="60" alt="あくまでも個人的な感想です"></a>
+		</div>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">どうしてこうなったのか</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2018-03-26">March 26, 2018</time></span>
+			<section itemprop="entry-text">
+				
+
+<h1 id="180326">180326</h1>
+
+<p>hugo new post/180326.md</p>
+
+<p>とするとpostにこの文章が作られる。弐番目の文も追加できた。</p>
+
+<p>そこで、180326となっているタイトルをどうしてこうなったのか　に変更した。
+またdraftをtrueからfalseに変更した。こうするとローカルホストで表示されるようになる。</p>
+
+<p>この間、失敗したがエラーメッセージなどは全く表示されず、コマンドプロンプトを見て判断するしかない。表示二は気をつけた方がいい。また参考になるサイトを見ながらやってもイマイチ曖昧なところが多い。
+ひとつひとつ積み上げていくしかないようだ。</p>
+
+<p>現在困っているのは、ロゴマークがうまく表示されないところだ。serverでは表示できないし、サイトの構築をしても表示されない。もしかしてこれらが自動的にやってくれるというのは、思い込みでしかないのかもしれない。
+なんとんかうそのような結末がちらちらと見えてきた。だんだん未来が読めるようになって来たのかもしれない。</p>
+
+<p>ロゴが表示できるようになった。
+方法　staticの中にimagesを作りなかに画像ファイルを入れる。</p>
+
+<p>configファイルに
+logo      = &ldquo;/images/logo.jpg&rdquo;
+と記載すれば、そこを見に行く。実に簡単にできているのに説明が見つからない。
+今回は
+<a href="http://d.hatena.ne.jp/shouh/20160108/1452261442">http://d.hatena.ne.jp/shouh/20160108/1452261442</a>
+shouhの日記
+からこの人のサイトは実にわかりやすく書いてある。苦労のほどが偲ばれる。</p>
+
+<p>リスト Hugo の Markdown ではspace4つである。なんてことも書いてある。</p>
+
+<ul>
+<li>リスト
+
+<ul>
+<li>サブリスト
+
+<ul>
+<li>サブサブリスト</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>色々あるらしい。今回使用したのはrogo-zenだがいろいろ苦労が多い。
+FrontMatterにカテゴリを設定する機能もある様だ。</p>
+
+<p>ここまでくると形が見えてくる。
+フッターが自動的にいい位置に来るなんてあたりまえにできている。
+表示画面が小さくて縦長になってもきちんと表示される。
+基本的な機能は既に全て（と思うが）そろっているこの完成度は見過ごせない。</p>
+
+<p>しばらくこのような手順でいじり倒しておいこうかと思う。</p>
+
+<p>それにしてもhtml生成がおかしい。
+完成度がイマイチ。ロゴの参照元がうまくない。</p>
+
+<p>困ったな。もっと有名どころが必要なのか。それともこのパソコンの問題なのだろうか？</p>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			
+			
+			
+			
+		</div>
+		<div class="copyright">Copyright &copy; hogehoge All rights reserved.</div>
+	</footer>
+
+</div>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-12345678-9', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
