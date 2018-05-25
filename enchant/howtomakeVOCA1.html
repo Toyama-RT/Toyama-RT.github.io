@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>VOCAのつくりかた1</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ol { 
+margin: 5px 100px 15px 100px;
+font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>多様なVOCAを自由自在に作る！そんなことできるのか？</h1>
+    <h1>第１回　録音</h1>
+
+    <div style="text-align: center;"><img title="recodeing" alt="録音" src="img/Screenshot3.png"></div>
+
+    <h2>１　はじめに　VOCAの抱える問題点</h2>
+    <p>
+VOCA（音声出力型コミュニケーションエイド）は、ことばに困難がある場合の代替手段として広く使われています。ネットでしらべるといくつかの商品が流通しているのがわかります。
+</p><p>
+しかしコミュニケーションに困難をもつひとが、抱える問題や制限条件も、使う目的もそしてニーズもかなり多様です。例えばどんな風にしたいのか、なりたいのかと話し合っても、ご本人や家族や関係者で微妙に（時には大幅に）異なることがよくあります。関係者の人数が増えるとますます多様になり、ついにはとりとめもないことになってきます。やりたいことと、やらせたいことと、やってほしいこと、そして実際にやることとできることはなかなか一致しにくいものです。
+</p><p>
+それもそのはず、『コミュニケーション』というひとつのことばでくくれるほど実際のコミュニケーションは単純ではありません。その人により、相手や、場所や、話題により、多様なコミュニケーションがいろいろな事情でその人の中に閉じ込められています。そんな場合に使う道具がコミュニケーションエイドで、そのひとつの種類がVOCAと呼ばれることばの出る機械です。ただよせられる期待が幅広く大きいわりには、機能も種類もそれほど多くなく、使いこなしの能力も工夫の余地も多くありません。さらにここでは説明しませんが活用するにはそれを使うひとの不自由に合わせた工夫も必要ですがこれも十分とはいえません。
+</p><p>
+このようにやりたいことはいろいろあるのに、足りないものはたくさんありすぎるのがVOCAの問題の特徴です。
+</p>
+<h2>２　多様なVOCAを作るには</h2>
+<p>
+問題のひとつ、多様なVOCAを従来の方法で作るといろいろ問題があります。まず多品種少量生産がビジネスとして成り立つか。製造、流通そしてユーザが購入できるか。持ち運べるか。使いこなせるか。受け入れられるか。赤字を出したり会社がつぶれたりしたらとても困ります。
+</p><p>
+この問題はコミュニケーションエイドでエンチャント文字盤が解決しようとしたことと同じです。こたえは、『スマホ（パソコンやタブレットでも可）をVOCAに変身させる』です。そしてＡ型VOCAからＢ型へＣ型、Ｄ型．．．次々と変身させるとこの問題を解決に近づけることができると考えました。
+</p>
+<h2>３　VOCAの基本的機能</h2>
+
+<p>
+考えたことを実現するために下準備が必要です。まずVOCAの基本的な機能を整理します。
+</p>
+<ol>
+<li>録音</li>
+<li>保存</li>
+<li>再生</li>
+</ol><p>
+基本的機能はこのようにかなりシンプルです。あとは扱えることばの数や再生するときの工夫が必要ですがこれらは比較的簡単です。まず最初の難関は録音と保存とにらんで、ひとつのことばを録音して保存することを目標にしました。
+</p>
+<h2>４　録音の方法</h2>
+<p>
+例によって、HTML5とJavaScriptで録音の方法を調べてみました。いくつか方法があってそれぞれの優劣も特徴もつかみきれません。これ以上は自分で実際にやってみないとわかりませんのでやってみることにしました。
+</p><p>
+最初に目星を付けたのは、MediaStreamRecoder.js を使う方法です。対応するブラウザが多いこと、androidにも対応しているらしいことが理由です。
+
+さっそく先人の苦労を勉強しながら組み立ててみました。
+</p>
+<h2>５　サンプル</h2>
+<p>
+サンプルは下記にあります。
+</p><p>
+<a href="http://www.toyama-reha.or.jp/techno/engineering/enchant/test2/index.html" target="_self">http://www.toyama-reha.or.jp/techno/engineering/enchant/test2/index.html</a>
+</p><p>
+<a href="https://toyama-rt.github.io/enchant/test2/index.html" target="_self">https://toyama-rt.github.io/enchant/test2/index.html</a>
+</p><p>
+アクセスするとこのページトップのような画像が表示されます。RECボタンをクリックすると5秒間録音し、その後再生します。またdownloadをクリックするとwavファイルが保存されます。
+</p><p>
+Windows　は、firefox　chrome　Edge　で<br>
+ubuntu　は、firefox　chrome　chromium　で<br>
+android　は、chrome　で動作を確認しています。
+</p><p>
+chrome　や　chromium　をお使いの場合は、二番目のリンクをお使いください。httpsでないと動作しません。またマイクがないと動作しません。
+</p>
+<h2>６　おわりに</h2>
+<p>
+ここで取り上げたVOCAは、｢音声録音再生型VOCA｣とでも分類される機種です。今回のサンプルで録音と保存ができるようになりました。
+
+今回はMediaStreamRecoder.jsを利用しましたが、これはマイクから音声以外にカメラから動画や静止画像も取り込み機能もあります。また録音の方法はこれ以外にもありますので、さらに試作を重ねて行きたいと思います。
+</p>
+<h2>参考URL</h2>
+<p>
+JavaScriptでの録音について<br>
+<a href="http://www.cyokodog.net/blog/media-capture-and-streams-web-audio-api/" target="_self">http://www.cyokodog.net/blog/media-capture-and-streams-web-audio-api/</a>
+</p><p>
+MediaStreamRecoder.js　について<br>
+<a href="https://github.com/streamproc/MediaStreamRecorder" target="_self">https://github.com/streamproc/MediaStreamRecorder</a>
+
+</p>
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2018/05/25　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
