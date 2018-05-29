@@ -10,6 +10,7 @@
 
   gtag('config', 'UA-82832782-3');
 </script>
+
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
     <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
@@ -51,6 +52,16 @@ font-size: 20px; /*リストのフォントの大きさ*/
 }
 
 span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 5em 1em 5em !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1em !important;
+}
+
+
 -->
 </style>
 
@@ -100,6 +111,73 @@ VOCA（音声出力型コミュニケーションエイド）は、ことばに�
 
 さっそく先人の苦労を勉強しながら組み立ててみました。
 </p>
+<p>index.html は以下の通り。</p>
+
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<meta charset="UTF-8" />
+<title>VOCA　録音テスト</title>
+&lt;/head&gt;
+&lt;body&gt;
+<p>REC をクリック後、5秒間録音します</p>
+<p>録音終了後、再生します</p>
+<p>その後、download をクリックするとwavファイルがダウンロードできます</p>
+
+    <button class="rec">REC</button>
+    <a class="download"></a>
+
+<script type="text/javascript" src="./MediaStreamRecorder.js"></script>
+<script type="text/javascript" src="index.js"></script>
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+<p>index.js は以下の通り。</p>
+<pre class="brush:js;">
+    var recControl = function(){
+        navigator.getUserMedia(
+            {
+                video: false,
+                audio: true
+            },
+            function(stream){
+                el.rec.textContent = 'now Recording...';
+                el.rec.disabled = true;
+                var recorder = new MediaStreamRecorder(stream);
+                recorder.mimeType = 'audio/ogg';
+                recorder.ondataavailable = function (blob) {
+                    var audio_el = document.createElement("audio");
+                    var url = audio_el.src = URL.createObjectURL(blob);
+                    audio_el.play();
+                    recorder.stop();
+                    stream.stop();
+                    el.rec.textContent = 'REC';
+                    el.rec.disabled = false;
+     
+                    //download link
+                    el.download.href = url;
+                    el.download.textContent = 'download';
+                    el.download.download = 'output.wav';
+                };
+                recorder.start(5000);
+            },
+            function(err){
+                console.log(err.name ? err.name : err);
+            }
+        );
+    }
+    var el = {
+        rec : document.querySelector('.rec'),
+        download: document.querySelector('.download')
+    }
+    el.rec.addEventListener('click', recControl, false);
+
+</pre>
+<p>そしてMediaStreamRecoder.js は参考URLを開き、右の緑の、Clone or download からzipファイルで入手できます。</p>
+
 <h2>５　サンプル</h2>
 <p>
 サンプルは下記にあります。
