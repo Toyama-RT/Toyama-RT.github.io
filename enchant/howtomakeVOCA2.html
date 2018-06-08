@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>VOCAのつくりかた2</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ol { 
+margin: 5px 100px 15px 100px;
+font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 5em 1em 5em !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1em !important;
+}
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>多様なVOCAを自由自在に作る！そんなことできるのか？</h1>
+    <h1>第２回　録音　その２</h1>
+
+    <div style="text-align: center;"><img title="recodeing" alt="録音" src="img/Screenshot4.png"></div>
+
+    <h2>１　前回までのおさらい</h2>
+<p>
+前回、MediaStreamRecorder.jsを利用した録音のサンプルを作ってみました。おおよそ目的通りに録音できました。しかし使用する機械やOSやブラウザによって、うまく動いたりあるいは全く動かないなどの問題があることもわかりました。
+</p><p>
+そこで録音に再び取り組みます。今回はWebAudioAPIを使って使用感の改善にも取り組みました。
+</p>
+<h2>２　WebAudioAPIの特徴</h2>
+<p>
+今回使用するWebAudioAPIは、音楽分野などの高度で多彩な音作りをのため、音の加工や組み合わせや複数の音の同時再生や正確なスケジューリングなどの機能も備えています。VOCAのようにシンプルな目的にはやや高機能ですが、それでも録音時間を任意に決められるなど使いやすい部分もあります。
+</p><p>
+将来的には、周波数やテンポなど加工して、普通とは違う聞こえ方をする人にとって聞こえやすい、わかりやすい声や音を作ることにつながるかもしれない機能を持っています。それはさておき、この機会にすこし使ってみることにします。
+</p>
+<h2>３　録音の方法</h2>
+<p>
+今回のプログラムは、irohaさんのサイトのサンプルをまねさせていただきました。実によく出来ていて、特に手を入れる必要はほとんどありませんでした。途中で日本語以外でも全くそのまま利用できることに気がついたので、英文の説明をつけました。まあなくてもわかるとは思います。
+</p><p>
+index.htmlは以下の通り。なかにjavascriptがコンパクトに入っています。
+
+</p>
+
+<pre class="brush:html;">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>VOCA 録音テスト２</title>
+	<style type='text/css'>
+		ul { list-style: none; }
+		#recordingslist audio { display: block; margin-bottom: 10px; }
+	</style>
+&lt;/head&gt;
+&lt;body&gt;
+	<h3>Web Audio API Recording and Sound files (WAV) produce</h3>
+	<h3>Web Audio API を使用した録音、及びWAVファイル出力のデモ</h3>
+        感謝 iroha Tech Note<br>
+	※ REC:Start Recording STOP:Stop Recording and you can download the soundfile(WAV)<br>
+	※ REC で録音開始　STOP で停止　その後、音声ファイル(WAVファイル)がダウンロードできます。<br><br>
+	<button onclick="startRecording(this);">REC</button>
+	<button onclick="stopRecording(this);" disabled>STOP</button>
+	
+	<h3>Recorded Sound Files 録音済みファイル</h3>
+	<ul id="recordingslist"></ul>
+	
+	<h3>Information ログ情報</h3>
+	<pre id="log"></pre>
+
+	<script>
+	function __log(e, data) {
+		log.innerHTML += e + " " + (data || '') + '\n';
+	}
+
+	var audio_context;
+	var recorder;
+
+	function startUserMedia(stream)
+	{
+		var input = audio_context.createMediaStreamSource(stream);
+		__log('Media stream created.');
+		
+		recorder = new Recorder(input);
+		__log('Recorder initialised.');
+	}
+
+	function startRecording(button)
+	{
+		recorder && recorder.record();
+		button.disabled = true;
+		button.nextElementSibling.disabled = false;
+		__log('Recording...');
+	}
+
+	function stopRecording(button)
+	{
+		recorder && recorder.stop();
+		button.disabled = true;
+		button.previousElementSibling.disabled = false;
+		__log('Stopped recording.');
+		
+		createDownloadLink();
+		recorder.clear();
+	}
+
+	function createDownloadLink()
+	{
+		recorder && recorder.exportWAV(function(blob) {
+			var url = URL.createObjectURL(blob);
+			var li = document.createElement('li');
+			var au = document.createElement('audio');
+			var hf = document.createElement('a');
+			
+			au.controls = true;
+			au.src = url;
+			hf.href = url;
+			hf.download = new Date().toISOString() + '.wav';
+			hf.innerHTML = hf.download;
+			li.appendChild(au);
+			li.appendChild(hf);
+			recordingslist.appendChild(li);
+		});
+	}
+
+	window.onload = function init()
+	{
+		try
+		{
+			window.AudioContext = window.AudioContext || window.webkitAudioContext;
+			navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+			window.URL = window.URL || window.webkitURL;
+			
+			audio_context = new AudioContext;
+			__log('Audio context set up.');
+			__log('navigator.getUserMedia ' + (navigator.getUserMedia ? 'available.' : 'not present!'));
+		}
+		catch (e)
+		{
+			alert('No web audio support in this browser!');
+		}
+		
+		navigator.getUserMedia({audio: true}, startUserMedia, function(e) {
+			__log('No live audio input: ' + e);
+		});
+	};
+	</script>
+
+	<script src="./dist/recorder.js"></script>
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+
+
+
+<p>
+最後から3行目の、./dist/recorder.jsは<a href="./test5b/dist/recorder.js" target="_blank">こちら</a>からどうぞ。
+</p>
+
+
+<h2>４　サンプル</h2>
+<p>
+サンプルは下記にあります。
+</p><p>
+<a href="http://www.toyama-reha.or.jp/techno/engineering/enchant/test5b/index.html" target="_self">http://www.toyama-reha.or.jp/techno/engineering/enchant/test5b/index.html</a>
+</p><p>
+<a href="https://toyama-rt.github.io/enchant/test5b/index.html" target="_self">https://toyama-rt.github.io/enchant/test5b/index.html</a>
+</p><p>
+アクセスするとこのページトップのような画像が表示されます。RECボタンをクリックすると録音が開始されます。STOPボタンをクリックすると録音が止まり、録音済みファイルの欄に追加されます。この図では二回録音したので、ふたつのファイルが表示されています。何回か録音し聞き比べてよいものを選んでダウンロードできます。
+
+</p><p>
+Windows　は、firefox　chrome　Edge　で<br>
+ubuntu　は、firefox　chrome　chromium　で<br>
+android　は、chrome　で動作を確認しています。
+</p><p>
+chrome　や　chromium　をお使いの場合は、二番目のリンクをお使いください。httpsでないと動作しません。
+</p><p>
+またマイクがないと動作しません。お忘れなく。（よくある失敗です）
+</p>
+<h2>５　おわりに</h2>
+<p>
+前回に引き続き、録音方法を考えてみました。今回はWebAudioAPIのたくさんの機能のほんの一部を使って録音とファイルの保存をやってみました。WebAudioAPIについてあちこち参考サイトを回ってみましたが、すごく奥が深く、使いこなすのは相当勉強が必要なようです。前回も今回もやっていることは似ていますが、使っているツールの格は随分違います。こんなことは仕事でもよくあることで、目的に合わせて使い分けできるといいですね。
+
+</p>
+<h2>参考URL</h2>
+<p>
+WebAudioAPIでの録音について<br>
+<a href="http://tech.at-iroha.jp/?p=663" target="_self">http://tech.at-iroha.jp/?p=663</a>
+</p>
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2018/06/08　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
