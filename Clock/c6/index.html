@@ -66,7 +66,7 @@ var ampm1 = ampm;
 
 //var date1 = month + '月' + date + '日' + '（' + myDay[day] + '）';
 
-var time1 = hour + '：' + min;
+var time1 = ampm + hour + '：' + min;
 
 //document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
 
@@ -78,7 +78,7 @@ document . getElementById( 'myDay-01' ) . innerHTML= myDay1 . toLocaleString(); 
 
 document . getElementById( 'date-01' ) . innerHTML= date1 . toLocaleString(); // div id="date-01"
 
-document . getElementById( 'ampm-01' ) . innerHTML= ampm1 . toLocaleString(); // div id="ampm-01"
+//document . getElementById( 'ampm-01' ) . innerHTML= ampm1 . toLocaleString(); // div id="ampm-01"
 
 document . getElementById( 'time-01' ) . innerHTML= time1 . toLocaleString(); // div id="time-01"
 
@@ -115,10 +115,10 @@ window . onload = clock;
         <div id="clock-02"></div>
         <div id="contents">
 		<div id = "year-01"></div>
+		<div id = "date-01"></div>
 		<div id = "month-01"></div>
 		<div id = "myDay-01"></div>
-		<div id = "date-01"></div>
-		<div id = "ampm-01"></div>
+<!--		<div id = "ampm-01"></div>  -->
 		<div id = "time-01"></div>
         </div>
 
