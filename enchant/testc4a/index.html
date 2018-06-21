@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>2 âπÇÃçƒê∂ÉeÉXÉg</title>
+    <style>
+    a{
+      font-size:30px;
+      color:red;
+    }
+    </style>
+  </head>
+
+<body>
+
+<audio  id="sound1">
+  <source src="voice1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound2">
+  <source src="voice2.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<a onclick="play1();">PLAY WORD 1</a><br>
+<a onclick="play2();">PLAY WORD 2</a>
+
+<script type="text/javascript">
+var TARGET1 = document.getElementById('sound1');
+function play1(){
+    TARGET1.play();
+}
+
+var TARGET2 = document.getElementById('sound2');
+function play2(){
+    TARGET2.play();
+}
+
+</script>
+</body>
+</html>
