@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>VOCAのつくりかた3</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ol { 
+margin: 5px 100px 15px 100px;
+font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 5em 1em 5em !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1em !important;
+}
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>多様なVOCAを自由自在に作る！そんなことできるのか？</h1>
+    <h1>第３回　再生</h1>
+
+    <div style="text-align: center;"><img title="playing" alt="録音" src="img/Screenshot5.png"></div>
+
+    <h2>１　前回までのおさらい</h2>
+<p>
+前回と前々回の結果、マイクから録音してその結果を音声ファイルとして保存できるようになりました。サンプルをお試しになった方はもう何回か声を録音して音声ファイルをいくつか保存されたことと思います。これでVOCAの基本機能のうち録音と保存ができるようになりました。
+</p><p>
+そして保存した音声ファイルを再生して聞いた時多分こう思ったのではないでしょうか。
+<br>
+『うまく話すのはなかなかかんたんじゃあないな。まるで自分の声じゃないみたいに聞こえる。』
+</p><p>
+そのとおりです。簡単そうに思っても、いい録音をするには少し練習も必要です。練習の方は皆さんにおまかせするとして、今回は再生に取り組むことにします。
+</p>
+<h2>２　再生の方法</h2>
+<p>
+このサイトではこれまで音の再生に何度か取り組んで来ました。音声ファイルの再生のほか合成音声もやりました。思いのほかかんたんにできることもありますし反対に非常に苦戦して結局できなかったこともあります。
+</p><p>
+今回のVOCA音声出力は、WebAudioAPIでやってみようとしました。しかし作業をすすめるにつれてサンプルのコードがみるみる長大化し、さらに狙い通りに動作しない泥沼にハマリました。
+</p><p>
+『そんなときはもっとシンプルな方法がよろしいですよ』と貴重なアドバイスをいただき、手堅く方針を変え、audioタグをJavaScriptで制御する方法を使うことにしました。
+</p><p>
+おかげさまでindex.htmlは以下のようにぐっと短くまとめることができました。
+今回もなかにjavascriptがコンパクトに入っています。
+</p>
+
+<pre class="brush:html;">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    <meta charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>2 音再生テスト</title>
+    <style>
+    a{
+      font-size:30px;
+      color:red;
+    }
+    </style>
+&lt;/head&gt;
+&lt;body&gt;
+
+<audio  id="sound1">
+  <source src="voice1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound2">
+  <source src="voice2.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<a onclick="play1();">PLAY WORD 1</a><br>
+<a onclick="play2();">PLAY WORD 2</a>
+
+<script type="text/javascript">
+var TARGET1 = document.getElementById('sound1');
+function play1(){
+    TARGET1.play();
+}
+
+var TARGET2 = document.getElementById('sound2');
+function play2(){
+    TARGET2.play();
+}
+
+</script>
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+<p>
+このサンプルは下記にあります。
+</p><p>
+<a href="http://www.toyama-reha.or.jp/techno/engineering/enchant/testc4a/index.html" target="_self">http://www.toyama-reha.or.jp/techno/engineering/enchant/testc4a/index.html</a>
+</p><p>
+<a href="https://toyama-rt.github.io/enchant/testc4a/index.html" target="_self">https://toyama-rt.github.io/enchant/testc4a/index.html</a>
+</p><p>
+アクセスするとこのページトップのような画像が表示されます。
+<br>
+PLAY WORD 1 をクリックすると『こんにちは』と発声します。
+<br>
+PLAY WORD 2 をクリックすると『さようなら』と発声します。
+</p><p>
+ Windows　は、firefox　chrome　Edge　で
+ ubuntu　は、firefox　chrome　chromium　で
+ android　は、chrome　firefox で動作を確認しています。 
+</p>
+<h2>３　ここで問題</h2>
+<p>
+さて上記のサンプルは、index.htmlファイルと2つの音声ファイル（voice1.wav, voice2.wav）で構成されます。これらを同じ場所においてindex.htmlを動かすとご覧いただいたサンプルが実行できるのです。
+</p><p>
+しかしこれをどこに置いたらいいでしょう。選択肢は下の３つです。
+
+<ol>
+<li>両方共Webに</li>
+<li>index.htmlはWebに音声ファイルはローカルに</li>
+<li>両方共ローカルに</li>
+</ol>
+</p><p>
+音声ファイルはほとんどの場合問題になることはないと思いがちですが、名前や住所を録音すると間違いなく個人情報です。このようなものをWeb上に置くのは気が進みません。何かあったら困ります。そのため１番は断念しました。
+</p><p>
+Web上のhtmlからローカルなファイルを読み書きすることはグレーな行為とみなされます。一部のブラウザではできません。これからこの方面も厳しくなることが予想されます。よって２番もやめました。そして消去法で３番の『両方共ローカルに保存する』ことになりました。
+</p><p>
+ローカルなhtmlファイルをパソコンで動かすのはかんたんです。ダブルクリックするだけです。
+</p><p>
+Android端末ではやや手間がかかります。
+</p><p>
+chromeかfirefox（androidブラウザでは音が出ません）を使い、アドレスバーに、htmlファイルのあるフォルダのパス（例えばDownloadフォルダの場合は、file:///sdcard/download など（ファイルマネージャで目的の場所を開くと正しいパスが表示されるので確認してください））を入力しENTERキーを押すとそのフォルダ内のファイルの一覧が表示されます。ここで表示させたい、index.htmlを長押しするとメニューが開きそこから、新しいタブで開くを選ぶと表示されます。
+</p><p>
+このほか、ファイルマネージャから目的のhtmlファイルをタップしてアプリケーションの選択からchromeやfirefoxを選んでも表示されます。
+</p><p>
+ここでブックマークをして次回以降はブックマークから開くと操作が楽になります。準備はやや手間がかかりますが使うときはとてもかんたんです。
+</p>
+
+<h2>４　保存して使うためのサンプル</h2>
+<p>
+ダウンロードして使用するサンプルはこちらからダウンロードできます。以下の3つのファイルを任意の同一フォルダに保存してください。一番目はページを表示するためのファイル、2番めと3番めは音声ファイルです。（下記のリンクを右クリック、リンク先を保存でダウンロードできます）
+</p><p>
+<a href="./testc4a/0/index.html" target="_blank">index.html</a>
+<br>
+<a href="./testc4a/voice1.wav" target="_blank">voice1.wav</a>
+<br>
+<a href="./testc4a/voice2.wav" target="_blank">voice2.wav</a>
+</p><p>
+保存後、上で説明した方法でindex.htmlファイルを開いてください。これで、オンラインサンプルと同じことが、ローカルで実行できるようになります。
+
+</p>
+<h2>５　使い方</h2>
+<p>
+サンプルに使用するファイルが保存してありますので比較的簡単にいろいろなことができます。まず、前回前々回に録音したファイルの名前を変更して、voice1.wavにしてください。録音した声がサンプルから聞こえてきます。voice2.wavにすると二番目の声になります。（androidでファイル名を変更する際は、google playから、ファイルマネージャ＋を入手して使うと楽でした）
+</p><p>
+
+また、index.htmlファイルの17行目から38行目を注目してください。なんとなく規則性が見えるでしょう。もしかしてここらへんをゴニョゴニョしたら3番目の声が使えるかなと思った人はいいカンしています。そのとおりです。4番目も5番目も10番目も100番目もできます。
+</p><p>
+
+前回まででたくさん録音できるようになりました。また今回はたくさん再生もできるようになりました。
+
+
+
+</p>
+<h2>６　おわりに</h2>
+<p>
+自由自在にVOCAはできるかの第三回目は録音した声の再生について説明しました。これでVOCAの基本、録音、保存、再生のすべてができるようになりました。どんな音でも声でも録音できます。かなりたくさん（多分何百種類（未確認です））録音できます。自由に選んで自由に再生できます。録音と保存と再生についてはこれで自由自在にできるようになりました。
+</p><p>
+index.htmlの中には、再生機能や表示機能が書き込んであります。ですが今回のサンプルでは画面表示を最低限にしてあります。
+</p><p>
+この殺風景なページに色々表示する方法は、まさにホームページのつくりかたそのものです。ですのですでに自分でお出来になるひとも少なくないと思います。またネットのあちこちにガイドやサンプルがたくさんありますのでこれらを参考にして、お使いになる方の都合や体調や好みに合わせて表現を整えることができれば、その方も気持ちよく使えることでしょう。
+</p><p>
+また別の見方をすると、使う人と力を合わせてVOCAという道具を仕上げていく取り組みそれ自体もなかなか価値のあることと思います。こうしようかどうしようかと相談する過程もとても貴重なコミュニケーションになります。これは使う人の近くにいて分かり合えている人にしかできない大切な役割ではないでしょうか。
+</p><p>
+今回ご紹介したのは技術的骨組み部分だけです。あとはお使いになる方々が自由に肉付けしていただければ幸いと考えます。
+</p><p>
+以上を持ちまして、自由自在にVOCAはできるか？をおわりたいと思います。
+
+</p>
+<h2>参考URL</h2>
+<p>
+HTML5 audioタグでの音源の再生について<br>
+<a href="https://zxcvbnmnbvcxz.com/html5-audio-mute-play-skip/index.html" target="_self">https://zxcvbnmnbvcxz.com/html5-audio-mute-play-skip/index.html</a>
+</p>
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2018/06/22　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
