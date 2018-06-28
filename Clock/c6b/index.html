@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes"> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <title>電子カレンダ５</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <script>
+
+
+
+function clock() {
+var myDay = new Array("日","月","火","水","木","金","土");
+var now  = new Date();
+var year = now.getFullYear(); // 年
+var month = now.getMonth()+1; // 月
+var date = now.getDate(); // 日
+var day = now.getDay();
+var hour = now.getHours(); // 時
+var min  = now.getMinutes(); // 分
+var sec  = now.getSeconds(); // 秒
+
+
+
+
+
+//カレンダーを夜半過ぎに読み込みなおすためにリロードする
+if ( hour == 0 && min == 15 && sec <= 12 ){
+window . setTimeout( "doReload()", 15000);
+}
+
+var ampm = "";
+if(hour >= 13) {
+ ampm = '午後';
+}else if(hour >= 12){
+ ampm = 'ひる';
+}else if(hour >= 1){
+ ampm = '午前';
+}else {
+ ampm = 'よる';
+}
+
+//24時間表示を12時間表示に変更
+if(hour >= 13) { hour = hour - 12; }
+
+ 
+// 数値が1桁の場合、頭に0を付けて2桁で表示する指定
+//if(hour < 10) { hour = "0" + hour; }
+if(min < 10) { min = "0" + min; }
+if(sec < 10) { sec = "0" + sec; }
+
+
+// フォーマット②
+var clock2 = month + '月' + date + '日' + '（' + myDay[day] + '）'  + hour + '：' + min; //　　　　+ '分';// + sec + '秒';
+
+var year1 = year + '';
+
+var month1 = month;
+
+var date1 = date;
+
+var myDay1 = myDay[day];
+
+var ampm1 = ampm;
+
+//var date1 = month + '月' + date + '日' + '（' + myDay[day] + '）';
+
+var time1 = ampm + hour + '：' + min;
+
+//document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
+
+document . getElementById( 'year-01' ) . innerHTML= year1 . toLocaleString(); // div id="year-01"
+
+document . getElementById( 'month-01' ) . innerHTML= month1 . toLocaleString(); // div id="month-01"
+
+document . getElementById( 'myDay-01' ) . innerHTML= myDay1 . toLocaleString(); // div id="myDay-01"
+
+document . getElementById( 'date-01' ) . innerHTML= date1 . toLocaleString(); // div id="date-01"
+
+//document . getElementById( 'ampm-01' ) . innerHTML= ampm1 . toLocaleString(); // div id="ampm-01"
+
+document . getElementById( 'time-01' ) . innerHTML= time1 . toLocaleString(); // div id="time-01"
+
+
+// 10000ミリ秒（10秒）ごとに処理を実効　せわしい秒表示を中止
+window . setTimeout( "clock()", 10000);
+}
+
+// リロード実行　true：webサーバーからのリロード
+function doReload() {
+    window.location.reload(true);
+}
+
+
+window . onload = clock;
+
+</script>
+
+
+<!--
+        <style type="text/css">
+            body {
+                margin: 0;
+            }
+            div#clock-02
+             {
+            font-size: 4em;
+            }
+            div#date-01
+             {
+            font-size: 4em;
+            }
+            div#time-01
+             {
+            font-size: 8em;
+            }
+        </style>
+-->
+
+    </head>
+    <body>
+<!--
+<form name="winsize">
+ウィンドウサイズ：横幅 = <input name="sw" type="text" size="10"> / 高さ = <input name="sh" type="text" size="10">
+</form>
+
+<script type="text/javascript">
+//読み込み時の表示
+window_load();
+
+//ウィンドウサイズ変更時に更新
+window.onresize = window_load;
+
+//サイズの表示
+function window_load() {
+	document.winsize.sw.value = window.innerWidth;
+	document.winsize.sh.value = window.innerHeight;
+}
+</script>
+-->
+        <div id="clock-02"></div>
+        <div id="contents">
+		<div id = "year-01"></div>
+		<div id = "date-01"></div>
+		<div id = "month-01"></div>
+		<div id = "myDay-01"></div>
+<!--		<div id = "ampm-01"></div>  -->
+		<div id = "time-01"></div>
+        </div>
+
+
+<iframe id="test" src="https://calendar.google.com/calendar/embed?title=Test&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=250&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=qa62tbp6se48rvm69d22j0v46c%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Asia%2FTokyo" style="border-width:0" width="300" height="250" frameborder="0" scrolling="no"></iframe>
+    </body>
+</html>
