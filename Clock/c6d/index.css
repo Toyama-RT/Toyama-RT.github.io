@@ -126,7 +126,7 @@
 }
 }
 /*タブレット程度のモニタの場合*/
-@media (min-width: 800px) and (max-width: 1249px) {
+@media (min-width: 800px) and (max-width: 1349px) {
 /*横向きの場合*/
 @media all and (orientation: landscape) {
      body {
@@ -254,7 +254,7 @@
 }
 }
 /*パソコン程度の大きなモニタの場合*/
-@media (min-width: 1250px) {
+@media all and (min-width: 1350px) {
 /*横向きの場合*/
 @media all and (orientation: landscape) {
      body {
