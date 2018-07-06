@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushCss.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>電子カレンダーのつくりかた</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ol { 
+margin: 5px 100px 15px 100px;
+font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 5em 1em 5em !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1em !important;
+}
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>電子カレンダー</h1>
+
+    <div style="text-align: center;"><img title="電子カレンダー" alt="電子カレンダー" src="img/clock.png"></div>
+
+    <h2>１　電子カレンダーとは何か</h2>
+<p>
+今日の日付や曜日や時刻がわからなったり、次に何をしたらいいのかわからなくなってしまうために日常生活がうまくいかなくなる人がいます。電子カレンダーはこのような人たちのために日付や曜日や時刻や予定などをみやすくわかりやすく知らせたり、予定を表示することでこのような人たちの生活を静かに応援するための道具です。
+</p><p>
+高齢者だけで暮らす人やひとりで暮らす高齢者がたくさんいます。またこの人たちがこれまでどおり暮らせなくなったとしても、離れた家族との同居や施設などへの入所には、社会的、制度的な問題もあるのですんなりと事は決まりません。何よりもご本人が新しい生活に変わっていかなくてはなりません。多くの人にとって生活環境の変化は少なくない負担になります。
+</p><p>
+できるならばそれまでの生活を同じように続け、住み慣れたところで住み続けていただきたい。そのための『記憶』や『予定』のお手伝いを少しするのが電子カレンダーです。
+</p><p>
+数年前に国立障害者リハビリテーションセンター研究所福祉機器開発部のみなさんが認知症者の福祉機器分野に取り組み、何種類かの試作品や海外の製品を紹介しました。電子カレンダーの他、アラーム付き薬入れ、忘れ物発見器などもがあります。
+</p>
+<h2>２　どんな人にどう役に立つのか</h2>
+<p>
+最近、今日は何日、何曜日、今何時、といった問いかけが頻回になってきた。こんな話をお聞きになったことはありませんか？一日に何回も尋ねられるひとも困りますが、実はわからなくなった人もずいぶんつらいのです。これは『ものわすれ』などと言われることもあります。
+</p><p>
+こんな時は、大きく見やすい日めくりと時計が役に立ちます。十分大きなものを決まった場所に置きます。その日の予定表がそばにあればさらにいいかもしれません。そして、わからなくなったら見に行く、見に行けば思い出す、思い出せば自分でできる。結果的に自分でできれば暮らしていけます。
+</p><p>
+このように、わからなくなると困るけれど思い出せれば自分でできる人はかなりおられるようです。誰かがひとこと声掛けしてくれるといいのですが、ひとり暮らしでは何か代わりの方法が必要です。また、日めくりをめくり忘れたり、何回もめくってしまったりするとこれも困ります。このような場合は日付付きの時計が役に立つかもしれません。
+</p><p>
+また、ゴミ出しの日がわからなくなったり家にゴミがたまったり、デイサービスや通院の日も同様の困りごとがあります。離れて暮らす家族にとっても気になります。
+</p><p>
+はじめの頃はこのように認知症者の生活を応援するために作られた道具なのですが、この他にも同じ悩みを抱える人たちがいます。例えば高次脳機能障害や自閉症の人たちの中にも時間や予定が苦手な人たちがいて、同じような道具が役に立つのではないかと考えられています。
+</p><p>
+ではどんなふうに役に立つのか実物を手に入れて試してみようとしたところ、困ったことに市販品はまだないことがわかりました。
+</p><p>
+こうなったら仕方がないので作ることにしました。それが上の図です。サンプルは下をご覧ください。
+
+</p><p>
+<a href="./c6d/index.html" target="_self">http://www.toyama-reha.or.jp/techno/engineering/clock/c6d/index.html</a>
+</p><p>
+
+
+</p>
+<h2>３　どんな機能があるのか</h2>
+<p>
+HTML5とJavaScriptで作りました。画面半分に日めくりのように年、月、日、曜日、時刻を表示しています。サンプルでは表示を最低限にしています。
+</p><p>
+残りの半分には、google calender　（内容はサンプルです）を埋め込みました。これも文字の大きさや表示数を減らしてあります。
+</p><p>
+タブレットやスマホの縦置き横置きに対応しています。
+</p><p>
+サンプルのindex.htmlは以下のようになっています。
+</p>
+
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes"> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <title>電子カレンダ７</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script>
+function clock() {
+var myDay = new Array("日","月","火","水","木","金","土");
+var now  = new Date();
+var year = now.getFullYear(); // 年
+var month = now.getMonth()+1; // 月
+var date = now.getDate(); // 日
+var day = now.getDay();
+var hour = now.getHours(); // 時
+var min  = now.getMinutes(); // 分
+var sec  = now.getSeconds(); // 秒
+
+//googleカレンダーを夜半過ぎに読み込むためリロードする
+//通信ラッシュを避けて0時15分0秒から12秒間に繰り返しを避けるために15秒待ち時間の後リロードする
+if ( hour == 0 && min == 15 && sec <= 12 ){
+window . setTimeout( "doReload()", 15000);
+}
+
+//午前午後がわかりにくい12時は、ひる、よると表示する
+var ampm = "";
+if(hour >= 13) {
+ ampm = '午後';
+}else if(hour >= 12){
+ ampm = 'ひる';
+}else if(hour >= 1){
+ ampm = '午前';
+}else {
+ ampm = 'よる';
+}
+
+//24時間表示をわかりやすい12時間表示に変更
+if(hour >= 13) { hour = hour - 12; }
+
+ 
+// 数値が1桁の場合、頭に0を付けて2桁で表示する指定　ただし時間はそのまま　テレビの時刻表示とそろえた
+//if(hour < 10) { hour = "0" + hour; }
+if(min < 10) { min = "0" + min; }
+if(sec < 10) { sec = "0" + sec; }
+
+
+// フォーマット
+var clock2 = month + '月' + date + '日' + '（' + myDay[day] + '）'  + hour + '：' + min; //　　　　+ '分';// + sec + '秒';
+var year1 = year + '';
+var month1 = month;
+var date1 = date;
+var myDay1 = myDay[day];
+var ampm1 = ampm;
+//var date1 = month + '月' + date + '日' + '（' + myDay[day] + '）';
+var time1 = ampm + hour + ':' + min;
+
+//document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
+document . getElementById( 'year-01' ) . innerHTML= year1 . toLocaleString(); // div id="year-01"
+document . getElementById( 'month-01' ) . innerHTML= month1 . toLocaleString(); // div id="month-01"
+document . getElementById( 'myDay-01' ) . innerHTML= myDay1 . toLocaleString(); // div id="myDay-01"
+document . getElementById( 'date-01' ) . innerHTML= date1 . toLocaleString(); // div id="date-01"
+//document . getElementById( 'ampm-01' ) . innerHTML= ampm1 . toLocaleString(); // div id="ampm-01"
+document . getElementById( 'time-01' ) . innerHTML= time1 . toLocaleString(); // div id="time-01"
+
+// 10000ミリ秒（10秒）ごとに処理を実効　せわしい秒表示を中止し処理負担を軽減
+window . setTimeout( "clock()", 10000);
+}
+
+// リロード実行　true：webサーバーからのリロード
+function doReload() {
+    window.location.reload(true);
+}
+
+window . onload = clock;
+</script>
+&lt;/head&gt;
+&lt;body&gt;
+<!-- 調整用　Windowサイズ表示部分 
+<form name="winsize">
+ウィンドウサイズ：横幅 = <input name="sw" type="text" size="10"> / 高さ = <input name="sh" type="text" size="10">
+</form>
+-->
+<script type="text/javascript">
+//読み込み時の表示
+window_load();
+
+//ウィンドウサイズ変更時に更新
+window.onresize = window_load;
+//サイズの表示
+function window_load() {
+	document.winsize.sw.value = window.innerWidth;
+	document.winsize.sh.value = window.innerHeight;
+}
+
+</script>
+
+        <div id="clock-02"></div>
+        <div id="contents">
+		<div id = "year-01"></div>
+		<div id = "date-01"></div>
+		<div id = "month-01"></div>
+		<div id = "myDay-01"></div>
+		<div id = "time-01"></div>
+        </div>
+
+<!--/*googleカレンダーデータを埋め込むためのiframe　cssで調整するためid="test"を追加している -->
+<iframe id="test" src="https://calendar.google.com/calendar/embed?title=Test&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=250&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ここは個人情報%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=Asia%2FTokyo" style="border-width:0" width="300" height="250" frameborder="0" scrolling="no"></iframe>
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+
+<p>
+index.cssは以下の通りです。
+</p>
+
+<pre class="brush:css;">
+/*スマホの場合*/
+@media (min-width: 0px) and (max-width: 799px) {
+/*横向きの場合*/
+@media all and (orientation: landscape) {
+     body {
+        margin: 0;
+     }
+     #contents {
+	position: relative;
+		width :  50vw ;
+		height : 100vh ;
+                float: left;
+        border: 1px solid #aaa;
+     }
+    #year-01 {
+	font-size: 3em;
+        text-align: center;
+	position: absolute;
+		top: 2vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #date-01 {
+	font-size: 6em;
+	font-weight: 900;
+        text-align: center;
+	position: absolute;
+		top: 25vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #month-01 {
+	font-size: 4em;
+	position: absolute;
+		top: 14vh ;
+		left: 5vw ;
+    }
+    #myDay-01 {
+	font-size: 4em;
+	position: absolute;
+		top: 14vh ;
+		right: 5vw ;
+    }
+    #time-01 {
+	font-size: 3em;
+        text-align: center;
+	position: absolute;
+		top: 70vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    iframe {
+        width: 35vw ;
+        height: 70vh ;
+        float: left;
+    }
+    #test {
+	transform-origin:0 0;
+	transform:scale(1.4); 
+        float: left;
+    }
+}
+/*縦向きの場合*/
+@media all and (orientation: portrait) {
+     body {
+        margin: 0;
+     }
+     #contents {
+	position: relative;
+		width :  100vw ;
+		height : 50vh ;
+        border: 1px solid #aaa;
+     }
+    #year-01 {
+	font-size: 3em;
+        text-align: center;
+	position: absolute;
+		top: 2vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #date-01 {
+	font-size: 6em;
+	font-weight: 900;
+        text-align: center;
+	position: absolute;
+		top: 10vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #month-01 {
+	font-size: 4em;
+	position: absolute;
+		top: 14vh ;
+		left: 5vw ;
+    }
+    #myDay-01 {
+	font-size: 4em;
+	position: absolute;
+		top: 14vh ;
+		right: 5vw ;
+    }
+    #time-01 {
+	font-size: 3em;
+        text-align: center;
+	position: absolute;
+		top: 35vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    iframe {
+        width: 75vw ;
+        height: 40vh ;
+    }
+    #test {
+	transform-origin:0 0;
+	transform:scale(1.4); 
+    }
+}
+}
+/*タブレットの場合*/
+@media (min-width: 800px) and (max-width: 1349px) {
+/*横向きの場合*/
+@media all and (orientation: landscape) {
+     body {
+        margin: 0;
+     }
+     #contents {
+	position: relative;
+		width :  50vw ;
+		height : 100vh ;
+                float: left;
+        border: 1px solid #aaa;
+     }
+    #year-01 {
+	font-size: 4em;
+        text-align: center;
+	position: absolute;
+		top: 2vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #date-01 {
+	font-size: 10em;
+	font-weight: 900;
+        text-align: center;
+	position: absolute;
+		top: 25vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #month-01 {
+	font-size: 6em;
+	position: absolute;
+		top: 14vh ;
+		left: 5vw ;
+    }
+    #myDay-01 {
+	font-size: 6em;
+	position: absolute;
+		top: 14vh ;
+		right: 5vw ;
+    }
+    #time-01 {
+	font-size: 5em;
+        text-align: center;
+	position: absolute;
+		top: 70vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    iframe {
+        width: 24vw ;
+        height: 50vh ;
+        float: left;
+    }
+    #test {
+	transform-origin:0 0;
+	transform:scale(2.0); 
+        float: left;
+    }
+}
+}
+/*縦向きの場合*/
+@media all and (orientation: portrait) {
+     body {
+        margin: 0;
+     }
+     #contents {
+	position: relative;
+		width :  100vw ;
+		height : 50vh ;
+        border: 1px solid #aaa;
+     }
+    #year-01 {
+	font-size: 4em;
+        text-align: center;
+	position: absolute;
+		top: 2vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #date-01 {
+	font-size: 10em;
+	font-weight: 900;
+        text-align: center;
+	position: absolute;
+		top: 10vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #month-01 {
+	font-size: 6em;
+	position: absolute;
+		top: 14vh ;
+		left: 5vw ;
+    }
+    #myDay-01 {
+	font-size: 6em;
+	position: absolute;
+		top: 14vh ;
+		right: 5vw ;
+    }
+    #time-01 {
+	font-size: 5em;
+        text-align: center;
+	position: absolute;
+		top: 35vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    iframe {
+        width: 50vw ;
+        height: 25vh ;
+    }
+    #test {
+	transform-origin:0 0;
+	transform:scale(2.0); 
+    }
+}
+}
+/*パソコン程度のモニタの場合*/
+@media all and (min-width: 1350px) {
+/*横向きの場合*/
+@media all and (orientation: landscape) {
+     body {
+        margin: 0;
+     }
+     #contents {
+	position: relative;
+		width :  50vw ;
+		height : 100vh ;
+                float: left;
+        border: 1px solid #aaa;
+     }
+    #year-01 {
+	font-size: 6em;
+        text-align: center;
+	position: absolute;
+		top: 2vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #date-01 {
+	font-size: 18em;
+	font-weight: 900;
+        text-align: center;
+	position: absolute;
+		top: 25vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #month-01 {
+	font-size: 8em;
+	position: absolute;
+		top: 14vh ;
+		left: 5vw ;
+    }
+    #myDay-01 {
+	font-size: 8em;
+	position: absolute;
+		top: 14vh ;
+		right: 5vw ;
+    }
+    #time-01 {
+	font-size: 4em;
+        text-align: center;
+	position: absolute;
+		top: 75vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    iframe {
+        width: 25vw;
+        height: 50vh;
+        float: left;
+    }
+    #test {
+	transform-origin:0 0;
+	transform:scale(2.0); 
+        float: left;
+    }
+}
+/* 縦向きの場合 */
+@media all and (orientation: portrait) {
+     body {
+        margin: 0;
+     }
+     #contents {
+	position: relative;
+		width :  100vw ;
+		height : 50vh ;
+        border: 1px solid #aaa;
+     }
+    #year-01 {
+	font-size: 6em;
+        text-align: center;
+	position: absolute;
+		top: 2vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #date-01 {
+	font-size: 18em;
+	font-weight: 900;
+        text-align: center;
+	position: absolute;
+		top: 20vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    #month-01 {
+	font-size: 8em;
+	position: absolute;
+		top: 150px ;
+		left: 150px ;
+    }
+    #myDay-01 {
+	font-size: 8em;
+	position: absolute;
+		top: 150px ;
+		right: 150px ;
+    }
+    #ampm-01 {
+	font-size: 1em;
+	position: absolute;
+		top: 400px ;
+		left: 150px ;
+    }
+    #time-01 {
+	font-size: 4em;
+        text-align: center;
+	position: absolute;
+		top: 10vh ;
+                left:  0 ;
+                right: 0 ;
+                margin: auto;
+    }
+    iframe {
+        width: 50vw ;
+        height: 25vh ;
+    }
+    #test {
+	transform-origin:0 0;
+	transform:scale(2.0); 
+    }
+}
+}
+</pre>
+
+
+</p>
+<h2>４　おわりに</h2>
+<p>
+時計はアナログかデジタルか。年は西暦表記か年号表記か。など作り始めるといろいろ判断に悩むことが次々出てきました。使う人が使いやすいようにしなくてはならないのは当然ですが、いろいろできるようにすると設定が複雑になり値段も高くなります。実際に作ってみて、一種類のデザインですべてのニーズをカバーする難しさを実感しましたが、結局ソフトウエアで多品種に対応するのがコスト的にもよいようです。
+</p><p>
+また、既存のスケジュールソフト（google calender）を埋め込みましたが、使用するブラウザによって表示が異なる問題も明らかになりました。しかし遠隔地から多人数のスケジュール支援をする場合はこのような機能が必要になるでしょう。
+</p>
+<h2>参考URL</h2>
+<p>
+認知症者の福祉機器の研究開発　国リハ研究所<br>
+<a href="http://www.rehab.go.jp/ri/kaihatsu/dementia/topj.html" target="_self">http://www.rehab.go.jp/ri/kaihatsu/dementia/topj.html</a>
+</p><p>
+利活用支援マニュアル　国リハ研究所<br>
+<a href="http://www.rehab.go.jp/ri/kaihatsu/dementia/manualj.html" target="_self">http://www.rehab.go.jp/ri/kaihatsu/dementia/manualj.html</a>
+</p><p>
+電子カレンダーを使ってみましょう　マニュアル<br>
+<a href="http://www.rehab.go.jp/ri/kaihatsu/dementia/ec_ap-karenda.pdf" target="_self">http://www.rehab.go.jp/ri/kaihatsu/dementia/ec_ap-karenda.pdf</a>
+</p><p>
+【2018年版】Googleカレンダーを使って公開用のカレンダーをホームページに埋め込む方法<br>
+<a href="https://usortblog.com/2018-google-calendar-embed/" target="_self">https://usortblog.com/2018-google-calendar-embed/</a>
+</p>
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2018/07/06　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
