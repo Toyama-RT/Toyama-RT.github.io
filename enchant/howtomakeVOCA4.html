@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushCss.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>VOCAのつくりかた4</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 40px;
+    }
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ul li {
+  margin-top: 0.5em; /* 上余白指定 */
+  margin-bottom: 0.5em; /* 下余白指定 */
+  margin-left: 1.5em; /* 左余白指定（padding-left など） */
+}
+ol { 
+margin: 5px 100px 15px 100px;
+font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 5em 1em 5em !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1em !important;
+}
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>多様なVOCAを自由自在に作る！そんなことできるのか？</h1>
+    <h1>番外編　サンプルの作り方</h1>
+
+    <div style="text-align: center;"><img title="Droplet" alt="サンプル" src="img/Screenshot6.png"></div>
+
+    <h2>１　前回までのおさらい</h2>
+<p>
+前回の簡単なサンプルを作ったところでもうおしまいと思ったのですが、せっかくですので上の写真のようなもう少し見栄えのよいサンプルを作って見ることにしました。
+</p><p>
+Dropsの画像を４種類表示して、クリックするとそれぞれ４種類のことばを発声します。
+発声する音声は、第１回と２回で説明した方法で録音したものを使用しました。サンプルプログラムは、第３回で使用したサンプルをすこし改造しました。
+</p>
+<h2>２　準備</h2>
+<p>
+サンプルはあとで説明するindex.htmlとindex.cssと録音した音声ファイル４種と、dropsのシンボル４種類を使っています。
+録音したのは、4種類のことばです。<br>
+「こんにちは」これをvoice1.wav <br>
+「さようなら」これをvoice2.wav<br>
+「ありがとう」これをvoice3.wav<br>
+「ごめんなさい」これをvoice4.wav と保存しました。<br>
+</p><p>
+またDropsのシンボルのうち、<br>
+204001こんにちは.gif　をimg1.gif<br>
+204002さようなら.gif　をimg2.gif<br>
+204085ありがとう.gif　をimg3.gif<br>
+204086ごめんなさい.gif　をimg4.gif と名前を変更しました。
+</p><p>
+今回のサンプルのindex.htmlは以下のようになっています。
+</p>
+
+<pre class="brush:html;">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+    <meta charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <title>VOCA2</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+&lt;/head&gt;
+&lt;body&gt;
+
+//音声ファイルの設定
+<audio  id="sound1">
+  <source src="voice1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound2">
+  <source src="voice2.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound3">
+  <source src="voice3.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound4">
+  <source src="voice4.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+//シンボル設定と表示部分
+     <div id="contents">
+        <div class="fig1">
+           <a onclick="play1();"><img src = "./img1.gif"></a>
+        </div>
+        <div class="fig2">
+           <a onclick="play2();"><img src = "./img2.gif"></a>
+        </div>
+        <div class="fig3">
+           <a onclick="play3();"><img src = "./img3.gif"></a>
+        </div>
+        <div class="fig4">
+           <a onclick="play4();"><img src = "./img4.gif"></a>
+        </div>
+     </div>
+//クリックで再生する部分
+<script type="text/javascript">
+var TARGET1 = document.getElementById('sound1');
+function play1(){
+    TARGET1.play();
+}
+
+var TARGET2 = document.getElementById('sound2');
+function play2(){
+    TARGET2.play();
+}
+
+var TARGET3 = document.getElementById('sound3');
+function play3(){
+    TARGET3.play();
+}
+
+var TARGET4 = document.getElementById('sound4');
+function play4(){
+    TARGET4.play();
+}
+
+</script>
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+<p>
+index.cssは以下の通りです。
+</p>
+
+<pre class="brush:css;">
+     body {
+        margin: 0;
+     } 
+     #contents {
+	position: relative;
+		width :  100vw ;
+		height : 100vh ;
+                float: left;
+        border: 1px solid #aaa;
+     }
+     .fig1 img {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+		top: 10vh ;
+		left: 15vw ;
+     }
+     .fig2 img {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+		top: 10vh ;
+		right: 15vw ;
+     }
+     .fig3 img {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+		bottom: 10vh ;
+		left: 15vw ;
+     }
+     .fig4 img {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+		bottom: 10vh ;
+		right: 15vw ;
+     }
+
+</pre>
+
+<p>
+音声ファイル4種、画像ファイル4種、そしてindex.htmlとindex.cssの合計10のファイルを同じ場所に保存して使います。
+</p><p>
+このサンプルは下記にあります。お使いのモニターに合わせて選んでください。
+</p>
+<p>
+<a href="./voca/voca-l/index.html" target="_self">シンボル表示大</a>
+</p><p>
+<a href="./voca/voca-m/index.html" target="_self">シンボル表示中</a>
+</p><p>
+<a href="./voca/voca-s/index.html" target="_self">シンボル表示小</a>
+</p><p>
+三種類のサンプルの違いは、index.cssの表示の大きさを指定している部分だけです。
+</p>
+<h2>３　おわりに</h2>
+<p>
+今期は『自由自在にVOCAはできるか？』シリーズのおまけとして、サンプルの作り方を説明しました。ここまでのシリーズで、自由に音声ファイルを作れるようになりました。また『視覚シンボルで楽々コミュニケーション』１，２という本が手に入ると、2000種類のDropsシンボルが自由に使えるようになります。これらを元にして、上で説明したプログラムに応用して使うと、一画面に四種類の画像を表示したVOCAを作ることができます。またよくよく見ると、八種類表示もそれほどむつかしくないことがわかってきます。
+</p><p>
+ここまでの学習でもう自由自在に何百、何千種類のVOCAを作れる様になりました。あとは練習次第、アイデア次第でもっと広がっていくことと思います。
+そして残された問題は、これらの道具をどう活用していくかになりました。このように本当に重要な問題の入り口までたどり着くことができました。
+</p><p>
+以上を持ちまして、自由自在にVOCAはできるか？を本当におわりたいと思います。
+
+</p>
+<h2>参考URL</h2>
+<p>
+Droplet Projectについて<br>
+<a href="http://droplet.ddo.jp/" target="_self">http://droplet.ddo.jp/</a>
+
+
+</p>
+
+      <hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2018/07/20　公開</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
