@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <title>VOCA2</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<body>
+
+<!-- 調整用　Windowサイズ表示部分 
+<form name="winsize">
+ウィンドウサイズ：横幅 = <input name="sw" type="text" size="10"> / 高さ = <input name="sh" type="text" size="10">
+</form>
+-->
+
+
+
+<audio  id="sound1">
+  <source src="voice1.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound2">
+  <source src="voice2.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound3">
+  <source src="voice3.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+<audio  id="sound4">
+  <source src="voice4.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+     <div id="contents">
+
+        <div class="fig1">
+           <a onclick="play1();"><img src = "./img1.gif"></a>
+        </div>
+        <div class="fig2">
+           <a onclick="play2();"><img src = "./img2.gif"></a>
+        </div>
+        <div class="fig3">
+           <a onclick="play3();"><img src = "./img3.gif"></a>
+        </div>
+        <div class="fig4">
+           <a onclick="play4();"><img src = "./img4.gif"></a>
+        </div>
+     </div>
+
+
+
+<!--
+
+<div style="text-align:center">
+<a onclick="play1();"><img src = "./img1.gif" width = "300" height = "300" ></a><br>
+<a onclick="play2();"><img src = "./img2.gif" width = "300" height = "300" ></a>
+<br>
+<a onclick="play3();"><img src = "./img3.gif" width = "300" height = "300" ></a><br>
+<a onclick="play4();"><img src = "./img4.gif" width = "300" height = "300" ></a>
+</div>
+-->
+
+
+
+
+<script type="text/javascript">
+//読み込み時の表示
+window_load();
+
+//ウィンドウサイズ変更時に更新
+window.onresize = window_load;
+//サイズの表示
+function window_load() {
+	document.winsize.sw.value = window.innerWidth;
+	document.winsize.sh.value = window.innerHeight;
+}
+
+</script>
+
+
+<script type="text/javascript">
+var TARGET1 = document.getElementById('sound1');
+function play1(){
+    TARGET1.play();
+}
+
+var TARGET2 = document.getElementById('sound2');
+function play2(){
+    TARGET2.play();
+}
+
+var TARGET3 = document.getElementById('sound3');
+function play3(){
+    TARGET3.play();
+}
+
+var TARGET4 = document.getElementById('sound4');
+function play4(){
+    TARGET4.play();
+}
+
+</script>
+
+</body>
+</html>

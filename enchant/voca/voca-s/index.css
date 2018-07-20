@@ -1,0 +1,39 @@
+/*スマホ程度の大きなモニタの場合*/
+     body {
+        margin: 0;
+     } 
+     #contents {
+	position: relative;
+		width :  100vw ;
+		height : 100vh ;
+                float: left;
+        border: 1px solid #aaa;
+     }
+     .fig1 img {
+          width: 150px;
+          height: 150px;
+          position: absolute;
+		top: 10vh ;
+		left: 15vw ;
+     }
+     .fig2 img {
+          width: 150px;
+          height: 150px;
+          position: absolute;
+		top: 10vh ;
+		right: 15vw ;
+     }
+     .fig3 img {
+          width: 150px;
+          height: 150px;
+          position: absolute;
+		bottom: 10vh ;
+		left: 15vw ;
+     }
+     .fig4 img {
+          width: 150px;
+          height: 150px;
+          position: absolute;
+		bottom: 10vh ;
+		right: 15vw ;
+     }
