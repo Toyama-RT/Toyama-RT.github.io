@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャント文字盤に文書保存機能をつける</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 50px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 75px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャント文字盤に文書保存機能をつける</h1>
+    <div style="text-align: center;"><img title="文書保存機能付きエンチャント文字盤" alt="とても暑い夏です熱中症に気をつけましょう" src="img/5bun.png"></div>
+<p align="center">
+
+</p>
+<h2>０　はじめに</h2>
+<p>
+コミュニケーションエイドで作成した文書を保存できると次に続きを書くことができます。
+</p><p>
+またあらかじめ作った文章を保存しておき、見せたい相手が来たときに、その文書を読み込んで表示することもできます。
+</p><p>
+さらに何種類かの文章を並行して書き進める際にも文書の保存機能があると作業が便利になります。これはワープロなどでも全く同じことです。
+</p><p>
+これまでエンチャント文字盤にはこのような文書保存の機能がありませんでした。そこで今回はエンチャント文字盤で作成した文章を保存する機能について考えて見ました。
+
+</p>
+<h2>１　エンチャント文字盤でのファイルの取扱</h2>
+<p>
+エンチャント文字盤はWebアプリです。基本的にホームページを同じ原理で動いています。
+さてこのような原理のエンチャント文字盤で作成した文章ファイルをどこに保存すべきでしょう。
+</p><p>
+複数の人がエンチャント文字盤を使い、それぞれ文書ファイルをWeb上に保存するのはかなりむつかしい仕事です。さらに保存された個人的な文章をしっかり守れるのかという問題もあります。ユーザがそれぞれ個別に保存場所を設定するのもずいぶん手間のかかることです。
+</p><p>
+ではユーザのパソコンに保存するのはどうでしょう。これは、自由自在にVOCAを作る際にも話題になりましたが、Web上のhtmlやjavascriptからユーザのパソコンのファイルを自由に読み書きするという意味で、できると便利なようですが、もしこれが実現するとすべてのパソコンが丸見え状態になり、個人の秘密やプライバシも保持できなくなります。コンピュータウイルスとかマルウエアなどの世界ですので、おいそれとできません。このような理由でこれまでこの問題を後回しにしてきました。
+</p><p>
+
+しかし実際にこれだけ多くのWebアプリが使われていますので、何かうまい仕組みがあるはずです。ようやく重い腰を上げて調査を開始しました。
+</p><p>
+しらべてみるとやはりありました。それが Web Storage です。これは、HTML5から追加された機能で、ブラウザの領域の一部に限定してファイルの読み書きができる仕組みです。仕組みとしてはクッキーに近いですが記憶容量の上限は5MBと文章を記憶するには十分で、データの有効期限もなく長く保存できます。
+</p><p>
+また Web Storage にはウインドウごとのセッションで有効な sessionStorage とブラウザ内に永続的にデータを保存する localStorage があります。今回の用途には localStorage が適しています。
+</p><p>
+Web Storage は制定され既に数年経過し実績もあるようです。例えばある通販サイトではお勧め商品が表示されます。これもこの機能を使っているそうです。（あなたの好きな商品の情報は、あなたのパソコンの中に保存されているのです。つまり同じパソコン同じブラウザ同じアカウントで誰かが買い物するときには注意が必要とわかります。）
+</p>
+<h2>２　文書の保存　具体的な方法</h2>
+<p>
+ワープロでは文書ファイルに名前をつけ保存し数多くの文章を管理できます。しかしファイルがあまりに増えると混乱しがちです。またファイル一覧の表示やファイル名の入力などユーザの負担も小さくありません。そこで今回はお使いになる人にわかりやすいシンプルな方法を考えてみました。
+
+ひらがなカタカナ文字盤　標準版　文章読み上げ機能付き　に何種類かの文書保存機能を追加しました。（尚サンプルの発声機能は、osは　win10, 8, 7, linux, android　ブラウザは　chrome, edge　に対応しています。文書保存機能は他のブラウザでも確認できます。）
+</p>
+<h3>1種類の文書を扱う場合</h3>
+<p>
+この場合に必要な動作は、前回終了時の文書が次回起動時に表示されることです。終了時に自動的に保存され、起動時にも自動的に読み込まれるようにすれば、特に操作項目を追加する必要もないでしょう。
+</p><p>
+サンプルはこちら、</p>
+<p><a target="_blunk"  href="./p-44lws1s/index.html">１つの文書保存</a>
+文字を入力したあと閉じ、再度開くと前の文が表示されます。</p>
+</p><p>
+外見上は従来と同じです。
+
+プログラムに追加したのは、起動時と終了時の処理です。
+</p>
+<pre class="brush: javascript;">
+  //local storage 関係宣言
+   var SERVICE_NAME = 'SERVICE_NAME';
+   var storage = null;
+window.onload = function() {
+  //開始時　local storage  から読み込み
+    try {
+        storage = JSON.parse(localStorage[SERVICE_NAME] || '');
+    } catch(e) {
+        storage = '';
+    }
+｝
+
+...中略...
+
+  //終了時　local storage  へ保存
+   window.onbeforeunload = function() {
+       storage = title.text
+       localStorage[SERVICE_NAME] = JSON.stringify(storage);
+   }
+
+...中略...
+
+            title.text = storage              // 読み込んだデータを変数に入れる
+</pre>
+
+<p>
+文書の保存先として、SERVICE_NAMEというキーを指定し、これと対になるデータ（この場合storage）を準備します。（2，3行）
+
+開始時まず一番最初は、該当するデータがありませんので、空白データを準備します。（9行目）
+
+これをエンチャント文字盤につかう変数 title.textに代入します。（23行）
+また終了の際は、変数の値を保存用変数に代入し、（17行）キーと対にして保存します。（18行）これで次回の起動時には自動的に前の文が読み込まれ表示されるようになります。
+</p>
+<h3>２種類の文書を扱う場合</h3>
+<p>
+サンプルはこちら、</p>
+<p><a target="_blunk"  href="./p-44lws1s4/index.html">２つの文書保存</a>
+文書を切り替えるには左上のボタンをクリックします。ボタンの左に文書識別番号が表示されます。再度開くと前の文が表示されます。
+</p><p>
+二文の場合は、上記と同じ記録用キーを2つ用意します。（4-7行）
+
+一文の場合と同様に起動時に自動的に読み込み、終了時に保存します。
+
+さらに使用中の文書を記憶するための識別番号が必要になります。(2-3行)起動時にこれは前回使用した文書を示します。これも同様に読み込みと保存をします。
+
+</p>
+<pre class="brush: javascript;">
+ //local storage 関係宣言
+   var SERVICE_NAME0 = 'SERVICE_NAME0';
+   var storage0;
+   var SERVICE_NAME1 = 'SERVICE_NAME1';
+   var storage1 = null;
+   var SERVICE_NAME2 = 'SERVICE_NAME2';
+   var storage2 = null;
+
+window.onload = function() {
+  //開始時　local storage  から読み込み
+        storage0 = localStorage.getItem('SERVICE_NAME0');
+    try {
+        storage1 = JSON.parse(localStorage[SERVICE_NAME1] || '');
+    } catch(e) {
+        storage1 = '';
+    }
+    try {
+        storage2 = JSON.parse(localStorage[SERVICE_NAME2] || '');
+    } catch(e) {
+        storage2 = '';
+    }
+    });
+
+...中略...
+
+  //終了時　local storage  へ保存
+   window.onbeforeunload = function() {
+            if (storage0 == 2 ){
+               storage2 = title.text;
+            } else {
+               storage1 = title.text;
+            }
+       localStorage.setItem('SERVICE_NAME0', storage0 );
+       localStorage[SERVICE_NAME1] = JSON.stringify(storage1);
+       localStorage[SERVICE_NAME2] = JSON.stringify(storage2);
+   }
+</pre>
+<p>
+起動時には前回使用した文書を文書識別番号により判断します。
+</p>
+<pre class="brush: javascript;">
+        if (storage0 == 2 ){
+           title.text = storage2;
+        } else {
+           title.text = storage1;
+           storage0 = 1;
+        }
+</pre>
+<p>
+さらに、文章を切り替える操作のためのボタンが必要になります。
+このページ一番上の図の左上のように文書切りかえのボタンとこのボタンを押したときのサウンドを追加しました。
+</p><p>
+このボタンのを押すたびに、文1、文2が切り替わります。この機能をボランをクリックしたさいのイベントとして下記を追加します。
+</p>
+<pre class="brush: javascript;">
+      wordbun.addEventListener(Event.TOUCH_START, function(e) {//文いれかえ
+        wordbun.tl.scaleBy( 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
+        wordbun.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
+        game_.assets[sndse3].clone().play();
+            if (storage0 == 1 ){
+               storage1 = title.text;
+               title.text = storage2;
+               storage0 = 2;
+            } else {
+               storage2 = title.text;
+               title.text = storage1;
+               storage0 = 1;
+            }
+               titleb.text = storage0;
+            });
+</pre>
+<p>
+2種類の文書を扱う場合はこのように外見も、動作もいくつか変更が必要になります。
+しかしこの先扱う文書の数が増えても、変化はごく部分的で作るのもこの先は楽です。
+</p>
+<h3>３種類の文書を扱う場合</h3>
+<p>
+サンプルはこちら、</p>
+<p><a target="_blunk"  href="./p-44lws1s5/index.html">３つの文書保存</a>
+文書を切り替えるには左上のボタンをクリックします。ボタンの左に文書識別番号が表示されます。再度開くと前の文が表示されます。
+</p><p>
+三種類の文書を扱う場合には、上記の項目をそれぞれ下記の様に修正します。
+</p>
+<pre class="brush: javascript;">
+  //local storage 関係宣言
+   var SERVICE_NAME0 = 'SERVICE_NAME0';
+   var storage0;
+   var SERVICE_NAME1 = 'SERVICE_NAME1';
+   var storage1 = null;
+   var SERVICE_NAME2 = 'SERVICE_NAME2';
+   var storage2 = null;
+   var SERVICE_NAME3 = 'SERVICE_NAME3';
+   var storage3 = null;
+window.onload = function() {
+  //開始時　local storage  から読み込み
+        storage0 = localStorage.getItem('SERVICE_NAME0');
+try {
+    storage1 = JSON.parse(localStorage[SERVICE_NAME1] || '');
+} catch(e) {
+    storage1 = '';
+}
+try {
+    storage2 = JSON.parse(localStorage[SERVICE_NAME2] || '');
+} catch(e) {
+    storage2 = '';
+}
+try {
+    storage3 = JSON.parse(localStorage[SERVICE_NAME3] || '');
+} catch(e) {
+    storage3 = '';
+}
+});
+
+...中略...
+
+  //終了時　local storage  へ保存
+   window.onbeforeunload = function() {
+            if (storage0 == 1 ){
+               storage1 = title.text;
+            } else if (storage0 == 2 ) {
+               storage2 = title.text;
+            } else if (storage0 == 3 ) {
+               storage3 = title.text;
+            } else {
+               //storage1 = title.text;
+            }
+
+
+
+       localStorage.setItem('SERVICE_NAME0', storage0 );
+    
+       localStorage[SERVICE_NAME1] = JSON.stringify(storage1);
+       localStorage[SERVICE_NAME2] = JSON.stringify(storage2);
+       localStorage[SERVICE_NAME3] = JSON.stringify(storage3);
+   }
+</pre>
+<p>
+起動時には前回使用した文書を表示します。
+</p>
+<pre class="brush: javascript;">
+            if (storage0 == 1 ){
+               title.text = storage1;
+            } else if (storage0 == 2 ){
+               title.text = storage2;
+            } else if (storage0 == 3 ){
+               title.text = storage3;
+            }
+</pre>
+<p>
+このボタンのを押すたびに、文1、文2、文3が切り替わります。この機能をボランをクリックしたさいのイベントとして下記を追加します。
+</p>
+
+<pre class="brush: javascript;">
+   wordbun.addEventListener(Event.TOUCH_START, function(e) {  //文いれかえ
+     wordbun.tl.scaleBy( 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
+     wordbun.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
+     game_.assets[sndse3].clone().play();
+
+            if (storage0 == 1 ){
+               storage1 = title.text;
+               title.text = storage2;
+               storage0 = 2;
+            } else if (storage0 == 2 ){
+               storage2 = title.text;
+               title.text = storage3;
+               storage0 = 3;
+            } else if (storage0 == 3 ){
+               storage3 = title.text;
+               title.text = storage1;
+               storage0 = 1;
+            }
+               titleb.text = storage0;
+            });
+</pre>
+</p>
+<h3>５種類10種類の文書を扱う場合</h3>
+<p>
+くどくなってきましたので省略します。
+サンプルはこちら、</p>
+<p><a target="_blunk"  href="./p-44lws1s6/index.html">５つの文書保存</a>
+文書を切り替えるには左上のボタンをクリックします。ボタンの左に文書識別番号が表示されます。再度開くと前の文が表示されます。
+</p>
+<p><a target="_blunk"  href="./p-44lws1s7/index.html">１０の文書保存</a>
+文書を切り替えるには左上のボタンをクリックします。ボタンの左に文書識別番号が表示されます。再度開くと前の文が表示されます。
+</p>
+<h2>３　まとめ</h2>
+<p>
+エンチャント文字盤で文書を保存できる様になりました。これで従来のコミュニケーションエイドが備えている基本的な機能がまたひとつ備わりました。またシンプルな文書の切りかえ操作もつくってみました。
+</p><p>
+これらを使っていくつかの文を準備して、きりかえて発声させると、VOCAのような使い方もできるでしょう。エンチャント文字盤の用途がいろいろ広がってきましたが、何よりもファイルの操作ができるようになったのが収穫です。これから先のアイデアもさらに広がるでしょう。
+</p><p>
+さてWeb Storage の記憶容量。５MB とはどれくらいでしょう。青空文庫で我が輩は猫であるのテキスト版のファイルを調べて見まら、なんと750kBでした。
+</p><p>
+まあいずれにせよ十分な記憶容量であることはまちがいないようです。
+</p>
+<h2>参考URL</h2>
+<p>視線入力準備関係
+<ul>
+  <li>ブラウザでストレージ？ Web Storageを使いこなそう<br>
+<a target="_blank" href="http://www.atmarkit.co.jp/ait/articles/1108/12/news093.html">http://www.atmarkit.co.jp/ait/articles/1108/12/news093.html</a></li>
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/08/10　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
