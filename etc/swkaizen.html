@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>呼び出しチャイム　だんだんボタンが押せなくなったという話</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 50px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 75px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>だんだんボタンが押せなくなったという話</h1>
+    <div style="text-align: center;"><img title="押しボタンを押す手の図" alt="押しボタンを押す手の図" src="img/sw1.png"></div>
+
+<h2>０　はじめに</h2>
+<p>
+在宅で療養されている神経難病の患者さんを訪問看護しているスタッフから連絡が次のようにありました。
+</p><p>
+日頃利用している呼び出しチャイムのボタンが最近押せなくなってきた。最近入院した際も代わりにほほでスイッチを動かしてナースコールを鳴らしていた。
+</p><p>
+この患者さんとはしばらく顔を合わせていないし、このようなスイッチの問題はやはり現場で現物を見てみたほうがいいだろうと考え出かけることにしました。
+</p>
+<h2>１　問題の確認</h2>
+<p>
+この人は、市販の無線チャイムの押しボタンを左拇指で操作しています。自宅でもデイサービスでも同じチャイムを両方で使用しています。
+</p><p>
+家族に話を聞くと、最近はボタンを押してもチャイムがならないことの方が多くなってきたそうです。実際にやってもらうと、指は押下動作をしているのですが、押し切るのにやや苦労していました。次に押しボタンをお借りして自分で押してみました。クリック感がやや強かったですが特に抵抗が大きいわけでもないので機械的異常はないようです。続いて私の指を押しボタンに見立てて代わりに拇指で押してもらいました。これで力も応答性も十分あることがわかりました。
+</p>
+<h2>２　原因の推測と対策</h2>
+<p>
+市販の押しボタンは押し間違いを防ぐため、ボタンがボディよりややへこんだ形状をしていることがあります。この製品もそうでした。また押下感触をよくするためにクリック感をつけることもよくあります。このようなボタンは指を深く押し込んで、さらにグリリと押すのですが、麻痺のある人はこの深く押すのが苦手なことがあります。この人もそのグリリが足りないのかもしれません。
+</p><p>
+そこで段ボールを10mm正方形に3枚切り取り、ボタンの上に三枚重ねてテープで貼り付けました。これでボタンの高さが数mm高くなりました。これで試してもらうとふたたび思い通りチャイムをならせるようになりました。
+</p>
+    <div style="text-align: center;"><img title="押しボタンを高くする図" alt="押しボタンを高くする図" src="img/sw2.png"></div>
+<p>
+しかし段ボールとテープでは耐久性が足りません。そこで家族に消しゴムをほどよい大きさに切って両面テープでボタンに貼り付けるようにお願いしたところ、それなら自分でやってみるということになりお任せすることにしました。これで押しボタンの件は一件落着です。
+</p><p>
+続いて正面の巨大モニターの位置をややあげる力仕事をお手伝いしたあと、LEDがたくさん光っているその人のお部屋をあとにしました。
+</p>
+<h2>３　まとめ</h2>
+<p>
+押しボタンが使えなくなってきたという知らせを聞いたときいろいろ考えました。他院入院時に使用したほほで使うスイッチは、多分ホッペタッチスイッチ（徳器技研工業）だろうと予想してそのパンフレットを準備しました。さらに念のためにＰＰＳスイッチを準備してデモもできるようにしました。これらはもし厳しい状況になっていた場合に、次の方法をきちんと提案するためでした。しかし結局これらの準備は空振りにおわり、いつか必要になるかもしれないですのでとかんたんに紹介しただけで持ち帰ることができました。
+</p><p>
+今回はスイッチの高さを上げることで同じスイッチのを継続して使用できるようになりました。具体的には消しゴムをほどよい大きさと形に切って両面テープで押しボタンの上に貼り付ける方法を提案して、ご家族に実施してもらうことになりました。
+</p><p>
+まずこのようにシンプルで安価な方法を提案すると、本人やご家族のいろいろな負担感が少なくなります。またご家族ができる方法を提案すると、こわれてもなんとかできる自信とそして安心感にもつながります。さらに微調整だってできます。
+</p><p>
+今回お伺いしたときも、みなさん不安そうで表情もさえませんでした。それがまだまだ何とかできるんじゃないかと自信をもってもらえました。日頃からこのような支援を心がけています。
+</p><p>
+最近よく、このような病気ではどの道具をどう使うとよいのかとか、新しい道具や方法について知りたいという人にお会いします。今回紹介したスイッチのかさ上げは当院でもよくやる方法で、広く知られているものと思っていましたが、よく聞くと知らない人が少なくないようです。
+</p><p>
+また、新しい高価な道具を紹介できるとなんとなくかっこいいのですが、安く解決できるときに節約しておかないと、いざと言うときにお金で困ることにもなりかねません。こんなつらいことにならないように、よく考えて提案していくことが大切だと考えています。
+</p><p>
+そのようなわけで、今回はベテランのみなさんはもうよく知っている話をいたしました。
+</p>
+<h2>参考URL</h2>
+<p>スイッチ関係
+<ul>
+  <li>トクソー技研株式会社　操作支援スイッチ　ホッペタッチスイッチなど<br>
+<a target="_blank" href="http://www.tokso.net/switch3.htm">http://www.tokso.net/switch3.htm</a></li>
+  <li>パシフィックサプライ　ピエゾニューマティックセンサースイッチ　PPSスイッチ<br>
+<a target="_blank" href="https://www.p-supply.co.jp/products/index.php?act=detail&pid=196">https://www.p-supply.co.jp/products/index.php?act=detail&pid=196</a></li>
+
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/08/24　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
