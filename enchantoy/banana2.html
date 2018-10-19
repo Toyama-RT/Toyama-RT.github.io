@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャントでおもちゃ うごくバナナ</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+
+
+
+-->
+</style>
+
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャントでおもちゃ</h1>
+    <h1>うごくバナナ</h1>
+    <div style="text-align: center;"><img title="スイッチ操作練習用サンプル" alt="スイッチ操作練習用サンプル" src="img/banana2.png">
+<p>スイッチ操作練習用サンプル</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+前回お伝えしたようないきさつで、エンチャントでおもちゃを作る取り組みが始まりました。しかし面白いものを作るのはそれほどかんたんではありません。
+</p><p>
+ある人にとって面白いことでも、別の人にとっては面白くもないこともあります。多くの人たちにとっておもしろいことでもその他の少ない人たちにはおもしろくないこともあります。
+</p><p>
+面白さには人それぞれちがいがあります。質的にも量的にも文化的にも違うようです。今回の主なターゲットはこどもたちです。こうなるといちから取り組むのはおそらくとても難しいことでしょう。
+</p><p>
+こんなときはいい方法があります。世の中を見渡して日夜そんなことに取り組んでいるいる人たちを見つけその仕事を見てまねしてみるところから始めるのです。これは楽です。おすすめです。どんな仕事にもつかえます。
+</p>
+<h2>１　ある朝の出来事</h2>
+<p>
+あるテレビ番組を見ていたら面白いことをやっていました。ボールがポンポンとはねて、キツツキがでてくるのです。初めて見たとき「これは何だ？」と思いました。しばらく見ているとじきに終わってしまいました。
+</p><p>
+別の日にはまたボールがポンポンとはねて今度はイノシシがでてきました。もっと長く見ていたかったのですが今度もまたすぐに終わってしまいました。とても残念です。３０分くらい見ていたいのですが、そんな放送をしたら苦情で放送局が大変なことになる（それはそれでおもしろい話ですがそれはさておき）ので録画することにしました。
+</p><p>
+次の日、今度はチワワが出てきました。録画しましたので繰り返し見ました。おもしろいといえばおもしろい、わからないといえばわからない、変な気持ちです。
+</p><p>
+この番組は、みんなにおおうけではないけれどなんとなくいいです。砂時計をじーっと見ていたり、アリの巣をずーっとながめるのがすきなひとはこんな静かなものもいいのかもしれません。録画を見ているうちに私も好きになってきました。きっとこのアイデアを出した人には深い考えがあったのでしょう。（実はなにもなかったりして）
+</p><p>
+そこでこころゆくまでじっくりとボールがポンポンはねるのを見ていられるプログラムを作ることにしました。
+</p>
+<h2>２　サンプル</h2>
+<p>
+スイッチを操作すると赤いボールが１個落ちてきて、『ばなな』と声が出るのが前回のサンプルでした。スイッチを操作すればいつでも同じ動作をしました。
+</p><p>
+これはスイッチの選定、適合作業、そして操作の練習が主な目的で作りました。このとき操作するこどもさんがいくらかでも飽きずに楽しんでもらえれば、仕事の方もはかどります。
+</p><p>
+さて今回はバナナが出てきます。このページの上の図のようにバナナがゆっくり上に下に動きます。ちょうどいいところでスイッチを押すとボールがバナナにぶつかってはね返り、『ばなな』と声が出ます。ボールがバナナにうまくぶつからないと、『ばな』になります。
+</p>
+<p>
+<a target="_blank" href="./p1b/index.html">サンプル5秒間隔</a>
+ボールが5秒間隔で落ちてきます。スイッチ操作でもボールが落ちてきます。
+</p><p>
+<a target="_blank" href="./p1a/index.html">サンプル10秒間隔</a>
+ボールが10秒間隔で落ちてきます。スイッチ操作でもボールが落ちてきます。
+</p>
+<p>
+どうしたらうまく行くのか試して見てください。<br>
+
+バナナが上だとボールはバナナの下を通ります。<br>
+
+バナナが下だとボールはバナナの上を通ります。<br>
+
+ちょうどいい時はボールはバナナの横にあたります。<br>
+</p><p>
+今回のサンプルは、うまくいったりいかなかったりします。どうしてかなと考えながら取り組んでください。
+</p><p>
+またごくまれに、ボールのあたりどころがよって『ばななな』となることもあります。このラッキーアイテムがでるとねがいごとがかないます。（たぶん）
+</p>
+<h2>３　おわりに</h2>
+<p>
+いつも同じ結果になるとすぐに飽きてきます。またやるたびにうまく行かないと飽きるまえにつまらなくなります。今回のサンプルは３回に１回くらいうまく行くように作りました。うまくいかなくてもしばらく待っていればうまくいくようになります。このくらいですと飽きたりめげたりしやすいひとでも、がんばれるかもしれません。プログラムでゲームを作るとこのように成功と失敗の割合を調整したりいろいろ工夫ができます。
+</p><p>
+実際に大人の場合でもうまくいかない取り組みが続くと精神的に参ってしまいます。過去にそんな失敗もしました。こどもさんならなおさらです。あまり元気をなくさないように、あまりのぼせないように工夫する必要があると思います。
+</p><p>
+怒ってiPadを投げつけたとか、だれかに噛み付いたとかいう話はよく聞きます。しかし可能なかぎりそのようなことにならないようにしたいものです。また反対に簡単すぎると、つまらないとかやる気がなくなるということもあります。
+</p><p>
+そのためにも、<br>
+
+「つぎはきっとうまくいくから　がんばってみようよ」とか<br>
+
+「なまいきなこぞうめ　つぎはこれでもくらえ」とか<br>
+
+状況に合わせて次々とネタを繰り出せるように準備することが大切になります。
+</p><p>
+皆さんのアプリは在庫が十分にありますか？
+</p>
+<h2>参考URL</h2>
+<ul>
+  <li>ピタゴラスイッチ<br>
+<a target="_blank" href="http://www.nhk.or.jp/kids/program/pitagora.html">http://www.nhk.or.jp/kids/program/pitagora.html</a></li>
+
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/10/19　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+  </body>
+</html>
