@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャントでおもちゃ バナナをうごかそう</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャントでおもちゃ</h1>
+    <h1>バナナをうごかそう</h1>
+    <div style="text-align: center;"><img title="スイッチ操作練習用サンプル" alt="スイッチ操作練習用サンプル" src="img/banana3.png">
+<p>スイッチ操作練習用サンプル</p>
+</div>
+
+<h2>０　はじめに　きっといるよこんなひと</h2>
+<p>
+ボールがポンポンとはねてキツツキやイノシシやチワワがでてくる番組は全国放送ですのでもうご覧になって知っている人もおられることでしょう。この番組を初めて見たときから、ボールがはねかえる壁を自分でうごかしたらおもしろいだろうなと思っていました。私が思ったくらいですからきっと日本中で10人くらいのひとがおなじことを考えたでしょう。まあみんな変人ですね。
+</p><p>
+わが家のテレビはリモコンのボタンでおみくじをひいたり、クイズにこたえたりできるのですが、壁をうごかすことはどうもできません。（できませんできませんにんげんにはぜったいできません）必要とする人数が少ないからやらないなんて言っていると、私の仕事のほとんどが存続できません。そこでここはひとつバナナを動かしてみることにしました。（でもこうすればできるようになるのです）
+</p>
+<h2>１　今回の取り組み</h2>
+<p>
+前回のサンプルは、バナナはゆっくりと上下して、スイッチを操作すると赤いボールが落ちてきてバナナにあたってはね返ると「ばなな」と声がでました。これは一種のシューティングゲーム（的あてゲーム）で、スイッチ操作ができると参加でき、工夫なしでもそれなりに当りました。またより当たる工夫の余地もありました。それに比べ今回のサンプルは、ボールと文字とバナナの関係と動きの仕組みを理解したうえで、バナナの上下動の操作が加わります。複雑さも覚えること多くなっています。
+</p><p>
+あれこれ考えながらやってみたらプログラムはできました。しかし意外なことに気がつきました。それはバナナをうごかす方法には何種類かあってそれぞれの方法に特徴があるのです。使うひとの好みや特徴に合わせて方法を選べばいくらかつかいやすくなったり、反対につかいにくくなったりするのではないかと考えています。それでは何回かに分けて説明していきたいと思います。
+</p>
+<h2>２　３ボタンサンプル</h2>
+<p>
+前回のサンプルではバナナはゆっくり一定の速度で上がったり下がったりを繰り返します。今回はこれをスイッチで操作するサンプルを作りました。まず最初のサンプルは最も一般的でオーソドックスな形式です。上の写真のように3つのボタンがあり、それぞれ上へ移動、下に移動、停止させます。多くの動画プレーヤや音楽プレーヤにつかわれている方法と基本的に同じです。またこのサンプルでは特に操作しなくてもボールは一定間隔で自動的に落ちてくることにしました。
+<p>
+<a target="_blank" href="./p2/index.html">バナナをうごかすサンプル</a>
+上下停止ボタンでバナナがうごきます。ボールが10秒間隔で落ちてきます。
+</p><p>
+まずは試しに動かしてみてください。
+</p>
+<h3>３ボタンの特徴</h3>
+<p>
+今回の３ボタンには多くの特徴があります。
+</p><p>
+まず3つのボタンを区別して操作する必要があります。このためには少なくとも三種類の動作とそれで動作するスイッチが必要になります。そしてスイッチを機器につなぐ必要もあります。しかしここではひとまずスイッチの条件は後回しにします。この中で使うひとの条件として三種類のスイッチを独立して操作する身体能力が必要となります。
+</p><p>
+上スイッチを操作すると上へ、下スイッチでは下へ動き始めます。停止スイッチで動きが止まります。この説明のように3ボタンスイッチはわかりやすい、理解しやすい特徴があります。またスイッチ操作の力加減も時間の長短も回数も関係ありません。押した瞬間に動作します。ですので手が震えて２回３回押しても問題ありません。またタイミングよく押す必要もありません。ただ停止スイッチは遅れるとバナナが行き過ぎてしまいます。
+</p><p>
+手順をまとめると次のようになります。まずバナナを上に動かすか下に動かすか決めます。次に上または下のスイッチを操作します。最後にここだと思ったときに、停止スイッチを操作します。（できればすばやく）この手順を繰り返えせば目標に近づくことができます。このように同時動作や維持動作がなく時間の縛りも少なくシンプルな手順になるのが特徴です
+</p><p>
+かんたんにまとめると身体的負担は多め、知的負担は軽めといったところでしょうか。
+</p>
+<h2>３　不自由をもつひとがスイッチを使うとき注意したいこと</h2>
+<p>
+通常、多くのひとは3ボタンスイッチのような特徴や条件に何ら障害を持ちません。特に意識しなくてもなんの不便もなく操作することができます。しかし様々な不自由を持つひとでは事情が異なることもあります。
+</p>
+<h3>動作のこと</h3>
+<p>
+まず麻痺が重度な場合、スイッチのための動作を見つけるのに苦労することがあります。ここで見つけると書きましたが、目で見てうごきがわかる動作はわかりやすいのですが、見えにくいわかりにくい動きも使えることがありますので、探すのは苦労します。ここで使えると書きましたが動作にも使いやすい品質のよい動作と品質がイマイチな動作があります。
+</p><p>
+品質の一例として、今だと思ったときにすかさずうごくか（応答性）があります。
+</p><p>
+以前おつきあいしていただいた方で応答に30-40秒かかるひとがいました。合図してから動作するまでこれだけ時間がかかるのです。これに気がつくまでこのひとは動作も意思疎通もできず知的問題もあるかもしれないと思われていましたが、時間さえかければ意思表出でき記憶も意識も年齢相応とわかりました。さらに周囲が声をかけ反応が届くまで待つようになると徐々に待ち時間が短くなり、数秒になりました。
+</p><p>
+また何回かうごかすと疲労でその後何分間かうごかせなくなる（易疲労）こともあります。この場合も時間をかけ疲労を避けるように注意する必要があります。この際ご本人が自分が疲れたことに気が付きにくいことがよくあります。しかしこのような状態でも練習により改善されることがあります。
+</p><p>
+このようにできるかできないか判定するだけでなく、どうしたらできるかを探す取り組みを行うわけですが、最近のかなり高性能のスイッチをつかっても3つ見つけるのがむつかしいことがあります。
+</p>
+<h3>見えているのか</h3>
+<p>
+視力が十分あれば見えているはずと思いがちです。しかし視力検査でOKでも実際の場面で見えていないことはよくあります。
+</p><p>
+まず視野です。誰もが広い範囲を一様に見えているわけはありません。左右や上下の半分が見えていないなどということもあります。中には葭（よし）の髄からのぞいて見ているようなひともいます。はねているボールとバナナと３つのボタンを一度に見えない人でも視力を検査するとOKのこともあります。とくに脳に何らかのダメージをうけたひとでは気をつけたいところです。例えば、自分を知っているはずなのに立ち位置によって声をかけるまで気がついてくれないことがあるなどということがあるならば注意したいところです。
+</p><p>
+このほか、見てから気がつくまでしばらく時間がかかるとか、動いているものはよくみえない、見えにくい、見失いやすいとか、似た形の見分けにくいが、色分けすると見分けられるなど、普通の人とは少し違うその人の苦手を見つける糸口として、見え方に注目することが大事です。
+</p>
+<h3>分かってもらえているか覚えてもらえているか</h3>
+<p>
+赤いボールがポンポンはねてバナナにぶつかってはねかえると「ばなな」と声が出ることと、そしてバナナを上下に動かせることをしっかり理解してからサンプルを試していただく必要は全くありません。よくわからないままあれこれやってみるのも、誰かがやっているのをみて覚えたり、教えたり教わったりするのも、くやしかったり、うれしかったりするのも、おもちゃではよくあることです。
+</p><p>
+ただ、あまりに足りないことが多いとか、昨日はできたことを今日は忘れているとかには気をつけたいところです。
+</p>
+<h2>４　おわりに</h2>
+<p>
+今回はバナナの上下動を３つのボタンで行うサンプルを作り紹介し３ボタン方式の特徴について説明しました。そして不自由を持つ人のつかいやすさに関係するいくつかの特徴と条件について考えました。これまで､スイッチ選びやアプリ選びの重要さは広く知られていましたが、これらの特徴や条件についてはあまり考えられてこなかったように思います。
+</p><p>
+次回はより身体の条件が厳しい人で同じことをする方法とその特徴や条件について考えていきたいと思います。
+</p>
+
+<h2>参考URL</h2>
+
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/10/26　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+  </body>
+</html>
