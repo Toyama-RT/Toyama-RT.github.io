@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャントでおもちゃ バナナをうごかそう３</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャントでおもちゃ</h1>
+    <h1>バナナを１ボタンでうごかそう</h1>
+    <div style="text-align: center;"><img title="スイッチ操作練習用サンプル" alt="スイッチ操作練習用サンプル" src="img/banana5.png">
+<p>スイッチ操作練習用サンプル</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+ボールがポンポンとはねてキツツキやイノシシやチワワがでてくるテレビ番組から始まり、おもちゃとスイッチについていろいろ試しています。
+今回はいよいよスイッチひとつで前々回前回と同じくバナナをうごかすことに挑戦します。使用する方法によって特徴、つまり長所や短所も変わって来ます。今回の1スイッチでは前回の2スイッチよりもこの特徴の違いがはっきりと現れるようです。それでは始めましょう。
+</p>
+<h2>１　今回の取り組み</h2>
+<p>
+前回、前々回に引き続きバナナを動かしてみましょう。ただし今回はさらに条件の厳しいひとに使ってもらうことを想定します。
+</p><p>
+１スイッチは、麻痺が重くほとんど動かせないひとのほか、コミュニケーションエイドなどの機器操作に取り組むひともほとんどがここから始まります。それまでの受診や診断などの経緯でかなり意気消沈しているひとも少なくありませんが、それでもいろいろできることを体験し、失ったものの他にまだ残っているものもあることを確認し、｢いけるところまでいってみよう｣と思っていただくことは何においても大切なことではあります。まあそれはさておき。
+</p><p>
+これまでと同じことに１スイッチの今回はもっと大胆に「スイッチのルール」やゲームの基本機能までを変更します。一般商品で1スイッチを使用している例はそれほど多くありませんが、デジタルウォッチやスマホ、タブレットなどボタンを増やしにくい機器で使われていますのでこころあたりのある方も多いでしょう。
+</p>
+<h2>２　1ボタンの特徴</h2>
+<p>
+今回取り組む1ボタンにもいくつか特徴があります。
+</p><p>
+まず一種類のスイッチを操作する身体能力が必要になります。これは身体への要求条件は最も軽いのですが、意思伝達装置をこの方法で操作しているひとが一番多く、苦労しながら使っている人が少なくありません。条件は軽いのですが楽をしているわけではありません。今回もこれらの動作でどんなスイッチを操作してその信号を機器に伝える方法についてはここでは扱いませんが、ネットでしらべて見つかる方法の多くは１スイッチです。
+</p><p>
+また｢スイッチのルール｣がごくシンプルでわかりやすい特徴があります。しかしこれは込み入った複雑なことがやりにくいというのが理由のひとつです。しかし複雑なことが苦手なひとの不自由を軽くするために役に立つかもしれません。たくさんのスイッチをが使える身体能力をお持ちでもあえてわかりやすいシンプルな方法を使うこともあります。
+</p><p>
+1スイッチでは複雑なことがやりにくいにも係わらず、複雑怪奇なスイッチのルールを作ればやってできないことはありません。むかしモールス信号を使う方法も考案されましたが普及には至りませんでした。理由はまあご想像のとおりです。
+</p>
+<h2>３　１ボタン積極タイプ</h2>
+<p>
+前回のサンプルとの外見上の違いは、上の画像のようにボタンの数だけです。ボタンの数が最小ですがそれでもスイッチのルールはいくつかあります。まず紹介するのは、ボタンを押すと動き、放すと止まるタイプです。はじめに上にうごきますが最上部までいくと方向転換して下にうごきます。ここでは積極タイプと呼ぶことにします。
+</p><p>
+<a target="_blank" href="./p3a/index.html">バナナをうごかすサンプルその４</a>
+ボタンでバナナがうごきます。ボールが10秒間隔で落ちてきます。
+
+</p>
+<h3>1ボタン積極タイプの特徴</h3>
+<p>
+押すと動き放すと止まる方式の積極タイプは、ある程度の時間押し続けることができることが必要です。また押し続けるため疲れやすいかもしれません。しかし途中で休みやすいので問題にならないかもしれません。これらは取り組む課題（ゲーム）の種類と時間にも関連するでしょう。また2ボタンでも説明した、トントンコントロールを使い微調整しやすい特徴もあります。
+</p><p>
+手の震えなどで短時間しか押せない場合でも、ラッチタイマを利用すればうまくいくかもしれません。しかしラッチの程度によりトントンコントロールの効果が減ることもありますので注意が必要です。
+</p><p>
+このタイプは動かすときに力を出す必要があります。このため努力（力）と成果（動き）がリンクし随意感（自分でやっている感じ）が出ます。このため後述する省エネタイプのようにイライラしたり、機械に使われているような疎外感を感じることが少ないようで、積極的な性格のひとには好かれることがあります。ただしこれらは気分の問題ですし、時間が長くなるとこちらの方が身体が疲れます。しかし別の観点から見るとトレーニングには向いているとも言えます。
+</p>
+<h2>４　１ボタン省エネタイプ</h2>
+<p>
+積極タイプとの外見上の違いはありませんがそれでは不便ですので、ボタンの色を変えました。省エネタイプは、ボタンを押すと動き、もういちど押すと止まるタイプです。はじめに上にうごきますが最上部までいくと方向転換して下にうごきます。最小限の操作の他はひたすら「待つ」ことになります。そこでここでは省エネタイプと呼ぶことにします。
+</p><p>
+<a target="_blank" href="./p3b/index.html">バナナをうごかすサンプルその５</a>
+ボタンでバナナがうごきます。ボールが10秒間隔で落ちてきます。
+</p>
+<h3>１ボタン省エネタイプの特徴</h3>
+<p>
+最大の特徴は労力の節減です。必要な場面で押す動作を行うだけであとは待つだけです。一種類の動作でごく短時間スイッチをONにするだけですので身体的負担は極少と言えます。しかし動きから目を離せない、気をぬけないといった特徴もあります。このためALS患者（運動機能は低下するが知的には問題ないと言われる）向けに開発された伝の心やレッツチャットなどの製品では重度の場合を想定して標準スイッチはこの方式を採用しています。
+</p><p>
+しかしこれほどの省エネが必要ではないひとも少なくありません。進行するまえに体験として取り組むひとからも｢待ってばかりでイライラする｣とか｢動きが遅くていやだ｣などの意見もあります。知的に問題なくてもイライラはつらいことです。
+</p><p>
+このような場合には、先に紹介した「積極タイプ」を試していただければ、気分転換にも、トレーニングにもなるようです。
+</p><p>
+省エネタイプはこのような原理ですので、トントンコントロールなどの技は使えません。
+</p>
+<h2>５　おわりに</h2>
+<p>
+前々回の３ボタン、前回２ボタンに引き続き今回は１ボタンを試してみました。これで基本は全く同じゲームを異なる5種類の方法説明し操作のためのサンプルを作りました。普通のひとにはどの方法でもすこし練習すれば十分使いこなすことができます。そして、運動の条件や運動の負担や知的な負担がそれぞれの方法で異なることを実感していただけたと思います。
+</p><p>
+今回の取り組みはいくつかの目的があります。
+</p><p>
+ひとつは同じゲームを操作するのでもやり方はいくつもあって、それらを多くの人たちに体験してもらうことです。現実のゲームやパソコン操作では普通のひとが使いやすいように暗黙の標準ルールがあります。標準のコントローラやキーボートとマウスがその一例です。商業的にはこのような標準的な操作のルールが大勢をしめ、さもその他の方法が存在しないように見受けられます。しかし標準ではないルールを用いれば、標準とは多少異なるユーザの利便性をいくらかでも改善することはできないわけではないことはわかっていただけたと思います。
+</p><p>
+もう一つの目的は、「できる」ことと「できない」ことへの理解を深めることです。このひとの「できない」とあのひとの「できない」はどこが同じでどこが違うのか。このひとはなににつまづいているのか。どうすれば改善できるのか。去年と同じことを今年はどれだけできるだろうか。またスポーツ選手などは速いボールを見分けることができますが反対に少しの速いと見逃してしまいうまくいかないひともいます。そのひとがうまくいくための制限速度はどうしたらいいのでしょう。このようなことに悩んだり既に取り組んでいるひともおられるでしょう。
+</p><p>
+パソコンがこのような取り組みに有用かどうかを確認するのも目的にひとつでした。
+</p><p>
+ゲーム自体はとてもシンプルですが、操作のための「スイッチのルール」により難しさや使いやすさや使うひとへの負担感が随分変わります。普通のひとはこの負担感のバリアを難なく超えますが、これにつまづくひともいるわけです。この見えないバリアの高さをはかり、低くする方法をさがし、つまづかないようにするにはどんな練習をしたらいいのか。これらを明らかにするためにはこのような取り組みが必要だと思います。
+</p><p>
+次回は、この文でもお話しした、スイッチのルールを作り込んで1ボタンで複数のスイッチを操作する方法についてご紹介する予定です。お楽しみに。
+
+</p>
+
+<h2>参考URL</h2>
+
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/11/09　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+  </body>
+</html>
