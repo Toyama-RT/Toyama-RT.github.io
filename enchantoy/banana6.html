@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャントでおもちゃ ワンスイッチでどこまでできるのか</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+
+
+
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャントでおもちゃ</h1>
+    <h1>ワンスイッチでどこまでできるのか</h1>
+    <div style="text-align: center;"><img title="スイッチテスト用サンプル" alt="スイッチ操作練習用サンプル" src="img/sw1.png">
+<p>スイッチテスト用</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+無料のオンラインゲーム製作フレームワーク、enchant.jsを使ってパソコンでもスマホでも使えるコミュニケーションエイドを作るためにいろいろ試しています。
+</p><p>
+ところでこれを利用して、操作スイッチのいろいろなアルゴリズム（仕組み、ルール）を作れることがわかりましたので、前回までのようにバナナを上下に動かすゲームを題材に何種類か作って試してみました。enchant.jsはゲームを構築する際の画像や効果音などの基本的機能が一式セットになっていますので準備も勉強も少ない手間でできます。さらに欲しい機能を追加するときにはＪａｖａＳｃｒｉｐｔで書き足したり、誰かが作った機能を参照したりなどして、自分なりの創意工夫が手軽に実現できますので、医療や福祉や教育などの現場で仕事する人には向いているように思います。
+</p><p>
+このような分野に関心をお持ちのかたは取り組んで見る価値はあると思います。うまく行けば欲しいものが自分で作れるようになるかもしれません。
+</p><p>
+さて今回は、ワンスイッチでどこまで出来るのかと題して、ここまでやったことを応用して、ひとつのボタンで複数のボタンを使い分けるスイッチプログラムをつくります。不自由な人と接する機会のある人もない人もご覧になってください。それでは始めましょう。
+</p>
+<h2>１　今回の取り組み</h2>
+<p>
+まずスイッチの働きを理解するためにシンプルなプログラムを２種類つくります。ひとつは押す（ONにする）時間で複数の選択肢をえらびます。もうひとつは一定時間に押す（ONにする）回数で複数の選択肢をえらぶ方式です。どちらも操作のための動作は『押して放す』（ONにしてOFFにする）ですが、押し方と放し方の良し悪し、言葉を代えると『動作の品質』によって使えるボタンの数が増えてくるところに注目してください。
+</p>
+<h2>２　ON時間で選択する</h2>
+<p>
+このサンプルはこのページトップの画像のような外見をしています。起動すると１，２，３の数字と３つの時計と５つの星が表示されます。そこで黄色い四角をクリック（タップ）し続けると１秒間隔で時計が表示されます。
+</p><p>
+１番目の時計が表示される前に放すと１番の上の星が、1番が表示されて2番が表示されるまえに放すと1番の星が、２番が表示されて3番が表示されるまえに放すと2番の星が、3番が表示されて一秒以内に放すと3番の星が、それ以降に放す一番下の星が表示されます。
+</p><p>
+ことばで説明するととてもわかりにくいですので、実際にサンプルを動かしてください。そのほうがより理解できると思います。さてこのようにONする時間で5つの星のうちどれを表示させるかを選ぶことができるようになります。
+</p><p>
+<a target="_blank" href="./sw1/index.html">　ON時間で選択するサンプル</a>
+</p>
+<h3>このタイプの特徴</h3>
+<p>
+不自由を持つひとは震えや痙性（例えば筋硬直）によってうまくスイッチ操作できない場合があります。震えではごく短い時間ONになり、痙性では長くONになります。上のサンプルで１秒以下や4秒以上の場合何もしないようにプログラムするとこのような失敗が減り、使う人の不便を減らすことができるかもしれません。
+</p><p>
+またスイッチからノイズがでることもあります（チャタリング）。普通は回路の工夫で取り除くことが多いですが、ソフト的に取り除くこともできます。
+</p><p>
+このタイプを使用するには長くONできることが必要です。この際、視覚や音で提示するとタイミングが取りやすくなることがあります。
+</p><p>
+長くONしたり、短くONしたりできると、単にONOFFできる場合よりも倍以上可能性が広がるのですが、その分知的な負担が大きいので理解や疲労に注意が必要になります。
+</p><p>
+パシフィックサプライのｐｐｓスイッチなどワンショット信号のスイッチではここで使っている長くＯＮすることができません。このような場合は二番のサンプルをお試しください。
+</p>
+<h2>３　ON回数で選択する</h2>
+    <div style="text-align: center;"><img title="スイッチテスト用サンプル" alt="スイッチ操作練習用サンプル" src="img/sw2.png">
+<p>スイッチテスト用</p>
+</div>
+<p>
+このサンプルは上の画像のような外見をしています。（まるで見分けがつきませんね）起動すると１，２，３の数字が表示されます。そこで緑の四角をクリック（タップ）するごとに時計が表示されます。
+</p><p>
+３秒間で１回クリックすると時計がひとつで１番に星が出ます。３秒間で２回クリックすると時計が２個で２番に星が出ます。３秒間で３回クリックすると時計が３個で３番に星が出ます。４回めのクリックすると元に戻ります。
+</p><p>
+これもことばではわかりにくいですので、実際に下のサンプルを動かしてみてください。このように一定時間内にONする回数で３つの星のうちどれを表示するか選べます。
+</p><p>
+<a target="_blank" href="./sw2/index.html">　ON時間で選択するサンプル</a>
+</p>
+<h3>このタイプの特徴</h3>
+<p>
+このタイプはＯＮを続けたりタイミングをとる必要がありません。単発、双発、三連発を使い分けて待つだけです。身体的負担はありますがシンプルで理解しやすいです。ただ決定までの時間（このサンプルでは３秒）が必要ですので、先読みして操作するか、時間的にゆとりのある用途にする必要があるかもしれません。
+</p><p>
+また選択数が多いと、多連発が必要になり疲労や制限時間の設定などで実用性が低くなる傾向があります。
+</p>
+<h2>４　これらで３ボタンを操作しバナナをうごかす</h2>
+<p>
+せっかくサンプルを２つつくりましたので、以前「バナナをうごかそう」でつくった、３ボタンでバナナをうごかすサンプルに組み込んでみます。実際には今回のサンプルから何行かをコピーしました。
+</p>
+    <div style="text-align: center;"><img title="スイッチテスト用サンプル" alt="スイッチ操作練習用サンプル" src="img/p2sw1.png">
+<p>ワンスイッチで3ボタンを操作するテスト用</p>
+</div>
+<p>
+<a target="_blank" href="./p2sw1/index.html">ワンスイッチのON時間でバナナをうごかすサンプル</a>
+ボタンでバナナがうごきます。ボールが10秒間隔で落ちてきます。
+</p><p>
+<a target="_blank" href="./p2sw2/index.html">ワンスイッチのON回数でバナナをうごかすサンプル</a>
+ボタンでバナナがうごきます。ボールが10秒間隔で落ちてきます。
+</p><p>
+このようなやり方ができると、Ａさんの好きなアプリにＡさんがわかりやすいスイッチアルゴリズムを組み込んでＡさんが使いやすいスイッチでそれを操作する、といったことができるようになります。
+</p>
+<h2>５　おわりに</h2>
+<p>
+今回は操作できるスイッチ数が少なくても、なんとかする方法について考えてみました。またサンプルを作り、実際に体験していただきました。またこのシリーズで３ボタンでバナナを動かすゲームを１ボタンでできるように改造して見ました。みなさんいかがだったでしょうか。
+</p><p>
+スイッチが少なくてもなんとかなるといえばなんとかなります。しかしご本人はそのためには、いろいろなルールを覚えたり、仕組みを理解したり、そして操作の練習が必要になります。もちろんうまくいって満足行く結果にたどり着けることもあるでしょう。
+</p><p>
+しかしその取り組みでご本人のこのような苦労が報われるのでしょうか。
+</p><p>
+このように考えると、可能な限り多くの随意運動を見つけ、それにふさわしいスイッチを適切に設置し、それぞれのスイッチに負担を考慮して適切に機能を割り振って、目的となる課題を実現するという従来の方法のよさを改めて考えさせられます。何よりもシンプルでそのひとが理解しやすくさらにエクササイズにもなります。
+</p><p>
+今回紹介したように、手段はいろいろたくさんあります。ですから特に理由のない限りは、特定の手段にこだわるよりも、何に取り組んだらその人のためになるかに力を入れるのがこれから大切になると思います。
+</p><p>
+そしてそのためにはどんな手段があるのかできるのか、そしてそのひとができるにはやりやすくするにはどうしたらいいのか。これを試し考え表現する手段として、enchant.jsとJavaScriptは役に立つのではないかと思います。
+</p><p>
+しかしいま『なにに取り組むべきか』を考えてアイデアを持つひとたちに、この『試し考え表現する手段』があまり普及していないのがとても残念です。
+</p><p>
+2020年から小学校でプログラミング教育が始まるそうです。せっかくやるのでしたらプログラミングでなにをやるのかなににつかうのかも考えてほしいと思います。
+</p>
+
+<h2>参考URL</h2>
+<ul>
+  <li>enchant.js　日本語<br>
+<a target="_blank" href="http://enchantjs.com/ja/">http://enchantjs.com/ja/</a></li>
+
+</ul>
+
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/11/16　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+  </body>
+</html>
