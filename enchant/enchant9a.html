@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>コミュニケーションエイド　視線入力とCameraMouse　富山県リハビリ病院</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>視線入力とCameraMouse を比べてみた</h1>
+    <h1>もうひとつの選択肢になるか？</h1>
+    <div style="text-align: center;"><img title="視線入力とCameraMouse を比べてみた" alt="視線入力とCameraMouse を比べてみた" src="img/cameramouse1.png"></div>
+<p align="center">
+<a target="_blank" href="https://youtu.be/yexDGH8zBtg">youtubeの動画はこちら　3分58秒　音が出ます</a>
+
+</p>
+<h2>０　はじめに</h2>
+<p>
+もう何年も前のことです。2010年ころに画像計測技術が急速に進歩し、実用的ないくつかのアプリケーションが続々と公開された時期がありました。一般向け商品では顔認識機能付きデジタルカメラが商品化されたのもこの時期です。また福祉分野では不自由なひとの機器操作のための道具がいくつかありました。伝の心のオプションに『表情スイッチ』というのがでて試したことと覚えています。なかには指の動きを撮影しその形や動きで機器操作するものもありました。これらはその後どうなったのでしょう。今はもう見かけることもありません。
+</p><p>
+FaceMouse はそのひとつでした。顔認識技術でユーザの顔の向きを検出しマウスカーソルを動かすソフトです。これをあるイタリアの青年が作り、一時無料で公開されていました。しかしその後何かの理由で開発が中断し製品も市場から消え現在は入手できなくなりました。また当時のソフトは現在のWindowsでは起動できません。
+</p><p>
+このFaceMouseとほぼ同じ時期に、James Gips 教授とボストン大学のチームも画像パターン追跡技術を応用した同様のアプリケーション、Camera Mouseをフリーソフトとして公開しました。発表当時は日本国内でもそれなりに知られ使われていたのですが、私はその後すっかり「御無沙汰」してしまいました。
+</p>
+    <div style="text-align: center;"><img title="cameramouseorg" alt="cameramouseorg" src="img/cameramouseorg.png"></div>
+<p>
+そこで何年かぶりにCameraMouseのサイトを訪問してみると外見は（上の写真）見たところ何も変わっていませんがソフトウエアはその後も開発が進められており現在2018年版が公開されていましたので早速入手しました。
+そして今回、約５年ぶりにCamera Mouseを使って最近取り組んでいる視線入力と比べてみることにしました。
+</p>
+<h2>１　準備</h2>
+<h3>必要な条件と機材</h3>
+<p>
+Camera Mouse2018はWindows7､8､8.1､10に対応しています。またカメラはノートパソコンの付属カメラまたはUSB接続のWEBカメラが必要です。今回使用したノートパソコンはWindows10ですがカメラが付属していないので、手持ちのLogicool HD Webcam  C270を使いました。
+</p>
+<h3>Camera Mouse のダウンロード</h3>
+<p>
+Camera Mouseのトップページ（上写真、本ページ末の参考URL参照）downloads　のタブをクリックするとDownloads and Links　のページが開きます。ここではCamera　Mouseの最新バージョンから古いバージョンまでプログラム本体、マニュアル、使用した教材、および関係する資料がたくさん入手できます。
+すべて英語ですが丁寧でわかりやすく作られています。
+</p><p>
+ここから　CameraMouse2018とマニュアルをダウンロードしました。マニュアルも英文ですが技術用語も少なく非常に丁寧に書かれています。
+</p>
+<h3>カメラドライバーのインストール</h3>
+<p>
+Camera Mouse のインストール前に使用するWebカメラのドライバをインストールする必要があります。マニュアルにもwindowsの汎用ドライバーは使用しないように書かれています。ノートパソコン付属のカメラの場合は問題ないと思いますが。別途USBカメラを使用する場合はカメラメーカのサイトなどで確認してください。
+</p><p>
+ちなみに今回使用したLogicool C270の場合は、マニュアルに『Windows８パソコンにUSB端子を接続すると自動的に適切なドライバがダウンロードされインストールされるがWindows７では別途ロジクールウェブカムソフトウエアをメーカサイトからダウンロードしてインストールする必要がある』と記載がありました。古い製品ですのでWindows10のことは書いてありません。そこでWindows10で試したところWindows 8の場合の記載と同様に約30秒ほどでドライバがダウンロードされインストールされました。
+</p>
+<h3>Camera Mouseのインストール</h3>
+<p>
+Camera Mouse のマニュアルにはインストールに関する記載が少ないので少し詳しく説明します。
+</p><p>
+まずダウンロードした、CameraMouse2018Installer.exe をダブルクリックすると下記のように表示されます。
+</p>
+    <div style="text-align: center;"><img title="cameramouseinstall1" alt="cameramouseinstall1" src="img/cm1.png"></div>
+<p>
+ここで、 I accept the agreement を選んで Next をクリックすると下記のように表示されます。
+</p>
+    <div style="text-align: center;"><img title="cameramouseinstall1" alt="cameramouseinstall1" src="img/cm2.png"></div>
+<p>
+ここで、 Install をクリックすると下記のように表示されます。
+</p>
+    <div style="text-align: center;"><img title="cameramouseinstall1" alt="cameramouseinstall1" src="img/cm3.png"></div>
+<p>
+ここで、 Finish をクリックするとインストールは終了し、下記のように表示されます。
+</p>
+    <div style="text-align: center;"><img title="cameramouseinstall1" alt="cameramouseinstall1" src="img/cm4.png"></div>
+<p>
+ここで、 OK をクリックするとCamera Mouse が起動し、モニターにあなたの姿が表示されていることでしょう。
+</p>
+<h3>起動と試運転開始</h3>
+<p>
+ここから先は Camera Mouse のマニュアルに非常に丁寧に説明されたいます。
+</p><p>
+インストールするとデスクトップにショートカットアイコンが作られています。
+これをクリックするとCamera Mouse が起動します。あとは表示に従って試運転を進めます。
+</p><p>
+カメラで撮影した映像がモニターに表示されますので顔の一部（目頭や鼻孔など）追尾する部位をクリックして選びます。その後数秒でマウスカーソルが顔の動きに合わせて動き始めます。
+</p>
+<h3>設定</h3>
+    <div style="text-align: center;"><img title="cameramouseinstall1" alt="cameramouseinstall1" src="img/cm5.png"></div>
+
+
+<p>
+カメラ映像の下のsetting をクリックすると上のような設定画面が開きます。ここでクリックや起動停止、感度などの設定ができます。Camera Mouse のマニュアルにはこの部分は大変丁寧に説明してありますので、そちらを参照してください。使う人の動きの大きさと使用するモニタの大きさを合わせるには、感度（Sensitivity）の部分で設定しますのでここから設定作業を始めるのがよいでしょう。
+
+
+</p>
+
+<h2>２　視線入力と比較してみると</h2>
+<h3>身体のずれとキャリブレーション</h3>
+<p>
+視線入力では顔の位置が多少ずれても動かす操作はできます。ここでできたと思ってはいけません。ズレが大きくなってくると狙った位置にマウスカーソルを停止させたり、微妙に位置を動かすことが難しくなってきます。これでは実用にはなりません。この場合はキャリブレーションをやり直す必要がありますがなかなか手間がかかります。これを防ぐためにはヘッドサポートなどを使い頭の位置が大きくずれないようにすると効果的です。どのくらいならいいのかの目安はカメラとの距離や目的の用途によって一様ではありません。
+</p><p>
+言葉を変えると、頭を動かせない人の場合は上のような視線入力の弱点が出にくくなります。また反対にヘッドサポートを使っても頭部が動きがちな人では困ることがあるかもしれません。背もたれのある椅子でもあまり効果がありません。なぜなら誰にとっても同じ姿勢を長い時間続けるのは楽ではなりません。リクライニングして凹型ヘッドレストを使うくらいの準備が必要かもしれません。
+</p><p>
+一方、カメラマウスはある程度の上下左右運動が必要になります。またいくらか随意性があれば一層有望です。運動は小さくても何とかできます。上で説明した感度の調整やいざとなったらカメラを顔に近づけて物理的に感度を上げることもできます。また顔のほか手足などでも同じことできます。その際追跡マーカーとして周囲から目立つ、ほくろ、つけボクロ、シールなど効果があります。またCamera Mouse では身体の位置がずれても特に問題になりません。基本的な原理から違っているようです。
+</p><p>
+今回試したふたつの方法は一見似ていますがお使いになる人の特徴とふたつの方法の特徴をよく考慮して計画すべきと思われます。
+</p>
+<h3>コストについて</h3>
+<p>
+そして費用についてです。視線入力ではパソコン以外に、Tobii Eye Tracker 4C が約２万円、miyasuku EyeConMouseが75600円、（miyasuku EyeConLTは3240円）必要です。試してみるには安価ではありません。
+</p><p>
+Camera Mouse は、カメラが必要です。すでに内蔵されているノートパソコンがあれば追加購入の必要はありません。一般的Webカメラでも約3000円で購入できますので費用の面では安くできます。またCamera Mouse のソフトは無料で入手できます。
+</p>
+<h3>疲労について</h3>
+<p>
+最後に疲労について。ページトップの動画では似たようなことをやっているように見えます。しかし疲労の質と程度はずいぶん違い比較は容易ではありません。使う筋も使い方も使う量も違います。日常生活ではあまりやらない動作ですので特に不自由のある人の場合は通常とは異なる疲労感がありますので、その疲労への配慮と休憩のとりかたに注意が必要と思われます。この配慮のためにもこの文をお読みのみなさんは実際にやったときの疲労を体験していただきたいと思います。
+</p>
+<h2>３　まとめ</h2>
+<p>
+今回 Camera Mouse の最新版を準備して視線入力との比較体験してみました。Camera Mouse は以前のバージョンとほとんど同じ使用感を維持した上で各所に改善も加えられていました。特に解像度の高いカメラが使用できるためターゲットの追随が改善されたように感じました。
+</p><p>
+今回の視線入力と Camera Mouse の比較にはもうひとつの理由がありました。
+視線入力の取り組みを始めてから、いろいろな方から不自由なこの人に試してみたいというお話が寄せられましたがこれらのみなさんには私自身が視線入力に習熟していないことを理由におことわりしてきました。しかしTobii Eye Tracker 4Cの計測範囲におさまらないほど体動のある人に習熟を待っていただくのもおかしな話です。
+</p><p>
+いろいろやったがうまくかない、他に方法がないので話題の視線入力を試したいという方には、顔やその他の随意運動がある場合もう一つの選択肢として Camera Mouse も試していただけるように今回は紹介と視線入力との比較をしてみました。
+</p><p>
+これによって、甘い見込みと準備不足練習不足でお試しをやってうまくいかずがっかりしてしまう人が少なくなることを期待しています。
+</p>
+<h2>参考URL</h2>
+<p>Camera Mouse 関係
+<ul>
+  <li>Camera Mouse トップページ<br>
+<a target="_blank" href="http://www.cameramouse.org/">http://www.cameramouse.org/</a></li>
+</ul>
+
+<p>使用したWebカメラ関係
+<ul>
+  <li>Logicool HD Webcam C270<br>
+<a target="_blank" href="https://www.logicool.co.jp/ja-jp/product/hd-webcam-c270">https://www.logicool.co.jp/ja-jp/product/hd-webcam-c270</a></li>
+
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/12/14　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
