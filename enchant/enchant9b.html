@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>コミュニケーションエイド　視線入力をやってわかったこと　富山県リハビリ病院</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+span.samples {font-size: small; }
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>視線入力をやってわかったこと</h1>
+    <div style="text-align: center;"><img title="tobiiのアイコン" alt="tobiiのアイコン" src="img/f1.png"></div>
+<p align="center">
+これが表示されなくなって困りました
+</p>
+<h2>０　はじめに</h2>
+<p>
+約半年前にtobii4Cを使用した視線入力に取り組みはじめました。この間いろいろと試してきました。ゲームを主な用途として商品化されたtobii4Cの基本的機能は非常に高く、また価格を考慮すれば従来の製品群とは全く別物と考えるべきものであることもわかりました。またmiyasukuのソフトウエアの完成度も高く、機能もよく練られていることが確認できました。
+</p><p>
+しかし万事順調だったわけではありません。いろいろなトラブルがありました。また疾患や症状によっては苦労するかもと思われるところもありました。決して『買って使えば何とかなる』ものではありません。使いこなすためにはそれなりの技能も必要な様です。
+</p><p>
+今回は半年間にわかったことやわからなかったことなどを簡単にまとめ、これから取り組みを開始する人たちの参考になるかもしれないことを書いてみたいと思います。
+</p>
+<h2>１　ドライバーのトラブル</h2>
+<p>
+パソコンを起動してもtobii4Cが動かない。左右の赤いランプがちらちらと点滅するはずなのに何ともならない。タスクトレイを見ても、目玉マークのアイコン（上図参照）が表示されない。このようになるともう視線入力は一切動きません。何回か再起動してもだめ。ところが次に日に起動すると何事もなかったように起動するのです。
+</p><p>
+このようなトラブルに何回か遭遇しました。とくに見学者が来ている時によくこれが発生したように思えるのは気のせいでしょうか？（冷や汗をかきましたが、多分気のせいでしょう）
+</p><p>
+Windowsのアップデートやtobii4Cのドライバのアップデートに高い確率でこれが起きていたのはまちがいないと思います。（これも偶然でしょうか）
+</p><p>
+miyasukuのサイトでは『Tobii デバイスドライバ完全削除と再インストール手順』という大変珍しい内容の資料を配布しています。orihimeのサイトにも類似の記事があるところみると、この部分がまだまだなのかもしれません。実際にこの作業でトラブルは解決します。しかしこのようなトラブルはまだ続くとも予想しています。
+</p><p>
+さらに、『Tobii デバイスドライバ完全削除と再インストール手順』の内容にはWindowsのレジストリを操作する部分が含まれます。ご存じの方も多いとは思いますが、『自信がないなら手を出すな、自己責任のレジストリ』です。
+</p><p>
+当面、視線入力を継続的にやるためにはこの部分を自分でやるか、レジストリ操作に慣れた助っ人を探す必要があるでしょう。
+</p>
+<h2>２　キャリブレーション</h2>
+<p>
+視線入力では装置と使う人間との相対位置を厳密に計測する必要があります。これがキャリブレーションです。身体の位置が2,3センチずれても視線入力がうまくいかなくなるときがあります。例えばマウスカーソルは上下左右に動かせるが、狙った位置にぴたりと来ない。といった具合です。こうなるとキャリブレーション作業をやり直すことになります。
+</p><p>
+姿勢が不安定な人では、頻回なキャリブレーションが必要になることもあります。この問題はヘッドサポートを使えば改善するかもしれません。また机の上に両肘をついて姿勢を安定させるといくらか改善することもあります。しかしこのようにするとおしりが痛くなることがよくあります。疾患によっては動きがきわめて少ないこともあります。このような場合はこの問題は少なくなります。
+</p>
+<h2>３　クリック操作</h2>
+<p>
+miyasukuのクリック操作にはいくつかの方法があります。しかし随意運動でのスイッチ操作が可能なら外部スイッチによるクリック入力をつよくお勧めします。断然楽です。
+</p><p>
+これが困難な場合は注視によるクリックにトライすることになります。ただしこれはこれまで余り経験したことのない種類の目の疲労をもたらすことがあります。ここでいう注視とは、一定時間一定範囲に眼球の動きを留めることを指します。しかし人間に限らず多くの動物には、一点を見ている時にも眼球が微妙に動く、『固視微動』という現象があります。固視微動に逆らう注視は、違った意味で疲労の原因になります。
+</p><p>
+クリックの練習で疲労を見ながら使う人に合わせて設定する必要があります。また小さいこどもさんでは、『エンチャントでおもちゃ』のようなものも役に立つかもしれません。
+</p>
+<h2>４　マウスカーソルの操作</h2>
+<p>
+視線入力ではマウスカーソルを動かすのは比較的簡単です。しかし狙ったところに止めるのは簡単ではありません。練習と設定が重要です。
+</p><p>
+『エンチャント文字盤』では、画面全面、二分割、四分割から50音文字盤まで大小様々な形状の文字盤がありますので練習と設定に利用できます。
+</p>
+    <div style="text-align: center;"><img title="図miyasukuEyeConMouseのズームモード" alt="miyasukuEyeConMouseのズームモード" src="img/f2.png"></div>
+<p align="center">
+miyasukuEyeConMouseのズームモード<br>一回目のクリックで周辺が拡大され二回目のクリックで確定する
+</p>
+<p>
+またmiyasukuのEyeConMouse、EyeConLTのズームモードやルーペモードを利用すると細かな位置合わせを助けてくれます。ただしズームモードはクリック操作2倍必要になります。またズームモードでは拡大された像で周囲が把握できなくなり使いにくいと感じることもあるかもしれません。
+</p>
+<h2>５　まとめ</h2>
+<p>
+今回、半年間の視線入力の試運転でわかったことをまとめてみました。全てが中途半端な内容ですが、これでも手探りで取り組んでいる人の助けにはいくらかなるのではないと思います。
+</p><p>
+またツールとしての視線入力が熟成してくると次はコンテンツが必要になってきます。おとなのみなさんにはそれぞれ豊富なコンテンツがある様ですが、こどもさん向けはかなり少ないようです。こちらも並行して進めていきたいと考えています。
+</p>
+
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>miyasuku<br>
+<a target="_blank" href="https://www.miyasuku.com/">https://www.miyasuku.com/</a></li>
+  <li>オリィ研究所<br>
+<a target="_blank" href="http://orihime.orylab.com/eye/">http://orihime.orylab.com/eye/</a></li>
+  <li>固視微動とは何ですか？（NTT技術ジャーナル）<br>
+<a target="_blank" href="http://www.ntt.co.jp/journal/0410/files/jn200410060.pdf">http://www.ntt.co.jp/journal/0410/files/jn200410060.pdf</a></li>
+  <li>エンチャントでおもちゃ<br>
+<a target="_blank" href="http://www.toyama-reha.or.jp/techno/engineering/enchantoy/whyenchantoy.html">http://www.toyama-reha.or.jp/techno/engineering/enchantoy/whyenchantoy.html</a></li>
+  <li>エンチャント文字盤<br>
+<a target="_blank" href="http://www.toyama-reha.or.jp/techno/engineering/enchant/enchant0.html">http://www.toyama-reha.or.jp/techno/engineering/enchant/enchant0.html</a></li>
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2018/12/21　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
