@@ -26,7 +26,7 @@ var path = `/enchant/sw-01`;
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('enchant01').then(cache => {
+    caches.open('enchant02').then(cache => {
       return cache.addAll([
         `/`,
         path + `/index.html?timestamp=${timeStamp}`,
