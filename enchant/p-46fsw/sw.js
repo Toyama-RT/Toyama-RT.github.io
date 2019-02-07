@@ -22,7 +22,7 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'p-46fsw';
-const CACHE_NAME = prefix + '00';
+const CACHE_NAME = prefix + '01';
 
 var path = `/enchant/p-46fsw`;
 
@@ -59,6 +59,8 @@ self.addEventListener('install', e => {
         path + `/kotoba6.mp3?timestamp=${timeStamp}`,
         path + `/kotoba7.gif?timestamp=${timeStamp}`,
         path + `/kotoba7.mp3?timestamp=${timeStamp}`,
+        path + `/kotoba8.gif?timestamp=${timeStamp}`,
+        path + `/kotoba8.mp3?timestamp=${timeStamp}`,
         path + `/arrow1.gif?timestamp=${timeStamp}`,
         path + `/arrow2.gif?timestamp=${timeStamp}`,
       ])
