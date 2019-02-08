@@ -146,7 +146,8 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache.map(url => new Request(url, {credentials: 'same-origin'})));
+        return cache.addAll(urlsToCache.map(url => new Request(url, {credentials: 'same-origin'})))
+      .then(() => self.skipWaiting());
       })
   );
 });
