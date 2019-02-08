@@ -22,7 +22,7 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'p-44fsw1';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
 var path = `/enchant/p-44fsw1`;
   let timeStamp = Date.now();
@@ -114,7 +114,7 @@ var urlsToCache = [
         path + `/snd/nu.mp3?timestamp=${timeStamp}`,
         path + `/snd/ne.mp3?timestamp=${timeStamp}`,
         path + `/snd/no.mp3?timestamp=${timeStamp}`,
-/*        path + `/snd/ha.mp3?timestamp=${timeStamp}`,
+        path + `/snd/ha.mp3?timestamp=${timeStamp}`,
         path + `/snd/hi.mp3?timestamp=${timeStamp}`,
         path + `/snd/hu.mp3?timestamp=${timeStamp}`,
         path + `/snd/he.mp3?timestamp=${timeStamp}`,
@@ -138,7 +138,7 @@ var urlsToCache = [
         path + `/snd/wo.mp3?timestamp=${timeStamp}`,
         path + `/snd/nn.mp3?timestamp=${timeStamp}`,
         path + `/snd/zenbukesu.mp3?timestamp=${timeStamp}`,
-        path + `/snd/gameover.mp3?timestamp=${timeStamp}`*/
+        path + `/snd/gameover.mp3?timestamp=${timeStamp}`
 ];
 self.addEventListener('install', function(event) {
   // Perform install steps
