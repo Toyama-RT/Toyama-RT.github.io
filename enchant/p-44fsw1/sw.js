@@ -52,7 +52,7 @@ var urlsToCache = [
         path + `/img/ku.png?timestamp=${timeStamp}`,
         path + `/img/ke.png?timestamp=${timeStamp}`,
         path + `/img/ko.png?timestamp=${timeStamp}`,
-        path + `/img/sa.png?timestamp=${timeStamp}`,
+/*        path + `/img/sa.png?timestamp=${timeStamp}`,
         path + `/img/si.png?timestamp=${timeStamp}`,
         path + `/img/su.png?timestamp=${timeStamp}`,
         path + `/img/se.png?timestamp=${timeStamp}`,
@@ -138,7 +138,7 @@ var urlsToCache = [
         path + `/snd/wo.mp3?timestamp=${timeStamp}`,
         path + `/snd/nn.mp3?timestamp=${timeStamp}`,
         path + `/snd/zenbukesu.mp3?timestamp=${timeStamp}`,
-        path + `/snd/gameover.mp3?timestamp=${timeStamp}`
+        path + `/snd/gameover.mp3?timestamp=${timeStamp}`*/
 ];
 self.addEventListener('install', function(event) {
   // Perform install steps
