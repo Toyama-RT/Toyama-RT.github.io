@@ -22,9 +22,9 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'p-44fsw';
-const CACHE_NAME = prefix + '00';
+const CACHE_NAME = prefix + '01';
 
-var path = `/enchant/p-52dsw`;
+var path = `/enchant/p-44fsw`;
 
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
