@@ -2585,7 +2585,7 @@ window.onload = function() {
         scene.addChild(wordsu);
         scene.addChild(wordse);
         scene.addChild(wordso);
-        scene.addChild(wordtalk);
+        //scene.addChild(wordtalk);
         scene.addChild(word7);
 
         scene.addChild(wordta); // た行
