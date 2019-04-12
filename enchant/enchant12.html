@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+    <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <title>エンチャントLCの開発</title>
+    <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+
+pre {
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+
+.under1 {
+  border-bottom: solid 2px red;
+}
+span.samples {font-size: small; }
+-->
+</style>
+
+ </head>
+  <body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78" /></a></font></font></font></p>
+
+
+    <h1>エンチャントLCの開発</h1>
+    <div style="text-align: center;"><img title="エンチャントLC　あいさつ文字盤" alt="エンチャントLC　あいさつ文字盤" src="img/lc3.png"></div>
+<p align="center">
+エンチャントLC　あいさつ文字盤
+</p>
+<h2>０　はじめに</h2>
+<p>
+先月、難病の方のコミュニケーション支援の研修会でお話する機会をいただきました。お世話していただいた皆さんにお礼申し上げます。さてそこでお話しした内容につきましてはまた改めてご紹介したいと思いますので今回は省略します。
+</p><p>
+会場には富山県内外から数十人の人たちが来られました。主催者の方によると、訓練士さんや看護師さんが半分、福祉関係介護関係の方とご本人とご家族でのこりの半分ということでした。週末二日間の研修会というこで参加した皆さんはコミュニケーションと支援に関心をお持ちの方々でした。
+</p><p>
+そんな中で伝の心やレッツチャットのお話の途中で会場の皆さんにお聞きしてみました。
+</p><p>
+｢皆さんの職場で、自分や患者さんの練習用の伝の心やレッツチャットなどの道具をお持ちでしょうか？　うちにはあるという方は手を上げてください｣
+</p><p>
+ざわざわ　きょろきょろ　その後　沈黙。。
+</p><p>
+ああ　やっぱり　だれも手が上がりません
+</p><p>
+これほど予想通りになるのは久しぶりでした。
+</p>
+<h2>１　重度障害者用意思伝達装置と難病</h2>
+<p>
+<a href="../how_to_make/How_to_make_1.html" target="_blank">こちらのページ</a>
+にも書きましたが、伝の心が発表された1997年ころの何年かはALSという病気についてマスコミで取り上げられることもよくあり、その病状とともに伝の心などの意思伝達装置も紹介されました。そして患者さんにこの道具を使ってもらえるようにと様々な人々が活動しました。たいへん高価な道具だったのですが実に多くの患者さんのもとに届けられました。
+</p><p>
+何年かあとにより簡便な使い方のレッツチャットも発表され伝の心とは異なる人々に喜ばれました。
+</p><p>
+この調子でいけば、多様な患者さんのために様々な製品が次々と出てくるのだろうと予想しましたがいろいろな事情でそうなりませんでした。それどころか支援に従事する人のところにも道具として備わっていないのは、さきにお話ししたとおりです。まるで教習車のない自動車学校のようです。
+</p><p>
+当院では発売当初から数年おきに伝の心とレッツチャットを購入し、患者さんの訓練に使用していましたが、最近はパソコンを希望される患者さんが多くなったため新規購入はしばらく中止し、古い伝の心とレッツチャットをつかっています。
+</p><p>
+こんな具合に伝の心からもう20年がたってしまいました。
+</p>
+<h2>２　そして現在</h2>
+<p>
+この間、社会はずいぶん変わりました。まずパソコンやタブレットやスマホがたいへん普及しました。小学校でパソコンを教え、中学高校生は自分のスマホを持ち、使いすぎを注意され親から取り上げられようものならさあたいへん！こんなことになるのが普通です。ゲーム、動画でのスマホの通信費の節約のためwifi（無線LAN）が家庭にどんどん入りました。あなたもwifiの設定をするたびに町内の電波が増えているのに気がつくことでしょう。
+</p><p>
+人も変わり道具も変わりました。コミュニケーションエイドはどう変わるのでしょうか。
+</p>
+<h2>３　エンチャントLC</h2>
+<p>
+もしすでに手元にパソコンやタブレットやスマホがあり、必要なコミュニケーションエイドをインターネット経由で使うことができるとなにがおきるでしょう。
+</p><p>
+<ul>
+<li>コミュニケーションエイドをもってはるばる患者さんのお宅を訪問したけれど気に入ってもらえず話はとりやめになった。</li>
+<li>コミュニケーションエイドのレンタル品が届いたが、体調をくずして使えず開封せずにそのまま送り返した。</li>
+<li>次のレンタルでは体調がよかった、レンタル期間がたってもうまくできなかった。</li>
+</ul>
+</p><p>
+おそらくこのような話は少なくすることができるでしょう。
+</p><p>
+このようなことを考えながら実用性の高いコミュニケーションエイドを作りました。
+</p><p>
+<h3>概　要</h3>
+</p><p>
+名称　エンチャントLC
+
+機能　インターネット配信<br>
+文字盤切り替え（ひらがな　カタカナ　あいさつ　からだの4種）<br>
+文書　10の文書を切り替え　使用機械に保存（オンライン保存ではない）<br>
+読み上げ機能　作成した文を読みあげる機能付き<br>
+対応ブラウザ　win10はEdgeまたはChrome、LinuxはChrome、AndroidはChrome をお使いください。ios、imac　では読み上げができません。ブラウザfirefoxでは日本語読み上げが不十分です。
+</p><p>
+<h3>使い方</h3>
+<p>
+下の『エンチャントLC』のリンクをクリックすると起動します。<br>
+文字をクリック（またはタップ）すると、読み上げ、文字列を表示します。<br>
+左上の顔マークをクリックすると、文字列を読み上げます。<br>
+そのしたの文マークをクリックすると文章が切り替わります。画面左上に文章番号が表示されます。<br>
+その右をクリックすると文字盤が切り替わります。<br>
+後は自動です。<br>
+</p>
+<p>
+<a href="./p-44lc1a/index.html" target="_blank">エンチャントLC</a>
+</p>
+<h2>４　まとめ</h2>
+<p>
+今回はこれまで積み重ねてきたものを応用して、オーソドックスなコミュニケーションエイドを作ってみました。いかがでしょうか。
+</p><p>
+ゲーム作成のための、 enchant.js と JavaScript をつかうとこのようなことができるのです。またインターネットを利用するといろいろなコストを有効に使うことができるようになります。また情報機器の新しい利用方法として社会コストの節約もできるかもしれません。コミュニケーションエイドに何十万円もかけなくてもいい時代になったのだと思います。
+</p><p>
+これによりより幅広いコミュニケーション支援につながることを期待しています。
+</p><p>
+ここまで読んで　『手が不自由でマウス操作できないんです』　って言う人がいっぱいいるのかなあ（←いやな予感）
+</p>
+
+
+
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>意思伝達装置　レッツ・チャット<br>
+<a target="_blank" href="http://sumai.panasonic.jp/agefree/products/communication/letschat/">http://sumai.panasonic.jp/agefree/products/communication/letschat/</a></li>
+  <li>enchant.js <br>
+<a target="_blank" href="http://enchantjs.com/ja/">http://enchantjs.com/ja/</a></li>
+  <li>JavaScript<br>
+<a target="_blank" href="https://ja.wikipedia.org/wiki/JavaScript">https://ja.wikipedia.org/wiki/JavaScript</a></li>
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">
+2019/4/12　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+  <p align="center">研究企画課リハ工学科にもどる</p>
+  </a>
+
+  </body>
+</html>
