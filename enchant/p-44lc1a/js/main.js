@@ -262,7 +262,7 @@ window.onload = function() {
 
 
   //表示フレーム設定
-    game_.fps = 10; // frames per second: 進行スピード設定　大きくするとcpu負荷、バッテリ消費大　注意
+    game_.fps = 5; // frames per second: 進行スピード設定　大きくするとcpu負荷、バッテリ消費大　注意
 
   //web speech api tts 音声の設定と起動時の音声発声設定
             var synthes = new SpeechSynthesisUtterance();
