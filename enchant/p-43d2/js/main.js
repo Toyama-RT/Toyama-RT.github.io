@@ -51,7 +51,8 @@ window.onload = function() {
 */
 
     game_.fps = 30; // frames(フレーム) per(毎) second(秒): 進行スピードを設定しています。
-    game_.preload('kotoba1.gif', 'kotoba1.mp3', 'kotoba2.gif', 'kotoba2.mp3', 'kotoba3.gif', 'kotoba3.mp3', 'kotoba4.gif', 'kotoba4.mp3', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
+    //game_.preload('kotoba1.gif', 'kotoba1.mp3', 'kotoba2.gif', 'kotoba2.mp3', 'kotoba3.gif', 'kotoba3.mp3', 'kotoba4.gif', 'kotoba4.mp3', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
+    game_.preload('kotoba1.gif', 'kotoba1.mp3', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
 
     game_.onload = function() { // 準備が整ったらメインの処理を実行します。
         game_.assets['gameover.mp3'].play();
@@ -59,20 +60,20 @@ window.onload = function() {
 
 	//表示する画像の設定
         var word1 = new Sprite(200, 50);  // word1というスプライト(操作可能な画像)を準備すると同時に、スプライトの表示される領域の大きさを設定しています。
-        var word2 = new Sprite(200, 50);  
-        var word3 = new Sprite(200, 50);  // word3という　以下同文。
-        var word4 = new Sprite(200, 50);  // word4という　以下同文。
+        //var word2 = new Sprite(200, 50);  
+        //var word3 = new Sprite(200, 50);  // word3という　以下同文。
+        //var word4 = new Sprite(200, 50);  // word4という　以下同文。
 
         word1.image = game_.assets['kotoba1.gif']; // word1にあらかじめロードしておいた画像を適用します。
-        word2.image = game_.assets['kotoba2.gif'];  // word2に　以下同文。
-        word3.image = game_.assets['kotoba3.gif'];   // word3に　以下同文。
-        word4.image = game_.assets['kotoba4.gif']; // word4に　以下同文。
+        //word2.image = game_.assets['kotoba2.gif'];  // word2に　以下同文。
+        //word3.image = game_.assets['kotoba3.gif'];   // word3に　以下同文。
+        //word4.image = game_.assets['kotoba4.gif']; // word4に　以下同文。
 
 	word1.x =  wiw * 0.5 -100; // word1の横位置を設定します。　左から幅の50%
         word1.y =  wih * 0.15; // word1の縦位置を設定します。　上から高さの15%
 	word1.scaleX = scx;   // 幅
 	word1.scaleY = scy; 　　// 高さ
-	word2.x =  wiw * 0.5 - 100; // word2の横位置を設定します。
+/*	word2.x =  wiw * 0.5 - 100; // word2の横位置を設定します。
         word2.y =  wih * 0.3;  // word2の縦位置を設定します。
 	word2.scaleX = scx;   // 幅
 	word2.scaleY = scy; 　　// 高さ
@@ -84,11 +85,11 @@ window.onload = function() {
         word4.y =  wih * 0.6;  // word4の縦位置を設定します。
 	word4.scaleX = scx;   // 幅
 	word4.scaleY = scy; 　　// 高さ
-
+*/
         game_.rootScene.addChild(word1); // シーンに画像を表示させます。
-        game_.rootScene.addChild(word2); // 同上
-        game_.rootScene.addChild(word3); // 同上
-        game_.rootScene.addChild(word4); // 同上
+//        game_.rootScene.addChild(word2); // 同上
+//        game_.rootScene.addChild(word3); // 同上
+//        game_.rootScene.addChild(word4); // 同上
 
         game_.rootScene.backgroundColor  = '#7ecef4'; // 動作部分の背景色の設定(16進数)。
 
@@ -100,7 +101,7 @@ window.onload = function() {
                 //word1.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);　//元に戻る
                 game_.assets['kotoba1.mp3'].clone().play(); //言葉を発声する
             });     
-            word2.addEventListener(Event.TOUCH_START, function(e) {  // word2をタッチしたら
+/*            word2.addEventListener(Event.TOUCH_START, function(e) {  // word2をタッチしたら
 		//word2.tl.scaleBy( 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
                 //word2.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
 		game_.assets['kotoba2.mp3'].clone().play(); //言葉を発声する
@@ -115,7 +116,7 @@ window.onload = function() {
                 //word4.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
 		game_.assets['kotoba4.mp3'].clone().play(); //言葉を発声する
             });
-
+*/
     }
     game_.start(); // スタートさせます
 
