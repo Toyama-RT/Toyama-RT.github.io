@@ -34,7 +34,7 @@ window.onload = function() {
     game_.preload('chara1.gif', 'se2.wav', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
 
     game_.onload = function() { // ゲームの準備が整ったらメインの処理を実行します。
-        game_.assets['gameover.mp3'].play();
+        //game_.assets['gameover.mp3'].play();
 	//クマの設定
         var kuma = new Sprite(32, 32);  // クマというスプライト(操作可能な画像)を準備すると同時に、スプライトの表示される領域の大きさを設定しています。
         kuma.image = game_.assets['chara1.gif']; // クマにあらかじめロードしておいた画像を適用します。
