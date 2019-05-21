@@ -52,10 +52,10 @@ window.onload = function() {
 
     game_.fps = 30; // frames(フレーム) per(毎) second(秒): 進行スピードを設定しています。
     //game_.preload('kotoba1.gif', 'kotoba1.mp3', 'kotoba2.gif', 'kotoba2.mp3', 'kotoba3.gif', 'kotoba3.mp3', 'kotoba4.gif', 'kotoba4.mp3', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
-    game_.preload('kotoba1.gif', 'kotoba1.mp3', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
+    game_.preload('kotoba1.gif', 'kotoba1.mp3', 'jump.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
 
     game_.onload = function() { // 準備が整ったらメインの処理を実行します。
-        game_.assets['gameover.mp3'].play();
+        //game_.assets['gameover.mp3'].play();
 
 
 	//表示する画像の設定
