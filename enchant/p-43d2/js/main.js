@@ -35,7 +35,7 @@ window.onload = function() {
     var wih = window.innerHeight; // モニター表示範囲高
     var scx = wiw * 5.5 / 1280; // 文字キー幅の係数
     var scy = wih * 2.5 / 1024;　// 文字キー高さ係数
-/*     // 表示画面の大きさを表示する機能
+     // 表示画面の大きさを表示する機能
 　　　　　　　　var title1 = new Label('');
             title1.x = 0;
             title1.y = 10;
@@ -48,7 +48,7 @@ window.onload = function() {
             game_.rootScene.addChild(title2);
             title2.text = window.innerWidth;
             //title2.text = game_.width;
-*/
+
 
     game_.fps = 30; // frames(フレーム) per(毎) second(秒): 進行スピードを設定しています。
     //game_.preload('kotoba1.gif', 'kotoba1.mp3', 'kotoba2.gif', 'kotoba2.mp3', 'kotoba3.gif', 'kotoba3.mp3', 'kotoba4.gif', 'kotoba4.mp3', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
