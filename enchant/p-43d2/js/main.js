@@ -69,10 +69,10 @@ window.onload = function() {
         //word3.image = game_.assets['kotoba3.gif'];   // word3に　以下同文。
         //word4.image = game_.assets['kotoba4.gif']; // word4に　以下同文。
 
-	word1.x =  wiw * 0.5 -100; // word1の横位置を設定します。　左から幅の50%
+	word1.x =  wiw * 0.1 -100; // word1の横位置を設定します。　左から幅の50%
         word1.y =  wih * 0.15; // word1の縦位置を設定します。　上から高さの15%
-	word1.scaleX = scx;   // 幅
-	word1.scaleY = scy; 　　// 高さ
+	word1.scaleX = scx/5;   // 幅
+	word1.scaleY = scy/5; 　　// 高さ
 /*	word2.x =  wiw * 0.5 - 100; // word2の横位置を設定します。
         word2.y =  wih * 0.3;  // word2の縦位置を設定します。
 	word2.scaleX = scx;   // 幅
