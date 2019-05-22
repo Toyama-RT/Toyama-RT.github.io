@@ -31,7 +31,7 @@ window.onload = function() {
 
     var game_ = new Game(320, 320); // ゲーム本体を準備すると同時に、表示される領域の大きさを設定しています。
     game_.fps = 12; // frames(フレーム) per(毎) second(秒): ゲームの進行スピードを設定しています。
-    game_.preload('chara1.gif', 'se2.wav', 'jump.mp3', 'gameover.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
+    game_.preload('chara1.gif', 'se2.wav', 'kotoba1.mp3'); // pre(前)-load(読み込み): ゲームに使う素材を予め読み込んでおきます。
 
     game_.onload = function() { // ゲームの準備が整ったらメインの処理を実行します。
         //game_.assets['gameover.mp3'].play();
@@ -83,7 +83,7 @@ window.onload = function() {
 		kuma.scaleY = 2;   // 高さは変更しない
 
             }*/
-		game_.assets['jump.mp3'].clone().play(); //クリックすると音がなる
+		game_.assets['kotoba1.mp3'].clone().play(); //クリックすると音がなる
 		modev ++;
 		if (modev > 3){
 		modev = 0;
