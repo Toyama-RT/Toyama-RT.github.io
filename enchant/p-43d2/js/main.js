@@ -90,14 +90,14 @@ window.onload = function() {
 //        game_.rootScene.addChild(word2); // 同上
 //        game_.rootScene.addChild(word3); // 同上
 //        game_.rootScene.addChild(word4); // 同上
-        game_.rootScene.addChild(title1); // シーンに画像を表示させます。
+        //game_.rootScene.addChild(title1); // シーンに画像を表示させます。
 
         game_.rootScene.backgroundColor  = '#7ecef4'; // 動作部分の背景色の設定(16進数)。
 
 
         // シーンに「タッチイベント」を追加します。
 
-            word1.addEventListener(Event.TOUCH_START, function(e) {  // word1をタッチしたら
+            game_.rootScene.addEventListener(Event.TOUCH_START, function(e) {  // word1をタッチしたら
 		//word1.tl.scaleBy( 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);　　//90%の大きさになり
                 //word1.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);　//元に戻る
                 game_.assets['kotoba1.mp3'].clone().play(); //言葉を発声する
