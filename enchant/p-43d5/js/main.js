@@ -97,11 +97,34 @@ window.onload = function() {
         // シーンに「タッチイベント」を追加します。
 
             //word1.addEventListener(Event.TOUCH_START, function(e) {  // word1をタッチしたら
-            word1.addEventListener('click', function(e) {  		
+            game_.rootScene.addEventListener(Event.TOUCH_START, function(e) {
             //word1.tl.scaleBy( 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);　　//90%の大きさになり
                 //word1.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);　//元に戻る
+
+    // タッチした位置を取得
+    var x = e.localX;
+    var y = e.localY;
+
+　　　　　　　　var title3 = new Label('');
+            title1.x = 50;
+            title1.y = 10;
+            game_.rootScene.addChild(title3);
+            title1.text = x;
+            //title1.text = game_.width;
+　　　　　　　　var title4 = new Label('');
+            title2.x = 50;
+            title2.y = 30;
+            game_.rootScene.addChild(title4);
+            title2.text = y;
+            //title2.text = game_.width;
+
+if(( x > 83 && x < 147) &&  ( y > 104 && y < 166)) {
+ 
                 game_.assets['kotoba1.mp3'].clone().play(); //言葉を発声する
-            }, false);     
+ 
+}
+
+            });     
 /*            word2.addEventListener(Event.TOUCH_START, function(e) {  // word2をタッチしたら
 		//word2.tl.scaleBy( 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
                 //word2.tl.scaleBy( 1 / 0.9, 3, enchant.Easing.ELASTIC_EASEINOUT);
