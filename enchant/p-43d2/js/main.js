@@ -27,8 +27,8 @@ window.onload = function() {
         }
     });      // 行の終わりには、;(セミコロン)をつけます。
 
-    var game_ = new Game(window.innerWidth  , window.innerHeight  ); // 本体を準備すると同時に、表示される領域の大きさを設定しています。
-    //var game_ = new Game( 1000  , 1000  ); // 本体を準備すると同時に、表示される領域の大きさを設定しています。
+    //var game_ = new Game(window.innerWidth  , window.innerHeight  ); // 本体を準備すると同時に、表示される領域の大きさを設定しています。
+    var game_ = new Game( 320  , 320  ); // 本体を準備すると同時に、表示される領域の大きさを設定しています。
 
 
     var wiw = window.innerWidth;  //モニター表示範囲幅
@@ -90,6 +90,7 @@ window.onload = function() {
 //        game_.rootScene.addChild(word2); // 同上
 //        game_.rootScene.addChild(word3); // 同上
 //        game_.rootScene.addChild(word4); // 同上
+        game_.rootScene.addChild(title1); // シーンに画像を表示させます。
 
         game_.rootScene.backgroundColor  = '#7ecef4'; // 動作部分の背景色の設定(16進数)。
 
