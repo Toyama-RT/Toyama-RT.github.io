@@ -1425,6 +1425,7 @@ function setCursorend() {
    var len = text1.value.length;
       text1.focus();
       text1.setSelectionRange(len, len);
+document.activeElement.blur();//Androidでキーボード出現を止めるためフォーカスを外す
 }
 
 function setCursorend2() {
@@ -1432,6 +1433,7 @@ function setCursorend2() {
    var len = text1.value.length;
       text2.focus();
       text2.setSelectionRange(len, len);
+document.activeElement.blur();//Androidでキーボード出現を止めるためフォーカスを外す
 }
 
     function Bunnum(param) {
