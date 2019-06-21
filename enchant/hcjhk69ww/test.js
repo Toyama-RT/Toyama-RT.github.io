@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //テキストボックスクリック時のカーソル出現＞Androidでのキーボード出現防止
      var obj = document.getElementById('text1');
 	 obj.addEventListener("click", function() {
-               setCursorend();
+               setCursorendx();
      }, false);
 //ボタンクリック時の動作
 //ひらがな文字盤
@@ -1157,6 +1157,10 @@ function setCursorend() {
    var len = text1.value.length;
       text1.focus();
       text1.setSelectionRange(len, len);
+document.activeElement.blur();//Androidでキーボード出現を止めるためフォーカスを外す
+}
+
+function setCursorendx() {
 document.activeElement.blur();//Androidでキーボード出現を止めるためフォーカスを外す
 }
 
