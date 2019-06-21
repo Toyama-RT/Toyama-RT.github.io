@@ -190,7 +190,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 //文書切り替えボタンを表示文番号にあわせて変更する
     Bunnum(storage0);
-
+//テキストボックスクリック時のカーソル出現＞Androidでのキーボード出現防止
+     var obj = document.getElementById('text1');
+	 obj.addEventListener("click", function() {
+               setCursorend();
+     }, false);
 //ボタンクリック時の動作
 //ひらがな文字盤
    // 一列目
