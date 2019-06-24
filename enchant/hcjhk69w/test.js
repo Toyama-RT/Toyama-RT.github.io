@@ -748,9 +748,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('yo');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/yo.mp3').play();
-      if (CBoard0 == 0 || CBoard0 == 1 ) {
+      if (CBoard0 == 0 ) {
       text1.value = text1.value + "よ";
-      } else if (CBoard0 == 2 ){
+      } else if (CBoard0 == 1 ){
       text1.value = text1.value + "ヨ";
       }
       setCursorend();
