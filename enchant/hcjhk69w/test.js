@@ -193,6 +193,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //テキストボックスクリック時のカーソル出現＞Androidでのキーボード出現防止
      var obj = document.getElementById('text1');
 	 obj.addEventListener("click", function() {
+      new Audio('./snd/space.mp3').play();
+      text1.value = text1.value + "S";
                setCursorend();
      }, false);
 //ボタンクリック時の動作
