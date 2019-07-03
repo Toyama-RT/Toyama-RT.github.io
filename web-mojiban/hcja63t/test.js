@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                setCursorend();
      }, false);
 
+      new Audio('./snd/a.mp3').play();
+
+
+
+
+
 //ボタンクリック時の動作
    // 一列目
 //     var obj = document.getElementById('talk');
