@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                setCursorend();
      }, false);
 
-      new Audio('./snd/a.mp3').play();
+      //new Audio('./snd/a.mp3').play();
 
 
 
