@@ -27,8 +27,6 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 
 
-
-
 //ボタンクリック時の動作
    // 一列目
 //     var obj = document.getElementById('talk');
