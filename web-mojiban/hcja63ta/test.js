@@ -148,7 +148,7 @@ var path = `/web-mojiban/hcja63ta`;
    // あ行
      var obj = document.getElementById('a');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/a.mp3').play();
+      new Audio(path + '/snd/a.mp3').play();
       text1.value = text1.value + "あ";
       setCursorend();
      }, false);
@@ -179,7 +179,7 @@ var path = `/web-mojiban/hcja63ta`;
    // か行
      var obj = document.getElementById('ka');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/ka.mp3').play();
+      new Audio(path + '/snd/ka.mp3').play();
       text1.value = text1.value + "か";
       setCursorend();
      }, false);
@@ -210,7 +210,7 @@ var path = `/web-mojiban/hcja63ta`;
    // さ行
      var obj = document.getElementById('sa');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/sa.mp3').play();
+      new Audio(path + '/snd/sa.mp3').play();
       text1.value = text1.value + "さ";
       setCursorend();
      }, false);
@@ -241,7 +241,7 @@ var path = `/web-mojiban/hcja63ta`;
    // た行
      var obj = document.getElementById('ta');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/ta.mp3').play();
+      new Audio(path + '/snd/ta.mp3').play();
       text1.value = text1.value + "た";
       setCursorend();
      }, false);
@@ -272,7 +272,7 @@ var path = `/web-mojiban/hcja63ta`;
    // な行
      var obj = document.getElementById('na');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/na.mp3').play();
+      new Audio(path + '/snd/na.mp3').play();
       text1.value = text1.value + "な";
       setCursorend();
      }, false);
@@ -303,7 +303,7 @@ var path = `/web-mojiban/hcja63ta`;
    // は行
      var obj = document.getElementById('ha');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/ha.mp3').play();
+      new Audio(path + '/snd/ha.mp3').play();
       text1.value = text1.value + "は";
       setCursorend();
      }, false);
@@ -334,7 +334,7 @@ var path = `/web-mojiban/hcja63ta`;
    // ま行
      var obj = document.getElementById('ma');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/ma.mp3').play();
+      new Audio(path + '/snd/ma.mp3').play();
       text1.value = text1.value + "ま";
       setCursorend();
      }, false);
@@ -365,7 +365,7 @@ var path = `/web-mojiban/hcja63ta`;
    // や行
      var obj = document.getElementById('ya');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/ya.mp3').play();
+      new Audio(path + '/snd/ya.mp3').play();
       text1.value = text1.value + "や";
       setCursorend();
      }, false);
@@ -540,7 +540,7 @@ var path = `/web-mojiban/hcja63ta`;
    // ら行
      var obj = document.getElementById('ra');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/ra.mp3').play();
+      new Audio(path + '/snd/ra.mp3').play();
       text1.value = text1.value + "ら";
       setCursorend();
      }, false);
@@ -571,7 +571,7 @@ var path = `/web-mojiban/hcja63ta`;
    // わ行
      var obj = document.getElementById('wa');
 	 obj.addEventListener("click", function() {
-      new Audio(path + './snd/wa.mp3').play();
+      new Audio(path + '/snd/wa.mp3').play();
       text1.value = text1.value + "わ";
       setCursorend();
      }, false);
