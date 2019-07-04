@@ -55,7 +55,7 @@ self.addEventListener('install', e => {
         path + `/snd/wa.mp3`,//?timestamp=${timeStamp}`,
       ])
       .then(() => self.skipWaiting());
-console.log('インストール');
+console.log('installed');
     })
   )
 
