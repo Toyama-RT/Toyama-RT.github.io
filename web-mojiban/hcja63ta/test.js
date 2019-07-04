@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 
 //ボタンクリック時の動作
+var path = `/web-mojiban/hcja63ta`;
    // 一列目
 //     var obj = document.getElementById('talk');
 //	 obj.addEventListener("click", function() {
@@ -147,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // あ行
      var obj = document.getElementById('a');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/a.mp3').play();
+      new Audio(path + './snd/a.mp3').play();
       text1.value = text1.value + "あ";
       setCursorend();
      }, false);
@@ -178,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // か行
      var obj = document.getElementById('ka');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/ka.mp3').play();
+      new Audio(path + './snd/ka.mp3').play();
       text1.value = text1.value + "か";
       setCursorend();
      }, false);
@@ -209,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // さ行
      var obj = document.getElementById('sa');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/sa.mp3').play();
+      new Audio(path + './snd/sa.mp3').play();
       text1.value = text1.value + "さ";
       setCursorend();
      }, false);
@@ -240,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // た行
      var obj = document.getElementById('ta');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/ta.mp3').play();
+      new Audio(path + './snd/ta.mp3').play();
       text1.value = text1.value + "た";
       setCursorend();
      }, false);
@@ -271,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // な行
      var obj = document.getElementById('na');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/na.mp3').play();
+      new Audio(path + './snd/na.mp3').play();
       text1.value = text1.value + "な";
       setCursorend();
      }, false);
@@ -302,7 +303,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // は行
      var obj = document.getElementById('ha');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/ha.mp3').play();
+      new Audio(path + './snd/ha.mp3').play();
       text1.value = text1.value + "は";
       setCursorend();
      }, false);
@@ -333,7 +334,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // ま行
      var obj = document.getElementById('ma');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/ma.mp3').play();
+      new Audio(path + './snd/ma.mp3').play();
       text1.value = text1.value + "ま";
       setCursorend();
      }, false);
@@ -364,7 +365,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // や行
      var obj = document.getElementById('ya');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/ya.mp3').play();
+      new Audio(path + './snd/ya.mp3').play();
       text1.value = text1.value + "や";
       setCursorend();
      }, false);
@@ -539,7 +540,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // ら行
      var obj = document.getElementById('ra');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/ra.mp3').play();
+      new Audio(path + './snd/ra.mp3').play();
       text1.value = text1.value + "ら";
       setCursorend();
      }, false);
@@ -570,7 +571,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    // わ行
      var obj = document.getElementById('wa');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/wa.mp3').play();
+      new Audio(path + './snd/wa.mp3').play();
       text1.value = text1.value + "わ";
       setCursorend();
      }, false);
