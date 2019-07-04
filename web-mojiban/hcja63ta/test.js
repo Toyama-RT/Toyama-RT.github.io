@@ -148,7 +148,7 @@ var path = `/web-mojiban/hcja63ta`;
    // あ行
      var obj = document.getElementById('a');
 	 obj.addEventListener("click", function() {
-      new Audio(path + '/snd/a.mp3').play();
+      new Audio("/web-mojiban/hcja63ta/snd/a.mp3").play();
       text1.value = text1.value + "あ";
       setCursorend();
      }, false);
