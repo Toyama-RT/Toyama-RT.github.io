@@ -56,6 +56,7 @@ self.addEventListener('install', e => {
       ])
       .then(() => self.skipWaiting());
     })
+console.log('インストール');
   )
 });
 
