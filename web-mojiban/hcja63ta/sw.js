@@ -26,7 +26,7 @@ var path = `/web-mojiban/hcja63ta`;
 self.addEventListener('install', e => {
   //let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('web-mojiban02').then(cache => {
+    caches.open('web-mojiban03').then(cache => {
       return cache.addAll([
         `/`,
         path + `/hcj.html`,//?timestamp=${timeStamp}`,
@@ -42,8 +42,8 @@ self.addEventListener('install', e => {
         path + `/img/ya.png`,//?timestamp=${timeStamp}`,
         path + `/img/ra.png`,//?timestamp=${timeStamp}`,
         path + `/img/wa.png`,//?timestamp=${timeStamp}`,
-        path + `/snd/a.mp3`,//?timestamp=${timeStamp}`,
-        path + `/snd/ka.mp3`,//?timestamp=${timeStamp}`,
+        path + `/img/a.mp3`,//?timestamp=${timeStamp}`,
+        path + `/img/ka.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/sa.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/ta.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/na.mp3`,//?timestamp=${timeStamp}`,

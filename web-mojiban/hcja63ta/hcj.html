@@ -13,11 +13,11 @@ var path = `/web-mojiban/hcja63ta`;
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
           .then(function(registration) {
-                console.log('Service Worker Registered');
+                console.log('Service Worker Registered ta');
           });
 
         navigator.serviceWorker.ready.then(function(registration) {
-           console.log('Service Worker Ready');
+           console.log('Service Worker Ready ta');
         });
       }
 
