@@ -21,12 +21,12 @@
 let version = '0.6.2';
 
 
-var path = `/web-mojiban/hcja63ta`;
+var path = `/web-mojiban/hcja63tb`;
 
 self.addEventListener('install', e => {
   //let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('web-mojiban04').then(cache => {
+    caches.open('web-mojiban05').then(cache => {
       return cache.addAll([
         `/`,
         path + `/hcj.html`,//?timestamp=${timeStamp}`,
