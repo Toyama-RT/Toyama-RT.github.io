@@ -45,14 +45,23 @@ self.addEventListener('install', e => {
         path + `/snd/a.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/a.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ka.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/ka.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/sa.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/sa.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ta.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/ta.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/na.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/na.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ha.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/ha.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ma.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/ma.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ya.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/ya.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ra.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/ra.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/wa.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/wa.wav`,//?timestamp=${timeStamp}`,
       ])
       .then(() => self.skipWaiting());
     })
