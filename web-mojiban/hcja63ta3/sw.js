@@ -43,6 +43,7 @@ self.addEventListener('install', e => {
         path + `/img/ra.png`,//?timestamp=${timeStamp}`,
         path + `/img/wa.png`,//?timestamp=${timeStamp}`,
         path + `/snd/a.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/a.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ka.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/sa.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/ta.mp3`,//?timestamp=${timeStamp}`,
