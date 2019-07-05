@@ -32,7 +32,6 @@ self.addEventListener('install', e => {
         path + `/hcj.html`,//?timestamp=${timeStamp}`,
         path + `/style.css`,//?timestamp=${timeStamp}`,
         path + `/test.js`,//?timestamp=${timeStamp}`,
-        path + `/sw.js`,//?timestamp=${timeStamp}`,
         path + `/img/a.png`,//?timestamp=${timeStamp}`,
         path + `/img/ka.png`,//?timestamp=${timeStamp}`,
         path + `/img/sa.png`,//?timestamp=${timeStamp}`,
