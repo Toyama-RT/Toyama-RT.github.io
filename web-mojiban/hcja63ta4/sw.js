@@ -21,7 +21,7 @@
 let version = '0.6.2';
 
 
-var path = `https://toyama-rt.github.io/web-mojiban/hcja63ta3`;
+var path = `https://toyama-rt.github.io/web-mojiban/hcja63ta4`;
 
 self.addEventListener('install', e => {
   //let timeStamp = Date.now();

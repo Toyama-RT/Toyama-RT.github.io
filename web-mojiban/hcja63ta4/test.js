@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 
 //ボタンクリック時の動作
-var path = `https://toyama-rt.github.io/web-mojiban/hcja63ta`;
+var path = `https://toyama-rt.github.io/web-mojiban/hcja63ta4`;
    // 一列目
 //     var obj = document.getElementById('talk');
 //	 obj.addEventListener("click", function() {
