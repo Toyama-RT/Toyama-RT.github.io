@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 
 //ボタンクリック時の動作
-var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
+//var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // 一列目*/
 //     var obj = document.getElementById('talk');
 //	 obj.addEventListener("click", function() {
@@ -277,7 +277,7 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
      var obj = document.getElementById('na');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/na.mp3').play();
-	document.getElementById( 'snd-na' ).play() ;
+	//document.getElementById( 'snd-na' ).play() ;
       text1.value = text1.value + "な";
       setCursorend();
      }, false);
@@ -308,8 +308,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // は行
      var obj = document.getElementById('ha');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/ha.mp3').play();
-	document.getElementById( 'snd-ha' ).play() ;
+      new Audio('./snd/ha.mp3').play();
+	//document.getElementById( 'snd-ha' ).play() ;
       text1.value = text1.value + "は";
       setCursorend();
      }, false);
@@ -340,8 +340,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // ま行
      var obj = document.getElementById('ma');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/ma.mp3').play();
-	document.getElementById( 'snd-ma' ).play() ;
+      new Audio('./snd/ma.mp3').play();
+	//document.getElementById( 'snd-ma' ).play() ;
       text1.value = text1.value + "ま";
       setCursorend();
      }, false);
@@ -372,8 +372,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // や行
      var obj = document.getElementById('ya');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/ya.mp3').play();
-	document.getElementById( 'snd-ya' ).play() ;
+      new Audio('./snd/ya.mp3').play();
+	//document.getElementById( 'snd-ya' ).play() ;
       text1.value = text1.value + "や";
       setCursorend();
      }, false);
@@ -548,8 +548,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // ら行
      var obj = document.getElementById('ra');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/ra.mp3').play();
-	document.getElementById( 'snd-ra' ).play() ;
+      new Audio('./snd/ra.mp3').play();
+//	document.getElementById( 'snd-ra' ).play() ;
       text1.value = text1.value + "ら";
       setCursorend();
      }, false);
@@ -580,8 +580,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // わ行
      var obj = document.getElementById('wa');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/wa.mp3').play();
-	document.getElementById( 'snd-wa' ).play() ;
+      new Audio('./snd/wa.mp3').play();
+//	document.getElementById( 'snd-wa' ).play() ;
       text1.value = text1.value + "わ";
       setCursorend();
      }, false);
