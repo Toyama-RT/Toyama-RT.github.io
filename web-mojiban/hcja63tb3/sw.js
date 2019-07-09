@@ -19,9 +19,9 @@
 
 //'use strict';
 const prefix = 'web-mojiban';
-const CACHE_NAME = prefix + '15';
+const CACHE_NAME = prefix + '16';
 
-var path = 'https://toyama-rt.github.io/web-mojiban/hcja63tb2';
+var path = 'https://toyama-rt.github.io/web-mojiban/hcja63tb3';
 
 self.addEventListener('install', e => {
   //let timeStamp = Date.now();
@@ -33,6 +33,10 @@ self.addEventListener('install', e => {
         path + `/hcj.html`,//?timestamp=${timeStamp}`,
         path + `/style.css`,//?timestamp=${timeStamp}`,
         path + `/test.js`,//?timestamp=${timeStamp}`,
+        path + `/img/000.png`,//?timestamp=${timeStamp}`,
+        path + `/img/00.png`,//?timestamp=${timeStamp}`,
+        path + `/img/1.png`,//?timestamp=${timeStamp}`,
+        path + `/img/6.png`,//?timestamp=${timeStamp}`,
         path + `/img/a.png`,//?timestamp=${timeStamp}`,
         path + `/img/ka.png`,//?timestamp=${timeStamp}`,
         path + `/img/sa.png`,//?timestamp=${timeStamp}`,
@@ -43,25 +47,18 @@ self.addEventListener('install', e => {
         path + `/img/ya.png`,//?timestamp=${timeStamp}`,
         path + `/img/ra.png`,//?timestamp=${timeStamp}`,
         path + `/img/wa.png`,//?timestamp=${timeStamp}`,
+        path + `/snd/1.mp3`,//?timestamp=${timeStamp}`,
+        path + `/snd/6.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/a.mp3`,//?timestamp=${timeStamp}`,
         path + `/snd/ka.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/ka.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/sa.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/sa.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ta.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/ta.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/na.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/na.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ha.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/ha.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ma.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/ma.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ya.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/ya.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/ra.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/ra.wav`,//?timestamp=${timeStamp}`,
         path + `/snd/wa.mp3`,//?timestamp=${timeStamp}`,
-//        path + `/snd/wa.wav`,//?timestamp=${timeStamp}`,
       ])
       .then(() => self.skipWaiting());
     })
