@@ -22,9 +22,9 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'p-44fsw1';
-const CACHE_NAME = prefix + '02';
+const CACHE_NAME = prefix + 't01';
 
-var path = `/enchant/p-44fsw1`;
+var path = `/enchant/p-44fsw1t`;
   let timeStamp = Date.now();
 
 var urlsToCache = [
