@@ -20,13 +20,18 @@
 // Version 0.6.3
 let version = '0.6.2';
 
+//'use strict';
+const prefix = 'web-mojiban';
+const CACHE_NAME = prefix + '13';
+
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcja63tb2';
 
 self.addEventListener('install', e => {
   //let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('web-mojiban12').then(cache => {
+    caches.open(CACHE_NAME).then(cache => {
+        console.log('Opened cache');
       return cache.addAll([
         `/`,
         path + `/hcj.html`,//?timestamp=${timeStamp}`,
@@ -73,13 +78,18 @@ self.addEventListener('install', e => {
 //});
 
 self.addEventListener('activate', function(event) {
-  var cacheKeeplist = ['web-mojiban12'];
+  var cacheKeeplist = [CACHE_NAME];
 
   event.waitUntil(
     caches.keys().then(function(keyList) {
+
       return Promise.all(keyList.map(function(key) {
-        if (cacheKeeplist.indexOf(key) === -1) {
+        if (cacheKeeplist.indexOf(key) === -1 && key.indexOf(prefix) === 0) {
+                    // ホワイトリストにないキャッシュで同じ接頭語がついているキャッシュを削除する
+
           return caches.delete(key);
+           console.log('Deleting out of date cache:', key);
+
         }
       }));
     })
