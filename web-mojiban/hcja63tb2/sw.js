@@ -22,7 +22,7 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'web-mojiban';
-const CACHE_NAME = prefix + '14';
+const CACHE_NAME = prefix + '15';
 
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcja63tb2';
@@ -77,6 +77,7 @@ self.addEventListener('install', e => {
 //});
 
 self.addEventListener('activate', function(event) {
+  event.waitUntil(self.clients.claim());
   var cacheKeeplist = [CACHE_NAME];
   event.waitUntil(
     caches.keys().then(function(keyList) {
