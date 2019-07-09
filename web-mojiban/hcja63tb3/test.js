@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 //ボタンクリック時の動作
 var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
-   // 一列目
+   // 一列目*/
 //     var obj = document.getElementById('talk');
 //	 obj.addEventListener("click", function() {
 //      new Audio('./snd/1.mp3').play();
 //      text1.value = text1.value + "１";
 //     }, false);
-//     var obj = document.getElementById('bun');
+/*     var obj = document.getElementById('bun');
 //	 obj.addEventListener("click", function() {
 //      new Audio('./snd/2.mp3').play();
 //      text1.value = text1.value + "２";
@@ -55,13 +55,13 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
       setCursorend();
      }, false);*/
    // 二列目
-/*     var obj = document.getElementById('00');
+     var obj = document.getElementById('00');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/space.mp3').play();
       text1.value = text1.value + "　";
       setCursorend();
      }, false);
-//     var obj = document.getElementById('katakana');
+/*     var obj = document.getElementById('katakana');
 //	 obj.addEventListener("click", function() {
 //      new Audio('./snd/2.mp3').play();
 //      text1.value = text1.value + "２";
@@ -82,7 +82,7 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
       new Audio('./snd/kesu.mp3').play();
       text1.value = text1.value.substring(0, text1.value.length -1 );
       setCursorend();
-     }, false);
+     }, false);*/
 
    // 数字
      var obj = document.getElementById('1');
@@ -91,7 +91,7 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
       text1.value = text1.value + "１";
       setCursorend();
      }, false);
-     var obj = document.getElementById('2');
+/*     var obj = document.getElementById('2');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/2.mp3').play();
       text1.value = text1.value + "２";
@@ -114,14 +114,14 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
       new Audio('./snd/5.mp3').play();
       text1.value = text1.value + "５";
       setCursorend();
-     }, false);
+     }, false);*/
      var obj = document.getElementById('6');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/6.mp3').play();
       text1.value = text1.value + "６";
       setCursorend();
      }, false);
-     var obj = document.getElementById('7');
+/*     var obj = document.getElementById('7');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/7.mp3').play();
       text1.value = text1.value + "７";
