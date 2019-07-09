@@ -148,8 +148,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // あ行
      var obj = document.getElementById('a');
 	 obj.addEventListener("click", function() {
-      //new Audio("/web-mojiban/hcja63ta/snd/a.mp3").play();
-	document.getElementById( 'snd-a' ).play() ;
+      new Audio("./snd/a.mp3").play();
+	//document.getElementById( 'snd-a' ).play() ;
       text1.value = text1.value + "あ";
       setCursorend();
      }, false);
@@ -180,8 +180,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // か行
      var obj = document.getElementById('ka');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/ka.mp3').play();
-	document.getElementById( 'snd-ka' ).play() ;
+      new Audio('./snd/ka.mp3').play();
+	//document.getElementById( 'snd-ka' ).play() ;
       text1.value = text1.value + "か";
       setCursorend();
      }, false);
@@ -212,8 +212,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // さ行
      var obj = document.getElementById('sa');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/sa.mp3').play();
-	document.getElementById( 'snd-sa' ).play() ;
+      new Audio('./snd/sa.mp3').play();
+	//document.getElementById( 'snd-sa' ).play() ;
       text1.value = text1.value + "さ";
       setCursorend();
      }, false);
@@ -244,8 +244,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // た行
      var obj = document.getElementById('ta');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/ta.mp3').play();
-	document.getElementById( 'snd-ta' ).play() ;
+      new Audio('./snd/ta.mp3').play();
+	//document.getElementById( 'snd-ta' ).play() ;
       text1.value = text1.value + "た";
       setCursorend();
      }, false);
@@ -276,7 +276,7 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcja63tb1`;
    // な行
      var obj = document.getElementById('na');
 	 obj.addEventListener("click", function() {
-      //new Audio(path + '/snd/na.mp3').play();
+      new Audio('./snd/na.mp3').play();
 	document.getElementById( 'snd-na' ).play() ;
       text1.value = text1.value + "な";
       setCursorend();
