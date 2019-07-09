@@ -26,7 +26,7 @@ var path = 'https://toyama-rt.github.io/web-mojiban/hcja63tb1';
 self.addEventListener('install', e => {
   //let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('web-mojiban10').then(cache => {
+    caches.open('web-mojiban11').then(cache => {
       return cache.addAll([
         `/`,
         path + `/hcj.html`,//?timestamp=${timeStamp}`,
@@ -73,10 +73,16 @@ self.addEventListener('activate',  event => {
 });
 
 self.addEventListener('fetch', event => {
-  console.log(event.request.url, `fetch`);
+
+  console.log(event.request.url, `fetch net first`);
   event.respondWith(
-    caches.match(event.request, {ignoreSearch:true}).then(response => {
-      return response || fetch(event.request);
+    fetch(event.request).catch(function() {
+      return caches.match(event.request);
+
+//  console.log(event.request.url, `fetch cache first`);
+//  event.respondWith(
+//    caches.match(event.request, {ignoreSearch:true}).then(response => {
+//      return response || fetch(event.request);
     })
   );
 });
