@@ -73,7 +73,7 @@ self.addEventListener('install', e => {
 //});
 
 self.addEventListener('activate', function(event) {
-  var cacheKeeplist = ['web-mojiban04'];
+  var cacheKeeplist = ['web-mojiban12'];
 
   event.waitUntil(
     caches.keys().then(function(keyList) {
