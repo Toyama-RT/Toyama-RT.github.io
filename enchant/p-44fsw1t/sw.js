@@ -22,7 +22,7 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'p-44fsw1t';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
 var path = `/enchant/p-44fsw1t`;
   let timeStamp = Date.now();
