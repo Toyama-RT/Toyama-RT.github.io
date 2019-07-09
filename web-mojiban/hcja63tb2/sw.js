@@ -22,7 +22,7 @@ let version = '0.6.2';
 
 //'use strict';
 const prefix = 'web-mojiban';
-const CACHE_NAME = prefix + '13';
+const CACHE_NAME = prefix + '14';
 
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcja63tb2';
@@ -78,27 +78,18 @@ self.addEventListener('install', e => {
 
 self.addEventListener('activate', function(event) {
   var cacheKeeplist = [CACHE_NAME];
-
   event.waitUntil(
     caches.keys().then(function(keyList) {
-
       return Promise.all(keyList.map(function(key) {
         if (cacheKeeplist.indexOf(key) === -1 && key.indexOf(prefix) === 0) {
-                    // ホワイトリストにないキャッシュで同じ接頭語がついているキャッシュを削除する
-
+         // ホワイトリストにないキャッシュで同じ接頭語がついているキャッシュを削除する
           return caches.delete(key);
            console.log('Deleting out of date cache:', key);
-
         }
       }));
     })
   );
 });
-
-
-
-
-
 
 self.addEventListener('fetch', event => {
 
