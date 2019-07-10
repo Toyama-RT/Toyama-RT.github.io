@@ -32,17 +32,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //      new Audio('./snd/1.mp3').play();
 //      text1.value = text1.value + "１";
 //     }, false);
-/*     var obj = document.getElementById('bun');
+//     var obj = document.getElementById('bun');
 //	 obj.addEventListener("click", function() {
 //      new Audio('./snd/2.mp3').play();
 //      text1.value = text1.value + "２";
 //     }, false);
-/*     var obj = document.getElementById('hai');
+     var obj = document.getElementById('hai');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/hai.mp3').play();
       //text1.value = text1.value + "３";
      }, false);
-     var obj = document.getElementById('ten');
+/*     var obj = document.getElementById('ten');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/ten.mp3').play();
       text1.value = text1.value + "、";
@@ -66,12 +66,12 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       new Audio('./snd/2.mp3').play();
       text1.value = text1.value + "２";
      }, false);
-     var obj = document.getElementById('iie');
+*/     var obj = document.getElementById('iie');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/iie.mp3').play();
       //text1.value = text1.value + "３";
      }, false);
-     var obj = document.getElementById('maru');
+/*     var obj = document.getElementById('maru');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/maru.mp3').play();
       text1.value = text1.value + "。";
@@ -97,13 +97,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "２";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('3');
+     var obj = document.getElementById('3');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/3.mp3').play();
       text1.value = text1.value + "３";
       setCursorend();
      }, false);
-     var obj = document.getElementById('4');
+/*     var obj = document.getElementById('4');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/4.mp3').play();
       text1.value = text1.value + "４";
@@ -127,13 +127,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "７";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('8');
+     var obj = document.getElementById('8');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/8.mp3').play();
       text1.value = text1.value + "８";
       setCursorend();
      }, false);
-     var obj = document.getElementById('9');
+/*     var obj = document.getElementById('9');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/9.mp3').play();
       text1.value = text1.value + "９";
@@ -159,13 +159,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "い";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('u');
+     var obj = document.getElementById('u');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/u.mp3').play();
       text1.value = text1.value + "う";
       setCursorend();
      }, false);
-     var obj = document.getElementById('e');
+/*     var obj = document.getElementById('e');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/e.mp3').play();
       text1.value = text1.value + "え";
@@ -191,13 +191,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "き";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('ku');
+     var obj = document.getElementById('ku');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/ku.mp3').play();
       text1.value = text1.value + "く";
       setCursorend();
      }, false);
-     var obj = document.getElementById('ke');
+/*     var obj = document.getElementById('ke');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/ke.mp3').play();
       text1.value = text1.value + "け";
@@ -223,13 +223,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "し";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('su');
+     var obj = document.getElementById('su');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/su.mp3').play();
       text1.value = text1.value + "す";
       setCursorend();
      }, false);
-     var obj = document.getElementById('se');
+/*     var obj = document.getElementById('se');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/se.mp3').play();
       text1.value = text1.value + "せ";
@@ -255,13 +255,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "ち";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('tu');
+     var obj = document.getElementById('tu');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/tu.mp3').play();
       text1.value = text1.value + "つ";
       setCursorend();
      }, false);
-     var obj = document.getElementById('te');
+/*     var obj = document.getElementById('te');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/te.mp3').play();
       text1.value = text1.value + "て";
@@ -287,13 +287,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "に";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('nu');
+     var obj = document.getElementById('nu');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/nu.mp3').play();
       text1.value = text1.value + "ぬ";
       setCursorend();
      }, false);
-     var obj = document.getElementById('ne');
+/*     var obj = document.getElementById('ne');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/ne.mp3').play();
       text1.value = text1.value + "ね";
@@ -319,13 +319,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "ひ";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('hu');
+     var obj = document.getElementById('hu');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/hu.mp3').play();
       text1.value = text1.value + "ふ";
       setCursorend();
      }, false);
-     var obj = document.getElementById('he');
+/*     var obj = document.getElementById('he');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/he.mp3').play();
       text1.value = text1.value + "へ";
@@ -351,13 +351,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "み";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('mu');
+     var obj = document.getElementById('mu');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/mu.mp3').play();
       text1.value = text1.value + "む";
       setCursorend();
      }, false);
-     var obj = document.getElementById('me');
+/*     var obj = document.getElementById('me');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/me.mp3').play();
       text1.value = text1.value + "め";
@@ -383,7 +383,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "ゆ";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('yo');
+     var obj = document.getElementById('yo');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/yo.mp3').play();
       text1.value = text1.value + "よ";
@@ -559,13 +559,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "り";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('ru');
+     var obj = document.getElementById('ru');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/ru.mp3').play();
       text1.value = text1.value + "る";
       setCursorend();
      }, false);
-     var obj = document.getElementById('re');
+/*     var obj = document.getElementById('re');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/re.mp3').play();
       text1.value = text1.value + "れ";
@@ -591,7 +591,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "を";
       setCursorend();
      }, false);
-/*     var obj = document.getElementById('nn');
+     var obj = document.getElementById('nn');
 	 obj.addEventListener("click", function() {
       new Audio('./snd/nn.mp3').play();
       text1.value = text1.value + "ん";
