@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-82832782-3');
-</script>
 
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title>HCJAM63</title>
+    <title>HCJAM63T1</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="./test.js"></script>
+
+<script>
+var path = `https://toyama-rt.github.io/web-mojiban/hcjam63t1`;
+
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered tb4');
+          });
+
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready tb4');
+        });
+      }
+
+</script>
 
   </head>
   <body>
@@ -108,6 +115,5 @@
 <img id="ro"   src="./img/ro.png" >
 <img id="000"  src="./img/000.png" >
 </div>
-
   </body>
 </html>
