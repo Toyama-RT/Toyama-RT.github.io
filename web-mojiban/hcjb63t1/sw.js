@@ -91,6 +91,7 @@ self.addEventListener('install', e => {
         path + `/img/yo.png`,
         path + `/img/gb.png`,
         path + `/img/gc.png`,
+        path + `/img/ra.png`,
         path + `/img/ri.png`,
         path + `/img/ru.png`,
         path + `/img/re.png`,
