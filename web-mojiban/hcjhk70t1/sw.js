@@ -19,7 +19,7 @@
 
 //'use strict';
 const prefix = 'web-mojiban8';
-const CACHE_NAME = prefix + '00';
+const CACHE_NAME = prefix + '01';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjhk70t1';
 
@@ -49,8 +49,8 @@ self.addEventListener('install', e => {
         path + `/img/zenbukesu.png`,
         path + `/img/katakana.png`,
         path + `/img/hiragana.png`,
-        path + `/img/aisatu.png`,
-        path + `/img/karada.png`,
+        path + `/img2/aisatu.png`,
+        path + `/img2/karada.png`,
         path + `/img/iie.png`,
         path + `/img/maru.png`,
         path + `/img/kesu.png`,
