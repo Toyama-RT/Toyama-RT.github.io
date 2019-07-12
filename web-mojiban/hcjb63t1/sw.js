@@ -192,7 +192,6 @@ self.addEventListener('install', e => {
         path + `/snd/pe.mp3`,
         path + `/snd/po.mp3`,
         path + `/snd/incorrect2.mp3`,
-
       ])
       .then(() => self.skipWaiting());
     })
