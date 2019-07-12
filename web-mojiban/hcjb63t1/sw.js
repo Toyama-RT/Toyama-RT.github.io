@@ -19,7 +19,7 @@
 
 //'use strict';
 const prefix = 'web-mojiban2';
-const CACHE_NAME = prefix + '00';
+const CACHE_NAME = prefix + '01';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjb63t1';
 
