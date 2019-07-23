@@ -201,8 +201,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
             var synthes = new SpeechSynthesisUtterance();
                synthes.voiceURI = 'Google 日本人';//'native';
                synthes.volume = 1;
-               synthes.rate = 1;// ややゆっくり　一文字の発話はっきりする
-               synthes.pitch = 1.2;
+               synthes.rate = 0.9;// ややゆっくり　一文字の発話はっきりする
+               synthes.pitch = 1;
                synthes.lang = 'ja-JP';
                synthes.text = '準備出来ました';
                //synthes.lang = 'en-US';
