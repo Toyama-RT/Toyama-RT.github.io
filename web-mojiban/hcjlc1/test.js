@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                synthes.rate = 0.9;// ややゆっくり　一文字の発話はっきりする
                synthes.pitch = 1;
                synthes.lang = 'ja-JP';
-               //synthes.text = '準備出来ました';
+               synthes.text = '準備出来ました';
                //synthes.lang = 'en-US';
                //synthes.text = 'hello, Now, We start the enchant.js';
                speechSynthesis.speak(synthes);
