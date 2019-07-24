@@ -19,9 +19,9 @@
 
 //'use strict';
 const prefix = 'web-mojiban8';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
-var path = 'https://toyama-rt.github.io/web-mojiban/hcjhk70t1';
+var path = 'https://toyama-rt.github.io/web-mojiban/hcjhk70t2';
 
 self.addEventListener('install', e => {
   e.waitUntil(
