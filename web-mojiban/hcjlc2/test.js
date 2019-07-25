@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
   //web speech api tts 音声の設定と起動時の音声発声設定
             var synthes = new SpeechSynthesisUtterance();
-               synthes.voiceURI = 'Google 日本人';//'native';
+               synthes.voiceURI = 'Microsoft Haruka Mobile - Japanese (Japan)';//'Google 日本人';//'native';
                synthes.volume = 1;
                synthes.rate = 0.9;// ややゆっくり　一文字の発話はっきりする
                synthes.pitch = 1;
