@@ -19,7 +19,7 @@
 
 //'use strict';
 const prefix = 'hcjlc2';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '03';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc2';
 
@@ -33,6 +33,7 @@ self.addEventListener('install', e => {
         path + `/style.css`,
         path + `/test.js`,
         path + `/img/talk0.png`,
+        path + `/img/000.png`,
         path + `/img/00.png`,
         path + `/img/bun01.png`,
         path + `/img/bun02.png`,
@@ -268,7 +269,7 @@ self.addEventListener('install', e => {
         path + `/img2/yameru.png`,
         path + `/img2/de.png`,
 
-        path + `/snd/hai.mp3`,
+/*        path + `/snd/hai.mp3`,
         path + `/snd/ten.mp3`,
         path + `/snd/zenbukesu.mp3`,
         path + `/snd/space.mp3`,
@@ -358,12 +359,12 @@ self.addEventListener('install', e => {
         path + `/snd/pi.mp3`,
         path + `/snd/pu.mp3`,
         path + `/snd/pe.mp3`,
-        path + `/snd/po.mp3`,
+        path + `/snd/po.mp3`,*/
         path + `/snd/incorrect2.mp3`,
         path + `/snd/se2.mp3`,
         path + `/snd/se3.mp3`,
 
-        path + `/snd2/arigatou.mp3`,
+/*        path + `/snd2/arigatou.mp3`,
         path + `/snd2/konnnichiha.mp3`,
         path + `/snd2/tanosiidesu.mp3`,
         path + `/snd2/ohayougozaimasu.mp3`,
@@ -463,7 +464,7 @@ self.addEventListener('install', e => {
         path + `/snd2/hantai.mp3`,
         path + `/snd2/toru.mp3`,
         path + `/snd2/yameru.mp3`,
-        path + `/snd2/de.mp3`,
+        path + `/snd2/de.mp3`,*/
 
       ])
       .then(() => self.skipWaiting());
