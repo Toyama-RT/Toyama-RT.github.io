@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "landscape",
   "start_url": "./hcj.html",
-  "lang": "ja-jp",
+  "lang": "ja",
   "icons": [
     {
       "src": "./ico/test192i.png",
