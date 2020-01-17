@@ -1,12 +1,11 @@
 {
-  "name": "Web•¶Žš”Õ",
-  "short_name": "Web•¶Žš”Õ‚S",
+  "name": "Web Mojiban 4",
+  "short_name": "Web Moji 4",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
   "orientation": "landscape",
-  "start_url": "./hcj.html",
-  "lang": "ja",
+  "start_url": "/?utm_source=homescreen",
   "icons": [
     {
       "src": "./ico/test192i.png",
