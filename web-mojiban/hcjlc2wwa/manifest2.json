@@ -5,7 +5,7 @@
   "background_color": "#2196f3",
   "display": "standalone",
   "orientation": "landscape",
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "./hcj.html",
   "icons": [
     {
       "src": "./ico/test192i.png",
