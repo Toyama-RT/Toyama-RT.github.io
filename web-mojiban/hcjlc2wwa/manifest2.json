@@ -1,13 +1,14 @@
 {
-  "name": "PWA Test2",
-  "short_name": "PWA2",
+  "name": "Web•¶Žš”Õ",
+  "short_name": "Web•¶Žš”Õ‚S",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
+  "orientation": "landscape",
   "start_url": "./hcj.html",
   "icons": [
     {
-      "src": "./ico/test192.png",
+      "src": "./ico/test192i.png",
       "sizes": "192x192",
       "type": "image/png"
     }
