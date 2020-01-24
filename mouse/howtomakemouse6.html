@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>不自由をもつ人のためのマウスつくり６｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>不自由をもつ人のためのマウス作り　６</h1>
+<h1>AutoHotkeyで「できリング。」はできるか？</h1>
+<div style="text-align: center;"><img alt="動画" src="img/AHKmouse.png" >
+</div>
+<p align="center">
+<a target="_blank" href="https://youtu.be/3n_KkUs_86E">youtubeの動画はこちら　3分33秒　小さな音が出ます</a>
+</p>
+<h2>０　はじめに</h2>
+<p>
+不自由をもつ人のためのマウス作りは今回で6回目になります。このシリーズではAutoHotkeyを使って、不自由をもつ人がWindowsパソコンを使用するためのマウスを作っています。
+</p><p>
+これまで、自由な動きが苦手な場合や震えのある場合や動きが非常に限られる場合にもプログラムに工夫することで、可能性が広がることを紹介してきました。また外部スイッチをパソコンとつないでこれらのソフトを操作する方法についてお話ししてきました。
+また1スイッチでマウス操作もできることがわかってきました。
+</p><p>
+そして今回は、よく知られた1スイッチでのマウス操作ソフト、「できリング。」を目標にして取り組みます。
+</p>
+<h2>１　「できリング。」</h2>
+<p>
+「できリング。」は、「できマウス。」プロジェクトの町田さんとTakayamaさんが共同開発した、1スイッチでマウスの移動やクリックが可能になるソフトです。
+</p>
+<div style="text-align: center;"><img alt="「できリング。」" src="img/deki.jpg" >
+</div>
+<p>
+このソフトでは、マウスカーソルの周囲に方向案内のサブカーソルが表示されます。サブカーソルが移動したい方向を示した際に，F7キーを押すとカーソルが移動します。また二重丸のときF7キーを押しすとクリックモードになります。通常は、F7 キーではなく、JoyToKeyなどを利用して「できマウス。」やゲームパッドなどにその人に適した外部スイッチを接続して操作します。
+</p><p>
+特に重度な麻痺をもち運動が少なく、使用できるスイッチも限られている人がWindowsパソコンを使用する際には「できリング。」は定番で私もよく利用していました。しかしその後の開発はWindowsVistaの頃から画面表示の不具合に悩まされ、またWindows8以降もライセンス関係で苦労を抱えてしまい現在に至っています。
+</p><p>
+同様のソフトに、工房和泉家さんのパッドdeマウスもあります。しかしこちらも2007年で開発が終了しているようです。
+</p><p>
+このような事情で重度麻痺者のパソコン操作がだんだん心もとなくなってきました。ふと気がついたときには使えるソフトがなくなっていて、すっかり手も足も出なくなっていたというのでは患者さんも困ります。そこで「できリング。」と同様の機能をAutoHotkeyで実現する試みを始めました。
+</p>
+<h2>２　「できリング。」の特徴とAutoHotkeyのねらい</h2>
+<p>
+「できリング。」の一番の特徴は、低コストであることです。「できリング。」自体はフリーソフトで無料です。joytokeyも安価で入手できます。また市販ゲームパッドが改造できる場合は出費も少なくてすみます。改造できない場合もできマウスが約一万円で使えます。試しに取り組む際も、買い換えや故障の際も出費が少なくて助かります。
+</p><p>
+そして最大の特徴は上でも説明したように、1スイッチでマウスが自立することです。スイッチをひとつ使うのは、身体的か知的に条件が厳しいかそれとも初心者でしょう。いずれもマウス操作から、できることやりたいことが広がっていきます。好きなゲームができるようになれば元気もでてきますし、もっとほかにできるんじゃないかと考えるようになります。このようなところは初心者むけにとても大切な特徴です。
+</p><p>
+ただ残念なのは、いくつか動きがある人まで、1スイッチで満足してしまう場合があることです。ほかにいくらか動きがあっても使わなかったら動かなくなることもあります。ただそのためには2スイッチや3スイッチなど多くの種類のソフトが必要になります。またそれらに精通した人材も必要です。これらを改善するためにアマチュアでも使いやすいAutoHotkeyが役にたつのではないかと考えています。
+</p><p>
+またたとえば、クチマウスや視線入力など代替マウスを使用しているとして、上下左右のうちひとつがうまくいかなくなった場合について考えてみましょう。その他の随意運動で苦手な操作をするソフトをAutoHotkeyで作り従来のソフトと並行してうごかす方法が考えられます。このように手段や道具を改善しながら、パソコンが継続できるように支援できるでしょう。
+</p><p>
+さらに麻痺が進んで1スイッチだけでも、できリングがあればマウスが自立できます。そのような事情で、今必要のない人たちが先々の心配をしなくてすむためにも、できリングが動くようになってほしいわけです。
+</p><p>
+またこのシリーズでは作成したプログラムコードを公開しています。これはソフトの設計図でしかも世界共通で言葉の壁はありません。これさえあればどの国の人も勉強すればまねをして同じものを作ることができるようになります。またこれから将来、Windowsやパソコンやコンピュータが大きく変わっても、21世紀の初め頃にはこのようなやり方でやっていたことが未来の人たちに伝えることができます。まるで古文書や石碑のようなことを考えています。
+</p>
+<h2>３　「できリング。」をつくる</h2>
+<p>
+さて前置きが長くなりました。早速作ったプログラムを見ていきましょう。おっとこれはいけません。コードも随分長いですね。もしこのサイトをスマホなどの小さな画面で見ている人がいたら、悪いことはいいません。パソコン等大きな画面で見ることをお勧めします。小さな画面では見えにくいしわかりにくいしなによりも身体によくありません。では続けます。
+</p><p>
+AHKmouse.ahk
+<pre class="brush: js;">
+;Setting 設定
+Scaninterval:= 1.5	;sec	スキャン間隔　秒
+BasicStep:= 2		;pic	最小移動量　ピクセル
+Acceleration:= 1.5	;加速係数
+limitstep:= 10		;steps	4方向8方向境界　ステップ
+Color1:= "FF0000"	;color code	表示色　カラーコード
+
+Count:=0
+flag:= 0
+
+;System　システム情報の検出
+;モニター数の検出
+SysGet, MonitorCount, MonitorCount
+;MsgBox,%MonitorCount%
+;モニター幅の検出
+SysGet, VirtualScreenWidth, 0
+;MsgBox,%VirtualScreenWidth%
+;モニター高さの検出
+SysGet, VirtualScreenHeight, 1
+;MsgBox,%VirtualScreenHeight%
+
+F7::
+;マウスカーソル位置の検出
+ CoordMode,Mouse,Screen
+ MouseGetPos, xpos1, ypos1 
+ ;MsgBox, The cursor is at X%xpos1% Y%ypos1%. 
+ xpos1:= xpos1 - 10
+ ypos1:= ypos1 - 10
+
+;メインループ main loop
+loop
+{
+ ;上
+Up:
+  xpos:= xpos1
+  ypos:= ypos1 - 60
+ Gosub, progtip
+  Direction:= 0
+ Gosub, Waitloop
+ if flag = 1	;移動量がlimitstep以下なら斜め方向のスキャンは省略する
+  Goto, Right
+;右上
+  xpos:= xpos1 + 40
+  ypos:= ypos1 - 40
+ Gosub, progtip
+  Direction:= 1
+ Gosub, Waitloop
+;右
+Right:
+  xpos:= xpos1 + 60
+  ypos:= ypos1
+ Gosub, progtip
+  Direction:= 2
+ Gosub, Waitloop
+ if flag = 1
+  Goto, Down
+;右下
+  xpos:= xpos1 + 40
+  ypos:= ypos1 + 40
+ Gosub, progtip
+  Direction:= 3
+ Gosub, Waitloop
+;下
+Down:
+  xpos:= xpos1
+  ypos:= ypos1 + 60
+ Gosub, progtip
+  Direction:= 4
+ Gosub, Waitloop
+ if flag = 1
+  Goto, Left
+;左下
+  xpos:= xpos1 - 40
+  ypos:= ypos1 + 40
+ Gosub, progtip
+  Direction:= 5
+ Gosub, Waitloop
+;左
+Left:
+  xpos:= xpos1 - 60
+  ypos:= ypos1
+ Gosub, progtip
+  Direction:= 6
+ Gosub, Waitloop
+ if flag = 1
+  Goto, Center
+;左上
+  xpos:= xpos1 - 40
+  ypos:= ypos1 - 40
+ Gosub, progtip
+  Direction:= 7
+ Gosub, Waitloop
+;中央
+Center:
+  xpos:= xpos1 - 10
+  ypos:= ypos1 - 10
+ Gosub, progtip2
+ Gosub, Waitloop2
+}
+Return
+
+;待ち受けループ　waitloop
+Waitloop:
+loop, % (Scaninterval * 10)
+{
+ sleep, 100
+ if GetKeyState("F7", "P") = 1
+ gosub, la1
+}
+Return
+
+;待ち受けループ2　waitloop2
+Waitloop2:
+loop, % (Scaninterval * 10)
+{
+ sleep, 100
+ if GetKeyState("F7", "P") = 1
+{
+ clickfrag:= 0
+ gosub, clickloop
+}
+}
+Return
+
+;クリックループ　clickloop
+clickloop:
+loop
+{
+;左クリック　left click
+  xpos:= xpos1 - 40
+  ypos:= ypos1 - 20
+ Gosub, progtip3
+  Cl:= 0
+ Gosub, Waitloop3
+ if clickfrag = 1
+  Return
+;右クリック　right click
+  xpos:= xpos1 + 40
+  ypos:= ypos1 - 20
+ Gosub, progtip3
+  Cl:= 1
+ Gosub, Waitloop3
+ if clickfrag = 1
+  Return
+;左ダブルクリック　left double click
+  xpos:= xpos1 - 40
+  ypos:= ypos1 - 20
+ Gosub, progtip4
+  Cl:= 2
+ Gosub, Waitloop3
+ if clickfrag = 1
+  Return
+;左ドラッグ　left drag
+  xpos:= xpos1 - 20
+  ypos:= ypos1 + 40
+ Gosub, progtip5
+  Cl:= 3
+ Gosub, Waitloop3
+Return
+}
+Return
+
+;待ち受けループ3　waitloop3
+Waitloop3:
+loop, % (Scaninterval * 10)
+{
+  sleep, 100
+if GetKeyState("F7", "P") = 1
+{
+ gosub, cli1
+ clickfrag:= 1
+}
+}
+Return
+
+;マウスクリック部
+cli1:
+;MsgBox, Click is here  %cl%. 
+If Cl = 0
+{
+MouseClick, left
+}
+Else If Cl = 1
+{
+MouseClick, right
+}
+Else If Cl = 2
+{
+MouseClick, left, , , 2
+}
+Else If Cl = 3
+{
+MouseClick, left, , , , ,D
+}
+Return
+
+;マウスカーソルの移動部
+la1:
+;MsgBox, The cursor is at X%xpos1% Y%ypos1%. 
+Progress, Off
+
+If Direction = 0
+{
+  X:= 0
+  Y:= BasicStep * -1
+}
+Else If Direction = 1
+{
+  X:= BasicStep
+  Y:= BasicStep * -1
+}
+Else If Direction = 2
+{
+  X:= BasicStep
+  Y:= 0
+}
+Else If Direction = 3
+{
+  X:= BasicStep
+  Y:= BasicStep
+}
+Else If Direction = 4
+{
+  X:= 0
+  Y:= BasicStep
+}
+Else If Direction = 5
+{
+  X:= BasicStep * -1
+  Y:= BasicStep
+}
+Else If Direction = 6
+{
+  X:= BasicStep * -1
+  Y:= 0
+}
+Else If Direction = 7
+{
+  X:= BasicStep * -1
+  Y:= BasicStep * -1
+}
+Else
+{
+
+}
+Sleep, 100
+Loop
+{
+Count++
+  XX:= X*Acceleration**((Count//10))	;加速　設定
+  YY:= Y*Acceleration**((Count//10))
+  MouseMove, XX, YY, Speed, R		;マウス移動
+Sleep, 50
+
+if GetKeyState("F7", "P") = 0
+{
+MouseGetPos, xpos1, ypos1 
+xpos1:= xpos1 - 10
+ypos1:= ypos1 - 10
+
+If (Count >= limitstep)
+flag:= 0
+Else flag:= 1
+;MsgBox,%Count% %limitstep% %flag%
+
+Count:=0
+Sleep, 100
+Break
+}
+
+}
+Return
+
+;画面表示部分
+progtip:
+	Progress, b zh0 h20 w20 x%xpos% y%ypos% cw%Color1%
+	Return
+progtip2:
+	Progress, b zh0 h40 w40 x%xpos% y%ypos% cw%Color1%
+	Return
+progtip3:
+	Progress, b zh0 h60 w20 x%xpos% y%ypos% cw%Color1%
+	Return
+progtip4:
+	Progress, b zh0 h60 w10 x%xpos% y%ypos% cw%Color1%
+	Return
+progtip5:
+	Progress, b zh0 h10 w60 x%xpos% y%ypos% cw%Color1%
+	Return
+
+</pre>
+</p><p>
+説明　文末の参考URLのAutoHotkeyWikiをお読みいただけるとより理解が深まります。<br>
+まずいちばん最初に設定があります。<br>
+
+1-6行　設定です。スキャン時間間隔や最小移動量などがここで設定できます。<br>
+
+8-9行　定数です。<br>
+
+11-20行　使用しているモニタの情報を収集しています。このプログラムでは特に使用していませんがモニタ端でマウスカーソルを反転させるなどする場合には利用できます。<br>
+
+22行　コントロールはF7キーで行います。「できリング。」と同じにしました。F7キーを押すとこの行からスタートします。<br>
+
+23－28行　モニタ座標系でマウスカーソルの位置を検出します。検出結果をメッセージボックスに表示させ確認しましたが、通常使用では不要ですのでコメントアウトしてあります。一辺20ピクセルの正方形を表示する際に左上の座標値を使うため、xpos1とypos1の値を10小さくしています。<br>
+
+30ー100行　メインループです。マウスカーソルの上、右上、右、右下、下、左下、左、左上、中央、を順に表示がスキャンします。表示座標値を代入して表示サブルーチン（後述）または中央からは待ち受けループその2（後述）へ行きます。その後方向識別変数Directionに数値を入れて、待ち受けループ（後述）へいきます。ここで何もなければ次の表示に進みます。基本的にはこのループを回りながら、次の入力を待ち受けます。前回の移動距離が既定値以下の場合flagが1になり、斜め方向のスキャンをとばし4方向と中央のみスキャンします。<br>
+
+102-110行　待ち受けループです。このループは一回100ミリ秒のループをスキャン間隔（秒）の10倍の回数（1秒なら10回）継続します。そしてこの間にF7キーの押下があれば（107行）サブルーチンLA1へ飛びます。<br>
+
+112-123行　待ち受けループその2です。上の待ち受けループと同じ方法でスキャンします。違っているのは、メインループの中央からここへ来て、この間にF7キーの押下があれば、クリックループ（後述）へ飛びます。<br>
+
+125-161行　クリックループです。ここも上の待ち受けループと同じ方法でスキャンします。メインループの中央でF7キーの押下があるとここに入ります。ここでは左クリック、右クリック、左ダブルクリック、左ドラッグの4択を行います。それぞれのステップで固有の表示を行います。その後クリック動作識別変数Clに1－4の変数を代入し、待ち受けループその3へ飛びます。<br>
+
+163-174行　待ち受けループその3です。ここでF7キーの押下があればクリック部サブルーチンcli1へ飛びます。押下がなければクリックループにもどります。<br>
+
+176-195行　マウスクリック動作を行うサブルーチンcli1です。ここではクリック動作識別変数Clごとにクリック動作を発生します。すなわち、0なら左クリック、1なら右クリック、2なら左ダブルクリック、そして４なら右ドラッグです。これらをifーelse文で実行しています。<br>
+
+その後待ち受けループ３に戻り、クリック作業終了フラグClickflagを１にして、クリックループにもどります。ここでクリック作業終了フラグClickflagが１ですので、すぐに待ち受けループその２に戻り、そこから99行目のメインループの最終行にもどります。<br>
+
+197-272行　マウスカーソルを動かしているところです。サブルーチンLA1です。<br>
+
+ここでまず画面表示を消します。（200行）つぎに移動方向変数Directionの値ごとに基本移動量XとYの値を代入します。<br>
+
+247-272行　のループで実際の移動を行います。249行でループの回数を数えます。<br>
+
+実際の移動量は基本移動量に加速係数の累乗倍です。<br>
+
+すなわちループが１０回未満なら、移動量は基本移動量です。<br>
+
+ループが１１以上２０未満なら、移動量は基本移動量ｘ加速係数<br>
+
+ループが２１以上3０未満なら、移動量は基本移動量ｘ加速係数の2乗<br>
+
+と加速していきます。<br>
+
+ここでF7キーが押下終了されると<br>
+
+まうすカーソルの位置を検出し（257-259行）移動量がlimitstep以下ならflagを1に以上なら０にして（261-264行）カウンタをリセットし（266行）<br>
+
+ループは終了（268行）してマウスカーソルは停止します。<br>
+
+その後、待ち受けループその1、さらにメインループへもどります。<br>
+
+（ここらへんを少しいじると、オルタネイトからモーメンタリに変更できま）<br>
+
+274-289行　ここが画面に表示する部分です。<br>
+
+このプログラムでは5種類の画面表示を使っています。ここにある5種類のサブルーチンが表示をしています。<br>
+
+</p><p>
+実際に試してみたい方は、
+<a target="_blank" href="http://www.toyama-reha.or.jp/techno/engineering/mouse/AHKmouse.exe">常駐型実行ファイル、AHKmouse.exe　をこちらから</a>
+ダウンロードしてください。ダブルクリックで動作を開始します。終了するときはタスクトレイ（通知領域、画面右下の部分）のＨのアイコンを右クリックしてEXITしてください。
+
+
+</p>
+<h2>４　今回のまとめ</h2>
+<p>
+今回、AutoHotkeyを使って「できリング。」と同じような機能を持つマウスソフトの制作に取り組みました。その結果多くの機能を曲がりなりにも再現できたのですが、いくつか十分に再現できないところ、まるで再現できなかったところもありました。
+</p><p>
+たとえば画面表示です。「できリング。」はその名の通りマウスカーソルを中心としたリングを表示しその周辺に小さなリングをスキャンさせる視覚的にわかりやすい外見をしています。しかしAutoHotkeyではグラフィック機能は非常に貧弱で（本来の用途を考えるとこれは当然ともいえるのですが）このような表現がまるでできませんでした。仕方がありませんので、色つきの四角形をProgressコマンドで表示することにしました。このProgressコマンドはその名の通り元々プログレスバーを表示するコマンドですがなんとか形にはなりました。
+</p><p>
+このような取り組みにより徐々に「できリング。」にかなり似たものを作る見通しがたつようになりました。そこで今月初めに、「できリング。」を開発した町田さんにサンプルプログラムをお送りして公開に関してご相談を差しあげました。これに対して「権利関係よりも多くの人に使ってもらえることが大切と考えるので、制作したものを自由に公開してもかまわない」と連絡をいただきました。これで安心してその後の作業を進めることができました。
+</p><p>
+このようないきさつですので、私の制作したものを参考にして改造変造など一切を自由にしていただいてかまいません。「無断でまねした」などと文句をつけるつもりは毛頭ありません。ただおもしろいものができたら公開してください。見にいきます。そして私もまねします。こうやっているとどんどん技術が進歩して、またどこかの誰かの役にたつことができるだろうと考えているからです。
+</p>
+<h2>５　不自由をもつ人のためのマウス作り　の　まとめ</h2>
+<p>
+約2ヶ月にわたってお送りした、不自由をもつ人のためのマウスつくりも今回でひとまず終わりにしようと思います。まず出来の悪い文章をここまでお読みいただきありがとうございます。
+</p><p>
+このシリーズを通じて私がお伝えしたかったことは、まず「プログラミングのススメ」です。今世の中の多くの人たちがパソコン、スマホ、タブレットを使っています。もう生活に欠かせないツールになってしまいました。勤務先の病院でも多くの患者さんがお使いになっています。携帯電話の使用禁止などもはや昔の話で、病棟のあちこちでスマホを見かけます。これらがもうすこし持ち主の役に立つことができたらなんとよいことでしょう。
+</p><p>
+不自由な人たちの生活を改善する自助具がたくさんあるのですが、これからはソフトウエアの自助プログラムが求められるようになると考えています。そしてこれを少ない負担でやる方法として、AutoHotkeyに注目しました。今回の取り組みでご紹介したように「できリング。」がわずか300行でできました。またインターネット上には参考になる多くの人々の記事がありこれにも助けられました。もちろん費用は少なくてすみました。
+</p><p>
+身体が不自由な人と同じように、10年後には情報機器が不自由な人がたくさんいるはずです。その人たちを手助けする準備を今から始めましょう。
+</p><p>
+そして最後にひとこと。らくに学べて役に立つコスパのいいプログラミング言語はどれかと悩んでいるのが一番コスパ悪いです。どのペンを使うかよりもきれいな文字や役に立つ文章の方が大事なのと同じです。
+</p>
+
+<h2>参考URL</h2>
+<p>AutoHotkey　関係
+<ul>
+  <li>AutoHotkey　（本家　英語です）ダウンロードはこちらから<br>
+<a target="_blank" href="https://www.autohotkey.com/">https://www.autohotkey.com/</a></li>
+
+  <li>AutoHotkey　WIKI 　（日本の分家です）使い方マニュアル一覧<br>
+<a target="_blank" href="http://ahkwiki.net/Top">http://ahkwiki.net/Top</a></li>
+
+  <li>AutoHotkeyの評価・使い方 - フリーソフト100　基本的な解説　使い方など<br>
+<a target="_blank" href="https://freesoft-100.com/review/autohotkey.html">https://freesoft-100.com/review/autohotkey.html</a></li>
+
+  <li>AutoHotkey - ウィキペディア<br>
+<a target="_blank" href="https://ja.wikipedia.org/wiki/AutoHotkey">https://ja.wikipedia.org/wiki/AutoHotkey</a></li>
+</ul>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2020/01/24　公開<br>
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
