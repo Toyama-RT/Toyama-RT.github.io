@@ -2,7 +2,7 @@
   "name": "Web Mojiban 4",
   "short_name": "Web Moji 4",
   "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "background_color": "#c0c0c0",
   "display": "standalone",
   "orientation": "landscape",
   "start_url": "./hcj.html",
