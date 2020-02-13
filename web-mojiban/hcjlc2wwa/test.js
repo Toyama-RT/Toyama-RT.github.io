@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //文書ファイル保存機能
   //local storage 関係宣言
    var SERVICE_NAME0 = 'SERVICE_NAME0';
+   var storage00;
    var storage0;
    var SERVICE_NAME1 = 'SERVICE_NAME1';
    var storage1 = null;
@@ -38,27 +39,27 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    var storage10 = null;
 
   //開始時　local storage  から読み込み
-        storage0 = localStorage.getItem('SERVICE_NAME0');
+        storage00 = localStorage.getItem('SERVICE_NAME0');
 
-            if (storage0 == 1 ){  //初回起動時にstrage0=nullとなるのを1にして不具合を回避している
+            if (storage00 == 1 ){  //初回起動時にstrage0=nullとなるのを1にして不具合を回避している
                storage0 =  1;
-            } else if (storage0 == 2 ) {
+            } else if (storage00 == 2 ) {
                storage0 =  2;
-            } else if (storage0 == 3 ) {
+            } else if (storage00 == 3 ) {
                storage0 =  3;
-            } else if (storage0 == 4 ) {
+            } else if (storage00 == 4 ) {
                storage0 =  4;
-            } else if (storage0 == 5 ) {
+            } else if (storage00 == 5 ) {
                storage0 =  5;
-            } else if (storage0 == 6 ) {
+            } else if (storage00 == 6 ) {
                storage0 =  6;
-            } else if (storage0 == 7 ) {
+            } else if (storage00 == 7 ) {
                storage0 =  7;
-            } else if (storage0 == 8 ) {
+            } else if (storage00 == 8 ) {
                storage0 =  8;
-            } else if (storage0 == 9 ) {
+            } else if (storage00 == 9 ) {
                storage0 =  9;
-            } else if (storage0 == 10 ) {
+            } else if (storage00 == 10 ) {
                storage0 =  10;
             } else {
                storage0 =  1;
