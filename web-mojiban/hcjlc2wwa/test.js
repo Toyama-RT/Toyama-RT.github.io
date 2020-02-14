@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         storage10 = '';
     }
   //終了時　local storage  へ保存
-   window.onbeforeunload = function() {
+   window.onunload = window.onbeforeunload = function() {
             if (storage0 == 1 ){
                storage1 = text1.value;
             } else if (storage0 == 2 ) {
