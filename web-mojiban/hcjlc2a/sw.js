@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 'hcjlc2a';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc2a';
 
