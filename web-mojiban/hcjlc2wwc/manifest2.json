@@ -1,0 +1,16 @@
+{
+  "name": "Web Mojiban 4C",
+  "short_name": "Web Moji 4C",
+  "theme_color": "#2196f3",
+  "background_color": "#c0c0c0",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./hcj.html",
+  "icons": [
+    {
+      "src": "./ico/test192i.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
