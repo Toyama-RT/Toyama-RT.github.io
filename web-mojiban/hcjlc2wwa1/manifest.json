@@ -1,0 +1,27 @@
+{
+  "name"              : "PWA SAMPLE123",
+  "short_name"        : "PWAS123",
+  "description"       : "PWA‚ÌƒeƒXƒg",
+  "start_url"         : "/?utm_source=homescreen",
+  "display"           : "standalone",
+  "orientation"       : "portrait",
+  "background_color"  : "#000000",
+  "theme_color"       : "#ffffff",
+  "icons": [
+    {
+      "src"           : "/img/manifest_icon-192.png",
+      "sizes"         : "192x192",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "/img/manifest_icon-256.png",
+      "sizes"         : "256x256",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "/img/manifest_icon-512.png",
+      "sizes"         : "512x512",
+      "type"          : "image/png"
+    }
+  ]
+}
