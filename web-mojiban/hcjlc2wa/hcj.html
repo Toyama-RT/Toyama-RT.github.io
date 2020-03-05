@@ -11,10 +11,24 @@
   gtag('config', 'UA-82832782-3');
 </script>
 
+<!-- for iOS  アドレスバー等のブラウザのUIを非表示 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="Web Mojiban 4">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="./ico/test192i.png">
+
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <title>HCJLC2WA</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="manifest" href="./manifest2.json">
+<!-- ios icon 表示対策 pwacompat -->
+<script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
+    integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
+    crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="./test.js"></script>
 
 <script>
