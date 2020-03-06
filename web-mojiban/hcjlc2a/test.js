@@ -1797,11 +1797,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       if (CBoard0 == 0 ){
         synthes.text = 'のばす';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "－";
+      text1.value = text1.value + "ー";
       } else if (CBoard0 == 1 ){
         synthes.text = 'のばす';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "－";
+      text1.value = text1.value + "ー";
       } else if (CBoard0 == 2 ){
         synthes.text = 'なぞ';
         speechSynthesis.speak(synthes);
