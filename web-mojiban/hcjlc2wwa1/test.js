@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", function() {
       //new Audio('./snd/se3.mp3').play();
-      new Audio(`/snd/se3.mp3`).play();
+      new Audio(`./snd/se3.mp3`).play();
 
             if (storage0 == 1 ){
                storage1 = text1.value;
@@ -327,7 +327,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", function() {
       //new Audio('./snd/se2.mp3').play();
-      new Audio(`/snd/se2.mp3`).play();
+      new Audio(`./snd/se2.mp3`).play();
 
       //location.href = '#text2';
       //setCursorend2();
