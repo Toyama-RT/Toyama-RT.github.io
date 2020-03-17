@@ -247,11 +247,16 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                 speechSynthesis.speak(synthes);
      }, false);
      //文書切り替え部分
+// audio test
+document.getElementById("bun").onclick = function(){
+  document.getElementById("sound1").play();
+};
+
+
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", function() {
       //new Audio('./snd/se3.mp3').play();
       new Audio(`./snd/se3.mp3`).play();
-
             if (storage0 == 1 ){
                storage1 = text1.value;
                text1.value = storage2;
