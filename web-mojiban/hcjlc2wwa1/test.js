@@ -248,13 +248,12 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
      //文書切り替え部分
 // audio test
-document.getElementById("bun").onclick = function(){
-  document.getElementById("sound2").play();
-};
-
-
+//document.getElementById("bun").onclick = function(){
+//  document.getElementById("sound2").play();
+//};
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", function() {
+  document.getElementById("sound2").play();
       //new Audio('./snd/se3.mp3').play();
       //new Audio(`./snd/se3.mp3`).play();
             if (storage0 == 1 ){
@@ -331,16 +330,16 @@ document.getElementById("bun").onclick = function(){
      }, false);
 
 // audio test
-document.getElementById("mojiban").onclick = function(){
-  document.getElementById("sound1").play();
-};
-
-
+//document.getElementById("mojiban").onclick = function(){
+//  document.getElementById("sound1").play();
+//};
 
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", function() {
+  document.getElementById("sound1").play();
+
       //new Audio('./snd/se2.mp3').play();
-      new Audio(`./snd/se2.mp3`).play();
+      //new Audio(`./snd/se2.mp3`).play();
 
       //location.href = '#text2';
       //setCursorend2();
