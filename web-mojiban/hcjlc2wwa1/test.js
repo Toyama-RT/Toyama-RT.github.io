@@ -1461,7 +1461,10 @@ document.getElementById("mojiban").onclick = function(){
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ボ';
                  } else {
-                   new Audio('./snd/incorrect2.mp3').play();
+//document.getElementById("bun").onclick = function(){
+  document.getElementById("sound3").play();
+//};
+                   //new Audio('./snd/incorrect2.mp3').play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'ええーと';
@@ -1624,7 +1627,11 @@ document.getElementById("mojiban").onclick = function(){
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ッ';
                  } else {
-                   new Audio('./snd/incorrect2.mp3').play();
+//document.getElementById("bun").onclick = function(){
+  document.getElementById("sound2").play();
+//};
+
+                   //new Audio('./snd/incorrect2.mp3').play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
