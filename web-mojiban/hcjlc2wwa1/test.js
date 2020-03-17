@@ -253,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //};
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", function() {
+  document.getElementById("sound2").currentTime = 0;
   document.getElementById("sound2").play();
       //new Audio('./snd/se3.mp3').play();
       //new Audio(`./snd/se3.mp3`).play();
@@ -336,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", function() {
+  document.getElementById("sound1").currentTime = 0;
   document.getElementById("sound1").play();
 
       //new Audio('./snd/se2.mp3').play();
