@@ -249,7 +249,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      //文書切り替え部分
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/se3.mp3').play();
+         document.getElementById("sound2").currentTime = 0;
+         document.getElementById("sound2").play();
 
             if (storage0 == 1 ){
                storage1 = text1.value;
@@ -325,7 +326,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", function() {
-      new Audio('./snd/se2.mp3').play();
+         document.getElementById("sound1").currentTime = 0;
+         document.getElementById("sound1").play();
       //location.href = '#text2';
       //setCursorend2();
       //ref https://www.sejuku.net/blog/64379
@@ -1445,8 +1447,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ボ';
                  } else {
-                   new Audio('./snd/incorrect2.mp3').play();
-                 } 
+                   document.getElementById("sound3").play();
+                } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'ええーと';
                    speechSynthesis.speak(synthes);
@@ -1608,7 +1610,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ッ';
                  } else {
-                   new Audio('./snd/incorrect2.mp3').play();
+                   document.getElementById("sound3").play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
