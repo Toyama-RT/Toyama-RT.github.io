@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    window_load();
   //ウィンドウサイズ変更時に更新
    window.onresize = window_load;
-  //画面サイズの表示 
+  //画面サイズの表示
    function window_load() {
 	var sW,sH,s;
 	sW = window.innerWidth;
@@ -235,8 +235,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                //synthes.lang = 'en-US';
                //synthes.text = 'hello, Now, We start the enchant.js';
                speechSynthesis.speak(synthes);
-
-
+          // ユーザの操作なしの発声（音声の再生）は近いうちにできなくなる
+          // 代案　「準備いいですか？」と表示し、タップしたら「はじめましょう」と発声する
 //ボタンクリック時の動作
 //ひらがな文字盤
    // 一列目
@@ -247,11 +247,16 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                 speechSynthesis.speak(synthes);
      }, false);
      //文書切り替え部分
+// audio test
+//document.getElementById("bun").onclick = function(){
+//  document.getElementById("sound2").play();
+//};
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", function() {
-         document.getElementById("sound2").currentTime = 0;
-         document.getElementById("sound2").play();
-
+  document.getElementById("sound2").currentTime = 0;
+  document.getElementById("sound2").play();
+      //new Audio('./snd/se3.mp3').play();
+      //new Audio(`./snd/se3.mp3`).play();
             if (storage0 == 1 ){
                storage1 = text1.value;
                text1.value = storage2;
@@ -324,10 +329,20 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "　";
       setCursorend();
      }, false);
+
+// audio test
+//document.getElementById("mojiban").onclick = function(){
+//  document.getElementById("sound1").play();
+//};
+
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", function() {
-         document.getElementById("sound1").currentTime = 0;
-         document.getElementById("sound1").play();
+  document.getElementById("sound1").currentTime = 0;
+  document.getElementById("sound1").play();
+
+      //new Audio('./snd/se2.mp3').play();
+      //new Audio(`./snd/se2.mp3`).play();
+
       //location.href = '#text2';
       //setCursorend2();
       //ref https://www.sejuku.net/blog/64379
@@ -1447,8 +1462,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ボ';
                  } else {
-                   document.getElementById("sound3").play();
-                } 
+//document.getElementById("bun").onclick = function(){
+  document.getElementById("sound3").play();
+//};
+                   //new Audio('./snd/incorrect2.mp3').play();
+                 } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'ええーと';
                    speechSynthesis.speak(synthes);
@@ -1610,7 +1628,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ッ';
                  } else {
-                   document.getElementById("sound3").play();
+//document.getElementById("bun").onclick = function(){
+  document.getElementById("sound2").play();
+//};
+
+                   //new Audio('./snd/incorrect2.mp3').play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
