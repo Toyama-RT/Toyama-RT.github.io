@@ -21,19 +21,22 @@
 <link rel="apple-touch-icon" href="./ico/test192i.png">
 
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title>HCJLC2WWA1</title>
+    <title>HCJLC2WWA3</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+<!-- for PWA マニフェストファイル読み込み -->
     <link rel="manifest" href="./manifest2.json">
-    <audio id="sound1" src="./snd/se2.mp3"></audio>   <!-- audiotest  -->
-    <audio id="sound2" src="./snd/se3.mp3"></audio>   <!-- audiotest  -->
-    <audio id="sound3" src="./snd/incorrect2.mp3"></audio>   <!-- audiotest  -->
+<!-- 使用するサウンドファイルの登録 -->
+    <audio id="sound1" src="./snd/se2.mp3"></audio>
+    <audio id="sound2" src="./snd/se3.mp3"></audio>
+    <audio id="sound3" src="./snd/incorrect2.mp3"></audio>
 
 <!-- ios icon 表示対策 pwacompat -->
 <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
     integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
     crossorigin="anonymous"></script>
 
- <!--   <script type="text/javascript" src="./test.js"></script>-->
+<!--   <script type="text/javascript" src="./test.js"></script>-->
+<!-- for PWA servive worker  オフライン動作用サービスワーカー読み込み -->
 
 <script>
 var path = `https://toyama-rt.github.io/web-mojiban/hcjlc2wwa3`;
@@ -50,10 +53,8 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcjlc2wwa3`;
       }
 
 </script>
-
+<!-- 文字盤動作用スクリプト読み込み -->
     <script type="text/javascript" src="./test.js"></script>
-
-
   </head>
   <body>
 <span id="winsize2"></span> <!-- 画面幅高、表示部分 -->

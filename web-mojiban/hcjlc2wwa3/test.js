@@ -235,8 +235,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                //synthes.lang = 'en-US';
                //synthes.text = 'hello, Now, We start the enchant.js';
                speechSynthesis.speak(synthes);
-
-
+          // ユーザの操作なしの発声（音声の再生）は近いうちにできなくなる
+          // 代案　「準備いいですか？」と表示し、タップしたら「はじめましょう」と発声する
 //ボタンクリック時の動作
 //ひらがな文字盤
    // 一列目
