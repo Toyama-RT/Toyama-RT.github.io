@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み終わってから以下を実行せよ
+//画面大きさ表示部分
+  //読み込み時の表示
+   window_load();
+  //ウィンドウサイズ変更時に更新
+   window.onresize = window_load;
+  //画面サイズの表示
+   function window_load() {
+	var sW,sH,s;
+	sW = window.innerWidth;
+	sH = window.innerHeight;
+	s = 'windows size 巾 ' + sW + ' 高 ' + sH;
+	//document.getElementById("winsize2").innerHTML = s;
+   }
+//文書ファイル保存機能
+  //local storage 関係宣言
    var SERVICE_NAME0 = 'SERVICE_NAME0';
    var storage00;
    var storage0;
@@ -22,48 +38,6 @@
    var SERVICE_NAME10 = 'SERVICE_NAME10';
    var storage10 = null;
 
-    // var text1 = document.getElementById("text1");
-
-document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み終わってから以下を実行せよ
-//画面大きさ表示部分
-  //読み込み時の表示
-   window_load();
-  //ウィンドウサイズ変更時に更新
-   window.onresize = window_load;
-  //画面サイズの表示
-   function window_load() {
-	var sW,sH,s;
-	sW = window.innerWidth;
-	sH = window.innerHeight;
-	s = 'windows size 巾 ' + sW + ' 高 ' + sH;
-	//document.getElementById("winsize2").innerHTML = s;
-   }
-//文書ファイル保存機能
-  //local storage 関係宣言
-/*   var SERVICE_NAME0 = 'SERVICE_NAME0';
-   var storage00;
-   var storage0;
-   var SERVICE_NAME1 = 'SERVICE_NAME1';
-   var storage1 = null;
-   var SERVICE_NAME2 = 'SERVICE_NAME2';
-   var storage2 = null;
-   var SERVICE_NAME3 = 'SERVICE_NAME3';
-   var storage3 = null;
-   var SERVICE_NAME4 = 'SERVICE_NAME4';
-   var storage4 = null;
-   var SERVICE_NAME5 = 'SERVICE_NAME5';
-   var storage5 = null;
-   var SERVICE_NAME6 = 'SERVICE_NAME6';
-   var storage6 = null;
-   var SERVICE_NAME7 = 'SERVICE_NAME7';
-   var storage7 = null;
-   var SERVICE_NAME8 = 'SERVICE_NAME8';
-   var storage8 = null;
-   var SERVICE_NAME9 = 'SERVICE_NAME9';
-   var storage9 = null;
-   var SERVICE_NAME10 = 'SERVICE_NAME10';
-   var storage10 = null;
-*/
   //開始時　local storage  から読み込み
         storage00 = localStorage.getItem('SERVICE_NAME0');
 
@@ -142,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
     } catch(e) {
         storage10 = '';
     }
-  //終了時　local storage  へ保存//localstorage対策３2020/02/19
-/*   window.onunload = window.onbeforeunload = function() {
+  //終了時　local storage  へ保存
+   window.onunload = window.onbeforeunload = function() {
             if (storage0 == 1 ){
                storage1 = text1.value;
             } else if (storage0 == 2 ) {
@@ -179,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
        localStorage[SERVICE_NAME8] = JSON.stringify(storage8);
        localStorage[SERVICE_NAME9] = JSON.stringify(storage9);
        localStorage[SERVICE_NAME10] = JSON.stringify(storage10);
-   }  */
+   }
 //文書ファイル保存機能ここまで
 
 //文字盤判別番号
@@ -292,7 +266,6 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                text1.value = storage1;
                storage0 = 1;
             }
-       localStorage.setItem('SERVICE_NAME0', storage0 ); //localstorage対策３2020/02/19　文番号の保存
       Bunnum(storage0);
       setCursorend();
      }, false);
@@ -1797,11 +1770,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       if (CBoard0 == 0 ){
         synthes.text = 'のばす';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ー";
+      text1.value = text1.value + "－";
       } else if (CBoard0 == 1 ){
         synthes.text = 'のばす';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ー";
+      text1.value = text1.value + "－";
       } else if (CBoard0 == 2 ){
         synthes.text = 'なぞ';
         speechSynthesis.speak(synthes);
@@ -1839,38 +1812,6 @@ function setCursorend() {
       text1.focus();
       text1.setSelectionRange(len, len);
 document.activeElement.blur();//Androidでキーボード出現を止めるためフォーカスを外す
-//localstorage対策３2020/02/19　文の保存
-            if (storage0 == 1 ){
-               storage1 = text1.value;
-               localStorage[SERVICE_NAME1] = JSON.stringify(storage1);
-            } else if (storage0 == 2 ){
-               storage2 = text1.value;
-               localStorage[SERVICE_NAME2] = JSON.stringify(storage2);
-            } else if (storage0 == 3 ){
-               storage3 = text1.value;
-               localStorage[SERVICE_NAME3] = JSON.stringify(storage3);
-            } else if (storage0 == 4 ){
-               storage4 = text1.value;
-               localStorage[SERVICE_NAME4] = JSON.stringify(storage4);
-            } else if (storage0 == 5 ){
-               storage5 = text1.value;
-               localStorage[SERVICE_NAME5] = JSON.stringify(storage5);
-            } else if (storage0 == 6 ){
-               storage6 = text1.value;
-               localStorage[SERVICE_NAME6] = JSON.stringify(storage6);
-            } else if (storage0 == 7 ){
-               storage7 = text1.value;
-               localStorage[SERVICE_NAME7] = JSON.stringify(storage7);
-            } else if (storage0 == 8 ){
-               storage8 = text1.value;
-               localStorage[SERVICE_NAME8] = JSON.stringify(storage8);
-            } else if (storage0 == 9 ){
-               storage9 = text1.value;
-               localStorage[SERVICE_NAME9] = JSON.stringify(storage9);
-            } else if (storage0 == 10 ){
-               storage10 = text1.value;
-               localStorage[SERVICE_NAME10] = JSON.stringify(storage10);
-            }
 }
 
 function Bunnum(param) {
