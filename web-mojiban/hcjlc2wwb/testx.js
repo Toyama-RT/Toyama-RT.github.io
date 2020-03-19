@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	sW = window.innerWidth;
 	sH = window.innerHeight;
 	s = 'windows size 巾 ' + sW + ' 高 ' + sH;
+	//document.getElementById("winsize2").innerHTML = s;
    }
 //文書ファイル保存機能
   //local storage 関係宣言
@@ -182,12 +183,14 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //文書ファイル保存機能ここまで
 
 //文字盤判別番号
-   var CBoard0 = 0;  // 0=> hiragana 1=> katakana 2=> aisatsu 3=> karada
+   var CBoard0 = 0;  // 0=> hiragana 1=> katakana
 
       location.href = '#text1';
 
 //テキストボックスへの初期文字列の書き込み部
      var text1 = document.getElementById("text1");
+     //var text2 = document.getElementById("text2");
+
 
             if (storage0 == 1 ){       // 文書番号storage0に指定された番号の文書をtext1に読み込んで表示する
                text1.value = storage1;
@@ -232,8 +235,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                //synthes.lang = 'en-US';
                //synthes.text = 'hello, Now, We start the enchant.js';
                speechSynthesis.speak(synthes);
-          // ユーザの操作なしの発声（音声の再生）は近いうちにできなくなる
-          // 代案　「準備いいですか？」と表示し、タップしたら「はじめましょう」と発声する
+
+
 //ボタンクリック時の動作
 //ひらがな文字盤
    // 一列目
@@ -246,8 +249,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      //文書切り替え部分
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", function() {
-          document.getElementById("sound2").currentTime = 0;
-          document.getElementById("sound2").play();
+      new Audio('./snd/se3.mp3').play();
+
             if (storage0 == 1 ){
                storage1 = text1.value;
                text1.value = storage2;
@@ -320,12 +323,12 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       text1.value = text1.value + "　";
       setCursorend();
      }, false);
-
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", function() {
-          document.getElementById("sound1").currentTime = 0;
-          document.getElementById("sound1").play();
-
+      new Audio('./snd/se2.mp3').play();
+      //location.href = '#text2';
+      //setCursorend2();
+      //ref https://www.sejuku.net/blog/64379
       CBoardChange(CBoard0);
              if (CBoard0 == 0 ){
                CBoard0 = 1;
@@ -1442,7 +1445,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ボ';
                  } else {
-                   document.getElementById("sound3").play();
+                   new Audio('./snd/incorrect2.mp3').play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'ええーと';
@@ -1532,7 +1535,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    speechSynthesis.speak(synthes);
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'っ';
+
                  } else if (lastletter == 'ハ'){
+                 //if (lastletter == 'ハ') {
                    synthes.text = 'ぱ';
                    speechSynthesis.speak(synthes);
                    text1.value = text1.value.substring(0, text1.value.length -1 );
@@ -1603,7 +1608,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ッ';
                  } else {
-                   document.getElementById("sound2").play();
+                   new Audio('./snd/incorrect2.mp3').play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
@@ -1825,8 +1830,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
 }, false);
 
-//　テキストボックスのカーソルを末尾に移動する機能
+
+
+
 function setCursorend() {
+   //text2.value = text1.value;
    var len = text1.value.length;
       text1.focus();
       text1.setSelectionRange(len, len);
@@ -1864,7 +1872,7 @@ document.activeElement.blur();//Androidでキーボード出現を止めるた�
                localStorage[SERVICE_NAME10] = JSON.stringify(storage10);
             }
 }
-//　文番号切り替え部分
+
 function Bunnum(param) {
       var elem = document.getElementById("bun");
 
@@ -1904,7 +1912,7 @@ function Bunnum(param) {
           break;
       }
     }
-// 文字盤切り替え機能
+
 function CBoardChange(param1){
       var elem = document.getElementById("mojiban");
       var elema = document.getElementById("a");
@@ -2171,7 +2179,10 @@ function CBoardChange(param1){
     }
 
 
-// ref. 
-//https://gist.github.com/roundrop/6504455
+// ref. https://gist.github.com/roundrop/6504455
+
+//ref.
+
 //https://www.imamura.biz/blog/27539
 //https://teratail.com/questions/24714
+
