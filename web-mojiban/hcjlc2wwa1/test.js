@@ -255,8 +255,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	 obj.addEventListener("click", function() {
   document.getElementById("sound2").currentTime = 0;
   document.getElementById("sound2").play();
-      //new Audio('./snd/se3.mp3').play();
-      //new Audio(`./snd/se3.mp3`).play();
+      //new Audio('./snd/se3.wma').play();
+      //new Audio(`./snd/se3.wma`).play();
             if (storage0 == 1 ){
                storage1 = text1.value;
                text1.value = storage2;
@@ -1465,7 +1465,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //document.getElementById("bun").onclick = function(){
   document.getElementById("sound3").play();
 //};
-                   //new Audio('./snd/incorrect2.mp3').play();
+                   //new Audio('./snd/incorrect2.wav').play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'ええーと';
@@ -1632,7 +1632,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
   document.getElementById("sound2").play();
 //};
 
-                   //new Audio('./snd/incorrect2.mp3').play();
+                   //new Audio('./snd/incorrect2.wav').play();
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
