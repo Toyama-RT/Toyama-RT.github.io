@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
          document.getElementById("sound2").currentTime = 0;
          document.getElementById("sound2").play();
 
-        const src = new AudioBufferSourceNode(audioctx1, {buffer:sound1});
+        const src = new AudioBufferSourceNode(audioctx1, {buffer:sound});
         src.connect(audioctx1.destination);
         src.start();
 
