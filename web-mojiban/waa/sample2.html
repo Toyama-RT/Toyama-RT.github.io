@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>First Step</h1>
+<button onclick="Play()"> Play </button><br/>
+<script>
+function Play() {
+    audioctx = new AudioContext();      // AudioContext を作成
+    osc = new OscillatorNode(audioctx); // オシレータを作成
+    osc.connect(audioctx.destination);  // オシレータを出力に接続
+    osc.start();                        // オシレータ動作開始
+}
+</script>
+</body>
+</html>

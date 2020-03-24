@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Buffer source</h1>
+<button id="playbtn">Play</button><br/>
+<script>
+
+window.addEventListener("load", async ()=>{
+    const audioctx = new AudioContext();
+    const sound = await LoadSample(audioctx, "./se2.wav");
+
+    document.getElementById("playbtn").addEventListener("click",()=>{
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+    });
+
+    function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+    }
+});
+</script>
+
+</body>
+</html>
