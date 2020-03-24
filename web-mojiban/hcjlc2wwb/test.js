@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    }
 // web audio API 関係
     const audioctx1 = new AudioContext();
-    const sound1 = LoadSample(audioctx1, "./snd/se2.wav");
+    const sound = LoadSample(audioctx1, "./snd/se2.wav");
     const audioctx2 = new AudioContext();
     const sound2 = LoadSample(audioctx2, "./snd/se3.wav");
     const audioctx3 = new AudioContext();
