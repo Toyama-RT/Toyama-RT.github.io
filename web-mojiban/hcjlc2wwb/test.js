@@ -39,24 +39,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	//document.getElementById("winsize2").innerHTML = s;
    }
 // web audio API 関係
-    const audioctx1 = new AudioContext();
-    const sound = LoadSample(audioctx1, "./snd/se2.wav");
     const audioctx2 = new AudioContext();
     const sound2 = LoadSample(audioctx2, "./snd/se3.wav");
     const audioctx3 = new AudioContext();
     const sound3 = LoadSample(audioctx3, "./snd/incorrect2.wav");
 
-    function LoadSample(actx, url) {
-        return new Promise((resolv)=>{
-            fetch(url).then((response)=>{
-                return response.arrayBuffer();
-            }).then((arraybuf)=>{
-                return actx.decodeAudioData(arraybuf);
-            }).then((buf)=>{
-                resolv(buf);
-            })
-        });
-    }
 
 
 //文書ファイル保存機能
@@ -269,13 +256,31 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
      //文書切り替え部分
      var obj = document.getElementById('bun');
-	 obj.addEventListener("click", function() {
+	 obj.addEventListener("click", async function() {
          document.getElementById("sound2").currentTime = 0;
          document.getElementById("sound2").play();
 
-        const src = new AudioBufferSourceNode(audioctx1, {buffer:sound});
-        src.connect(audioctx1.destination);
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/se2.wav");
+
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
         src.start();
+
+    function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+    }
+
+
+
 
             if (storage0 == 1 ){
                storage1 = text1.value;
