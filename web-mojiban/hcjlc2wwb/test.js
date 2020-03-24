@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	//document.getElementById("winsize2").innerHTML = s;
    }
 // web audio API 関係
-    const audioctx2 = new AudioContext();
-    const sound2 = LoadSample(audioctx2, "./snd/se3.wav");
-    const audioctx3 = new AudioContext();
-    const sound3 = LoadSample(audioctx3, "./snd/incorrect2.wav");
+    //const audioctx2 = new AudioContext();
+    //const sound2 = LoadSample(audioctx2, "./snd/se3.wav");
+    //const audioctx3 = new AudioContext();
+    //const sound3 = LoadSample(audioctx3, "./snd/incorrect2.wav");
 
 
 
