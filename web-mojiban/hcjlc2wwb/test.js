@@ -38,6 +38,27 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	s = 'windows size 巾 ' + sW + ' 高 ' + sH;
 	//document.getElementById("winsize2").innerHTML = s;
    }
+// web audio API 関係
+    const audioctx1 = new AudioContext();
+    const sound1 = await LoadSample(audioctx1, "./snd/se2.wav");
+    const audioctx2 = new AudioContext();
+    const sound2 = await LoadSample(audioctx2, "./snd/se3.wav");
+    const audioctx3 = new AudioContext();
+    const sound3 = await LoadSample(audioctx3, "./snd/incorrect2.wav");
+
+    function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+    }
+
+
 //文書ファイル保存機能
   //local storage 関係宣言
 /*   var SERVICE_NAME0 = 'SERVICE_NAME0';
@@ -251,6 +272,10 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	 obj.addEventListener("click", function() {
          document.getElementById("sound2").currentTime = 0;
          document.getElementById("sound2").play();
+
+        const src = new AudioBufferSourceNode(audioctx1, {buffer:sound1});
+        src.connect(audioctx1.destination);
+        src.start();
 
             if (storage0 == 1 ){
                storage1 = text1.value;
