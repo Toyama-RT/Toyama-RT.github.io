@@ -16,10 +16,10 @@
  */
 
 //'use strict';
-const prefix = 'hcjlc2wb';
+const prefix = 'hcjlc2b';
 const CACHE_NAME = prefix + '01';
 
-var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc2wb';
+var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc2b';
 
 self.addEventListener('install', e => {
   e.waitUntil(
