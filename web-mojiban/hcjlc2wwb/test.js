@@ -22,10 +22,8 @@
    var SERVICE_NAME10 = 'SERVICE_NAME10';
    var storage10 = null;
 
-    // var text1 = document.getElementById("text1");
-
 document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み終わってから以下を実行せよ
-//画面大きさ表示部分
+//画面大きさ表示部分　テスト用
   //読み込み時の表示
    window_load();
   //ウィンドウサイズ変更時に更新
@@ -38,16 +36,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	s = 'windows size 巾 ' + sW + ' 高 ' + sH;
 	//document.getElementById("winsize2").innerHTML = s;
    }
-// web audio API 関係
-    //const audioctx2 = new AudioContext();
-    //const sound2 = LoadSample(audioctx2, "./snd/se3.wav");
-    //const audioctx3 = new AudioContext();
-    //const sound3 = LoadSample(audioctx3, "./snd/incorrect2.wav");
-
-
 
 //文書ファイル保存機能
-  //local storage 関係宣言
+  //local storage 関係宣言 グローバル変数化のため、文頭へ移動した
 /*   var SERVICE_NAME0 = 'SERVICE_NAME0';
    var storage00;
    var storage0;
@@ -99,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                storage0 =  1;
             }
 
-
     try {
         storage1 = JSON.parse(localStorage[SERVICE_NAME1] || '');
     } catch(e) {
@@ -150,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
     } catch(e) {
         storage10 = '';
     }
-  //終了時　local storage  へ保存//localstorage対策３2020/02/19
+  //終了時　local storage  へ保存//localstorage対策３2020/02/19　入力後カーソル移動ファンクション部分へ移動
 /*   window.onunload = window.onbeforeunload = function() {
             if (storage0 == 1 ){
                storage1 = text1.value;
@@ -197,8 +187,6 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 //テキストボックスへの初期文字列の書き込み部
      var text1 = document.getElementById("text1");
-     //var text2 = document.getElementById("text2");
-
 
             if (storage0 == 1 ){       // 文書番号storage0に指定された番号の文書をtext1に読み込んで表示する
                text1.value = storage1;
@@ -226,13 +214,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 //文書切り替えボタンを表示文番号にあわせて変更する
     Bunnum(storage0);
 //テキストボックスクリック時のカーソル出現＞Androidでのキーボード出現防止
-//これでもクリック後KBが表示される。解決できない
+//これでもクリック後KBが表示される。解決できない＞出なくなった
      var obj = document.getElementById('text1');
 	 obj.addEventListener("click", function() {
                setCursorend();
      }, false);
 
-  //web speech api tts 音声の設定と起動時の音声発声設定
+  //web speech api tts 音声の設定と起動時の音声発声設定　ユーザの操作なしには許可されない場合がこれから増える
             var synthes = new SpeechSynthesisUtterance();
                synthes.voiceURI = 'Google 日本人';//'native';
                synthes.volume = 1;
@@ -240,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                synthes.pitch = 1;
                synthes.lang = 'ja-JP';
                synthes.text = '準備出来ました';
-               //synthes.lang = 'en-US';
+               //synthes.lang = 'en-US';//米語の例
                //synthes.text = 'hello, Now, We start the enchant.js';
                speechSynthesis.speak(synthes);
 
@@ -257,17 +245,14 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      //文書切り替え部分
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", async function() {
-         document.getElementById("sound2").currentTime = 0;
-         document.getElementById("sound2").play();
-
+     // web audio API によるサウンド出力
         const audioctx = new AudioContext();
-        const sound = await LoadSample(audioctx, "./snd/se2.wav");
-
+        const sound = await LoadSample(audioctx, "./snd/se3.wav");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
         src.start();
 
-    function LoadSample(actx, url) {
+      function LoadSample(actx, url) {
         return new Promise((resolv)=>{
             fetch(url).then((response)=>{
                 return response.arrayBuffer();
@@ -277,10 +262,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                 resolv(buf);
             })
         });
-    }
-
-
-
+      }
 
             if (storage0 == 1 ){
                storage1 = text1.value;
@@ -355,12 +337,26 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       setCursorend();
      }, false);
      var obj = document.getElementById('mojiban');
-	 obj.addEventListener("click", function() {
-         document.getElementById("sound1").currentTime = 0;
-         document.getElementById("sound1").play();
-      //location.href = '#text2';
-      //setCursorend2();
-      //ref https://www.sejuku.net/blog/64379
+	 obj.addEventListener("click", async function() {
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/se2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+
       CBoardChange(CBoard0);
              if (CBoard0 == 0 ){
                CBoard0 = 1;
@@ -1271,7 +1267,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
    //濁音処理部分
      var obj = document.getElementById('gb');
-	 obj.addEventListener("click", function() {
+	 obj.addEventListener("click", async function() {
 
       if (CBoard0 == 0 || CBoard0 == 1 ) {
                 lastletter = text1.value.charAt(text1.value.length -1);
@@ -1477,7 +1473,26 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ボ';
                  } else {
-                   document.getElementById("sound3").play();
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+
+
                 } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'ええーと';
@@ -1493,7 +1508,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
     //半濁音　小文字処理部分
      var obj = document.getElementById('gc');
-	 obj.addEventListener("click", function() {
+	 obj.addEventListener("click", async function() {
 
       if (CBoard0 == 0 || CBoard0 == 1 ) {
                 lastletter = text1.value.charAt(text1.value.length -1);
@@ -1640,7 +1655,26 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ッ';
                  } else {
-                   document.getElementById("sound3").play();
+                   //document.getElementById("sound3").play();
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
@@ -2210,11 +2244,8 @@ function CBoardChange(param1){
       }
     }
 
-
+// 参考url
 // ref. https://gist.github.com/roundrop/6504455
-
-//ref.
-
 //https://www.imamura.biz/blog/27539
 //https://teratail.com/questions/24714
 
