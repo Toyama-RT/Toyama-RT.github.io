@@ -574,9 +574,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('a');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '高田先生';
+        synthes.text = 'あ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "高田先生";
+      text1.value = text1.value + "あ";
       } else if (CBoard0 == 1 ){
         synthes.text = 'あ';
         speechSynthesis.speak(synthes);
