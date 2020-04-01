@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
    var storage10 = null;
 */
   //開始時　local storage  から読み込み
-        storage00 = localStorage.getItem('SERVICE_NAME0');
+/*        storage00 = localStorage.getItem('SERVICE_NAME0');
 
             if (storage00 == 1 ){  //初回起動時にstrage0=nullとなるのを1にして不具合を回避している
                storage0 =  1;
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
     } catch(e) {
         storage10 = '';
     }
-
+*/
 
 // フォーカス時にローカルストレージを読み込みなおす　　マルチWeb文字盤機能
    window.onload = window.onfocus = function() {
@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       location.href = '#text1';
 
 //テキストボックスへの初期文字列の書き込み部
-     var text1 = document.getElementById("text1");
+/*     var text1 = document.getElementById("text1");
 
             if (storage0 == 1 ){       // 文書番号storage0に指定された番号の文書をtext1に読み込んで表示する
                text1.value = storage1;
@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                text1.value = storage10;
             }
                setCursorend();
-
+*/
 //文書切り替えボタンを表示文番号にあわせて変更する
     Bunnum(storage0);
 //テキストボックスクリック時のカーソル出現＞Androidでのキーボード出現防止
