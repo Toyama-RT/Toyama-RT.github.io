@@ -247,6 +247,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                text1.value = storage10;
             }
                setCursorend();
+      Bunnum(storage0);
 
    }
 
