@@ -451,23 +451,23 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", async function() {
      // web audio API によるサウンド出力
-     //   const audioctx = new AudioContext();
-     //   const sound = await LoadSample(audioctx, "./snd/se2.wav");
-     //   const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
-     //   src.connect(audioctx.destination);
-     //   src.start();
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/se2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
 
-     //  function LoadSample(actx, url) {
-     //   return new Promise((resolv)=>{
-     //       fetch(url).then((response)=>{
-     //           return response.arrayBuffer();
-     //       }).then((arraybuf)=>{
-     //           return actx.decodeAudioData(arraybuf);
-     //       }).then((buf)=>{
-     //           resolv(buf);
-     //       })
-     //   });
-     //  }
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
 
       CBoardChange(CBoard0);
              if (CBoard0 == 0 ){
@@ -512,9 +512,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "井波所長さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'カレーライス';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "カレーライス";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -533,9 +533,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "才崎さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'うどん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "うどん";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -554,9 +554,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "たかはらさん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'オムライス';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "オムライス";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -575,9 +575,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "黒田先生";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'ハンバーガー';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "ハンバーガー";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -596,9 +596,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "谷川さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'チャーハン';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "チャーハン";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -618,9 +618,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "米沢課長さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'ラーメン';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "ラーメン";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -639,9 +639,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "後藤さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'そば';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "そば";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -660,9 +660,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "中野さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'たいやき';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "たいやき";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -681,9 +681,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "塚本さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'トースト';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "トースト";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -702,9 +702,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "岩崎さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'ギョーザ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "ギョーザ";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -724,9 +724,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "山形さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はい';
+        synthes.text = 'ピザ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "ピザ";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はい';
         speechSynthesis.speak(synthes);
@@ -745,9 +745,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "田伏さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'ありがとう';
+        synthes.text = 'ごはん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ありがとう";
+      text1.value = text1.value + "ごはん";
       } else if (CBoard0 == 3 ){
         synthes.text = 'あたま';
         speechSynthesis.speak(synthes);
@@ -766,9 +766,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "古岡さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'こんにちは';
+        synthes.text = 'おはし';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "こんにちは";
+      text1.value = text1.value + "おはし";
       } else if (CBoard0 == 3 ){
         synthes.text = 'みみ';
         speechSynthesis.speak(synthes);
@@ -787,9 +787,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "山守さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'たのしいです';
+        synthes.text = 'フォーク';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "たのしいです";
+      text1.value = text1.value + "フォーク";
       } else if (CBoard0 == 3 ){
         synthes.text = 'て';
         speechSynthesis.speak(synthes);
@@ -808,9 +808,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "浅野さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'おはようございます';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おはようございます";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
         synthes.text = 'ひじ';
         speechSynthesis.speak(synthes);
@@ -830,9 +830,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "曲尾さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'いいえ';
+        synthes.text = 'パン';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "いいえ";
+      text1.value = text1.value + "パン";
       } else if (CBoard0 == 3 ){
         synthes.text = 'いいえ';
         speechSynthesis.speak(synthes);
@@ -851,9 +851,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "藤井さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'おねがいします';
+        synthes.text = 'おかし';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おねがいします";
+      text1.value = text1.value + "おかし";
       } else if (CBoard0 == 3 ){
         synthes.text = 'かお';
         speechSynthesis.speak(synthes);
@@ -872,9 +872,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "南さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'さようなら';
+        synthes.text = 'スプーン';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "さようなら";
+      text1.value = text1.value + "スプーン";
       } else if (CBoard0 == 3 ){
         synthes.text = 'まゆ';
         speechSynthesis.speak(synthes);
@@ -893,9 +893,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "米田さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'うれしいです';
+        synthes.text = 'ストロー';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "うれしいです";
+      text1.value = text1.value + "ストロー";
       } else if (CBoard0 == 3 ){
         synthes.text = 'あし';
         speechSynthesis.speak(synthes);
@@ -914,9 +914,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "泉さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'おやすみなさい';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おやすみなさい";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
         synthes.text = 'ひざ';
         speechSynthesis.speak(synthes);
@@ -936,9 +936,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "高田先生";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'どちらでもいいです';
+        synthes.text = 'あけてください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "どちらでもいいです";
+      text1.value = text1.value + "あけてください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'どちらでもいいです';
         speechSynthesis.speak(synthes);
@@ -957,9 +957,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "木倉先生";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'もういいです';
+        synthes.text = 'とおしてください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "もういいです";
+      text1.value = text1.value + "とおしてください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'め';
         speechSynthesis.speak(synthes);
@@ -978,9 +978,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "大村先生";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'はじめまして';
+        synthes.text = 'すててください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はじめまして";
+      text1.value = text1.value + "すててください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'ほっぺ';
         speechSynthesis.speak(synthes);
@@ -999,9 +999,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "看護師さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'さびしいです';
+        synthes.text = '充電してください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "さびしいです";
+      text1.value = text1.value + "充電してください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'ゆび';
         speechSynthesis.speak(synthes);
@@ -1020,9 +1020,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "大島さん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'よろしく';
+        synthes.text = 'おねがいします';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "よろしく";
+      text1.value = text1.value + "おねがいします";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はら';
         speechSynthesis.speak(synthes);
@@ -1042,9 +1042,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "野村先生";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'どちらでもありません';
+        synthes.text = 'しめてください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "どちらでもありません";
+      text1.value = text1.value + "しめてください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'どちらでもありません';
         speechSynthesis.speak(synthes);
@@ -1063,9 +1063,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "麻生先生";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'ごめんなさい';
+        synthes.text = 'ひろってください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ごめんなさい";
+      text1.value = text1.value + "ひろってください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'くち';
         speechSynthesis.speak(synthes);
@@ -1084,9 +1084,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "まさみさん";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'あついです';
+        synthes.text = '入れてください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "あついです";
+      text1.value = text1.value + "入れてください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'くび';
         speechSynthesis.speak(synthes);
@@ -1105,9 +1105,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "先生";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'かなしいです';
+        synthes.text = '電池交換してください';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "かなしいです";
+      text1.value = text1.value + "電池交換してください";
       } else if (CBoard0 == 3 ){
         synthes.text = 'むね';
         speechSynthesis.speak(synthes);
@@ -1126,9 +1126,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'ねむたいです';
+        synthes.text = 'トイレはどこですか';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ねむたいです";
+      text1.value = text1.value + "トイレはどこですか";
       } else if (CBoard0 == 3 ){
         synthes.text = 'せなか';
         speechSynthesis.speak(synthes);
@@ -1148,9 +1148,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "診察";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'もういちどおねがいします';
+        synthes.text = '行ってきます';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "もういちどおねがいします";
+      text1.value = text1.value + "行ってきます";
       } else if (CBoard0 == 3 ){
         synthes.text = 'もういちどおねがいします';
         speechSynthesis.speak(synthes);
@@ -1169,9 +1169,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "リハビリ";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'すこしまってください';
+        synthes.text = 'お帰りなさい';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "すこしまってください";
+      text1.value = text1.value + "お帰りなさい";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はな';
         speechSynthesis.speak(synthes);
@@ -1190,9 +1190,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "内科";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'さむいです';
+        synthes.text = 'いただきます';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "さむいです";
+      text1.value = text1.value + "いただきます";
       } else if (CBoard0 == 3 ){
         synthes.text = 'かた';
         speechSynthesis.speak(synthes);
@@ -1211,9 +1211,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "心理";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'くやしいです';
+        synthes.text = '大丈夫ですか';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "くやしいです";
+      text1.value = text1.value + "大丈夫ですか";
       } else if (CBoard0 == 3 ){
         synthes.text = 'こし';
         speechSynthesis.speak(synthes);
@@ -1232,9 +1232,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "くすり";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'おきています';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おきています";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
         synthes.text = 'おしり';
         speechSynthesis.speak(synthes);
@@ -1254,9 +1254,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "予約";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'まちがえました';
+        synthes.text = 'ただいま';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "まちがえました";
+      text1.value = text1.value + "ただいま";
       } else if (CBoard0 == 3 ){
         synthes.text = 'まちがえました';
         speechSynthesis.speak(synthes);
@@ -1275,9 +1275,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "整形";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'すきです';
+        synthes.text = 'いってらっしゃい';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "すきです";
+      text1.value = text1.value + "いってらっしゃい";
       } else if (CBoard0 == 3 ){
         synthes.text = 'ひだり';
         speechSynthesis.speak(synthes);
@@ -1296,9 +1296,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "精神科";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'げんきです';
+        synthes.text = 'ごちそうさまでした';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "げんきです";
+      text1.value = text1.value + "ごちそうさまでした";
       } else if (CBoard0 == 3 ){
         synthes.text = 'うえ';
         speechSynthesis.speak(synthes);
@@ -1317,9 +1317,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "注射";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'ようこそ';
+        synthes.text = 'こんばんは';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ようこそ";
+      text1.value = text1.value + "こんばんは";
       } else if (CBoard0 == 3 ){
         synthes.text = 'たいへん';
         speechSynthesis.speak(synthes);
@@ -1338,9 +1338,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "副作用";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'まあまあです';
+        synthes.text = 'アピタ東';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "まあまあです";
+      text1.value = text1.value + "アピタ東";
       } else if (CBoard0 == 3 ){
         synthes.text = 'が';
         speechSynthesis.speak(synthes);
@@ -1356,13 +1356,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ま";
       } else if (CBoard0 == 1 ){
-        synthes.text = '頭痛';
+        synthes.text = '頭痛がします';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "頭痛";
+      text1.value = text1.value + "頭痛がします";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'わかりました';
+        synthes.text = '富山';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "わかりました";
+      text1.value = text1.value + "富山";
       } else if (CBoard0 == 3 ){
         synthes.text = 'くるしいです';
         speechSynthesis.speak(synthes);
@@ -1377,13 +1377,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "み";
       } else if (CBoard0 == 1 ){
-        synthes.text = '便秘';
+        synthes.text = '便秘です';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "便秘";
+      text1.value = text1.value + "便秘です";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'きらいです';
+        synthes.text = '富山駅前';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "きらいです";
+      text1.value = text1.value + "富山駅前";
       } else if (CBoard0 == 3 ){
         synthes.text = 'みぎ';
         speechSynthesis.speak(synthes);
@@ -1398,13 +1398,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "む";
       } else if (CBoard0 == 1 ){
-        synthes.text = '熱';
+        synthes.text = '熱があります';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "熱";
+      text1.value = text1.value + "熱があります";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'つかれました';
+        synthes.text = '総が輪';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "つかれました";
+      text1.value = text1.value + "総が輪";
       } else if (CBoard0 == 3 ){
         synthes.text = 'なか';
         speechSynthesis.speak(synthes);
@@ -1419,13 +1419,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "め";
       } else if (CBoard0 == 1 ){
-        synthes.text = '吐き気';
+        synthes.text = '吐き気がします';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "吐き気";
+      text1.value = text1.value + "吐き気がします";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'またきてね';
+        synthes.text = 'しまむら';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "またきてね";
+      text1.value = text1.value + "しまむら";
       } else if (CBoard0 == 3 ){
         synthes.text = 'ふつう';
         speechSynthesis.speak(synthes);
@@ -1440,13 +1440,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "も";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'かぜ';
+        synthes.text = 'かぜぎみです';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "かぜ";
+      text1.value = text1.value + "かぜぎみです";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'でかけます';
+        synthes.text = 'アルプラザ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "でかけます";
+      text1.value = text1.value + "アルプラザ";
       } else if (CBoard0 == 3 ){
         synthes.text = 'に';
         speechSynthesis.speak(synthes);
@@ -1462,13 +1462,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "や";
       } else if (CBoard0 == 1 ){
-        synthes.text = '歯痛';
+        synthes.text = '歯が痛いです';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "歯痛";
+      text1.value = text1.value + "歯が痛いです";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'わかりません';
+        synthes.text = '春';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "わかりません";
+      text1.value = text1.value + "春";
       } else if (CBoard0 == 3 ){
         synthes.text = 'いたいです';
         speechSynthesis.speak(synthes);
@@ -1483,13 +1483,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ゆ";
       } else if (CBoard0 == 1 ){
-        synthes.text = '下痢';
+        synthes.text = '下痢です';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "下痢";
+      text1.value = text1.value + "下痢です";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'しっています';
+        synthes.text = '夏';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "しっています";
+      text1.value = text1.value + "夏";
       } else if (CBoard0 == 3 ){
         synthes.text = 'まえ';
         speechSynthesis.speak(synthes);
@@ -1508,9 +1508,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "かぶれました";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'わたし';
+        synthes.text = '秋';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "わたし";
+      text1.value = text1.value + "秋";
       } else if (CBoard0 == 3 ){
         synthes.text = 'した';
         speechSynthesis.speak(synthes);
@@ -1751,9 +1751,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    speechSynthesis.speak(synthes);
       text1.value = text1.value + "のどが痛いです";
       } else if (CBoard0 == 2 ){
-                   synthes.text = 'のどが痛いです';
+                   synthes.text = '冬';
                    speechSynthesis.speak(synthes);
-      text1.value = text1.value + "のどが痛いです";
+      text1.value = text1.value + "冬";
       } else if (CBoard0 == 3 ){
                    synthes.text = 'すこし';
                    speechSynthesis.speak(synthes);
@@ -1937,9 +1937,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    speechSynthesis.speak(synthes);
       text1.value = text1.value + "せきがでます";
       } else if (CBoard0 == 2 ){
-                   synthes.text = 'せきがでます';
+                   synthes.text = 'ファボーレ';
                    speechSynthesis.speak(synthes);
-      text1.value = text1.value + "せきがでます";
+      text1.value = text1.value + "ファボーレ";
       } else if (CBoard0 == 3 ){
                    synthes.text = 'を';
                    speechSynthesis.speak(synthes);
@@ -1960,9 +1960,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "しびれます";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'どういたしまして';
+        synthes.text = '朝';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "どういたしまして";
+      text1.value = text1.value + "朝";
       } else if (CBoard0 == 3 ){
         synthes.text = 'かゆいです';
         speechSynthesis.speak(synthes);
@@ -1977,13 +1977,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "り";
       } else if (CBoard0 == 1 ){
-        synthes.text = '手洗い';
+        synthes.text = '手洗いをします';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "手洗い";
+      text1.value = text1.value + "手洗いをします";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'しりません';
+        synthes.text = '昼';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "しりません";
+      text1.value = text1.value + "昼";
       } else if (CBoard0 == 3 ){
         synthes.text = 'うしろ';
         speechSynthesis.speak(synthes);
@@ -1998,13 +1998,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "る";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'おふろ';
+        synthes.text = 'おふろにはいります';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おふろ";
+      text1.value = text1.value + "おふろにはいります";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'あなた';
+        synthes.text = '夕方';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "あなた";
+      text1.value = text1.value + "夕方";
       } else if (CBoard0 == 3 ){
         synthes.text = 'つける';
         speechSynthesis.speak(synthes);
@@ -2023,9 +2023,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'さあ';
+        synthes.text = '夜';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "さあ";
+      text1.value = text1.value + "夜";
       } else if (CBoard0 == 3 ){
         synthes.text = 'つづけます';
         speechSynthesis.speak(synthes);
@@ -2044,9 +2044,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'うんうん';
+        synthes.text = '乗ります';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "うんうん";
+      text1.value = text1.value + "乗ります";
       } else if (CBoard0 == 3 ){
         synthes.text = 'は';
         speechSynthesis.speak(synthes);
@@ -2066,9 +2066,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ふるえます";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'ちがいます';
+        synthes.text = 'バス';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ちがいます";
+      text1.value = text1.value + "バス";
       } else if (CBoard0 == 3 ){
         synthes.text = 'のどがかわきました';
         speechSynthesis.speak(synthes);
@@ -2087,9 +2087,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "うがいをします";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'よかったです';
+        synthes.text = 'タクシー';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "よかったです";
+      text1.value = text1.value + "タクシー";
       } else if (CBoard0 == 3 ){
         synthes.text = 'はんたい';
         speechSynthesis.speak(synthes);
@@ -2108,9 +2108,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "困ります";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'みんな';
+        synthes.text = '市電';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "みんな";
+      text1.value = text1.value + "市電";
       } else if (CBoard0 == 3 ){
         synthes.text = 'とる';
         speechSynthesis.speak(synthes);
@@ -2129,11 +2129,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = '電車';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "電車";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'やめます';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "やめます";
       }
@@ -2144,9 +2144,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       if (CBoard0 == 0 ){
       } else if (CBoard0 == 1 ){
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = '降ります';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "降ります";
       } else if (CBoard0 == 3 ){
         synthes.text = 'で';
         speechSynthesis.speak(synthes);
@@ -2367,7 +2367,7 @@ function CBoardChange(param1){
           elemnn3.src = "./img3/00.png";
           break;
         case 1:
-          elem.src = "./img4/00.png";
+          elem.src = "./img/4.png";
           elem1.src = "./img4/kare-raisu.png";
           elem2.src = "./img4/udon.png";
           elem3.src = "./img4/omuraisu.png";
@@ -2431,6 +2431,16 @@ function CBoardChange(param1){
           break;
         case 2:
           elem.src = "./img/hiragana.png";
+          elem1.src = "./img/1.png";
+          elem2.src = "./img/2.png";
+          elem3.src = "./img/3.png";
+          elem4.src = "./img/4.png";
+          elem5.src = "./img/5.png";
+          elem6.src = "./img/6.png";
+          elem7.src = "./img/7.png";
+          elem8.src = "./img/8.png";
+          elem9.src = "./img/9.png";
+          elem0.src = "./img/0.png";
           elema.src = "./img2/hai.png";
           elemi.src = "./img2/atama.png";
           elemu.src = "./img2/mimi.png";
@@ -2483,7 +2493,17 @@ function CBoardChange(param1){
           elemnn3.src = "./img2/de.png";
           break;
         case 3:
-          elem.src = "./img/katakana.png";
+          elem.src = "./img3/hito.png";
+          elem1.src = "./img/1.png";
+          elem2.src = "./img/2.png";
+          elem3.src = "./img/3.png";
+          elem4.src = "./img/4.png";
+          elem5.src = "./img/5.png";
+          elem6.src = "./img/6.png";
+          elem7.src = "./img/7.png";
+          elem8.src = "./img/8.png";
+          elem9.src = "./img/9.png";
+          elem0.src = "./img/0.png";
           elema.src = "./img/a.png";
           elemi.src = "./img/i.png";
           elemu.src = "./img/u.png";
