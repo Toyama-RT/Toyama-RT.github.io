@@ -1,7 +1,7 @@
 {
   "name": "Web Mojiban t1",
   "short_name": "Web Moji t1",
-  "theme_color": "#2196f3",
+  "theme_color": "#00ff7f",
   "background_color": "#c0c0c0",
   "display": "standalone",
   "orientation": "landscape",
