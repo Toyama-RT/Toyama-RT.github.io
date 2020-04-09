@@ -2382,12 +2382,12 @@ function CBoardChange(param1){
           elemi.src = "./img4/gohan.png";
           elemu.src = "./img4/ohasi.png";
           eleme.src = "./img4/fo-ku.png";
-          elemo.src = "./img4/00.png";
+          elemo.src = "./img3/00.png";
           elemka.src = "./img4/pan.png";
           elemki.src = "./img4/okasi.png";
           elemku.src = "./img4/supu-n.png";
           elemke.src = "./img4/sutoro-.png";
-          elemko.src = "./img4/00.png";
+          elemko.src = "./img3/00.png";
           elemsa.src = "./img4/akete.png";
           elemsi.src = "./img4/toosite.png";
           elemsu.src = "./img4/sutete.png";
