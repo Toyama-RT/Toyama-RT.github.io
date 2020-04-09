@@ -225,7 +225,6 @@ self.addEventListener('install', e => {
         path + `/img2/ashi.png`,
         path + `/img2/hiza.png`,
 
-
         path + `/img2/me.png`,
         path + `/img2/hoppe.png`,
         path + `/img2/yubi.png`,
@@ -272,8 +271,148 @@ self.addEventListener('install', e => {
 
         path + `/ico/test512i.png`,
         path + `/ico/test256.png`,
-        path + `/ico/test192.png`,
+        path + `/ico/take_192.png`,
         path + `/ico/test192i.png`,
+
+        path + `/img3/00.png`,
+        path + `/img3/hito.png`,
+        path + `/img3/syokua.png`,
+
+        path + `/img3/inami.png`,
+        path + `/img3/saizaki.png`,
+        path + `/img3/takahara.png`,
+        path + `/img3/kuroda.png`,
+        path + `/img3/tanigawa.png`,
+
+        path + `/img3/yonezawa.png`,
+        path + `/img3/gotou.png`,
+        path + `/img3/nakano.png`,
+        path + `/img3/tukamoto.png`,
+        path + `/img3/iwasaki.png`,
+
+        path + `/img3/yamagata.png`,
+        path + `/img3/tabuse.png`,
+        path + `/img3/furuoka.png`,
+        path + `/img3/yamamori.png`,
+        path + `/img3/asano.png`,
+
+        path + `/img3/magario.png`,
+        path + `/img3/fujii.png`,
+        path + `/img3/minami.png`,
+        path + `/img3/yoneda.png`,
+        path + `/img3/izumi.png`,
+
+        path + `/img3/takata.png`,
+        path + `/img3/kikura.png`,
+        path + `/img3/oomura.png`,
+        path + `/img3/kangosi.png`,
+        path + `/img3/oosima.png`,
+
+        path + `/img3/nomura.png`,
+        path + `/img3/asou.png`,
+        path + `/img3/masami.png`,
+        path + `/img3/sensei.png`,
+
+        path + `/img3/sinsatu.png`,
+        path + `/img3/rihabiri.png`,
+        path + `/img3/naika.png`,
+        path + `/img3/sinri.png`,
+        path + `/img3/kusuri.png`,
+
+        path + `/img3/yoyaku.png`,
+        path + `/img3/seikei.png`,
+        path + `/img3/seisinka.png`,
+        path + `/img3/cyuusya.png`,
+        path + `/img3/fukusayou.png`,
+
+        path + `/img3/dutuu.png`,
+        path + `/img3/benpi.png`,
+        path + `/img3/netu.png`,
+        path + `/img3/hakike.png`,
+        path + `/img3/kaze.png`,
+
+        path + `/img3/haita.png`,
+        path + `/img3/geri.png`,
+        path + `/img3/kabureta.png`,
+        path + `/img3/nodoitai.png`,
+        path + `/img3/seki.png`,
+
+        path + `/img3/sibire.png`,
+        path + `/img3/tearai.png`,
+        path + `/img3/ofuro.png`,
+
+        path + `/img3/furue.png`,
+        path + `/img3/ugai.png`,
+        path + `/img3/komaru.png`,
+
+        path + `/img4/kare-raisu.png`,
+        path + `/img4/udon.png`,
+        path + `/img4/omuraisu.png`,
+        path + `/img4/hanba-ga-.png`,
+        path + `/img4/cya-han.png`,
+
+        path + `/img4/ra-men.png`,
+        path + `/img4/soba.png`,
+        path + `/img4/taiyaki.png`,
+        path + `/img4/to-suto.png`,
+        path + `/img4/gyo-za.png`,
+
+        path + `/img4/piza.png`,
+        path + `/img4/gohan.png`,
+        path + `/img4/ohasi.png`,
+        path + `/img4/fo-ku.png`,
+
+        path + `/img4/pan.png`,
+        path + `/img4/okasi.png`,
+        path + `/img4/supu-n.png`,
+        path + `/img4/sutoro-.png`,
+
+        path + `/img4/akete.png`,
+        path + `/img4/toosite.png`,
+        path + `/img4/sutete.png`,
+        path + `/img4/juuden.png`,
+        path + `/img4/onegai.png`,
+
+        path + `/img4/simete.png`,
+        path + `/img4/hirotte.png`,
+        path + `/img4/irete.png`,
+        path + `/img4/dennchikoukan.png`,
+        path + `/img4/toiredoko.png`,
+
+        path + `/img4/ittekimasu.png`,
+        path + `/img4/okaeri.png`,
+        path + `/img4/itadakimasu.png`,
+        path + `/img4/daijoubu.png`,
+
+        path + `/img4/tadaima.png`,
+        path + `/img4/itterassyai.png`,
+        path + `/img4/gochisousama.png`,
+        path + `/img4/konbanha.png`,
+        path + `/img4/apitahigasi.png`,
+
+        path + `/img4/toyama.png`,
+        path + `/img4/toyamaekimae.png`,
+        path + `/img4/sougawa.png`,
+        path + `/img4/simamura.png`,
+        path + `/img4/arupuraza.png`,
+
+        path + `/img4/haru.png`,
+        path + `/img4/natu.png`,
+        path + `/img4/aki.png`,
+        path + `/img4/fuyu.png`,
+        path + `/img4/fabo-re.png`,
+
+        path + `/img4/asa.png`,
+        path + `/img4/hiru.png`,
+        path + `/img4/yuugata.png`,
+        path + `/img4/yoru.png`,
+        path + `/img4/norimasu.png`,
+
+        path + `/img4/basu.png`,
+        path + `/img4/takusi-.png`,
+        path + `/img4/siden.png`,
+        path + `/img4/densya.png`,
+        path + `/img4/orimasu.png`,
 
       ])
       .then(() => self.skipWaiting());
