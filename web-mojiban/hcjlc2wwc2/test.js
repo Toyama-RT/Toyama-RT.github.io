@@ -516,9 +516,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "カレーライス";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '１';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "１";
       }
       setCursorend();
      }, false);
@@ -537,9 +537,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "うどん";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '２';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "２";
       }
       setCursorend();
      }, false);
@@ -558,9 +558,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "オムライス";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '３';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "３";
       }
       setCursorend();
      }, false);
@@ -579,9 +579,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ハンバーガー";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '４';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "４";
       }
       setCursorend();
      }, false);
@@ -600,9 +600,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "チャーハン";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '５';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "５";
       }
       setCursorend();
      }, false);
@@ -622,9 +622,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ラーメン";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '６';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "６";
       }
       setCursorend();
      }, false);
@@ -643,9 +643,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "そば";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '７';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "７";
       }
       setCursorend();
      }, false);
@@ -664,9 +664,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "たいやき";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '８';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "８";
       }
       setCursorend();
      }, false);
@@ -685,9 +685,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "トースト";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '９';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "９";
       }
       setCursorend();
      }, false);
@@ -706,9 +706,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ギョーザ";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'はい';
+        synthes.text = '０';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はい";
+      text1.value = text1.value + "０";
       }
       setCursorend();
      }, false);
