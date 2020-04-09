@@ -1211,9 +1211,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "心理";
       } else if (CBoard0 == 2 ){
-        synthes.text = '大丈夫ですか';
+        synthes.text = 'おいしいです';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "大丈夫ですか";
+      text1.value = text1.value + "おいしいです";
       } else if (CBoard0 == 3 ){
         synthes.text = 'こし';
         speechSynthesis.speak(synthes);
@@ -1232,9 +1232,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "くすり";
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = '大丈夫ですか';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "大丈夫ですか";
       } else if (CBoard0 == 3 ){
         synthes.text = 'おしり';
         speechSynthesis.speak(synthes);
@@ -2401,8 +2401,8 @@ function CBoardChange(param1){
           elemna.src = "./img4/ittekimasu.png";
           elemni.src = "./img4/okaeri.png";
           elemnu.src = "./img4/itadakimasu.png";
-          elemne.src = "./img4/daijoubu.png";
-          elemno.src = "./img4/00.png";
+          elemne.src = "./img4/oisii.png";
+          elemno.src = "./img4/daijoubu.png";
           elemha.src = "./img4/tadaima.png";
           elemhi.src = "./img4/itterassyai.png";
           elemhu.src = "./img4/gochisousama.png";
