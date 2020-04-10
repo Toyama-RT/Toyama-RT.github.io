@@ -2160,7 +2160,6 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
 
 function setCursorend() {
-   //text2.value = text1.value;
    var len = text1.value.length;
       text1.focus();
       text1.setSelectionRange(len, len);
@@ -2367,7 +2366,7 @@ function CBoardChange(param1){
           elemnn3.src = "./img3/00.png";
           break;
         case 1:
-          elem.src = "./img/4.png";
+          elem.src = "./img/hiragana.png";
           elem1.src = "./img4/kare-raisu.png";
           elem2.src = "./img4/udon.png";
           elem3.src = "./img4/omuraisu.png";
@@ -2430,7 +2429,7 @@ function CBoardChange(param1){
           elemnn3.src = "./img4/orimasu.png";
           break;
         case 2:
-          elem.src = "./img/hiragana.png";
+/*          elem.src = "./img/hiragana.png";
           elem1.src = "./img/1.png";
           elem2.src = "./img/2.png";
           elem3.src = "./img/3.png";
@@ -2492,7 +2491,7 @@ function CBoardChange(param1){
           elemnn2.src = "./img2/yameru.png";
           elemnn3.src = "./img2/de.png";
           break;
-        case 3:
+        case 3:*/
           elem.src = "./img3/hito.png";
           elem1.src = "./img/1.png";
           elem2.src = "./img/2.png";
