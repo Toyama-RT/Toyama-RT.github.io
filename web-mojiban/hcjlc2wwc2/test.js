@@ -475,9 +475,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
             } else if (CBoard0 == 1 ){
                CBoard0 = 2;
             } else if (CBoard0 == 2 ){
-               CBoard0 = 3;
+/*               CBoard0 = 3;
             } else if (CBoard0 == 3 ){
-               CBoard0 = 0;
+*/               CBoard0 = 0;
             }
      }, false);
      var obj = document.getElementById('iie');
