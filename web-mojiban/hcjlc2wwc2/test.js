@@ -762,9 +762,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "う";
       } else if (CBoard0 == 1 ){
-        synthes.text = '古岡さん';
+        synthes.text = 'ふる岡さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "古岡さん";
+      text1.value = text1.value + "ふる岡さん";
       } else if (CBoard0 == 2 ){
         synthes.text = 'おはし';
         speechSynthesis.speak(synthes);
@@ -953,9 +953,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "し";
       } else if (CBoard0 == 1 ){
-        synthes.text = '木倉先生';
+        synthes.text = 'き倉先生';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "木倉先生";
+      text1.value = text1.value + "き倉先生";
       } else if (CBoard0 == 2 ){
         synthes.text = 'とおしてください';
         speechSynthesis.speak(synthes);
