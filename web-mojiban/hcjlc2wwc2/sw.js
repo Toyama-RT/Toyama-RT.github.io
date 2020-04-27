@@ -28,7 +28,6 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         path + `/hcj.html`,
-        path + `/hcjr.html`,
         path + `/style.css`,
         path + `/test.js`,
         path + `/manifest2.json`,
