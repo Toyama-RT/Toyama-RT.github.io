@@ -35,7 +35,7 @@
 var path = `https://toyama-rt.github.io/web-mojiban/hcjlc2wwc2`;
 
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
+        navigator.serviceWorker.register(path + '/swr.js', { scope: path + '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered lc2');
           });
