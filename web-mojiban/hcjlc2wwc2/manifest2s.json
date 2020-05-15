@@ -1,0 +1,16 @@
+{
+  "name": "Web Mojiban t1s",
+  "short_name": "Web Moji t1s",
+  "theme_color": "#00ff7f",
+  "background_color": "#c0c0c0",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./hcjs.html",
+  "icons": [
+    {
+      "src": "./ico/take_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

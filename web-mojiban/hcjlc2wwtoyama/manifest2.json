@@ -1,6 +1,6 @@
 {
-  "name": "Web Mojiban t1",
-  "short_name": "Web Moji t1",
+  "name": "Web Mojiban TOYAMA",
+  "short_name": "Web Moji TOYAMA",
   "theme_color": "#00ff7f",
   "background_color": "#c0c0c0",
   "display": "standalone",
@@ -8,7 +8,7 @@
   "start_url": "./hcj.html",
   "icons": [
     {
-      "src": "./ico/take_192.png",
+      "src": "./ico/toyama.png",
       "sizes": "192x192",
       "type": "image/png"
     }
