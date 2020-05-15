@@ -358,11 +358,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", async function() {
      // web audio API によるサウンド出力
-//        const audioctx = new AudioContext();
-//        const sound = await LoadSample(audioctx, "./snd/se3.wav");
-//        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
-//        src.connect(audioctx.destination);
-//        src.start();
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/se3.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
 
       function LoadSample(actx, url) {
         return new Promise((resolv)=>{
@@ -451,11 +451,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", async function() {
      // web audio API によるサウンド出力
-//        const audioctx = new AudioContext();
-//        const sound = await LoadSample(audioctx, "./snd/se2.wav");
-//        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
-//        src.connect(audioctx.destination);
-//        src.start();
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/se2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
 
        function LoadSample(actx, url) {
         return new Promise((resolv)=>{
@@ -2303,7 +2303,7 @@ function CBoardChange(param1){
 
       switch (param1) {
         case 0:
-          elem.src = "./img3/syokua.png";
+          elem.src = "./img/hiragana.png";
           elem1.src = "./imgt/aisonai.png";
           elem2.src = "./imgt/ageccya.png";
           elem3.src = "./imgt/iiga.png";
@@ -2366,7 +2366,7 @@ function CBoardChange(param1){
           elemnn3.src = "./imgt/00.png";
           break;
         case 1:
-          elem.src = "./img/hiragana.png";
+/*          elem.src = "./img/hiragana.png";
           elem1.src = "./img4/kare-raisu.png";
           elem2.src = "./img4/udon.png";
           elem3.src = "./img4/omuraisu.png";
@@ -2429,7 +2429,7 @@ function CBoardChange(param1){
           elemnn3.src = "./img4/orimasu.png";
           break;
         case 2:
-/*          elem.src = "./img/hiragana.png";
+          elem.src = "./img/hiragana.png";
           elem1.src = "./img/1.png";
           elem2.src = "./img/2.png";
           elem3.src = "./img/3.png";
@@ -2492,7 +2492,7 @@ function CBoardChange(param1){
           elemnn3.src = "./img2/de.png";
           break;
         case 3:*/
-          elem.src = "./img3/hito.png";
+          elem.src = "./imgt/toyama.png";
           elem1.src = "./img/1.png";
           elem2.src = "./img/2.png";
           elem3.src = "./img/3.png";
