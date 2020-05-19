@@ -435,10 +435,22 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
      var obj = document.getElementById('zenbukesu');
 	 obj.addEventListener("click", function() {
+
+    var result = window.confirm('ほんとうにぜんぶけしていいですか？');
+    
+    if( result ) {
         synthes.text = 'ぜんぶけす';
         speechSynthesis.speak(synthes);
-      text1.value = "";
-      setCursorend();
+        text1.value = "";
+        setCursorend();
+    }
+    else {
+    }
+
+// firefox の場合次の2行を使わないと正常に消せない　　原因不明
+        //text1.value = "";
+        //setCursorend();
+
      }, false);
    // 二列目
      var obj = document.getElementById('00');

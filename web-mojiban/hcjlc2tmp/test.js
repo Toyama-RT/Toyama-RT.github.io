@@ -283,9 +283,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('zenbukesu');
 	 obj.addEventListener("click", function() {
         synthes.text = 'ぜんぶけす';
+
+    var result = window.confirm('ほんとうにぜんぶけしていいですか？');
+    
+    if( result ) {
+        synthes.text = 'ぜんぶけす';
         speechSynthesis.speak(synthes);
-      text1.value = "";
-      setCursorend();
+        text1.value = "";
+        setCursorend();
+    }
+    else {
+    }
      }, false);
    // 二列目
      var obj = document.getElementById('00');
