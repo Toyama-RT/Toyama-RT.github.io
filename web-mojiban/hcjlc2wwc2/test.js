@@ -436,6 +436,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('zenbukesu');
 	 obj.addEventListener("click", function() {
 
+    var result = window.confirm('ほんとうにぜんぶけしていいですか？');
+
     if( result ) {
         synthes.text = 'ぜんぶけす';
         speechSynthesis.speak(synthes);
