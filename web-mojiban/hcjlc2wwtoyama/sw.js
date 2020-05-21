@@ -131,7 +131,7 @@ self.addEventListener('install', e => {
         path + `/imgt/kenaruicya.png`,
         path + `/imgt/korare.png`,
         path + `/imgt/kowakusa.png`,
-        path + `/imgt/sirroruke.png`,
+        path + `/imgt/sittoruke.png`,
         path + `/imgt/jamanai.png`,
         path + `/imgt/syowasinai.png`,
         path + `/imgt/soiga.png`,
