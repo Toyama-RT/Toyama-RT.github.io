@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>Web 文字盤C｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>Web 文字盤　１２</h1>
+<h1>「ぜんぶけす」の改善</h1>
+
+<div style="text-align: center;"><img alt="富士通ArrowsTab" src="img/zenbu1.png" >
+<br>
+<p>「ぜんぶけす」に確認ダイアログを追加</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+Web文字盤のモニター試用は今年2月に開始しました。
+</p><p>
+Web文字盤のモニターをお願いしている方は実にいろいろなことを教えてくれます。ご本人はただあれこれほしいものや考えたことを知らせてくれ、私はそれを実現するためにあれこれ改善を重ねています。Web文字盤10でもご紹介したマルチ文字盤などオリジナルの文字盤作りもその取り組みのひとつです。
+</p><p>
+この作業は一見すると勘違いやトラブルの連続なのですが、それまで見落としていたことや、気づかなかったことに遭遇し問題解決に取り組むうちに色々勉強できることがたくさんあります。
+</p><p>
+今回もこのような事例についてお話したいと思います。
+</p>
+<h2>１　「ぜんぶけす」を間違っておしてしまう</h2>
+<p>
+その日のお話は、
+</p><p>
+『左下にある「ぜんぶけす」をよく間違っておして文をけしてしまう。このボタンを右の方に変更してほしい』
+</p><p>
+ということでした。
+</p><p>
+たしかに、苦労して入力した文章も、このような間違いで一気に消えてしまいます。文字盤のデザインを考えた際には、「けす」と「ぜんぶけす」は右手操作にじゃまになりにくい左下に並べることにしました。しかしこのひとは右手に不自由があるので左手で操作しますのでこれでは反対です。
+</p><p>
+そこで左右反転させた試作品を作りしばらくこれを使ってもらいました。
+</p>
+<div style="text-align: center;"><img alt="富士通ArrowsTab" src="img/zenbu2.png"></div>
+<p>
+しかししばらくすると、こんなはなしが届きました。
+</p><p>
+『「けす」を押すときに間違って「ぜんぶけす」を押してしまう。』
+</p><p>
+つまり「けす」と「ぜんぶけす」が隣り合っているのがよろしくないようです。そこで、「けす」を左下に残し、「ぜんぶけす」だけひらがな文字盤の右下角に変更してみました。
+</p><p>
+しかし、ひらがな文字盤とカタカナ文字盤では右下が空白ですから問題ないのですが、他の文字盤で右下角を使っていると、その文字の移動先にも困ります。また「ぜんぶけす」の場所が文字盤ごとに統一していないと先々困ったことになりそうです。
+</p><p>
+さらに「けす」と「ぜんぶけす」の似た機能を並べて角に配置すると覚えやすいですが、これを別々にするとわかりにくくなることも予想できます。ここまで考えると、「ぜんぶけす」の誤操作をキーレイアウトで解決するには限界があることがわかってきました。
+</p><p>
+基本に戻って考え直すと、「ぜんぶけす」操作は頻度の少ない操作です。それに比べ「けす」操作はかなり頻回に使用します。この2つを間違えないようにするために、「ぜんぶけす」に確認のためのひと手間としてダイアログを追加することにしました。
+</p>
+<div style="text-align: center;"><img alt="確認ダイアログ" src="img/zenbu3.png"></div>
+
+<p>
+手間は増えますが、間違いは減ります。これも試作品を作って試してもらったところ、にっこりOKとなりました。
+</p>
+<h2>２　ニーズとはなかなか難しい</h2>
+<p>
+はじめの話とは随分ちがう結果になりましたがここがニーズ調査やモニター調査の難しいところです。たとえば『福祉機器のニーズがうまくつかめない』とか、『言われたとおりに作ったのに喜ばれないし使ってもらえない』といった話をよく聞きます。これも似たところに理由があると思います。
+</p><p>
+とかくニーズ調査や市場調査では、「〇〇で困っている、だから□□してほしい」という話がたくさん出て来ます。これをそのまま受け取ったら困ったことになります。つまり困っている人は、困っていること自体は間違いないのですが、後半の「だから□□してほしい」には注意が必要です。解決方法自体に根拠は乏しく思いつきに近いことが少なくありません。普通の人の場合は、問題を分析して理解することも、対策を構想し試すことも、イメージしたものを正しく表現する技能や訓練（たとえば製図）などほとんどありませんから、ことばの流れとして「だから□□してほしい」と言ってしまい、このため言われたとおりのものを作っても、問題の解決にならないことが多いのです。また運良く使えるものができても次は価格の話し合いが必要になるでしょう。ですから本来ニーズ調査で把握すべきことは、「〇〇で困っている、いまのこれがああなるなら〇〇円支出してもいい」つまり抱える問題、達成する目標、その条件、そのコストだと私は思います。しかしこれらを尋ねられた方も簡単に返事できませんので困ります。試してみないと判断できないこともあります。そんなときは試作品を作って確認してもらうことも大切になります。しかし解決の手段については別途しっかり考えておかねばなりません、予算的に解決が困難な問題に時間や手間をかけるのは是非とも避けたいものです。
+</p><p>
+慣れた技術者同士の話ならテキパキ話が進みますが、そうでない場合は何倍何十倍も時間と手間をかけて話を進めていく必要があります。確認のための試作サンプルが必要なこともあります。ただしその場合でもコストで苦労しないように、Web文字盤でも心がけています。
+</p>
+<h2>３　ダイアログの作り方</h2>
+<p>
+今回製作したダイアログはこのように作りました。
+
+<pre class="brush: js;">
+     var obj = document.getElementById('zenbukesu');
+	 obj.addEventListener("click", function() {
+
+    var result = window.confirm('ほんとうにぜんぶけしていいですか？');
+    
+    if( result ) {
+        synthes.text = 'ぜんぶけす';
+        speechSynthesis.speak(synthes);
+        text1.value = "";
+        setCursorend();
+    }
+    else {
+    }
+
+// firefox の場合次の2行を使わないと正常に消せない　　原因不明
+        //text1.value = "";
+        //setCursorend();
+
+     }, false);
+
+</pre>
+</p>
+<p>
+1-19行で「ぜんぶけす」をタップしたときの動作を記述しています。
+4行目でダイアログを表示しています。
+7-10行目でOKの時の処理を記述しています。
+キャンセルの時の処理は12-13行目の間に記述しますがここでは空欄です。
+Firefoxでは、なぜか16-17行目のコメントアウトを外さないと動作しません。理由はわかりません。バグでしょうか？
+</p>
+<h2>４　ここで問題発生　改善してもじきに元に戻る?</h2>
+<p>
+ここで確認ダイアログを表示し、OKの追加操作で「ぜんぶけす」を実行する試作品を、モニターの方と動作を確認してお渡して持ち帰ってもらいました。しかしここからトラブルが始まりました。
+</p><p>
+30分ほどしてモニターの方が戻って来られました。
+</p><p>
+『帰ってから使ったら元にもどってしまった』（つまり確認ダイアログがでなくなった）
+</p><p>
+とWeb文字盤に文が綴ってありました。
+
+はじめは何かの手違いかと考え、削除と再インストールしましたがオフライン状態でしばらくして確認すると更新が元に戻っていました。こんな珍現象は是非じっくり調べるべきと考えしばらく預かって調べることにしました。
+
+</p>
+<h2>５　調査と解決</h2>
+<p>
+別のタブレットやパソコンでも同じ試作品を試してみました。オンラインアプリですからこんな作業は楽にできます。しかしこの問題はモニターさんに使ってもらっているタブレットだけの問題であることがわかりました。
+</p><p>
+またこの問題は、削除して再インストールしても解決できないこと、つまり何回やってもうまくいかないことを確認しました。つまりこれははっきりした原因がどこかに存在するという意味です。反対にうまくいったりいかなかったりする問題は対応が難しくなることが多いですからその点で気が楽です。
+</p><p>
+またWeb文字盤をインストールする前にブラウザで操作する時もオフライン状態にすると同じ不具合がでることがわかりました。（オンラインの時は問題なしでした。）つまりこのタブレットのブラウザの動きに問題があるようです。
+</p><p>
+また不具合の内容を見ると更新したいくつかのファイルのうちある特定のファイルのみが更新されず古いままであることがわかりました。オンラインの時は正常で、オフラインでしばらくすると更新前のゾンビが復活するようです。
+</p><p>
+基本的なトラブルの原因はオフライン機能のためのキャッシュにあるようです。しかも更新したファイルのいくつかは正常に動いていることそして更新前の古いファイルがどこかでのこっていることから、更新の途中で記憶容量がいっぱいになり部分的に更新が止まっていると推測しました。
+</p><p>
+そこでブラウザキャッシュを思い切って削除（Chromeでは、メニュー＞履歴＞閲覧履歴データを削除＞キャッシュされた画像とファイル　にチェックを入れて削除）したところ、一連の問題はあっさり解決できました。やはり保存場所に空きがなくなったことが原因だったようです。
+</p><p>
+しかしインストール後の動作確認は正常だったのにオフラインにしてしばらくしてから不具合がでて、改良部分が元にもどってしまったように見えたのはなぜだったのでしょう。ここから先は推測です。オンライン状態でインストールしたの際に問題の更新ファイルがApplicationCacheに保存できなかったがブラウザのCacheにはその更新ファイルが一時的に保存され、そして有効時間内にはブラウザのCacheから読み出して、さも正常に動いているように見えた。やがて有効時間が過ぎるとブラウザのCacheも消えてApplicationCacheに残っていた更新前のファイルを読み込んで、元にもどったように見えた。こんなところでしょうか？でもアンインストールしてもApplicationCacheは残るってことですがこれでいいんでしょうか。
+</p><p>
+なにはともあれまあこれでひとまず解決ともいえますがオフラインWebアプリではこの部分が肝心なのですからCache容量不足などの警告がほしいところです。
+</p>
+<h2>６　おわりに</h2>
+<p>
+今回はその後のモニター試用と着々(?)と進めているWeb文字盤の改善についてご紹介しました。いかがだったでしょう。
+</p><p>
+様々な問題でお困りのみなさんにとって、なにをどう進めたらいいのかわからず苦労することがあります。しかしそんなときは自分と同じように困っているひとがやっていることのまねから始めるのがよろしいと思います。見知らぬ初めてのレストランでは、ほかの客のテーブルを見て同じ料理を注文するのと同じです。「あのひとと同じものをください」
+これでとりあえずのスタートができます。あとの手直しはその後やればいいのです。
+</p><p>
+「あのひとと同じものをください」といわれたらさっと出せる。Web文字盤もそんなふうになればいいと考えています。
+</p><p>
+今回の問題を調べてみるとやはりキャッシュの使いすぎには注意せよとの記事も見つかりました。（文末の参考urlを参照）ApplicationCacheの容量は、Chromeでは概ね空き容量の6％未満、Firefoxでは10％未満、safariでは50MBで、特にsafariでは容量が厳しいことがわかりました。幸い記憶容量を増やせばこの問題も間接的ながら安価に回避できるのでこのような事情がわかっていれば回避することもできるでしょう。
+</p><p>
+まあこれからも気長に取り組んでいこうと思っています。
+
+</p>
+
+<h2>関連する話題</h2>
+
+<ul>
+  <li><a href="./web-mojiban1.html" target="_self">Web　文字盤　１　Android の EVA Facial Mouse でも使えます</a>
+</li>
+  <li><a href="./web-mojiban2.html" target="_self">Web　文字盤　２　ワイドモニターでの見やすさを改善しました</a>
+</li>
+  <li><a href="./web-mojiban3.html" target="_self">Web　文字盤　３　あいさつ文字盤とからだ文字盤を追加しました</a>
+</li>
+  <li><a href="./web-mojiban4.html" target="_self">Web　文字盤　４　オフラインWebアプリへの道</a>
+</li>
+  <li><a href="./web-mojiban5.html" target="_self">Web　文字盤　５　文章読み上げ機能を追加しました</a>
+</li>
+  <li><a href="./web-mojiban6.html" target="_self">Web　文字盤　６　読み上げ機能付きWeb文字盤にオフラインWebアプリ機能をつけました</a>
+</li>
+  <li><a href="./web-mojiban7.html" target="_self">Web　文字盤　７　オフラインWebアプリ　通常の使い方とインストールアンインストールの方法</a>
+</li>
+  <li><a href="./web-mojiban8.html" target="_self">Web　文字盤　８　番外編　パソコンとAndroidにおけるJavaScriptの違いと不具合の対策</a>
+</li>
+  <li><a href="./web-mojiban9.html" target="_self">Web　文字盤　９　タブレットの準備OK</a>
+</li>
+  <li><a href="./web-mojibana.html" target="_self">Web　文字盤　１０　マルチWeb文字盤</a>
+</li>
+  <li><a href="./web-mojibanb.html" target="_self">Web　文字盤　１１　タブレット三兄弟</a>
+</li>
+  <li><a href="./web-mojibanc.html" target="_self">Web　文字盤　１２　「ぜんぶけす」の改善</a>
+</li>
+</ul>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>モバイル対応Webアプリケーションのキャッシュ戦略<br>
+<a target="_blank" href="https://html5experts.jp/kyo_ago/2466/">https://html5experts.jp/kyo_ago/2466/</a></li>
+
+</ul>
+
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2020/05/22　公開</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+</body></html>
