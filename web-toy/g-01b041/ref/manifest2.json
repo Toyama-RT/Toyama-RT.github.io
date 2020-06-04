@@ -1,0 +1,16 @@
+{
+  "name": "Web Mojiban TOYAMA",
+  "short_name": "Web Moji TOYAMA",
+  "theme_color": "#ffff00",
+  "background_color": "#c0c0c0",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./hcj.html",
+  "icons": [
+    {
+      "src": "./ico/toyama.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
