@@ -1028,9 +1028,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "そ";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'たのむっちゃ';
+        synthes.text = 'たのんちゃ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "たのむっちゃ";
+      text1.value = text1.value + "たのんちゃ";
       } else if (CBoard0 == 2 ){
         synthes.text = 'おねがいします';
         speechSynthesis.speak(synthes);
