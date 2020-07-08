@@ -28,11 +28,9 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         path + `/hcj.html`,
-        path + `/hcjr.html`,
         path + `/style.css`,
         path + `/test.js`,
         path + `/manifest2.json`,
-        path + `/manifest2r.json`,
         path + `/img/talk0.png`,
         path + `/img/000.png`,
         path + `/img/00.png`,
@@ -282,9 +280,6 @@ self.addEventListener('install', e => {
         path + `/snd/se2.wav`,
         path + `/snd/se3.wav`,
 
-        path + `/ico/test512i.png`,
-        path + `/ico/test256.png`,
-        path + `/ico/test192.png`,
         path + `/ico/test192i.png`,
 
       ])
