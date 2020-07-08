@@ -2,7 +2,7 @@
   "name": "Web Mojiban t2",
   "short_name": "Web Moji t2",
   "theme_color": "#00ff7f",
-  "background_color": "#c0c0c0",
+  "background_color": "#ff6347",
   "display": "standalone",
   "orientation": "landscape",
   "start_url": "./hcj.html",
