@@ -439,17 +439,14 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
     var result = window.confirm('ほんとうにぜんぶけしていいですか？');
     
     if( result ) {
+        setTimeout( 'text1.value = ""; setCursorend();', 500 );
         synthes.text = 'ぜんぶけす';
         speechSynthesis.speak(synthes);
-        text1.value = "";
-        setCursorend();
     }
     else {
     }
 
-// firefox の場合次の2行を使わないと正常に消せない　　原因不明
-        //text1.value = "";
-        //setCursorend();
+// firefox の場合上の、setTimeoutを使わないと正常に消せない　　原因不明
 
      }, false);
    // 二列目

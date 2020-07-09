@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+
+<!-- for iOS  アドレスバー等のブラウザのUIを非表示 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="Web Mojiban t1">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="./ico/take_192.png">
+
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>HCJLC2WWC2T</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+<!-- for PWA マニフェストファイル読み込み 
+    <link rel="manifest" href="./manifest2.json"> -->
+<!-- ios icon 表示対策 pwacompat -->
+<script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
+    integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
+    crossorigin="anonymous"></script>
+
+<!-- for PWA servive worker  オフライン動作用サービスワーカー読み込み  
+<script>
+var path = `https://toyama-rt.github.io/web-mojiban/hcjlc2wwc3t`;
+
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered lc2');
+          });
+
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready lc2');
+        });
+      }
+</script> -->
+<!-- 文字盤動作用スクリプト読み込み -->
+    <script type="text/javascript" src="./test.js"></script>
+  </head>
+  <body>
+<span id="winsize2"></span> <!-- 画面幅高、表示部分 -->
+
+<!-- テキストエリアの配置 -->
+<textarea id="text1" placeholder="" cols="50" rows="3" ></textarea>
+<!-- 文字盤　一行目 -->
+<div class="flex">
+<img id="000"  src="./img/talk0.png" >
+<img id="00"   src="./img2/00.png" >
+<img id="1"    src="./img8/inami.png" >
+<img id="6"    src="./img8/gotou.png" >
+<img id="a"    src="./img8/yamagata.png" >
+<img id="ka"   src="./img8/minami.png" >
+<img id="sa"   src="./img8/takata.png" >
+<img id="ta"   src="./img8/nomura.png" >
+<img id="na"   src="./img8/00.png" >
+<img id="ha"   src="./img8/00.png" >
+<img id="ma"   src="./img8/00.png" >
+<img id="ya"   src="./img8/00.png" >
+<img id="ra"   src="./img8/00.png" >
+<img id="wa"   src="./img8/00.png" >
+</div>
+<!-- 文字盤　二行目  -->
+<div class="flex">
+<img id="bun"  src="./img/bun01.png" >
+<img id="mojiban"   src="./img/byouin.png" >
+<img id="2"    src="./img8/saizaki.png" >
+<img id="7"    src="./img8/tabuse.png" >
+<img id="i"    src="./img8/magario.png" >
+<img id="ki"   src="./img8/yonezawasan.png" >
+<img id="si"   src="./img8/kikura.png" >
+<img id="ti"   src="./img8/hasimotosennsei.png" >
+<img id="ni"   src="./img8/00.png" >
+<img id="hi"   src="./img8/00.png" >
+<img id="mi"   src="./img8/00.png" >
+<img id="yu"   src="./img8/00.png" >
+<img id="ri"   src="./img8/00.png" >
+<img id="wo"   src="./img8/00.png" >
+</div>
+<!-- 文字盤　三行目  -->
+<div class="flex">
+<img id="hai"  src="./img/hai.png" >
+<img id="iie"   src="./img/iie.png" >
+<img id="3"    src="./img8/takahara.png" >
+<img id="8"    src="./img8/yamamori.png" >
+<img id="u"    src="./img8/junnkosan.png" >
+<img id="ku"   src="./img8/hoyousan.png" >
+<img id="su"   src="./img8/oomura.png" >
+<img id="tu"   src="./img8/asou.png" >
+<img id="nu"   src="./img8/00.png" >
+<img id="hu"   src="./img8/00.png" >
+<img id="mu"   src="./img8/00.png" >
+<img id="yo"   src="./img8/00.png" >
+<img id="ru"   src="./img8/00.png" >
+<img id="nn"   src="./img8/00.png" >
+</div>
+<!-- 文字盤　四行目  -->
+<div class="flex">
+<img id="ten"  src="./img/ten.png" >
+<img id="maru" src="./img/maru.png" >
+<img id="4"    src="./img8/kuroda.png" >
+<img id="9"    src="./img8/iwasaki.png" >
+<img id="e"    src="./img8/asano.png" >
+<img id="ke"   src="./img8/masami.png" >
+<img id="se"   src="./img8/kanngosisan.png" >
+<img id="te"   src="./img8/00.png" >
+<img id="ne"   src="./img8/00.png" >
+<img id="he"   src="./img8/00.png" >
+<img id="me"   src="./img8/00.png" >
+<img id="gb"   src="./img8/00.png" >
+<img id="re"   src="./img8/00.png" >
+<img id="bar"  src="./img8/00.png" >
+</div>
+<!-- 文字盤　五行目  -->
+<div class="flex">
+<img id="zenbukesu"  src="./img/zenbukesu.png" >
+<img id="kesu" src="./img/kesu.png" >
+<img id="5"    src="./img8/tanigawa.png" >
+<img id="0"    src="./img8/izumi.png" >
+<img id="o"    src="./img8/oosima.png" >
+<img id="ko"   src="./img8/00.png" >
+<img id="so"   src="./img8/00.png" >
+<img id="to"   src="./img8/00.png" >
+<img id="no"   src="./img8/00.png" >
+<img id="ho"   src="./img8/00.png" >
+<img id="mo"   src="./img8/00.png" >
+<img id="gc"   src="./img8/00.png" >
+<img id="ro"   src="./img8/00.png" >
+<img id="0000"  src="./img8/00.png" >
+</div>
+  </body>
+</html>
