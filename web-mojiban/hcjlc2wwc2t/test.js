@@ -2365,7 +2365,7 @@ function CBoardChange(param1){
           elemte.src = "./img2/00.png";
           elemto.src = "./img2/aitai.png";
           elemna.src = "./img2/sumimasenn.png";
-          elemni.src = "./img2/gomennnasai.png";
+          elemni.src = "./img2/00.png";
           elemnu.src = "./img2/gobusata.png";
           elemne.src = "./img2/ohisasiburi.png";
           elemno.src = "./img2/00.png";
