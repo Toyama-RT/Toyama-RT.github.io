@@ -667,17 +667,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "井波所長さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'あけて';
+        synthes.text = '診察';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "あけて";
+      text1.value = text1.value + "診察";
       } else if (CBoard0 == 2 ){
-        synthes.text = '衣替え';
+        synthes.text = 'カレーライス';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "衣替え";
+      text1.value = text1.value + "カレーライス";
       } else if (CBoard0 == 3 ){
-        synthes.text = '暑いです';
+        synthes.text = '部屋';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "暑いです";
+      text1.value = text1.value + "部屋";
       }
       setCursorend();
      }, false);
@@ -688,17 +688,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "才崎さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '通して';
+        synthes.text = 'リハビリ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "通して";
+      text1.value = text1.value + "リハビリ";
       } else if (CBoard0 == 2 ){
-        synthes.text = '遠慮';
+        synthes.text = 'うどん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "遠慮";
+      text1.value = text1.value + "うどん";
       } else if (CBoard0 == 3 ){
-        synthes.text = '楽しいです';
+        synthes.text = '食堂';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "楽しいです";
+      text1.value = text1.value + "食堂";
       }
       setCursorend();
      }, false);
@@ -709,17 +709,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "たか原さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'すてて';
+        synthes.text = '内科';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "すてて";
+      text1.value = text1.value + "内科";
       } else if (CBoard0 == 2 ){
-        synthes.text = '反省';
+        synthes.text = 'オムライス';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "反省";
+      text1.value = text1.value + "オムライス";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'どちらでもいいです';
+        synthes.text = 'トイレ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "どちらでもいいです";
+      text1.value = text1.value + "トイレ";
       }
       setCursorend();
      }, false);
@@ -730,17 +730,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "黒田先生";
       } else if (CBoard0 == 1 ){
-        synthes.text = '充電';
+        synthes.text = '心理';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "充電";
+      text1.value = text1.value + "心理";
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = 'ハンバーガー';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "ハンバーガー";
       } else if (CBoard0 == 3 ){
-        synthes.text = '苦しいです';
+        synthes.text = '洗面じょ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "苦しいです";
+      text1.value = text1.value + "洗面じょ";
       }
       setCursorend();
      }, false);
@@ -751,17 +751,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "谷川さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '電池交換';
+        synthes.text = 'くすり';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "電池交換";
+      text1.value = text1.value + "くすり";
       } else if (CBoard0 == 2 ){
-        synthes.text = '成功';
+        synthes.text = 'チャーハン';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "成功";
+      text1.value = text1.value + "チャーハン";
       } else if (CBoard0 == 3 ){
-        synthes.text = '元気です';
+        synthes.text = 'おふろ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "元気です";
+      text1.value = text1.value + "おふろ";
       }
       setCursorend();
      }, false);
@@ -769,105 +769,105 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('6');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'お願いします';
+        synthes.text = '後藤さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "お願いします";
+      text1.value = text1.value + "後藤さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'しめて';
+        synthes.text = '予約';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "しめて";
+      text1.value = text1.value + "予約";
       } else if (CBoard0 == 2 ){
-        synthes.text = '訓練';
+        synthes.text = 'ラーメン';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "訓練";
+      text1.value = text1.value + "ラーメン";
       } else if (CBoard0 == 3 ){
-        synthes.text = '寒いです';
+        synthes.text = '病院';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "寒いです";
+      text1.value = text1.value + "病院";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('7');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'さようなら';
+        synthes.text = '田伏さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "さようなら";
+      text1.value = text1.value + "田伏さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'ひろって';
+        synthes.text = '整形';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ひろって";
+      text1.value = text1.value + "整形";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'メール';
+        synthes.text = 'そば';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "メール";
+      text1.value = text1.value + "そば";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'うれしいです';
+        synthes.text = '売店';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "うれしいです";
+      text1.value = text1.value + "売店";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('8');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'どちらでもありません';
+        synthes.text = '山守さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "どちらでもありません";
+      text1.value = text1.value + "山守さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '入れて';
+        synthes.text = '精神科';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "入れて";
+      text1.value = text1.value + "神経科";
       } else if (CBoard0 == 2 ){
-        synthes.text = '友人';
+        synthes.text = 'たいやき';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "友人";
+      text1.value = text1.value + "たいやき";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'どちらでもありません';
+        synthes.text = 'キャッシュコーナー';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "どちらでもありません";
+      text1.value = text1.value + "キャッシュコーナー";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('9');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'おやすみなさい';
+        synthes.text = '岩崎さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おやすみなさい";
+      text1.value = text1.value + "岩崎さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '出して';
+        synthes.text = '注射';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "出して";
+      text1.value = text1.value + "注射";
       } else if (CBoard0 == 2 ){
-        synthes.text = '知人';
+        synthes.text = 'トースト';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "知人";
+      text1.value = text1.value + "トースト";
       } else if (CBoard0 == 3 ){
-        synthes.text = '疲れました';
+        synthes.text = 'ポスト';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "疲れました";
+      text1.value = text1.value + "ポスト";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('0');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'またきてね';
+        synthes.text = '泉さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "またきてね";
+      text1.value = text1.value + "泉さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '取って';
+        synthes.text = '副作用';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "取って";
+      text1.value = text1.value + "副作用";
       } else if (CBoard0 == 2 ){
-        synthes.text = '失敗';
+        synthes.text = 'ギョーザ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "失敗";
+      text1.value = text1.value + "ギョーザ";
       } else if (CBoard0 == 3 ){
-        synthes.text = '調子いいです';
+        synthes.text = '床屋';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "調子いいです";
+      text1.value = text1.value + "床屋";
       }
       setCursorend();
      }, false);
@@ -875,105 +875,105 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('a');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'もういいです';
+        synthes.text = '山形さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "もういいです";
+      text1.value = text1.value + "山形さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '早くして';
+        synthes.text = '頭痛';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "早くして";
+      text1.value = text1.value + "頭痛";
       } else if (CBoard0 == 2 ){
-        synthes.text = '移送サービス';
+        synthes.text = '焼きそば';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "移送サービス";
+      text1.value = text1.value + "焼きそば";
       } else if (CBoard0 == 3 ){
-        synthes.text = '好きです';
+        synthes.text = 'ギプス室';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "好きです";
+      text1.value = text1.value + "ギプス室";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('i');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'はじめまして';
+        synthes.text = '曲尾さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はじめまして";
+      text1.value = text1.value + "曲尾さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '伝えて';
+        synthes.text = '便秘';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "伝えて";
+      text1.value = text1.value + "便秘";
       } else if (CBoard0 == 2 ){
-        synthes.text = '過食';
+        synthes.text = 'お好み焼き';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "過食";
+      text1.value = text1.value + "お好み焼き";
       } else if (CBoard0 == 3 ){
-        synthes.text = '悲しいです';
+        synthes.text = '談話室';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "悲しいです";
+      text1.value = text1.value + "談話室";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('u');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'もう一度お願いします';
+        synthes.text = '純子さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "もう一度お願いします";
+      text1.value = text1.value + "純子さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '介助';
+        synthes.text = '熱';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "介助";
+      text1.value = text1.value + "熱";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'テレビ';
+        synthes.text = 'おにぎり';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "テレビ";
+      text1.value = text1.value + "おにぎり";
       } else if (CBoard0 == 3 ){
-        synthes.text = '知っています';
+        synthes.text = '玄関';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "知っています";
+      text1.value = text1.value + "玄関";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('e');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'こんばんは';
+        synthes.text = '浅野さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "こんばんは";
+      text1.value = text1.value + "浅野さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '一緒に来て';
+        synthes.text = '吐き気';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "一緒に来て";
+      text1.value = text1.value + "吐き気";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'ストレス';
+        synthes.text = 'おすし';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ストレス";
+      text1.value = text1.value + "おすし";
       } else if (CBoard0 == 3 ){
-        synthes.text = '眠いです';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "眠いです";
+      text1.value = text1.value + "";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('o');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'よかったです';
+        synthes.text = '大島さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "よかったです";
+      text1.value = text1.value + "大島さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '手伝って';
+        synthes.text = '風邪';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "手伝って";
+      text1.value = text1.value + "風邪";
       } else if (CBoard0 == 2 ){
-        synthes.text = '外泊';
+        synthes.text = 'シューマイ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "外泊";
+      text1.value = text1.value + "シューマイ";
       } else if (CBoard0 == 3 ){
-        synthes.text = '変わりありません';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "変わりありません";
+      text1.value = text1.value + "";
       }
       setCursorend();
      }, false);
@@ -981,105 +981,105 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ka');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'ごめんなさい';
+        synthes.text = '南さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ごめんなさい";
+      text1.value = text1.value + "南さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '貼って';
+        synthes.text = '歯が痛い';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "貼って";
+      text1.value = text1.value + "歯が痛い";
       } else if (CBoard0 == 2 ){
-        synthes.text = '休み';
+        synthes.text = 'ピザ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "休み";
+      text1.value = text1.value + "ピザ";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'きらいです';
+        synthes.text = '富山駅前';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "きらいです";
+      text1.value = text1.value + "富山駅前";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ki');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'よろしく';
+        synthes.text = '米沢さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "よろしく";
+      text1.value = text1.value + "米沢さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '電話';
+        synthes.text = '下痢';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "電話";
+      text1.value = text1.value + "下痢";
       } else if (CBoard0 == 2 ){
-        synthes.text = '後悔';
+        synthes.text = 'ごはん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "後悔";
+      text1.value = text1.value + "ごはん";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'くやしいです';
+        synthes.text = '総が輪';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "くやしいです";
+      text1.value = text1.value + "総が輪";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ku');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '';
+        synthes.text = '保要さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "保要さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '直して';
+        synthes.text = 'かぶれた';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "直して";
+      text1.value = text1.value + "かぶれた";
       } else if (CBoard0 == 2 ){
-        synthes.text = '安心';
+        synthes.text = 'パン';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "安心";
+      text1.value = text1.value + "パン";
       } else if (CBoard0 == 3 ){
-        synthes.text = '知りません';
+        synthes.text = '市役所';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "知りません";
+      text1.value = text1.value + "市役所";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ke');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '';
+        synthes.text = 'まさみさん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "まさみさん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '修理';
+        synthes.text = 'のどが痛い';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "修理";
+      text1.value = text1.value + "のどが痛い";
       } else if (CBoard0 == 2 ){
-        synthes.text = '悩み';
+        synthes.text = 'サンドイッチ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "悩み";
+      text1.value = text1.value + "サンドイッチ";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '銀行';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "銀行";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ko');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'うれしいです';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "うれしいです";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'やめて';
+        synthes.text = 'せき';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "やめて";
+      text1.value = text1.value + "せき";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'お話';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "お話";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'まあまあです';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "まあまあです";
+      text1.value = text1.value + "";
       }
       setCursorend();
      }, false);
@@ -1087,105 +1087,105 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('sa');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '行ってきます';
+        synthes.text = '高田先生';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "行ってきます";
+      text1.value = text1.value + "高田先生";
       } else if (CBoard0 == 1 ){
-        synthes.text = '教えて';
+        synthes.text = 'しびれ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "教えて";
+      text1.value = text1.value + "しびれ";
       } else if (CBoard0 == 2 ){
-        synthes.text = '残します';
+        synthes.text = 'おかし';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "残します";
+      text1.value = text1.value + "おかし";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'しまむら';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "しまむら";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('si');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'お帰りなさい';
+        synthes.text = '木倉先生';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "お帰りなさい";
+      text1.value = text1.value + "木倉先生";
       } else if (CBoard0 == 1 ){
-        synthes.text = '書いて';
+        synthes.text = '手洗い';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "書いて";
+      text1.value = text1.value + "手洗い";
       } else if (CBoard0 == 2 ){
-        synthes.text = '片付け';
+        synthes.text = 'お餅';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "片付け";
+      text1.value = text1.value + "お餅";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'アルプラザ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "アルプラザ";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('su');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'いただきます';
+        synthes.text = '大村先生';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "いただきます";
+      text1.value = text1.value + "大村先生";
       } else if (CBoard0 == 1 ){
-        synthes.text = '合図';
+        synthes.text = 'おふろ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "合図";
+      text1.value = text1.value + "おふろ";
       } else if (CBoard0 == 2 ){
-        synthes.text = '相談';
+        synthes.text = '団子';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "相談";
+      text1.value = text1.value + "団子";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'ファボーレ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "ファボーレ";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('se');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'おいしいです';
+        synthes.text = '看護師さん';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おいしいです";
+      text1.value = text1.value + "看護師さん";
       } else if (CBoard0 == 1 ){
-        synthes.text = '預かって';
+        synthes.text = 'ねちがえ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "預かって";
+      text1.value = text1.value + "ねちがえ";
       } else if (CBoard0 == 2 ){
-        synthes.text = '支度';
+        synthes.text = 'アイス';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "支度";
+      text1.value = text1.value + "アイス";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'アピタ東';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "アピタ東";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('so');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '大丈夫ですか';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "大丈夫ですか";
-      } else if (CBoard0 == 1 ){
-        synthes.text = 'もらって';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "もらって";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'なくなった';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "なくなった";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'アピア';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "アピア";
       }
       setCursorend();
      }, false);
@@ -1193,63 +1193,63 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ta');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'ただいま';
+        synthes.text = '野村先生';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ただいま";
+      text1.value = text1.value + "野村先生";
       } else if (CBoard0 == 1 ){
-        synthes.text = '連絡';
+        synthes.text = 'ふるえ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "連絡";
+      text1.value = text1.value + "ふるえ";
       } else if (CBoard0 == 2 ){
-        synthes.text = '返事';
+        synthes.text = 'りんご';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "返事";
+      text1.value = text1.value + "りんご";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'au';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "au";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ti');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '行ってらっしゃい';
+        synthes.text = '橋本先生';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "行ってらっしゃい";
+      text1.value = text1.value + "橋本先生";
       } else if (CBoard0 == 1 ){
-        synthes.text = '投函';
+        synthes.text = 'うがい';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "投函";
+      text1.value = text1.value + "うがい";
       } else if (CBoard0 == 2 ){
-        synthes.text = '掃除';
+        synthes.text = 'バナナ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "掃除";
+      text1.value = text1.value + "バナナ";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'cic';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "cic";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('tu');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'ごちそうさま';
+        synthes.text = '麻生先生';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ごちそうさま";
+      text1.value = text1.value + "麻生先生";
       } else if (CBoard0 == 1 ){
-        synthes.text = '都合を聞いて';
+        synthes.text = '困る';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "都合を聞いて";
+      text1.value = text1.value + "困る";
       } else if (CBoard0 == 2 ){
-        synthes.text = '切手';
+        synthes.text = '柿';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "切手";
+      text1.value = text1.value + "柿";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'マリエ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "マリエ";
       }
       setCursorend();
      }, false);
@@ -1260,38 +1260,38 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'はさんで';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "はさんで";
-      } else if (CBoard0 == 2 ){
-        synthes.text = '作って';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "作って";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '梨';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "梨";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '無印';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "無印";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('to');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '会いたいです';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "会いたいです";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '後ろにかけて';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "後ろにかけて";
-      } else if (CBoard0 == 2 ){
-        synthes.text = '使って';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "使って";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = 'スイカ';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "スイカ";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'マツキヨ';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "マツキヨ";
       }
       setCursorend();
      }, false);
@@ -1299,84 +1299,84 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('na');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'すみません';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "すみません";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '支払い';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "支払い";
-      } else if (CBoard0 == 2 ){
-        synthes.text = '持って';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "持って";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '本屋';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "本屋";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ni');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'ごめんなさい';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ごめんなさい";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '連れていって';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "連れていって";
-      } else if (CBoard0 == 2 ){
-        synthes.text = '許可';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "許可";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'CDショップ';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "CDショップ";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('nu');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'ご無沙汰しています';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ご無沙汰しています";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '頼んで';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "頼んで";
-      } else if (CBoard0 == 2 ){
-        synthes.text = '注文';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "注文";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '手芸店';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "手芸店";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ne');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'お久しぶりです';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おひさしぶりです";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = '延長';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "延長";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'コンビニ';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "コンビニ";
       }
       setCursorend();
      }, false);
@@ -1391,13 +1391,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = '注意';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "注意";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '100円ショップ';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "100円ショップ";
       }
       setCursorend();
      }, false);
@@ -1405,76 +1405,76 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ha');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '天気';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "天気";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '受付';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "受付";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = '愚痴';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "愚痴";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'これにします';
+        synthes.text = '散歩';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "これにします";
+      text1.value = text1.value + "散歩";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('hi');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '晴';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "晴";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '県信さん';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "県信さん";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = '段差';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "段差";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
-        synthes.text = '選びます';
+        synthes.text = '車いすOKですか';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "選びます";
+      text1.value = text1.value + "車いすOKですか";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('hu');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '曇';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "曇";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '電動';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "電動";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
-        synthes.text = 'あきらめます';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "あきらめます";
+      text1.value = text1.value + "";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('he');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '雨';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "雨";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '手動';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "手動";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1489,13 +1489,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ho');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '雪';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "雪";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '事務所';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "事務所";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1511,97 +1511,97 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ma');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '春';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "春";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '買い物';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "買い物";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'おはし';
+        synthes.text = 'お願いします';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "おはし";
+      text1.value = text1.value + "お願いします";
       } else if (CBoard0 == 3 ){
-        synthes.text = '頑張ります';
+        synthes.text = '行きたいです';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "頑張ります";
+      text1.value = text1.value + "行きたいです";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('mi');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '夏';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "夏";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '届けを出して';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "届けを出して";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'フォーク';
+        synthes.text = 'ありますか';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "フォーク";
+      text1.value = text1.value + "ありますか";
       } else if (CBoard0 == 3 ){
-        synthes.text = '感謝';
+        synthes.text = '行ってきます';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "感謝";
+      text1.value = text1.value + "行ってきます";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('mu');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '秋';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "秋";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '冷蔵庫';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "冷蔵庫";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'スプーン';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "スプーン";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = 'ほしいです';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "ほしいです";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '行ってきました';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "行ってきました";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('me');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '冬';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "冬";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '冷凍庫';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "冷凍庫";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'ストロー';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ストロー";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = 'いくらですか';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "いくらですか";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'どこですか？';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "どこですか？";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('mo');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '安心';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "安心";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '蛍光とう';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "蛍光とう";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1617,17 +1617,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ya');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '朝';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "朝";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '洗濯';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "洗濯";
-      } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '元気です';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "元気です";
+      } else if (CBoard0 == 2 ){
+        synthes.text = 'いただきます';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "いただきます";
       } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1638,17 +1638,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('yu');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '昼';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "昼";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = '調子いいです';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "調子いいです";
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = 'ごちそうさま';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "ごちそうさま";
       } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1659,13 +1659,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('yo');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ) {
-        synthes.text = '夕';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "夕";
-      } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '変わりありません';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "変わりありません";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1680,13 +1680,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('gb');
 	 obj.addEventListener("click", async function() {
       if (CBoard0 == 0 ) {
-        synthes.text = '夜中';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "夜中";
-      } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '頑張ります';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "頑張ります";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1702,13 +1702,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	 obj.addEventListener("click", async function() {
 
       if (CBoard0 == 0 ) {
-        synthes.text = '安全';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "安全";
-      } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = 'ありがとうございます';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "ありがとうございます";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1724,105 +1724,105 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ra');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '重い';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "重い";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '聞きたい';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "聞きたい";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'します';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "します";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = 'からい';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "からい";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'バス';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "バス";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ri');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '高い';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "高い";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '見たい';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "見たい";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'しました';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "しました";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '甘い';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "甘い";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'タクシー';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "タクシー";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ru');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '手頃';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "手ごろ";
-      } else if (CBoard0 == 1 ){
-        synthes.text = '休みたい';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "休みたい";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'したいです';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "したいです";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = 'おいしい';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "おいしい";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '市電';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "市電";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('re');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '明るい';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "明るい";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = 'して';
+        synthes.text = 'おなかぺこぺこ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "して";
+      text1.value = text1.value + "おなかぺこぺこ";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '電車';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "電車";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('ro');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '十分';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "十分";
-      } else if (CBoard0 == 1 ){
-        synthes.text = 'ほしい';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ほしい";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'ください';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ください";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = 'おなかいっぱい';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "おなかいっぱい";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '乗ります';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "乗ります";
       }
       setCursorend();
      }, false);
@@ -1830,72 +1830,72 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('wa');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '軽い';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "軽い";
-      } else if (CBoard0 == 1 ){
-        synthes.text = 'して';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "して";
-      } else if (CBoard0 == 2 ){
-        synthes.text = '探しています';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "探しています";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '恥ずかしい';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "恥ずかしい";
+      } else if (CBoard0 == 3 ){
+        synthes.text = 'エレベーター';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "エレベーター";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('wo');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '低い';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "低い";
-      } else if (CBoard0 == 1 ){
-        synthes.text = 'ください';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ください";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'ありますか';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ありますか";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '好き';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "好き";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '延長';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "延長";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('nn');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '安い';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "安い";
-      } else if (CBoard0 == 1 ){
-        synthes.text = 'お願いします';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "お願いします";
-      } else if (CBoard0 == 2 ){
-        synthes.text = 'お願いします';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "お願いします";
-      } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 2 ){
+        synthes.text = '';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "";
+      } else if (CBoard0 == 3 ){
+        synthes.text = '何階';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "何階";
       }
       setCursorend();
      }, false);
      var obj = document.getElementById('bar');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '暗い';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "暗い";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1914,21 +1914,21 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('0000');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'たりない';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "たりない";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = 'ありがとう';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ありがとう";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = 'です';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "です";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '降ります';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "降ります";
       }
       setCursorend();
      }, false);
@@ -2141,256 +2141,256 @@ function CBoardChange(param1){
 
       switch (param1) {
         case 0:
-          elem.src = "./img/mononamae.png";
-          elem1.src = "./img5/akete.png";
-          elem2.src = "./img5/toosite.png";
-          elem3.src = "./img5/sutete.png";
-          elem4.src = "./img5/juuden.png";
-          elem5.src = "./img5/dennchikoukan.png";
-          elem6.src = "./img5/simete.png";
-          elem7.src = "./img5/hirotte.png";
-          elem8.src = "./img5/irete.png";
-          elem9.src = "./img5/dasite.png";
-          elem0.src = "./img5/totte.png";
-          elema.src = "./img5/hayakusite.png";
-          elemi.src = "./img5/tutaete.png";
-          elemu.src = "./img5/kaijo.png";
-          eleme.src = "./img5/issyonikite.png";
-          elemo.src = "./img5/tetudatte.png";
-          elemka.src = "./img5/hatte.png";
-          elemki.src = "./img5/denwa.png";
-          elemku.src = "./img5/naosite.png";
-          elemke.src = "./img5/syuuri.png";
-          elemko.src = "./img5/yamete.png";
-          elemsa.src = "./img5/osiete.png";
-          elemsi.src = "./img5/kaite.png";
-          elemsu.src = "./img5/aizu.png";
-          elemse.src = "./img5/azukatte.png";
-          elemso.src = "./img5/moratte.png";
-          elemta.src = "./img5/renraku.png";
-          elemti.src = "./img5/toukan.png";
-          elemtu.src = "./img5/tugouwokiite.png";
-          elemte.src = "./img5/hasande.png";
-          elemto.src = "./img5/usironikakete.png";
-          elemna.src = "./img5/siharai.png";
-          elemni.src = "./img5/tureteitte.png";
-          elemnu.src = "./img5/tanonde.png";
-          elemne.src = "./img5/00.png";
-          elemno.src = "./img5/00.png";
-          elemha.src = "./img5/uketuke.png";
-          elemhi.src = "./img5/kensinsan.png";
-          elemhu.src = "./img5/dendou.png";
-          elemhe.src = "./img5/syudou.png";
-          elemho.src = "./img5/jimusyo.png";
-          elemma.src = "./img5/kaimono.png";
-          elemmi.src = "./img5/todokewodasite.png";
-          elemmu.src = "./img5/reizouko.png";
-          elemme.src = "./img5/reitouko.png";
-          elemmo.src = "./img5/keikoutou.png";
-          elemya.src = "./img5/sentaku.png";
-          elemyu.src = "./img5/00.png";
-          elemyo.src = "./img5/00.png";
-          elemyo2.src = "./img5/00.png";
-          elemyo3.src = "./img5/00.png";
-          elemra.src = "./img5/kikitai.png";
-          elemri.src = "./img5/mitai.png";
-          elemru.src = "./img5/yasumitai.png";
-          elemre.src = "./img5/00.png";
-          elemro.src = "./img5/hosii.png";
-          elemwa.src = "./img5/site.png";
-          elemwo.src = "./img5/kudasai.png";
-          elemnn.src = "./img5/onegaisimasu.png";
-          elemnn2.src = "./img5/00.png";
-          elemnn3.src = "./img5/arigatou.png";
+          elem.src = "./img/tabemono.png";
+          elem1.src = "./img8/sinsatu.png";
+          elem2.src = "./img8/rihabiri.png";
+          elem3.src = "./img8/naika.png";
+          elem4.src = "./img8/sinri.png";
+          elem5.src = "./img8/kusuri.png";
+          elem6.src = "./img8/yoyaku.png";
+          elem7.src = "./img8/seikei.png";
+          elem8.src = "./img8/seisinka.png";
+          elem9.src = "./img8/cyuusya.png";
+          elem0.src = "./img8/fukusayou.png";
+          elema.src = "./img8/dutuu.png";
+          elemi.src = "./img8/benpi.png";
+          elemu.src = "./img8/netu.png";
+          eleme.src = "./img8/hakike.png";
+          elemo.src = "./img8/kaze.png";
+          elemka.src = "./img8/haita.png";
+          elemki.src = "./img8/geri.png";
+          elemku.src = "./img8/kabureta.png";
+          elemke.src = "./img8/nodoitai.png";
+          elemko.src = "./img8/seki.png";
+          elemsa.src = "./img8/sibire.png";
+          elemsi.src = "./img8/tearai.png";
+          elemsu.src = "./img8/ofuro.png";
+          elemse.src = "./img8/nechigae.png";
+          elemso.src = "./img8/00.png";
+          elemta.src = "./img8/furue.png";
+          elemti.src = "./img8/ugai.png";
+          elemtu.src = "./img8/komaru.png";
+          elemte.src = "./img8/00.png";
+          elemto.src = "./img8/00.png";
+          elemna.src = "./img8/00.png";
+          elemni.src = "./img8/00.png";
+          elemnu.src = "./img8/00.png";
+          elemne.src = "./img8/00.png";
+          elemno.src = "./img8/00.png";
+          elemha.src = "./img8/00.png";
+          elemhi.src = "./img8/00.png";
+          elemhu.src = "./img8/00.png";
+          elemhe.src = "./img8/00.png";
+          elemho.src = "./img8/00.png";
+          elemma.src = "./img8/00.png";
+          elemmi.src = "./img8/00.png";
+          elemmu.src = "./img8/00.png";
+          elemme.src = "./img8/00.png";
+          elemmo.src = "./img8/00.png";
+          elemya.src = "./img8/genki.png";
+          elemyu.src = "./img8/cyousiii.png";
+          elemyo.src = "./img8/kawarinasi.png";
+          elemyo2.src = "./img8/ganbarimasu.png";
+          elemyo3.src = "./img8/arigatou.png";
+          elemra.src = "./img8/00.png";
+          elemri.src = "./img8/00.png";
+          elemru.src = "./img8/00.png";
+          elemre.src = "./img8/00.png";
+          elemro.src = "./img8/00.png";
+          elemwa.src = "./img8/00.png";
+          elemwo.src = "./img8/00.png";
+          elemnn.src = "./img8/00.png";
+          elemnn2.src = "./img8/00.png";
+          elemnn3.src = "./img8/00.png";
           break;
         case 1:
-          elem.src = "./img/jibun.png";
-          elem1.src = "./img6/koromogae.png";
-          elem2.src = "./img6/enryo.png";
-          elem3.src = "./img6/hansei.png";
-          elem4.src = "./img6/00.png";
-          elem5.src = "./img6/seikou.png";
-          elem6.src = "./img6/kunren.png";
-          elem7.src = "./img6/me-ru.png";
-          elem8.src = "./img6/yuujin.png";
-          elem9.src = "./img6/chijin.png";
-          elem0.src = "./img6/sippai.png";
-          elema.src = "./img6/isousa-bisu.png";
-          elemi.src = "./img6/kasyoku.png";
-          elemu.src = "./img6/terebi.png";
-          eleme.src = "./img6/sutoresu.png";
-          elemo.src = "./img6/gaihaku.png";
-          elemka.src = "./img6/yasumi.png";
-          elemki.src = "./img6/koukai.png";
-          elemku.src = "./img6/ansin.png";
-          elemke.src = "./img6/nayami.png";
-          elemko.src = "./img6/ohanasi.png";
-          elemsa.src = "./img6/nokosimasu.png";
-          elemsi.src = "./img6/kataduke.png";
-          elemsu.src = "./img6/soudan.png";
-          elemse.src = "./img6/sitaku.png";
-          elemso.src = "./img6/nakunatta.png";
-          elemta.src = "./img6/henji.png";
-          elemti.src = "./img6/souji.png";
-          elemtu.src = "./img6/kitte.png";
-          elemte.src = "./img6/tukutte.png";
-          elemto.src = "./img6/tukatte.png";
-          elemna.src = "./img6/motte.png";
-          elemni.src = "./img6/kyoka.png";
-          elemnu.src = "./img6/cyuumon.png";
-          elemne.src = "./img6/encyou.png";
-          elemno.src = "./img6/cyuui.png";
-          elemha.src = "./img6/guchi.png";
-          elemhi.src = "./img6/dansa.png";
-          elemhu.src = "./img6/00.png";
-          elemhe.src = "./img6/00.png";
-          elemho.src = "./img6/00.png";
-          elemma.src = "./img6/ohasi.png";
-          elemmi.src = "./img6/fo-ku.png";
-          elemmu.src = "./img6/supu-nn.png";
-          elemme.src = "./img6/sutoro-.png";
-          elemmo.src = "./img6/00.png";
-          elemya.src = "./img6/00.png";
-          elemyu.src = "./img6/00.png";
-          elemyo.src = "./img6/00.png";
-          elemyo2.src = "./img6/00.png";
-          elemyo3.src = "./img6/00.png";
-          elemra.src = "./img6/simasu.png";
-          elemri.src = "./img6/simasita.png";
-          elemru.src = "./img6/sitaidesu.png";
-          elemre.src = "./img6/site.png";
-          elemro.src = "./img6/kudasai.png";
-          elemwa.src = "./img6/sagasiteimasu.png";
-          elemwo.src = "./img6/arimasuka.png";
-          elemnn.src = "./img6/onegaisimasu.png";
-          elemnn2.src = "./img6/00.png";
-          elemnn3.src = "./img6/00.png";
+          elem.src = "./img/basyo.png";
+          elem1.src = "./img9/kare-raisu.png";
+          elem2.src = "./img9/udon.png";
+          elem3.src = "./img9/omuraisu.png";
+          elem4.src = "./img9/hanba-ga-.png";
+          elem5.src = "./img9/cya-han.png";
+          elem6.src = "./img9/ra-men.png";
+          elem7.src = "./img9/soba.png";
+          elem8.src = "./img9/taiyaki.png";
+          elem9.src = "./img9/to-suto.png";
+          elem0.src = "./img9/gyo-za.png";
+          elema.src = "./img9/yakisoba.png";
+          elemi.src = "./img9/okonomiyaki.png";
+          elemu.src = "./img9/onigiri.png";
+          eleme.src = "./img9/osusi.png";
+          elemo.src = "./img9/syu-mai.png";
+          elemka.src = "./img9/piza.png";
+          elemki.src = "./img9/gohan.png";
+          elemku.src = "./img9/pan.png";
+          elemke.src = "./img9/sandoicchi.png";
+          elemko.src = "./img9/00.png";
+          elemsa.src = "./img9/okasi.png";
+          elemsi.src = "./img9/omochi.png";
+          elemsu.src = "./img9/dango.png";
+          elemse.src = "./img9/aisu.png";
+          elemso.src = "./img9/00.png";
+          elemta.src = "./img9/ringo.png";
+          elemti.src = "./img9/banana.png";
+          elemtu.src = "./img9/kaki.png";
+          elemte.src = "./img9/nasi.png";
+          elemto.src = "./img9/suika.png";
+          elemna.src = "./img9/00.png";
+          elemni.src = "./img9/00.png";
+          elemnu.src = "./img9/00.png";
+          elemne.src = "./img9/00.png";
+          elemno.src = "./img9/00.png";
+          elemha.src = "./img9/00.png";
+          elemhi.src = "./img9/00.png";
+          elemhu.src = "./img9/00.png";
+          elemhe.src = "./img9/00.png";
+          elemho.src = "./img9/00.png";
+          elemma.src = "./img9/onegaisimau.png";
+          elemmi.src = "./img9/arimasuka.png";
+          elemmu.src = "./img9/hosiidesu.png";
+          elemme.src = "./img9/ikuradesuka.png";
+          elemmo.src = "./img9/00.png";
+          elemya.src = "./img9/itadakimasu.png";
+          elemyu.src = "./img9/gochisousama.png";
+          elemyo.src = "./img9/00.png";
+          elemyo2.src = "./img9/00.png";
+          elemyo3.src = "./img9/00.png";
+          elemra.src = "./img9/karai.png";
+          elemri.src = "./img9/amai.png";
+          elemru.src = "./img9/oisii.png";
+          elemre.src = "./img9/kuufuku.png";
+          elemro.src = "./img9/manpuku.png";
+          elemwa.src = "./img9/hazukasii.png";
+          elemwo.src = "./img9/suki.png";
+          elemnn.src = "./img9/00.png";
+          elemnn2.src = "./img9/00.png";
+          elemnn3.src = "./img9/desu.png";
           break;
         case 2:
-          elem.src = "./img/aisatu.png";
-          elem1.src = "./img7/atui.png";
-          elem2.src = "./img7/tanosii.png";
-          elem3.src = "./img7/dochirademoii.png";
-          elem4.src = "./img7/kurusii.png";
-          elem5.src = "./img7/genki.png";
-          elem6.src = "./img7/samui.png";
-          elem7.src = "./img7/uresii.png";
-          elem8.src = "./img7/dochirademonai.png";
-          elem9.src = "./img7/tukareta.png";
-          elem0.src = "./img7/cyousiii.png";
-          elema.src = "./img7/suki.png";
-          elemi.src = "./img7/kanasii.png";
-          elemu.src = "./img7/sitteiru.png";
-          eleme.src = "./img7/nemui.png";
-          elemo.src = "./img7/kawarinasi.png";
-          elemka.src = "./img7/kirai.png";
-          elemki.src = "./img7/kuyasii.png";
-          elemku.src = "./img7/sirimasen.png";
-          elemke.src = "./img7/00.png";
-          elemko.src = "./img7/maamaa.png";
-          elemsa.src = "./img7/00.png";
-          elemsi.src = "./img7/00.png";
-          elemsu.src = "./img7/00.png";
-          elemse.src = "./img7/00.png";
-          elemso.src = "./img7/00.png";
-          elemta.src = "./img7/00.png";
-          elemti.src = "./img7/00.png";
-          elemtu.src = "./img7/00.png";
-          elemte.src = "./img7/00.png";
-          elemto.src = "./img7/00.png";
-          elemna.src = "./img7/00.png";
-          elemni.src = "./img7/00.png";
-          elemnu.src = "./img7/00.png";
-          elemne.src = "./img7/00.png";
-          elemno.src = "./img7/00.png";
-          elemha.src = "./img7/korenisimasu.png";
-          elemhi.src = "./img7/erabimasu.png";
-          elemhu.src = "./img7/akiramemasu.png";
-          elemhe.src = "./img7/00.png";
-          elemho.src = "./img7/00.png";
-          elemma.src = "./img7/ganbarimasu.png";
-          elemmi.src = "./img7/kannsya.png";
-          elemmu.src = "./img7/00.png";
-          elemme.src = "./img7/00.png";
-          elemmo.src = "./img7/00.png";
-          elemya.src = "./img7/00.png";
-          elemyu.src = "./img7/00.png";
-          elemyo.src = "./img7/00.png";
-          elemyo2.src = "./img7/00.png";
-          elemyo3.src = "./img7/00.png";
-          elemra.src = "./img7/00.png";
-          elemri.src = "./img7/00.png";
-          elemru.src = "./img7/00.png";
-          elemre.src = "./img7/00.png";
-          elemro.src = "./img7/00.png";
-          elemwa.src = "./img7/00.png";
-          elemwo.src = "./img7/00.png";
-          elemnn.src = "./img7/00.png";
-          elemnn2.src = "./img7/00.png";
-          elemnn3.src = "./img7/00.png";
+          elem.src = "./img/hitonamae.png";
+          elem1.src = "./img9/heya.png";
+          elem2.src = "./img9/syokudou.png";
+          elem3.src = "./img9/toire.png";
+          elem4.src = "./img9/senmenjo.png";
+          elem5.src = "./img9/ofuro.png";
+          elem6.src = "./img9/byouin.png";
+          elem7.src = "./img9/baiten.png";
+          elem8.src = "./img9/kyassyuko-na-.png";
+          elem9.src = "./img9/posuto.png";
+          elem0.src = "./img9/tokoya.png";
+          elema.src = "./img9/gipususitu.png";
+          elemi.src = "./img9/dannwasitu.png";
+          elemu.src = "./img9/genkan.png";
+          eleme.src = "./img9/00.png";
+          elemo.src = "./img9/00.png";
+          elemka.src = "./img9/toyamaekimae.png";
+          elemki.src = "./img9/sougawa.png";
+          elemku.src = "./img9/siyakusyo.png";
+          elemke.src = "./img9/ginkou.png";
+          elemko.src = "./img9/00.png";
+          elemsa.src = "./img9/simamura.png";
+          elemsi.src = "./img9/arupuraza.png";
+          elemsu.src = "./img9/fabo-re.png";
+          elemse.src = "./img9/apitahigasi.png";
+          elemso.src = "./img9/apia.png";
+          elemta.src = "./img9/au.png";
+          elemti.src = "./img9/cic.png";
+          elemtu.src = "./img9/marie.png";
+          elemte.src = "./img9/mujirusi.png";
+          elemto.src = "./img9/matukiyo.png";
+          elemna.src = "./img9/honya.png";
+          elemni.src = "./img9/cdsyoppu.png";
+          elemnu.src = "./img9/syugeiten.png";
+          elemne.src = "./img9/konbini.png";
+          elemno.src = "./img9/100kin.png";
+          elemha.src = "./img9/sanpo.png";
+          elemhi.src = "./img9/kurumaisuok.png";
+          elemhu.src = "./img9/00.png";
+          elemhe.src = "./img9/00.png";
+          elemho.src = "./img9/00.png";
+          elemma.src = "./img9/ikitaidesu.png";
+          elemmi.src = "./img9/ittekiumasu.png";
+          elemmu.src = "./img9/ittekimasita.png";
+          elemme.src = "./img9/dokodesuka.png";
+          elemmo.src = "./img9/00.png";
+          elemya.src = "./img9/00.png";
+          elemyu.src = "./img9/00.png";
+          elemyo.src = "./img9/00.png";
+          elemyo2.src = "./img9/00.png";
+          elemyo3.src = "./img9/00.png";
+          elemra.src = "./img9/basu.png";
+          elemri.src = "./img9/takusi-.png";
+          elemru.src = "./img9/siden.png";
+          elemre.src = "./img9/densya.png";
+          elemro.src = "./img9/norimasu.png";
+          elemwa.src = "./img9/erebe-ta.png";
+          elemwo.src = "./img9/encyou.png";
+          elemnn.src = "./img9/nankai.png";
+          elemnn2.src = "./img9/00.png";
+          elemnn3.src = "./img9/orimasu.png";
           break;
         case 3:
-          elem.src = "./img/onegai.png";
-          elem1.src = "./img2/arigatou.png";
-          elem2.src = "./img2/konnichiha.png";
-          elem3.src = "./img2/dochirademoii.png";
-          elem4.src = "./img2/ohayou.png";
-          elem5.src = "./img2/youkoso.png";
-          elem6.src = "./img2/onegaisimasu2.png";
-          elem7.src = "./img2/sayounara.png";
-          elem8.src = "./img2/dochirademonai.png";
-          elem9.src = "./img2/oyasumi.png";
-          elem0.src = "./img2/matakitene.png";
-          elema.src = "./img2/mouiidesu.png";
-          elemi.src = "./img2/hajimemasite.png";
-          elemu.src = "./img2/mouichido2.png";
-          eleme.src = "./img2/konbanha.png";
-          elemo.src = "./img2/yokatta.png";
-          elemka.src = "./img2/gomennasai.png";
-          elemki.src = "./img2/yorosiku.png";
-          elemku.src = "./img2/00.png";
-          elemke.src = "./img2/00.png";
-          elemko.src = "./img2/uresii.png";
-          elemsa.src = "./img2/ittekimasu.png";
-          elemsi.src = "./img2/okaerinasai.png";
-          elemsu.src = "./img2/itadakimasu.png";
-          elemse.src = "./img2/oisiidesu.png";
-          elemso.src = "./img2/daijoubu.png";
-          elemta.src = "./img2/tadaima.png";
-          elemti.src = "./img2/itterassyai.png";
-          elemtu.src = "./img2/gochisousama.png";
-          elemte.src = "./img2/00.png";
-          elemto.src = "./img2/aitai.png";
-          elemna.src = "./img2/sumimasenn.png";
-          elemni.src = "./img2/gomennnasai.png";
-          elemnu.src = "./img2/gobusata.png";
-          elemne.src = "./img2/ohisasiburi.png";
-          elemno.src = "./img2/00.png";
-          elemha.src = "./img2/tennki.png";
-          elemhi.src = "./img2/hare.png";
-          elemhu.src = "./img2/kumori.png";
-          elemhe.src = "./img2/ame.png";
-          elemho.src = "./img2/yuki.png";
-          elemma.src = "./img2/haru.png";
-          elemmi.src = "./img2/natu.png";
-          elemmu.src = "./img2/aki.png";
-          elemme.src = "./img2/fuyu.png";
-          elemmo.src = "./img2/ansin.png";
-          elemya.src = "./img2/asa.png";
-          elemyu.src = "./img2/hiru.png";
-          elemyo.src = "./img2/yuu.png";
-          elemyo2.src = "./img2/yonaka.png";
-          elemyo3.src = "./img2/anzen.png";
-          elemra.src = "./img2/omoi.png";
-          elemri.src = "./img2/takai.png";
-          elemru.src = "./img2/tegoro.png";
-          elemre.src = "./img2/akarui.png";
-          elemro.src = "./img2/juubun.png";
-          elemwa.src = "./img2/karui.png";
-          elemwo.src = "./img2/hikui.png";
-          elemnn.src = "./img2/yasui.png";
-          elemnn2.src = "./img2/kurai.png";
-          elemnn3.src = "./img2/tarinai.png";
+          elem.src = "./img/byouin.png";
+          elem1.src = "./img8/inami.png";
+          elem2.src = "./img8/saizaki.png";
+          elem3.src = "./img8/takahara.png";
+          elem4.src = "./img8/kuroda.png";
+          elem5.src = "./img8/tanigawa.png";
+          elem6.src = "./img8/gotou.png";
+          elem7.src = "./img8/tabuse.png";
+          elem8.src = "./img8/yamamori.png";
+          elem9.src = "./img8/iwasaki.png";
+          elem0.src = "./img8/izumi.png";
+          elema.src = "./img8/yamagata.png";
+          elemi.src = "./img8/magario.png";
+          elemu.src = "./img8/junnkosan.png";
+          eleme.src = "./img8/asano.png";
+          elemo.src = "./img8/oosima.png";
+          elemka.src = "./img8/minami.png";
+          elemki.src = "./img8/yonezawasan.png";
+          elemku.src = "./img8/hoyousan.png";
+          elemke.src = "./img8/masami.png";
+          elemko.src = "./img8/00.png";
+          elemsa.src = "./img8/takata.png";
+          elemsi.src = "./img8/kikura.png";
+          elemsu.src = "./img8/oomura.png";
+          elemse.src = "./img8/kanngosisan.png";
+          elemso.src = "./img8/00.png";
+          elemta.src = "./img8/nomura.png";
+          elemti.src = "./img8/hasimotosennsei.png";
+          elemtu.src = "./img8/asou.png";
+          elemte.src = "./img8/00.png";
+          elemto.src = "./img8/00.png";
+          elemna.src = "./img8/00.png";
+          elemni.src = "./img8/00.png";
+          elemnu.src = "./img8/00.png";
+          elemne.src = "./img8/00.png";
+          elemno.src = "./img8/00.png";
+          elemha.src = "./img8/00.png";
+          elemhi.src = "./img8/00.png";
+          elemhu.src = "./img8/00.png";
+          elemhe.src = "./img8/00.png";
+          elemho.src = "./img8/00.png";
+          elemma.src = "./img8/00.png";
+          elemmi.src = "./img8/00.png";
+          elemmu.src = "./img8/00.png";
+          elemme.src = "./img8/00.png";
+          elemmo.src = "./img8/00.png";
+          elemya.src = "./img8/00.png";
+          elemyu.src = "./img8/00.png";
+          elemyo.src = "./img8/00.png";
+          elemyo2.src = "./img8/00.png";
+          elemyo3.src = "./img8/00.png";
+          elemra.src = "./img8/00.png";
+          elemri.src = "./img8/00.png";
+          elemru.src = "./img8/00.png";
+          elemre.src = "./img8/00.png";
+          elemro.src = "./img8/00.png";
+          elemwa.src = "./img8/00.png";
+          elemwo.src = "./img8/00.png";
+          elemnn.src = "./img8/00.png";
+          elemnn2.src = "./img8/00.png";
+          elemnn3.src = "./img8/00.png";
           break;
       }
     }
