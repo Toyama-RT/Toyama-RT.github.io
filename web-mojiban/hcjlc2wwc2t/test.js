@@ -1144,9 +1144,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "相談";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'わかりました';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "わかりました";
       }
       setCursorend();
      }, false);
@@ -1250,9 +1250,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "切手";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'わかりません';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "わかりません";
       }
       setCursorend();
      }, false);
@@ -1323,9 +1323,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ni');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = 'ごめんなさい';
+        synthes.text = '';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "ごめんなさい";
+      text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
         synthes.text = '連れていって';
         speechSynthesis.speak(synthes);
@@ -2293,12 +2293,12 @@ function CBoardChange(param1){
           elemko.src = "./img7/maamaa.png";
           elemsa.src = "./img7/00.png";
           elemsi.src = "./img7/00.png";
-          elemsu.src = "./img7/00.png";
+          elemsu.src = "./img7/wakarimasita.png";
           elemse.src = "./img7/00.png";
           elemso.src = "./img7/00.png";
           elemta.src = "./img7/00.png";
           elemti.src = "./img7/00.png";
-          elemtu.src = "./img7/00.png";
+          elemtu.src = "./img7/wakarimasen.png";
           elemte.src = "./img7/00.png";
           elemto.src = "./img7/00.png";
           elemna.src = "./img7/00.png";
