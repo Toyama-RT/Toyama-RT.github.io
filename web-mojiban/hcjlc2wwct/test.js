@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                synthes.text = '準備出来ました';
                //synthes.lang = 'en-US';//米語の例
                //synthes.text = 'hello, Now, We start the enchant.js';
-               //speechSynthesis.speak(synthes);
+               speechSynthesis.speak(synthes);
 
 
 //ボタンクリック時の動作
