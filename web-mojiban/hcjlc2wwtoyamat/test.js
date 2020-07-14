@@ -2391,6 +2391,36 @@ function Bunnum(param) {
         case 10:
           elem.src = "./img/bun10.png";
           break;
+        case 11:
+          elem.src = "./img/bun11.png";
+          break;
+        case 12:
+          elem.src = "./img/bun12.png";
+          break;
+        case 13:
+          elem.src = "./img/bun13.png";
+          break;
+        case 14:
+          elem.src = "./img/bun14.png";
+          break;
+        case 15:
+          elem.src = "./img/bun15.png";
+          break;
+        case 16:
+          elem.src = "./img/bun16.png";
+          break;
+        case 17:
+          elem.src = "./img/bun17.png";
+          break;
+        case 18:
+          elem.src = "./img/bun18.png";
+          break;
+        case 19:
+          elem.src = "./img/bun19.png";
+          break;
+        case 20:
+          elem.src = "./img/bun20.png";
+          break;
         default:
           elem.src = "./img/bun01.png";
           break;
