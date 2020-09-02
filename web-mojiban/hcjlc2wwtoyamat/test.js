@@ -2354,6 +2354,36 @@ document.activeElement.blur();//Androidでキーボード出現を止めるた�
             } else if (storage0 == 10 ){
                storage10 = text1.value;
                localStorage[SERVICE_NAME10] = JSON.stringify(storage10);
+            } else if (storage0 == 11 ){
+               storage11 = text1.value;
+               localStorage[SERVICE_NAME11] = JSON.stringify(storage11);
+            } else if (storage0 == 12 ){
+               storage12 = text1.value;
+               localStorage[SERVICE_NAME12] = JSON.stringify(storage12);
+            } else if (storage0 == 13 ){
+               storage13 = text1.value;
+               localStorage[SERVICE_NAME13] = JSON.stringify(storage13);
+            } else if (storage0 == 14 ){
+               storage14 = text1.value;
+               localStorage[SERVICE_NAME14] = JSON.stringify(storage14);
+            } else if (storage0 == 15 ){
+               storage15 = text1.value;
+               localStorage[SERVICE_NAME15] = JSON.stringify(storage15);
+            } else if (storage0 == 16 ){
+               storage16 = text1.value;
+               localStorage[SERVICE_NAME16] = JSON.stringify(storage16);
+            } else if (storage0 == 17 ){
+               storage17 = text1.value;
+               localStorage[SERVICE_NAME17] = JSON.stringify(storage17);
+            } else if (storage0 == 18 ){
+               storage18 = text1.value;
+               localStorage[SERVICE_NAME18] = JSON.stringify(storage18);
+            } else if (storage0 == 19 ){
+               storage19 = text1.value;
+               localStorage[SERVICE_NAME19] = JSON.stringify(storage19);
+            } else if (storage0 == 20 ){
+               storage20 = text1.value;
+               localStorage[SERVICE_NAME20] = JSON.stringify(storage20);
             }
 }
 
