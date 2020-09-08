@@ -2178,8 +2178,8 @@ function CBoardChange(param1){
           elemna.src = "./img5/siharai.png";
           elemni.src = "./img5/tureteitte.png";
           elemnu.src = "./img5/tanonde.png";
-          elemne.src = "./img5/00.png";
-          elemno.src = "./img5/00.png";
+          elemne.src = "./img/00.png";
+          elemno.src = "./img/00.png";
           elemha.src = "./img5/uketuke.png";
           elemhi.src = "./img5/kensinsan.png";
           elemhu.src = "./img5/dendou.png";
@@ -2191,19 +2191,19 @@ function CBoardChange(param1){
           elemme.src = "./img5/reitouko.png";
           elemmo.src = "./img5/keikoutou.png";
           elemya.src = "./img5/sentaku.png";
-          elemyu.src = "./img5/00.png";
-          elemyo.src = "./img5/00.png";
-          elemyo2.src = "./img5/00.png";
-          elemyo3.src = "./img5/00.png";
+          elemyu.src = "./img/00.png";
+          elemyo.src = "./img/00.png";
+          elemyo2.src = "./img/00.png";
+          elemyo3.src = "./img/00.png";
           elemra.src = "./img5/kikitai.png";
           elemri.src = "./img5/mitai.png";
           elemru.src = "./img5/yasumitai.png";
-          elemre.src = "./img5/00.png";
+          elemre.src = "./img/00.png";
           elemro.src = "./img5/hosii.png";
           elemwa.src = "./img5/site.png";
           elemwo.src = "./img5/kudasai.png";
           elemnn.src = "./img5/onegaisimasu.png";
-          elemnn2.src = "./img5/00.png";
+          elemnn2.src = "./img/00.png";
           elemnn3.src = "./img5/arigatou.png";
           break;
         case 1:
