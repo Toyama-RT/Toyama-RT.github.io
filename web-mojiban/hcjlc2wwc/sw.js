@@ -268,10 +268,13 @@ self.addEventListener('install', e => {
         path + `/img2/yameru.png`,
         path + `/img2/de.png`,
 
-        path + `/snd/incorrect2.wav`,
-        path + `/snd/se2.wav`,
+        path + `/snd/incorrect2.mp3`,
+        path + `/snd/se2.mp3`,
         path + `/snd/se3.mp3`,
 
+        path + `/ico/test512i.png`,
+        path + `/ico/test256.png`,
+        path + `/ico/test192.png`,
         path + `/ico/test192i.png`,
 
       ])

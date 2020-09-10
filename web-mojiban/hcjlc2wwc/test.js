@@ -461,8 +461,10 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", async function() {
+     // 軽量のサウンド出力
+      new Audio('./snd/se2.mp3').play();
      // web audio API によるサウンド出力
-        const audioctx = new AudioContext();
+/*        const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/se2.wav");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
@@ -479,7 +481,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
             })
         });
        }
-
+*/
       CBoardChange(CBoard0);
              if (CBoard0 == 0 ){
                CBoard0 = 1;
@@ -1596,8 +1598,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value.substring(0, text1.value.length -1 );
                    text1.value = text1.value + 'ボ';
                  } else {
+     // 軽量のサウンド出力
+      new Audio('./snd/incorrect2.mp3').play();
+
      // web audio API によるサウンド出力
-        const audioctx = new AudioContext();
+/*        const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
@@ -1614,7 +1619,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
             })
         });
        }
-
+*/
 
                 } 
       } else if (CBoard0 == 2 ){
@@ -1779,8 +1784,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value + 'ッ';
                  } else {
                    //document.getElementById("sound3").play();
+     // 軽量のサウンド出力
+      new Audio('./snd/incorrect2.mp3').play();
+
      // web audio API によるサウンド出力
-        const audioctx = new AudioContext();
+/*        const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
@@ -1797,7 +1805,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
             })
         });
        }
-
+*/
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
