@@ -357,6 +357,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      //文書切り替え部分
      var obj = document.getElementById('bun');
 	 obj.addEventListener("click", async function() {
+     // 軽量のサウンド出力
+      new Audio('./snd/se3.mp3').play();
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/se3.wav");
