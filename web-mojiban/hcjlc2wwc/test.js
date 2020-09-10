@@ -360,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      // 軽量のサウンド出力
       new Audio('./snd/se3.mp3').play();
      // web audio API によるサウンド出力
-        const audioctx = new AudioContext();
+/*        const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/se3.wav");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
@@ -377,7 +377,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
             })
         });
       }
-
+*/
             if (storage0 == 1 ){
                storage1 = text1.value;
                text1.value = storage2;
