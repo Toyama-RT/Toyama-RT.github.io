@@ -272,9 +272,6 @@ self.addEventListener('install', e => {
         path + `/snd/se2.wav`,
         path + `/snd/se3.mp3`,
 
-        path + `/ico/test512i.png`,
-        path + `/ico/test256.png`,
-        path + `/ico/test192.png`,
         path + `/ico/test192i.png`,
 
       ])
