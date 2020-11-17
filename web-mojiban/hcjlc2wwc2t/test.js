@@ -1026,9 +1026,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ku');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '';
+        synthes.text = 'お先にどうぞ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "お先にどうぞ";
       } else if (CBoard0 == 1 ){
         synthes.text = '直して';
         speechSynthesis.speak(synthes);
@@ -1059,9 +1059,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "悩み";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '心配です';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "心配です";
       }
       setCursorend();
      }, false);
@@ -1165,9 +1165,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "支度";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '不安です';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "不安です";
       }
       setCursorend();
      }, false);
@@ -1739,9 +1739,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "します";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '外出';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "外出";
       }
       setCursorend();
      }, false);
@@ -1845,9 +1845,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "探しています";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'します';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "します";
       }
       setCursorend();
      }, false);
@@ -1866,9 +1866,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ありますか";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'したいです';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "したいです";
       }
       setCursorend();
      }, false);
@@ -2289,12 +2289,12 @@ function CBoardChange(param1){
           elemka.src = "./img7/kirai.png";
           elemki.src = "./img7/kuyasii.png";
           elemku.src = "./img7/sirimasen.png";
-          elemke.src = "./img7/00.png";
+          elemke.src = "./img7/sinnpaidesu.png";
           elemko.src = "./img7/maamaa.png";
           elemsa.src = "./img7/00.png";
           elemsi.src = "./img7/00.png";
           elemsu.src = "./img7/wakarimasita.png";
-          elemse.src = "./img7/00.png";
+          elemse.src = "./img7/fuandesu.png";
           elemso.src = "./img7/00.png";
           elemta.src = "./img7/00.png";
           elemti.src = "./img7/00.png";
@@ -2321,13 +2321,13 @@ function CBoardChange(param1){
           elemyo.src = "./img7/00.png";
           elemyo2.src = "./img7/00.png";
           elemyo3.src = "./img7/00.png";
-          elemra.src = "./img7/00.png";
+          elemra.src = "./img7/gaisyutu.png";
           elemri.src = "./img7/00.png";
           elemru.src = "./img7/00.png";
           elemre.src = "./img7/00.png";
           elemro.src = "./img7/00.png";
-          elemwa.src = "./img7/00.png";
-          elemwo.src = "./img7/00.png";
+          elemwa.src = "./img7/simasu.png";
+          elemwo.src = "./img7/sitaidesu.png";
           elemnn.src = "./img7/00.png";
           elemnn2.src = "./img7/00.png";
           elemnn3.src = "./img7/00.png";
@@ -2351,7 +2351,7 @@ function CBoardChange(param1){
           elemo.src = "./img2/yokatta.png";
           elemka.src = "./img2/gomennnasai.png";
           elemki.src = "./img2/yorosiku.png";
-          elemku.src = "./img2/00.png";
+          elemku.src = "./img2/osakinidouzo.png";
           elemke.src = "./img2/00.png";
           elemko.src = "./img2/uresii.png";
           elemsa.src = "./img2/ittekimasu.png";
