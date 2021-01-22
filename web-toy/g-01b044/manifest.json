@@ -1,0 +1,16 @@
+{
+  "name": "WebToy 4",
+  "short_name": "WebToy 4",
+  "theme_color": "#ffff00",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "./ico/webtoy.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
