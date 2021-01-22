@@ -6,7 +6,7 @@ window.onload = function() {
         game.preload('./snd/jump.mp3');
         game.onload = function() {
                 //物理エンジンの宣言
-                var world = new PhysicsWorld(0, 1.622);//月の重力加速度　下方向に1.622m/s2
+                var world = new PhysicsWorld(0, 9.8);//地球の重力加速度　下方向に9.8m/s2
 
                 //床の作成
                 var floor = new PhyBoxSprite(320, 16, enchant.box2d.STATIC_SPRITE, 0, 1.0, 0, false);//密度0摩擦1反発0
@@ -70,18 +70,18 @@ window.onload = function() {
 		  game.assets['./snd/jump.mp3'].clone().play(); //クリックすると音
 
                   if (count1 == 0){
-                    Impx = 8;
+                    Impx = 50;
                   } else if (count1 == 1){
-                    Impx = -8;
+                    Impx = -50;
                   } else {
                    Impx = 0;
                    count1 = -1;
                   }
-                   Impy = -8; 
+                   Impy = -50; 
                  box.applyImpulse(new b2Vec2(Impx, Impy));
                  count1++;
 
-                });
+                }
                 }
                   addBox();
                   addBox();
