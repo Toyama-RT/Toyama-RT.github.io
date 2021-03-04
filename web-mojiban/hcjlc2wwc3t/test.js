@@ -950,9 +950,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "おすし";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '居場所';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "居場所";
       }
       setCursorend();
      }, false);
@@ -2281,7 +2281,7 @@ function CBoardChange(param1){
           elema.src = "./img9/gipususitu.png";
           elemi.src = "./img9/dannwasitu.png";
           elemu.src = "./img9/genkan.png";
-          eleme.src = "./img9/00.png";
+          eleme.src = "./img9/ibasyo.png";
           elemo.src = "./img9/00.png";
           elemka.src = "./img9/toyamaekimae.png";
           elemki.src = "./img9/sougawa.png";
