@@ -1123,9 +1123,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "片付け";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = 'つらいです';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "つらいです";
       }
       setCursorend();
      }, false);
@@ -1229,9 +1229,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "掃除";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '涙';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "涙";
       }
       setCursorend();
      }, false);
@@ -1369,9 +1369,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "おひさしぶりです";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = '静かに';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "静かに";
       } else if (CBoard0 == 2 ){
         synthes.text = '延長';
         speechSynthesis.speak(synthes);
@@ -2178,7 +2178,7 @@ function CBoardChange(param1){
           elemna.src = "./img5/siharai.png";
           elemni.src = "./img5/tureteitte.png";
           elemnu.src = "./img5/tanonde.png";
-          elemne.src = "./img/00.png";
+          elemne.src = "./img5/shizukani.png";
           elemno.src = "./img/00.png";
           elemha.src = "./img5/uketuke.png";
           elemhi.src = "./img5/kensinsan.png";
@@ -2292,12 +2292,12 @@ function CBoardChange(param1){
           elemke.src = "./img7/sinnpaidesu.png";
           elemko.src = "./img7/maamaa.png";
           elemsa.src = "./img7/00.png";
-          elemsi.src = "./img7/00.png";
+          elemsi.src = "./img7/turai.png";
           elemsu.src = "./img7/wakarimasita.png";
           elemse.src = "./img7/fuandesu.png";
           elemso.src = "./img7/00.png";
           elemta.src = "./img7/00.png";
-          elemti.src = "./img7/00.png";
+          elemti.src = "./img7/namida.png";
           elemtu.src = "./img7/wakarimasen.png";
           elemte.src = "./img7/00.png";
           elemto.src = "./img7/00.png";
