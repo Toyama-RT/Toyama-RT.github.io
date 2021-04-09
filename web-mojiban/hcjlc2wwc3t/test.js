@@ -1299,9 +1299,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('na');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '';
+        synthes.text = '体温';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "体温";
       } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1320,9 +1320,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ni');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '';
+        synthes.text = '体重';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "体重";
       } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -2172,8 +2172,8 @@ function CBoardChange(param1){
           elemtu.src = "./img8/komaru.png";
           elemte.src = "./img8/00.png";
           elemto.src = "./img8/00.png";
-          elemna.src = "./img8/00.png";
-          elemni.src = "./img8/00.png";
+          elemna.src = "./img8/taion.png";
+          elemni.src = "./img8/taijuu.png";
           elemnu.src = "./img8/00.png";
           elemne.src = "./img8/00.png";
           elemno.src = "./img8/00.png";
