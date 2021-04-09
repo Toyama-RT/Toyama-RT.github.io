@@ -2309,7 +2309,7 @@ function CBoardChange(param1){
           elemha.src = "./img7/korenisimasu.png";
           elemhi.src = "./img7/erabimasu.png";
           elemhu.src = "./img7/akiramemasu.png";
-          elemhe.src = "./img7/wasureta.png";
+          elemhe.src = "./img7/wasuremasita.png";
           elemho.src = "./img7/jibun.png";
           elemma.src = "./img7/ganbarimasu.png";
           elemmi.src = "./img7/kannsya.png";
