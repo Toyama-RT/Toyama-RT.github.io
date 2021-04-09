@@ -1299,13 +1299,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('na');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '体温';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "体温";
-      } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '体温';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "体温";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1320,13 +1320,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('ni');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-        synthes.text = '体重';
-        speechSynthesis.speak(synthes);
-      text1.value = text1.value + "体重";
-      } else if (CBoard0 == 1 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
+      } else if (CBoard0 == 1 ){
+        synthes.text = '体重';
+        speechSynthesis.speak(synthes);
+      text1.value = text1.value + "体重";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
