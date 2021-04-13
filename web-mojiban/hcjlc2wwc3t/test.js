@@ -1928,7 +1928,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       } else if (CBoard0 == 3 ){
         synthes.text = 'おります';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "降ります";
+      text1.value = text1.value + "おります";
       }
       setCursorend();
      }, false);
