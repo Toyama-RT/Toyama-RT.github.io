@@ -4,8 +4,8 @@ const DEG_TO_RAD = Math.PI / 180;
 
 const PTM_RATIO  = 30.0;
 
-const C_WIDTH  = 640;
-const C_HEIGHT = 640;
+const C_WIDTH  = window.innerWidth;//640;
+const C_HEIGHT = window.innerHeight;//640;
 
 const C_NAME   = "canvas";
 
