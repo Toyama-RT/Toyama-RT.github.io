@@ -16,10 +16,10 @@
  */
 
 //'use strict';
-const prefix = 't02';
+const prefix = 't03';
 const CACHE_NAME = prefix + '00';
 
-var path = 'https://toyama-rt.github.io/web-toy/t02';
+var path = 'https://toyama-rt.github.io/web-toy/t03';
 
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -43,6 +43,7 @@ self.addEventListener('install', e => {
         path + `/blue3.png`,
         path + `/yellow.png`,
         path + `/yellow3.png`,
+        path + `/touchtostart.png`,
 
         path + `/ico/webtoy.png`,
 

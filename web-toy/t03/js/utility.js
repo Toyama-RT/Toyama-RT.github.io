@@ -148,7 +148,7 @@ console.log("deg =", deg, deg * DEG_TO_RAD);
 		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
 		this._bodyDef.angle = deg * DEG_TO_RAD;
 		this._bodyDef.type = type;
-		this._bodyDef.userData = {shape_type: 'box', img: boxImg, width: 50, height: 50};//img;//null;
+		this._bodyDef.userData = {shape_type: 'box', img: boxImg, width: 100, height: 100};//img;//null;
 
 		// Shape
 		this._fixDef.shape = new b2PolygonShape;
