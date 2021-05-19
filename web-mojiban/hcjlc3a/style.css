@@ -60,3 +60,7 @@ textarea {
 
 
 span.samples {font-size: small; }
+
+body {
+touch-action: none; /* タッチパネルの操作を無効化 */
+}
