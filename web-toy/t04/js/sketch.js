@@ -78,14 +78,14 @@ canvas.height = window.innerHeight;
 
 	createBox3( canvas.width * 20 / 100, canvas.height * 10 / 100, 200, 200, 30, boxImga);
 	createBox3( canvas.width * 50 / 100, canvas.height * 20 / 100, 200, 200, 60, boxImgb);
-	createBox3( canvas.width * 80 / 100, canvas.height * 30 / 100, 200, 200, 85, boxImgc);
+	//createBox3( canvas.width * 80 / 100, canvas.height * 30 / 100, 200, 200, 85, boxImgc);
 
 
 	//createBox();
 
 	createTriangle( canvas.width * 20 / 100, canvas.height * 20 / 100, -45, triImga);
 	createTriangle( canvas.width * 50 / 100, canvas.height * 30 / 100, -45, triImgb);
-	createTriangle( canvas.width * 80 / 100, canvas.height * 40 / 100, -45, triImgc);
+	//createTriangle( canvas.width * 80 / 100, canvas.height * 40 / 100, -45, triImgc);
 
 	// Functions
 	function createFrame(){
