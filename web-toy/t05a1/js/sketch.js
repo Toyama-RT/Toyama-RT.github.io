@@ -2,20 +2,19 @@ console.log("Hello Box2dWeb!!");
 
 const WaitForClick = () => new Promise(resolve => document.body.addEventListener("click", resolve));
 
-//async function WaitSample() {
-//var img = document.getElementById("image_place");
+async function WaitSample() {
+var img = document.getElementById("image_place");
     //document.getElementById("image_place").style.display="none";
 
-  //console.log("waiting for click");
-//	abc();
-  //await WaitForClick();
+  console.log("waiting for click");
+  await WaitForClick();
   //console.log("この行は、クリックされた後に実行されます。");
-  //    audioElem = new Audio();
-  //    audioElem.src = "./bat1.mp3";
-  //    audioElem.play();
-    //document.getElementById("image_place").style.display="none";
-	//abc();
-//}
+      audioElem = new Audio();
+      audioElem.src = "./bat1.mp3";
+      audioElem.play();
+      document.getElementById("image_place").style.display="none";
+	abc();
+}
 
 const TAG_REMOVER = "remover";
 
@@ -27,11 +26,11 @@ let manager = null;
 // Main
 window.onload = function(){
 
-//WaitSample();
+WaitSample();
 
-//}
+}
 
-//function abc(){
+function abc(){
 var canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -89,7 +88,7 @@ canvas.height = window.innerHeight;
 	//createBox3(160,  80, 50, 50, 60, boxImgb);
 	//createBox3(270, 100, 50, 50, 90, boxImgc);
 
-	createBox3( canvas.width * 20 / 100, canvas.height * 10 / 100, 100, 100, 30, boxImga);
+	//createBox3( canvas.width * 20 / 100, canvas.height * 10 / 100, 100, 100, 30, boxImga);
 	//createBox3( canvas.width * 50 / 100, canvas.height * 20 / 100, 100, 100, 60, boxImgb);
 	//createBox3( canvas.width * 80 / 100, canvas.height * 30 / 100, 100, 100, 90, boxImgc);
 
@@ -102,9 +101,13 @@ canvas.height = window.innerHeight;
 
 
 	let type = b2Body.b2_dynamicBody;
-	manager.createCircleImage(type, canvas.width * 20 / 100, canvas.height * 20 / 100, CirImga, 0, null, null, null);
-	manager.createCircleImage(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 0, null, null, null);
-//	manager.createCircleImage(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 20 / 100, canvas.height * 20 / 100, CirImga, 50, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 50, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 50, 0, null, null, null);
+
+	//manager.createCircleImage(type, canvas.width * 20 / 100, canvas.height * 20 / 100, CirImga, 0, null, null, null);
+	//manager.createCircleImage(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 0, null, null, null);
+	//manager.createCircleImage(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 0, null, null, null);
 
 	// Functions
 	function createFrame(){

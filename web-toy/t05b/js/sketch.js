@@ -96,10 +96,10 @@ canvas.height = window.innerHeight;
 	//createTriangle( canvas.width * 80 / 100, canvas.height * 40 / 100, -45, triImgc);
 
 
-	let type = b2Body.b2_dynamicBody;
-	manager.createCircleImage(type, canvas.width * 20 / 100, canvas.height * 20 / 100, CirImga, 0, null, null, null);
-	manager.createCircleImage(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 0, null, null, null);
-	manager.createCircleImage(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 0, null, null, null);
+	//let type = b2Body.b2_dynamicBody;
+	//manager.createCircleImage(type, canvas.width * 20 / 100, canvas.height * 30 / 100, CirImga, 0, null, null, null);
+	//manager.createCircleImage(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 0, null, null, null);
+	//manager.createCircleImage(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 0, null, null, null);
 
 	// Functions
 	function createFrame(){
@@ -107,15 +107,15 @@ canvas.height = window.innerHeight;
 		let type = b2Body.b2_staticBody;
 
 		// Remover
-		let remover1 = manager.createBody(type, canvas.width *35 /100 -55, canvas.height /2, canvas.width /5, 10, 90);
-		remover1.SetUserData({tag: TAG_REMOVER});
-		let remover2 = manager.createBody(type, canvas.width *35 /100 +55, canvas.height /2, canvas.width /5, 10, 90);
-		remover2.SetUserData({tag: TAG_REMOVER});
+	//	let remover1 = manager.createBody(type, canvas.width *35 /100 -55, canvas.height /2, canvas.width /5, 10, 90);
+	//	remover1.SetUserData({tag: TAG_REMOVER});
+	//	let remover2 = manager.createBody(type, canvas.width *35 /100 +55, canvas.height /2, canvas.width /5, 10, 90);
+	//	remover2.SetUserData({tag: TAG_REMOVER});
 
-		let remover3 = manager.createBody(type, canvas.width * 65 / 100 -55, canvas.height /2, canvas.width /5, 10, 90);
-		remover3.SetUserData({tag: TAG_REMOVER});
-		let remover4 = manager.createBody(type, canvas.width * 65 / 100 +55, canvas.height /2, canvas.width /5, 10, 90);
-		remover4.SetUserData({tag: TAG_REMOVER});
+	//	let remover3 = manager.createBody(type, canvas.width * 65 / 100 -55, canvas.height /2, canvas.width /5, 10, 90);
+	//	remover3.SetUserData({tag: TAG_REMOVER});
+	//	let remover4 = manager.createBody(type, canvas.width * 65 / 100 +55, canvas.height /2, canvas.width /5, 10, 90);
+	//	remover4.SetUserData({tag: TAG_REMOVER});
 
 		//manager.createBody(type, 100, 240, 220, 5, +15);
 		//manager.createBody(type, 30,  200, 70,  5, +45);

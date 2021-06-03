@@ -207,16 +207,16 @@ console.log("deg =", deg, deg * DEG_TO_RAD);
 		body.CreateFixture(this._fixDef);
 		return body;
 	}
-/*
+
 	// 丸その１
-	createCircle(type, x, y, w, deg=0, 
+	createCircle(type, x, y, img, w, deg=0, 
 		dencity=FIX_DENCITY, friction=FIX_FRICTION, restitution=FIX_RESTITUTION){
 
 		// Box
 		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
 		this._bodyDef.angle = deg * DEG_TO_RAD;
 		this._bodyDef.type = type;
-		this._bodyDef.userData = null;
+		this._bodyDef.userData = {shape_type: "circle", img: img, radius: w};
 
 		// Shape
 		this._fixDef.shape = new b2CircleShape(w / PTM_RATIO);
@@ -250,7 +250,7 @@ console.log("deg =", deg, deg * DEG_TO_RAD);
 		body.CreateFixture(this._fixDef);
 		return body;
 	}
-*/
+
 	//ウェルドジョイント
 	createWeldJoint(bodyA, bodyB, aX, aY){
 		let weldJointDef = new b2WeldJointDef();
