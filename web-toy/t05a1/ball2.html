@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics 
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -9,9 +9,9 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-82832782-3');
-</script>-->
-<!-- Global site tag (gtag.js) - Google Analytics 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -19,28 +19,22 @@
 
   gtag('config', 'UA-82832782-1');
 </script>
--->
 
 <!-- for iOS  アドレスバー等のブラウザのUIを非表示 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <!-- ホーム画面に表示されるアプリ名 -->
-<meta name="apple-mobile-web-app-title" content="WebToy TUMIKI">
+<meta name="apple-mobile-web-app-title" content="WebToy ball2">
 <!-- ホーム画面に表示されるアプリアイコン -->
 <link rel="apple-touch-icon" href="./ico/webtoy.png">
 
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
 
-
-
-
-
-
-    <title>WebToy TUMIKI</title>
+    <title>WebToy Ball1</title>
 
 <!-- for PWA マニフェストファイル読み込み  -->
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="./manifest2.json">
 <!-- ios icon 表示対策 pwacompat -->
 <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
     integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
@@ -48,7 +42,7 @@
 <!-- for PWA servive worker  オフライン動作用サービスワーカー読み込み   -->
 
 <script>
-var path = `https://toyama-rt.github.io/web-toy/t02`;
+var path = `https://toyama-rt.github.io/web-toy/t05a1`;
 
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
@@ -70,16 +64,26 @@ var path = `https://toyama-rt.github.io/web-toy/t02`;
 	<script language="javascript" type="text/javascript" 
 	src="./js/utility.js"></script>
 	<script language="javascript" type="text/javascript" 
-	src="./js/sketch.js"></script>
+	src="./js/sketch2.js"></script>
 	<!-- CSS -->
 	<style>
 body{
 padding: 0; margin: 0;
   touch-action: none; <!--//タッチパネルの操作を無効化-->
 }
+
+.class1 {
+  text-align: center;
+}
 </style>
+
 </head>
 <body>
+
+<div class="class1">
+  <img id="image_place"src="touchtostart.png">
+</div>
+
 	<!-- <canvas id="canvas" width="1480" height="1024" style="background-color:#ffffff;" ></canvas> -->
 	<canvas id="canvas" style="background-color:#ffffff;" ></canvas>
 

@@ -115,9 +115,9 @@ canvas.height = window.innerHeight;
 		let type = b2Body.b2_staticBody;
 
 		// Remover
-		let remover1 = manager.createBody(type, canvas.width /2 -55, canvas.height /2, canvas.width /5, 10, 90);
+		let remover1 = manager.createBody(type, canvas.width /2 -55, canvas.height /2, canvas.height /4, 10, 90);
 		remover1.SetUserData({tag: TAG_REMOVER});
-		let remover2 = manager.createBody(type, canvas.width /2 +55, canvas.height /2, canvas.width /5, 10, 90);
+		let remover2 = manager.createBody(type, canvas.width /2 +55, canvas.height /2, canvas.height /4, 10, 90);
 		remover2.SetUserData({tag: TAG_REMOVER});
 
 		//manager.createBody(type, 100, 240, 220, 5, +15);

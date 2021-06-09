@@ -1,17 +1,20 @@
-console.log("Hello Box2dWeb!!");
+console.log("Hello Box2dWeb!!  sketch2.js");
 
 const WaitForClick = () => new Promise(resolve => document.body.addEventListener("click", resolve));
 
 async function WaitSample() {
+var img = document.getElementById("image_place");
+    //document.getElementById("image_place").style.display="none";
+
   console.log("waiting for click");
   await WaitForClick();
-  //console.log("‚±‚Ìs‚ÍAƒNƒŠƒbƒN‚³‚ê‚½Œã‚ÉÀs‚³‚ê‚Ü‚·B");
+  //console.log("ã“ã®è¡Œã¯ã€ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸå¾Œã«å®Ÿè¡Œã•ã‚Œã¾ã™ã€‚");
       audioElem = new Audio();
       audioElem.src = "./bat1.mp3";
       audioElem.play();
+      document.getElementById("image_place").style.display="none";
 	abc();
 }
-
 
 const TAG_REMOVER = "remover";
 
@@ -27,14 +30,37 @@ WaitSample();
 
 }
 
-
 function abc(){
+var canvas = document.getElementById('canvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
     var audioElem;
 
       audioElem = new Audio();
       audioElem.src = "./bat1.mp3";
       audioElem.play();
+
+			let boxImga = new Image();
+			boxImga.src = "red.png";
+			let boxImgb = new Image();
+			boxImgb.src = "blue.png";
+			let boxImgc = new Image();
+			boxImgc.src = "yellow.png";
+
+			let triImga = new Image();
+			triImga.src = "red3.png";
+			let triImgb = new Image();
+			triImgb.src = "blue3.png";
+			let triImgc = new Image();
+			triImgc.src = "yellow3.png";
+
+			let CirImga = new Image();
+			CirImga.src = "empty.png";
+			let CirImgb = new Image();
+			CirImgb.src = "bluec.png";
+			let CirImgc = new Image();
+			CirImgc.src = "yellowc.png";
 
 	
 	// World
@@ -43,7 +69,11 @@ function abc(){
 	// Manager
 	manager = new b2Manager(world);
 
+
 	createFrame();
+
+
+
 	//createRotater(150, 210, 80, +3);
 	//createRotater(330, 210, 80, -3);
 	//createSeesaw(100, 150, 80, -45, +45);
@@ -52,14 +82,32 @@ function abc(){
 	//createDaruma(240, 190);
 
 	//createBox();
-	//createBox();
-	//createBox();
-	//createBox2( 50, 110, 25, 25);
-	createBox3(200, 110, 25, 25);
-	createBox3(100, 110, 25, 25);
-	createBox3(50, 110, 25, 25);
+	//createBox2(160, 100, 25, 25, 15);
 
-	//createTriangle();
+	//createBox3( 50, 100, 50, 50, 30, boxImga);
+	//createBox3(160,  80, 50, 50, 60, boxImgb);
+	//createBox3(270, 100, 50, 50, 90, boxImgc);
+
+	//createBox3( canvas.width * 20 / 100, canvas.height * 10 / 100, 100, 100, 30, boxImga);
+	//createBox3( canvas.width * 50 / 100, canvas.height * 20 / 100, 100, 100, 60, boxImgb);
+	//createBox3( canvas.width * 80 / 100, canvas.height * 30 / 100, 100, 100, 90, boxImgc);
+
+
+	//createBox();
+
+	//createTriangle( canvas.width * 20 / 100, canvas.height * 20 / 100, -45, triImga);
+	//createTriangle( canvas.width * 50 / 100, canvas.height * 30 / 100, -45, triImgb);
+	//createTriangle( canvas.width * 80 / 100, canvas.height * 40 / 100, -45, triImgc);
+
+
+	let type = b2Body.b2_dynamicBody;
+	manager.createCircle(type, canvas.width * 20 / 100, canvas.height * 20 / 100, CirImga, canvas.height /15, 0, null, null, null);
+	//manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 50, 0, null, null, null);
+	//manager.createCircle(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 50, 0, null, null, null);
+
+	//manager.createCircleImage(type, canvas.width * 20 / 100, canvas.height * 20 / 100, CirImga, 0, null, null, null);
+	//manager.createCircleImage(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 0, null, null, null);
+	//manager.createCircleImage(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 0, null, null, null);
 
 	// Functions
 	function createFrame(){
@@ -67,8 +115,20 @@ function abc(){
 		let type = b2Body.b2_staticBody;
 
 		// Remover
-		let remover = manager.createBody(type, 160, 305, 320, 5);
-		remover.SetUserData({tag: TAG_REMOVER});
+		let remover1 = manager.createBody(type, canvas.width /2 -78, canvas.height /4, canvas.height /4, 10, 45);
+		remover1.SetUserData({tag: TAG_REMOVER});
+		let remover2 = manager.createBody(type, canvas.width /2 +78, canvas.height /4, canvas.height /4, 10, 45);
+		remover2.SetUserData({tag: TAG_REMOVER});
+
+		let remover3 = manager.createBody(type, canvas.width /2 -78, canvas.height /2, canvas.height /4, 10, -45);
+		remover3.SetUserData({tag: TAG_REMOVER});
+		let remover4 = manager.createBody(type, canvas.width /2 +78, canvas.height /2, canvas.height /4, 10, -45);
+		remover4.SetUserData({tag: TAG_REMOVER});
+
+		let remover5 = manager.createBody(type, canvas.width /2 -78, canvas.height *3/4, canvas.height /4, 10, 45);
+		remover5.SetUserData({tag: TAG_REMOVER});
+		let remover6 = manager.createBody(type, canvas.width /2 +78, canvas.height *3/4, canvas.height /4, 10, 45);
+		remover6.SetUserData({tag: TAG_REMOVER});
 
 		//manager.createBody(type, 100, 240, 220, 5, +15);
 		//manager.createBody(type, 30,  200, 70,  5, +45);
@@ -141,38 +201,33 @@ function abc(){
 
 	function createBox(){
 		let type = b2Body.b2_dynamicBody;
-		let x = 160;//Math.random() * 480;
-			//let boxImga = new Image();
-			//boxImga.src = "red.png";
-		let body = manager.createBody(type, x, 10, 50, 50, 0);
+		let x = 60;//Math.random() * 480;
+		let body = manager.createBody(type, x, 10, 25, 25);
 	}
 
-	function createBox2(x, y, w, h){
+	function createBox2(x, y, w, h, deg){
 		let type = b2Body.b2_dynamicBody;
 		//let x = 160;//Math.random() * 480;
 			let boxImga = new Image();
 			boxImga.src = "red.png";
-		let body = manager.createBody(type, x, y, w, h, 45, boxImga);
+		let body = manager.createBody2(type, x, y, w, h, deg);//, boxImga);
 	}
 
-	function createBox3(x, y, w, h){
+	function createBox3(x, y, w, h, deg, boxImg){
 		let type = b2Body.b2_dynamicBody;
 		//let x = 160;//Math.random() * 480;
-		//	let boxImga = new Image();
-		//	boxImga.src = "blue.png";
-
-		let body = manager.createBody(type, x, y, w, h, 30);
+		let body = manager.createBody3(type, x, y, w, h, deg, boxImg);
 	}
 
 	//body.ontouchstart = function(){
 	//};
 
-	function createTriangle(){
+	function createTriangle(x,y, deg, Img){
 		let type = b2Body.b2_dynamicBody;
-		let body = manager.createTri(type, 80, 10);
+		let body = manager.createTri(type, x, y, deg, Img);
 
 /*
-// ‘½ŠpŒ`‚Ì‚İ
+// å¤šè§’å½¢ã®è©¦ã¿
 	var vertexArray=new Array();
 
 	//Setting up Vertices in an Array   
@@ -255,7 +310,7 @@ console.log("Hello Contact");
 		manager.update();
 	};
 
-	// Random 1•bŠÔŠu‚ÅˆêŒÂ‚Ã‚Â—‚Æ‚·d‘g‚İ
+	// Random 1ç§’é–“éš”ã§ä¸€å€‹ã¥ã¤è½ã¨ã™ä»•çµ„ã¿
 	window.setInterval(()=>{
 		// Create
 		let type = b2Body.b2_dynamicBody;
@@ -274,7 +329,7 @@ console.log("Hello Contact");
 
         window.addEventListener(Event.TOUCH_START, function() {
             //addBall();
-            //game.assets['./water-drop1.mp3'].play();  //‚¨—ç@Œø‰Ê‰¹ƒ‰ƒ{—l
+            //game.assets['./water-drop1.mp3'].play();  //ãŠç¤¼ã€€åŠ¹æœéŸ³ãƒ©ãƒœæ§˜
 
 console.log("Hello Click!");
 

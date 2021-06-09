@@ -16,10 +16,10 @@
  */
 
 //'use strict';
-const prefix = 't05a';
+const prefix = 't05a1';
 const CACHE_NAME = prefix + '00';
 
-var path = 'https://toyama-rt.github.io/web-toy/t05a';
+var path = 'https://toyama-rt.github.io/web-toy/t05a1';
 
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -28,9 +28,12 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         path + `/index.html`,
+        path + `/ball2.html`,
         path + `/js/sketch.js`,
+        path + `/js/sketch2.js`,
         path + `/js/utility.js`,
         path + `/manifest.json`,
+        path + `/manifest2.json`,
         path + `/libs/box2dweb/Box2d.min.js`,
 
         path + `/gameover.mp3`,
