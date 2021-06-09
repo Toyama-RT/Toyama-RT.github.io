@@ -6,7 +6,16 @@
     <description>Recent content on あくまでも個人的な感想です</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 27 May 2021 10:41:04 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jun 2021 15:03:22 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10:SDecomposition　ScanSnapを分解して考える</title>
+      <link>https://toyama-rt.github.io/b1/post/decomposition/</link>
+      <pubDate>Wed, 09 Jun 2021 15:03:22 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/decomposition/</guid>
+      <description>分解について ある日職場で、『紙』の書類を提出することになりました。こんな時は、紙の書類をpdf化して、PDFｰviewerで必要事項を記入してメールに添付して送信するのが一番手間がかかりません。しかも手元にファイルが残りますので後で（多分来</description>
+    </item>
+    
     <item>
       <title>9th　ハイライト色を変更</title>
       <link>https://toyama-rt.github.io/b1/post/9th/</link>
