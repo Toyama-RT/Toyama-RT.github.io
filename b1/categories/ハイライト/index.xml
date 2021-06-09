@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ハイライト on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/categories/%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/</link>
+    <description>Recent content in ハイライト on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 27 May 2021 10:41:04 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/categories/%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9th　ハイライト色を変更</title>
+      <link>https://toyama-rt.github.io/b1/post/9th/</link>
+      <pubDate>Thu, 27 May 2021 10:41:04 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/9th/</guid>
+      <description>ハイライトの色を標準から変更する ハイライト色をデフォルト値 #e22d30 ■ から #8db1ab ■ に変更しました: # config.toml [Params] highlightColor = &amp;#34;#8db1ab&amp;#34; # ハイライト色を上書きする このように、config.tomlの値を変更する。 実際には、xfceの青 00aade を指定した。</description>
+    </item>
+    
+  </channel>
+</rss>

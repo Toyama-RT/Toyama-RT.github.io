@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/post/</link>
+    <description>Recent content in Posts on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 27 May 2021 10:41:04 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9th　ハイライト色を変更</title>
+      <link>https://toyama-rt.github.io/b1/post/9th/</link>
+      <pubDate>Thu, 27 May 2021 10:41:04 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/9th/</guid>
+      <description>ハイライトの色を標準から変更する ハイライト色をデフォルト値 #e22d30 ■ から #8db1ab ■ に変更しました: # config.toml [Params] highlightColor = &amp;#34;#8db1ab&amp;#34; # ハイライト色を上書きする このように、config.tomlの値を変更する。 実際には、xfceの青 00aade を指定した。</description>
+    </item>
+    
+    <item>
+      <title>8th　タグとカテゴリーを使う</title>
+      <link>https://toyama-rt.github.io/b1/post/8th/</link>
+      <pubDate>Thu, 27 May 2021 09:53:53 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/8th/</guid>
+      <description>タグtagsとカテゴリーcategoryを使う タグは、ページを特徴つけるキーワードの役割をします。 使用するには、config.tomlに [taxonomies] tag = &amp;#34;tags&amp;#34; category = &amp;#34;categories&amp;#34; を、 markdownでは --- title: &amp;#34;first entry&amp;#34; date: 2019-06-06T16:54:14+09:00 draft: true tags: [hugo, taxonomy] categories: [hugo] --- taxonomiesとは分類という意味</description>
+    </item>
+    
+    <item>
+      <title>7th　サイドバーを使う</title>
+      <link>https://toyama-rt.github.io/b1/post/7th/</link>
+      <pubDate>Wed, 26 May 2021 18:06:22 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/7th/</guid>
+      <description>サイドバーを使う [Params.logo] # image = &amp;#34;img/profile.PNG&amp;#34; # Logo image. Path relative to &amp;#34;static&amp;#34; title = &amp;#34;ポケ森攻略まとめブログ&amp;#34; # Logo title, otherwise will use site title subtitle = &amp;#34;ポケ森ファンが発信するまとめサイト&amp;#34; # Logo subtitle [Params.sidebar] home = &amp;#34;right&amp;#34; # Configure layout for home page list = &amp;#34;right&amp;#34; # Configure layout for list pages single = &amp;#34;right&amp;#34; # Configure layout for single pages # Enable widgets in given order widgets = [&amp;#34;search&amp;#34;,</description>
+    </item>
+    
+    <item>
+      <title>6th　このサイトについてをつくる</title>
+      <link>https://toyama-rt.github.io/b1/post/6th/</link>
+      <pubDate>Wed, 26 May 2021 17:30:44 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/6th/</guid>
+      <description>このサイトについてをつくる このサイトについてをメニューに表示させるには、 [[Menus.main]] Name = &amp;ldquo;このサイトについて&amp;rdquo; URL = &amp;ldquo;/about/&amp;rdquo; weight = 3 をconfig.tomlに追記して、 hugo new about/about.md で、ページを作ればできる。 同じやり方で、書いているやつはこんな</description>
+    </item>
+    
+    <item>
+      <title>5th　メニューをつくる</title>
+      <link>https://toyama-rt.github.io/b1/post/5th/</link>
+      <pubDate>Wed, 26 May 2021 17:24:30 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/5th/</guid>
+      <description>メニューのつくりかた 指定の順序でメインメニューを作成 Mainroad テーマではページコンテンツの YAMLフロントマター で menu: main のように記述することによってそのページをメインメニューに加えられるようになっています（参考）。 しかし、この方法ではメニューの順序を</description>
+    </item>
+    
+    <item>
+      <title>4th サマリーの長さを調整</title>
+      <link>https://toyama-rt.github.io/b1/post/4th/</link>
+      <pubDate>Wed, 26 May 2021 15:36:04 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/4th/</guid>
+      <description>サマリーの長さを調整 デフォルトのままでは日本語記事のサマリーが長くなってしまいます。これは英語のように空白区切りで単語数をカウントしているためです。 これを防ぐには Hugo 設定ファイル config.toml でパラメータ hasCJKLanguage を true に設定します。 このサイトではさらに summaryLength でサマリ</description>
+    </item>
+    
+    <item>
+      <title>3rd　Hugoの使い方メモ</title>
+      <link>https://toyama-rt.github.io/b1/post/3rd/</link>
+      <pubDate>Tue, 25 May 2021 18:47:22 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/3rd/</guid>
+      <description>Hugoの使い方メモ 弐頭でのファイル構成 c;\Hugo\bin\ Hugo.exe LICENSE READ.me c:\Hugo\Sites ここにサイトをつくる。色々試しながら、古いサイトは順次、１，２，３とナンバリングしていく。 １ サイトの作り方 $ hugo new site サイト名 これで空のサイトが出来上がります。生成されたのはサイトの情報を入力す</description>
+    </item>
+    
+    <item>
+      <title>2nd　二番目の文章</title>
+      <link>https://toyama-rt.github.io/b1/post/2nd/</link>
+      <pubDate>Tue, 25 May 2021 18:04:54 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/2nd/</guid>
+      <description>title は新規投稿の際に指定したファイル名になりますが、frontmatterを書き換えて変更できます。この変更でファイル名は変更されません。 ここまでは、 https://terashim.com/posts/create-hugo-blog-and-customize-mainroad-theme/ を参考にしています。このサイトもmainroadで作られています。</description>
+    </item>
+    
+    <item>
+      <title>1st</title>
+      <link>https://toyama-rt.github.io/b1/post/1st/</link>
+      <pubDate>Tue, 25 May 2021 14:14:55 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/1st/</guid>
+      <description>My first HUGO page. これは日本語です この文章はTyporaで作成しました。自動的に日本語が表示されます。文字コードが自動的にutf-8で保存されます。CONFIG.TOMLはterapadで作成しましたが、こちらがデフォルトでshiftJIS になるので</description>
+    </item>
+    
+  </channel>
+</rss>

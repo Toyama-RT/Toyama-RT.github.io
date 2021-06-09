@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/tags/hugo/</link>
+    <description>Recent content in hugo on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 27 May 2021 09:53:53 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>8th　タグとカテゴリーを使う</title>
+      <link>https://toyama-rt.github.io/b1/post/8th/</link>
+      <pubDate>Thu, 27 May 2021 09:53:53 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/8th/</guid>
+      <description>タグtagsとカテゴリーcategoryを使う タグは、ページを特徴つけるキーワードの役割をします。 使用するには、config.tomlに [taxonomies] tag = &amp;#34;tags&amp;#34; category = &amp;#34;categories&amp;#34; を、 markdownでは --- title: &amp;#34;first entry&amp;#34; date: 2019-06-06T16:54:14+09:00 draft: true tags: [hugo, taxonomy] categories: [hugo] --- taxonomiesとは分類という意味</description>
+    </item>
+    
+  </channel>
+</rss>

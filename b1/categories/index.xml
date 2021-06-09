@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/categories/</link>
+    <description>Recent content in Categories on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 27 May 2021 10:41:04 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ハイライト</title>
+      <link>https://toyama-rt.github.io/b1/categories/%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/</link>
+      <pubDate>Thu, 27 May 2021 10:41:04 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/categories/%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://toyama-rt.github.io/b1/categories/hugo/</link>
+      <pubDate>Thu, 27 May 2021 09:53:53 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
