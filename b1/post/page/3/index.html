@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>5th　メニューをつくる - あくまでも個人的な感想です</title>
+	<title>Posts - あくまでも個人的な感想です</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="/b1/css/style.css">
 	
+	<link rel="alternate" type="application/rss+xml" href="/b1/post/index.xml" title="あくまでも個人的な感想です">
 
 	<link rel="shortcut icon" href="/b1/favicon.ico">
 		
@@ -55,7 +56,7 @@ if (!doNotTrack) {
 				
 			</a>
 		</li>
-		<li class="menu__item">
+		<li class="menu__item menu__item--active">
 			<a class="menu__link" href="/b1/post/">
 				
 				<span class="menu__text">投稿一覧</span>
@@ -77,46 +78,34 @@ if (!doNotTrack) {
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">5th　メニューをつくる</h1>
-			<div class="post__meta meta">
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Posts</h1>
+	</header><article class="list__item post">
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/b1/post/1st/" rel="bookmark">
+			1st
+			</a>
+		</h2>
+		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-05-26T17:24:30&#43;09:00">May 26, 2021</time></div></div>
-		</header><div class="content post__content clearfix">
-			<h1 id="メニューのつくりかた">メニューのつくりかた</h1>
-<h3 id="指定の順序でメインメニューを作成">指定の順序でメインメニューを作成</h3>
-<p>Mainroad テーマではページコンテンツの <a href="https://gohugo.io/content-management/front-matter/">YAMLフロントマター</a> で <code>menu: main</code> のように記述することによってそのページをメインメニューに加えられるようになっています（<a href="https://github.com/vimux/mainroad/#menus">参考</a>）。 しかし、この方法ではメニューの順序を指定することができません。</p>
-<p>順序を指定してメインメニューを作成するには、YAMLフロントマターを使わず Hugo 設定ファイル <code>config.toml</code> で次のように記述します:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># config.toml</span>
-<span style="color:#75715e"># メインメニュー</span>
-[[<span style="color:#a6e22e">Menus</span>.<span style="color:#a6e22e">main</span>]]
-  <span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;ホーム&#34;</span>
-  <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/&#34;</span>
-[[<span style="color:#a6e22e">Menus</span>.<span style="color:#a6e22e">main</span>]]
-  <span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;投稿一覧&#34;</span>
-  <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
-</code></pre></div><p>参考にしたのはこちら</p>
-<p>Hugo によるブログ作成と mainroad テーマのカスタマイズ</p>
-<p><a href="https://terashim.com/posts/create-hugo-blog-and-customize-mainroad-theme/">https://terashim.com/posts/create-hugo-blog-and-customize-mainroad-theme/</a></p>
-<p>[[Menus.main]]
-Name = &ldquo;ホーム&rdquo;
-URL = &ldquo;/&rdquo;
-weight = 1</p>
-<p>などとすれば順番を指定できるのはこちらから</p>
-<p><a href="https://itsys-tech.com/list/hugo/007/">HUGOのテーマ「Mainroad」の設定方法を紹介</a></p>
-<p><a href="https://itsys-tech.com/list/hugo/007/">https://itsys-tech.com/list/hugo/007/</a></p>
-
-		</div>
-	</article>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-05-25T14:14:55&#43;09:00">May 25, 2021</time></div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		My first HUGO page. これは日本語です この文章はTyporaで作成しました。自動的に日本語が表示されます。文字コードが自動的にutf-8で保存されます。CONFIG.TOMLはterapadで作成しましたが、こちらがデフォルトでshiftJIS になるので
+	</div>
+</article>
 </main>
 
-
-
+<div class="pagination">
+	<a class="pagination__item pagination__item--prev btn" href="/b1/post/page/2/">«</a>
+	<span class="pagination__item pagination__item--current">3/3</span>
+</div>
 
 			</div>
-			<aside class="sidebar"><div class="widget-search widget">
+			
+<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
