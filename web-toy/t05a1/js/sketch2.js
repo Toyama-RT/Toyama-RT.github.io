@@ -35,6 +35,10 @@ var canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+  console.log("canvas.width" + " %d", canvas.width);
+  console.log("canvas.height" + " %d", canvas.height);
+
+
     var audioElem;
 
       audioElem = new Audio();
@@ -101,7 +105,7 @@ canvas.height = window.innerHeight;
 
 
 	let type = b2Body.b2_dynamicBody;
-	manager.createCircle(type, canvas.width * 20 / 100, canvas.height * 20 / 100, CirImga, canvas.height /15, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 10 / 100, CirImga, canvas.height /15, 0, null, null, null);
 	//manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 50, 0, null, null, null);
 	//manager.createCircle(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 50, 0, null, null, null);
 
@@ -113,21 +117,21 @@ canvas.height = window.innerHeight;
 	function createFrame(){
 
 		let type = b2Body.b2_staticBody;
-
+                let div = (canvas.height / 15 + 5) * Math.sqrt(2)
 		// Remover
-		let remover1 = manager.createBody(type, canvas.width /2 -78, canvas.height /4, canvas.height /4, 10, 45);
+		let remover1 = manager.createBody(type, canvas.width /2 - div, canvas.height /4, canvas.height /4, 10, 45);
 		remover1.SetUserData({tag: TAG_REMOVER});
-		let remover2 = manager.createBody(type, canvas.width /2 +78, canvas.height /4, canvas.height /4, 10, 45);
+		let remover2 = manager.createBody(type, canvas.width /2 + div, canvas.height /4, canvas.height /4, 10, 45);
 		remover2.SetUserData({tag: TAG_REMOVER});
 
-		let remover3 = manager.createBody(type, canvas.width /2 -78, canvas.height /2, canvas.height /4, 10, -45);
+		let remover3 = manager.createBody(type, canvas.width /2 - div, canvas.height /2, canvas.height /4, 10, -45);
 		remover3.SetUserData({tag: TAG_REMOVER});
-		let remover4 = manager.createBody(type, canvas.width /2 +78, canvas.height /2, canvas.height /4, 10, -45);
+		let remover4 = manager.createBody(type, canvas.width /2 + div, canvas.height /2, canvas.height /4, 10, -45);
 		remover4.SetUserData({tag: TAG_REMOVER});
 
-		let remover5 = manager.createBody(type, canvas.width /2 -78, canvas.height *3/4, canvas.height /4, 10, 45);
+		let remover5 = manager.createBody(type, canvas.width /2 - div, canvas.height *3/4, canvas.height /4, 10, 45);
 		remover5.SetUserData({tag: TAG_REMOVER});
-		let remover6 = manager.createBody(type, canvas.width /2 +78, canvas.height *3/4, canvas.height /4, 10, 45);
+		let remover6 = manager.createBody(type, canvas.width /2 + div, canvas.height *3/4, canvas.height /4, 10, 45);
 		remover6.SetUserData({tag: TAG_REMOVER});
 
 		//manager.createBody(type, 100, 240, 220, 5, +15);
