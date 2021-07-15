@@ -1,6 +1,6 @@
 {
-  "name": "WebToy Ball3",
-  "short_name": "WebToy Ball3",
+  "name": "WebBall3L",
+  "short_name": "WebBall3L",
   "theme_color": "#00ff00",
   "background_color": "#000000",
   "display": "standalone",
@@ -8,7 +8,7 @@
   "start_url": "./ball3.html",
   "icons": [
     {
-      "src": "./ico/webtoy.png",
+      "src": "./ico/webball.png",
       "sizes": "192x192",
       "type": "image/png"
     }

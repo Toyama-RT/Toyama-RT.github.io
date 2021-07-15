@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't05a1';
-const CACHE_NAME = prefix + '02';
+const CACHE_NAME = prefix + '03';
 
 var path = 'https://toyama-rt.github.io/web-toy/t05a1';
 
@@ -84,7 +84,7 @@ self.addEventListener('install', e => {
 
         path + `/touchtostart.png`,
 
-        path + `/ico/webtoy.png`,
+        path + `/ico/webball.png`,
 
       ])
       .then(() => self.skipWaiting());
