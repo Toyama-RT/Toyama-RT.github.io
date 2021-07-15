@@ -41,7 +41,13 @@ canvas.height = window.innerHeight;
 
 // radius of balls and the dimension for wall and image  
 
-if (canvas.height <= 675 ) {
+if (canvas.height <= 525 ) {
+   var radiusball = 30;
+   var ch2 = 450;
+} else if (canvas.height <= 600 ) {
+   var radiusball = 35;
+   var ch2 = 525;
+} else if (canvas.height <= 675 ) {
    var radiusball = 40;
    var ch2 = 600;
 } else if (canvas.height <= 750 ) {
