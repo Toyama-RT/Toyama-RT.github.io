@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't05a1';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
 var path = 'https://toyama-rt.github.io/web-toy/t05a1';
 
@@ -42,6 +42,8 @@ self.addEventListener('install', e => {
         path + `/water-drop1.mp3`,
         path + `/bat1.mp3`,
 
+        path + `/redc30.png`,
+        path + `/redc35.png`,
         path + `/redc40.png`,
         path + `/redc45.png`,
         path + `/redc50.png`,
@@ -53,6 +55,8 @@ self.addEventListener('install', e => {
         path + `/redc120.png`,
         path + `/redc150.png`,
         path + `/redc200.png`,
+        path + `/bluec30.png`,
+        path + `/bluec35.png`,
         path + `/bluec40.png`,
         path + `/bluec45.png`,
         path + `/bluec50.png`,
@@ -64,6 +68,8 @@ self.addEventListener('install', e => {
         path + `/bluec120.png`,
         path + `/bluec150.png`,
         path + `/bluec200.png`,
+        path + `/yellowc30.png`,
+        path + `/yellowc35.png`,
         path + `/yellowc40.png`,
         path + `/yellowc45.png`,
         path + `/yellowc50.png`,
