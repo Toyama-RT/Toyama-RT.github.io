@@ -1,4 +1,4 @@
-console.log("Hello Box2dWeb!!  sketch2.js");
+console.log("Hello Box2dWeb!!  sketch3.js");
 
 const WaitForClick = () => new Promise(resolve => document.body.addEventListener("click", resolve));
 
@@ -39,6 +39,43 @@ canvas.height = window.innerHeight;
   console.log("canvas.height" + " %d", canvas.height);
 
 
+// radius of balls and the dimension for wall and image  
+
+if (canvas.height <= 675 ) {
+   var radiusball = 40;
+   var ch2 = 600;
+} else if (canvas.height <= 750 ) {
+   var radiusball = 45;
+   var ch2 = 675;
+} else if (canvas.height <= 825 ) {
+   var radiusball = 50;
+   var ch2 = 750;
+} else if (canvas.height <= 900 ) {
+   var radiusball = 55;
+   var ch2 = 825;
+} else if (canvas.height <= 1050 ) {
+   var radiusball = 60;
+   var ch2 = 900;
+} else if (canvas.height <= 1200 ) {
+   var radiusball = 70;
+   var ch2 = 1050;
+} else if (canvas.height <= 1500 ) {
+   var radiusball = 80;
+   var ch2 = 1200;
+} else if (canvas.height <= 1800 ) {
+   var radiusball = 100;
+   var ch2 = 1500;
+} else if (canvas.height <= 2250 ) {
+   var radiusball = 120;
+   var ch2 = 1800;
+} else {
+   var radiusball = 150;
+   var ch2 = 2250;
+}
+
+  console.log("radius of balls" + " %d", radiusball);
+
+
     var audioElem;
 
       audioElem = new Audio();
@@ -60,14 +97,11 @@ canvas.height = window.innerHeight;
 			triImgc.src = "yellow3.png";
 
 			let CirImga = new Image();
-
-			CirImga.src = "empty.png";
-
-
+			CirImga.src = "redc"+String(radiusball)+".png";
 			let CirImgb = new Image();
-			CirImgb.src = "bluec.png";
+			CirImgb.src = "bluec"+String(radiusball)+".png";
 			let CirImgc = new Image();
-			CirImgc.src = "yellowc.png";
+			CirImgc.src = "yellowc"+String(radiusball)+".png";
 
 	
 	// World
@@ -108,7 +142,9 @@ canvas.height = window.innerHeight;
 
 
 	let type = b2Body.b2_dynamicBody;
-	manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 10 / 100, CirImga, canvas.height /15, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 25 / 100, canvas.height * 10 / 100, CirImga, radiusball, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 10 / 100, CirImgc, radiusball, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 75 / 100, canvas.height * 10 / 100, CirImgb, radiusball, 0, null, null, null);
 	//manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 50, 0, null, null, null);
 	//manager.createCircle(type, canvas.width * 80 / 100, canvas.height * 20 / 100, CirImgc, 50, 0, null, null, null);
 
@@ -120,21 +156,21 @@ canvas.height = window.innerHeight;
 	function createFrame(){
 
 		let type = b2Body.b2_staticBody;
-                let div = (canvas.height / 15 + 5) * Math.sqrt(2)
+                let div = (ch2 / 15 + 5) * Math.sqrt(2)
 		// Remover
-		let remover1 = manager.createBody(type, canvas.width /2 - div, canvas.height /4 + 10, canvas.height /4, 10, 45);
+		let remover1 = manager.createBody(type, canvas.width /2 - div, ch2 /4 + 10, ch2 /4, 10, 45);
 		remover1.SetUserData({tag: TAG_REMOVER});
-		let remover2 = manager.createBody(type, canvas.width /2 + div, canvas.height /4 + 10, canvas.height /4, 10, 45);
+		let remover2 = manager.createBody(type, canvas.width /2 + div, ch2 /4 + 10, ch2 /4, 10, 45);
 		remover2.SetUserData({tag: TAG_REMOVER});
 
-		let remover3 = manager.createBody(type, canvas.width /2 - div, canvas.height /2, canvas.height /4, 10, -45);
+		let remover3 = manager.createBody(type, canvas.width /2 - div, ch2 /2, ch2 /4, 10, -45);
 		remover3.SetUserData({tag: TAG_REMOVER});
-		let remover4 = manager.createBody(type, canvas.width /2 + div, canvas.height /2, canvas.height /4, 10, -45);
+		let remover4 = manager.createBody(type, canvas.width /2 + div, ch2 /2, ch2 /4, 10, -45);
 		remover4.SetUserData({tag: TAG_REMOVER});
 
-		let remover5 = manager.createBody(type, canvas.width /2 - div, canvas.height *3/4 -10, canvas.height /4, 10, 45);
+		let remover5 = manager.createBody(type, canvas.width /2 - div, ch2 *3/4 -10, ch2 /4, 10, 45);
 		remover5.SetUserData({tag: TAG_REMOVER});
-		let remover6 = manager.createBody(type, canvas.width /2 + div, canvas.height *3/4 -10, canvas.height /4, 10, 45);
+		let remover6 = manager.createBody(type, canvas.width /2 + div, ch2 *3/4 -10, ch2 /4, 10, 45);
 		remover6.SetUserData({tag: TAG_REMOVER});
 
 		//manager.createBody(type, 100, 240, 220, 5, +15);

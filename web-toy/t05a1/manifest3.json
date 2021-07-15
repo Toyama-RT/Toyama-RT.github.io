@@ -1,11 +1,11 @@
 {
-  "name": "WebToy Ball2",
-  "short_name": "WebToy Ball2",
+  "name": "WebToy Ball3",
+  "short_name": "WebToy Ball3",
   "theme_color": "#00ff00",
   "background_color": "#000000",
   "display": "standalone",
   "orientation": "landscape",
-  "start_url": "./ball2.html",
+  "start_url": "./ball3.html",
   "icons": [
     {
       "src": "./ico/webtoy.png",
