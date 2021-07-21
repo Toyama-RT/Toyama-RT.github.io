@@ -1409,9 +1409,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = '診察券';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "診察券";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1430,9 +1430,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = '保険証';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "保険証";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1451,17 +1451,17 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = 'お薬手帳';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "お薬手帳";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 3 ){
-        synthes.text = '';
+        synthes.text = '地図';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "地図";
       }
       setCursorend();
      }, false);
@@ -2177,9 +2177,9 @@ function CBoardChange(param1){
           elemnu.src = "./img8/00.png";
           elemne.src = "./img8/00.png";
           elemno.src = "./img8/00.png";
-          elemha.src = "./img8/00.png";
-          elemhi.src = "./img8/00.png";
-          elemhu.src = "./img8/00.png";
+          elemha.src = "./img8/sinnsatukenn.png";
+          elemhi.src = "./img8/hokennsyou.png";
+          elemhu.src = "./img8/okusuritecyou.png";
           elemhe.src = "./img8/00.png";
           elemho.src = "./img8/00.png";
           elemma.src = "./img8/00.png";
@@ -2305,7 +2305,7 @@ function CBoardChange(param1){
           elemno.src = "./img9/100kin.png";
           elemha.src = "./img9/sanpo.png";
           elemhi.src = "./img9/kurumaisuok.png";
-          elemhu.src = "./img9/00.png";
+          elemhu.src = "./img9/chizu.png";
           elemhe.src = "./img9/00.png";
           elemho.src = "./img9/00.png";
           elemma.src = "./img9/ikitaidesu.png";
