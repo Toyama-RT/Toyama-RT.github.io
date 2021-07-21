@@ -1628,9 +1628,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "洗濯";
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = 'はんこ';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "はんこ";
       } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -1645,13 +1645,13 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "昼";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = '通帳記帳';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "通帳記帳";
       } else if (CBoard0 == 2 ){
-        synthes.text = '';
+        synthes.text = '身障手帳';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "身障手帳";
       } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -2191,7 +2191,7 @@ function CBoardChange(param1){
           elemme.src = "./img5/reitouko.png";
           elemmo.src = "./img5/keikoutou.png";
           elemya.src = "./img5/sentaku.png";
-          elemyu.src = "./img/00.png";
+          elemyu.src = "./img5/tuucyoukicyou.png";
           elemyo.src = "./img/00.png";
           elemyo2.src = "./img/00.png";
           elemyo3.src = "./img/00.png";
@@ -2253,8 +2253,8 @@ function CBoardChange(param1){
           elemmu.src = "./img6/supu-nn.png";
           elemme.src = "./img6/sutoro-.png";
           elemmo.src = "./img6/00.png";
-          elemya.src = "./img6/00.png";
-          elemyu.src = "./img6/00.png";
+          elemya.src = "./img6/hannko.png";
+          elemyu.src = "./img6/sinnsyoutecyou.png";
           elemyo.src = "./img6/00.png";
           elemyo2.src = "./img6/00.png";
           elemyo3.src = "./img6/00.png";

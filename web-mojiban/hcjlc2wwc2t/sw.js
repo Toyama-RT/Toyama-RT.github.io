@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 'hcjlc2wwc2t';
-const CACHE_NAME = prefix + '09';
+const CACHE_NAME = prefix + '10';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc2wwc2t';
 
@@ -168,6 +168,7 @@ self.addEventListener('install', e => {
         path + `/img5/reitouko.png`,
         path + `/img5/keikoutou.png`,
         path + `/img5/sentaku.png`,
+        path + `/img5/tuucyoukicyou.png`,
         path + `/img5/kikitai.png`,
         path + `/img5/mitai.png`,
         path + `/img5/yasumitai.png`,
@@ -218,6 +219,8 @@ self.addEventListener('install', e => {
         path + `/img6/fo-ku.png`,
         path + `/img6/supu-nn.png`,
         path + `/img6/sutoro-.png`,
+        path + `/img6/hannko.png`,
+        path + `/img6/sinnsyoutecyou.png`,
         path + `/img6/simasu.png`,
         path + `/img6/simasita.png`,
         path + `/img6/sitaidesu.png`,
