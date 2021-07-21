@@ -1649,9 +1649,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "通帳記帳";
       } else if (CBoard0 == 2 ){
-        synthes.text = '身障手帳';
+        synthes.text = 'しんしょう手帳';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "身障手帳";
+      text1.value = text1.value + "しんしょう手帳";
       } else if (CBoard0 == 3 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
