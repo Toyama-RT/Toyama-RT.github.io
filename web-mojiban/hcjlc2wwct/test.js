@@ -2156,6 +2156,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
 console.log("Hello bell.png");
+var music = new Audio('./snd/chime2.mp3');
+music.play();  // 再生
+
       } else if (CBoard0 == 1 ){
       } else if (CBoard0 == 2 ){
         synthes.text = 'びっくり';
