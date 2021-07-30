@@ -2157,6 +2157,28 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
      var obj = document.getElementById('0000');
 	 obj.addEventListener("click", function() {
+
+     // web audio API によるサウンド出力  チャイムをならす
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+     // web audio API によるサウンド出力  チャイムをならす
+
+
       if (CBoard0 == 0 ){
 /*
      // web audio API によるサウンド出力  チャイムをならす
@@ -2439,7 +2461,7 @@ function CBoardChange(param1){
           elemwo.src = "./img/ktwo.png";
           elemnn.src = "./img/ktnn.png";
           elemnn2.src = "./img/bar.png";
-          elemnn3.src = "./img/0000.png";
+          elemnn3.src = "./img/000.png";
           break;
         case 1:
           elem.src = "./img2/karada.png";
