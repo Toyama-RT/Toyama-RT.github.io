@@ -2155,6 +2155,27 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('0000');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
+
+     // web audio API によるサウンド出力  チャイムをならす
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+     // web audio API によるサウンド出力  チャイムをならす
+
       } else if (CBoard0 == 1 ){
       } else if (CBoard0 == 2 ){
         synthes.text = 'びっくり';
