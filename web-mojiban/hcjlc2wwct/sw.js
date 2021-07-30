@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 'hcjlc2wwct';
-const CACHE_NAME = prefix + '02';
+const CACHE_NAME = prefix + '03';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc2wwct';
 
@@ -280,6 +280,7 @@ self.addEventListener('install', e => {
         path + `/snd/incorrect2.wav`,
         path + `/snd/se2.wav`,
         path + `/snd/se3.wav`,
+        path + `/snd/chime2.mp3`,
 
         path + `/ico/test192i.png`,
 
