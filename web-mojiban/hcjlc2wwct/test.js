@@ -2596,7 +2596,7 @@ function CBoardChange(param1){
           elemwo.src = "./img/wo.png";
           elemnn.src = "./img/nn.png";
           elemnn2.src = "./img/bar.png";
-          elemnn3.src = "./img/000.png";
+          elemnn3.src = "./img/bell.png";
           break;
       }
     }
