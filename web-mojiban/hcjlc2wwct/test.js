@@ -2155,6 +2155,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('0000');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
+//console.log("Hello Box2dWeb!!  sketch3.js");
       } else if (CBoard0 == 1 ){
       } else if (CBoard0 == 2 ){
         synthes.text = 'びっくり';
@@ -2414,6 +2415,9 @@ function CBoardChange(param1){
           elemwa.src = "./img/ktwa.png";
           elemwo.src = "./img/ktwo.png";
           elemnn.src = "./img/ktnn.png";
+          elemnn2.src = "./img/bar.png";
+          elemnn3.src = "./img/000.png";
+
           break;
         case 1:
           elem.src = "./img2/karada.png";
@@ -2572,7 +2576,7 @@ function CBoardChange(param1){
           elemwo.src = "./img/wo.png";
           elemnn.src = "./img/nn.png";
           elemnn2.src = "./img/bar.png";
-          elemnn3.src = "./img/000.png";
+          elemnn3.src = "./img/chime.png";
           break;
       }
     }
