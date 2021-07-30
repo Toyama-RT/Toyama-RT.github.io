@@ -2438,6 +2438,8 @@ function CBoardChange(param1){
           elemwa.src = "./img/ktwa.png";
           elemwo.src = "./img/ktwo.png";
           elemnn.src = "./img/ktnn.png";
+          elemnn2.src = "./img/bar.png";
+          elemnn3.src = "./img/0000.png";
           break;
         case 1:
           elem.src = "./img2/karada.png";
