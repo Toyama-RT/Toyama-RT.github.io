@@ -2137,6 +2137,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         synthes.text = 'のばす';
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "ー";
+
+
+
       } else if (CBoard0 == 1 ){
         synthes.text = 'のばす';
         speechSynthesis.speak(synthes);
@@ -2155,7 +2158,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('0000');
 	 obj.addEventListener("click", function() {
       if (CBoard0 == 0 ){
-
+/*
      // web audio API によるサウンド出力  チャイムをならす
         const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
@@ -2175,7 +2178,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         });
        }
      // web audio API によるサウンド出力  チャイムをならす
-
+*/
       } else if (CBoard0 == 1 ){
       } else if (CBoard0 == 2 ){
         synthes.text = 'びっくり';
