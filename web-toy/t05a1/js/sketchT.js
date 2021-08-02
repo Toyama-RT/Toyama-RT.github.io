@@ -127,9 +127,9 @@ canvas.height = window.innerHeight;
 		//let remover2 = manager.createBody(type, canvas.width /2 + div, canvas.height /4 + 10, canvas.height /4, 10, 45);
 		//remover2.SetUserData({tag: TAG_REMOVER});
 
-		let remover3 = manager.createBody(type, canvas.width /2 - div, canvas.height /2, canvas.height /4, 10, -45);
+		let remover3 = manager.createBody(type, canvas.width /2 - div, canvas.height /2 +15, canvas.height /4, 10, 90);
 		remover3.SetUserData({tag: TAG_REMOVER});
-		let remover4 = manager.createBody(type, canvas.width /2 + div, canvas.height /2, canvas.height /4, 10, -45);
+		let remover4 = manager.createBody(type, canvas.width /2 + div, canvas.height /2, canvas.height /4, 10, 90);
 		remover4.SetUserData({tag: TAG_REMOVER});
 
 		//let remover5 = manager.createBody(type, canvas.width /2 - div, canvas.height *3/4 -10, canvas.height /4, 10, 45);
