@@ -2181,7 +2181,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();
-        const sound = await LoadSample(audioctx, "./snd/chime2.wav");
+        const sound = await LoadSample(audioctx, "./snd/chime2.mp3");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
         src.start();
