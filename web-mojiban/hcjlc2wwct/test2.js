@@ -2174,11 +2174,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       }
 
 */
-      if (CBoard0 == 0 ){
+/*      if (CBoard0 == 0 ){
         console.log("Hello bell.png");
         var music = new Audio('./snd/chime2.mp3');
-        music.play();  // チャイム音　再生（WebaudioAPIよりもこちらが楽だね）
-/*
+        music.play();  // チャイム音　再生（WebaudioAPIよりもこちらが楽だね）*/
+
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/se3.wav");
@@ -2197,7 +2197,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
             })
         });
       }
-*/
+
 
       } else if (CBoard0 == 1 ){
       } else if (CBoard0 == 2 ){
