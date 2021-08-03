@@ -30,6 +30,7 @@ self.addEventListener('install', e => {
         path + `/hcj.html`,
         path + `/style.css`,
         path + `/test.js`,
+        path + `/test2.js`,
         path + `/manifest2.json`,
         path + `/img/talk0.png`,
         path + `/img/000.png`,
@@ -281,6 +282,7 @@ self.addEventListener('install', e => {
         path + `/snd/se2.wav`,
         path + `/snd/se3.wav`,
         path + `/snd/chime2.mp3`,
+        path + `/snd/chime2.wav`,
 
         path + `/ico/test192i.png`,
 
