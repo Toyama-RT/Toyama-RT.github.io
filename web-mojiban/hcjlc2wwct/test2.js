@@ -2174,8 +2174,8 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       }
 
 */
-/*      if (CBoard0 == 0 ){
-        console.log("Hello bell.png");
+      if (CBoard0 == 0 ){
+/*        console.log("Hello bell.png");
         var music = new Audio('./snd/chime2.mp3');
         music.play();  // チャイム音　再生（WebaudioAPIよりもこちらが楽だね）*/
 
