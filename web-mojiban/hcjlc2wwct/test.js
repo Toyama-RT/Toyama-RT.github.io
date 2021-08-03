@@ -2153,11 +2153,33 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
       setCursorend();
      }, false);
      var obj = document.getElementById('0000');
-	 obj.addEventListener("click", function() {
+	 obj.addEventListener("click", async function() {
       if (CBoard0 == 0 ){
-        console.log("Hello bell.png");
-        var music = new Audio('./snd/chime2.mp3');
-        music.play();  // チャイム音　再生（WebaudioAPIよりもこちらが楽だね）
+//        console.log("Hello bell.png");
+//        var music = new Audio('./snd/chime2.mp3');
+//        music.play();  // チャイム音　再生（WebaudioAPIよりもこちらが楽だね）でもオフラインでは音が出ないのを発見
+     // web audio API によるサウンド出力
+        console.log("Hello chime2.wav");
+
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/chime2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+      }
+
+
       } else if (CBoard0 == 1 ){
       } else if (CBoard0 == 2 ){
         synthes.text = 'びっくり';
