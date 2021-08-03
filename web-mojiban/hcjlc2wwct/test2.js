@@ -2154,7 +2154,7 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      }, false);
      var obj = document.getElementById('0000');
 	 obj.addEventListener("click", async function() {
-     // web audio API によるサウンド出力
+/*     // web audio API によるサウンド出力
         const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snd/se3.wav");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
@@ -2173,11 +2173,11 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         });
       }
 
-
+*/
       if (CBoard0 == 0 ){
-//        console.log("Hello bell.png");
-//        var music = new Audio('./snd/chime2.wav');
-//        music.play();  // チャイム音　再生（WebaudioAPIよりもこちらが楽だね）
+        console.log("Hello bell.png");
+        var music = new Audio('./snd/chime2.wav');
+        music.play();  // チャイム音　再生（WebaudioAPIよりもこちらが楽だね）
 /*
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();
