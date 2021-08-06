@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't05a1';
-const CACHE_NAME = prefix + '04';
+const CACHE_NAME = prefix + '05';
 
 var path = 'https://toyama-rt.github.io/web-toy/t05a1';
 
@@ -31,22 +31,16 @@ self.addEventListener('install', e => {
         path + `/ball2.html`,
         path + `/ball3.html`,
         path + `/ball3p.html`,
-        path + `/balla1.html`,
         path + `/js/sketch2.js`,
         path + `/js/sketch3.js`,
-        path + `/js/sketcha1.js`,
         path + `/js/utility.js`,
-        path + `/js/utilitya1.js`,
         path + `/manifest3.json`,
         path + `/manifest3p.json`,
-        path + `/manifesta1.json`,
         path + `/libs/box2dweb/Box2d.min.js`,
 
         path + `/gameover.mp3`,
         path + `/water-drop1.mp3`,
         path + `/bat1.mp3`,
-        path + `/snare02.mp3`,
-        path + `/drum03.mp3`,
 
         path + `/redc30.png`,
         path + `/redc35.png`,
