@@ -5,7 +5,7 @@
   "background_color": "#000000",
   "display": "standalone",
   "orientation": "landscape",
-  "start_url": "./ballA1.html",
+  "start_url": "./balla1.html",
   "icons": [
     {
       "src": "./ico/webball.png",
