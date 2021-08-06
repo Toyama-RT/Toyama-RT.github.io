@@ -88,7 +88,7 @@ if (canvas.height <= 525 ) {
       audioElem.src = "./bat1.mp3";
       audioElem.play();
 
-			let boxImga = new Image();
+/*			let boxImga = new Image();
 			boxImga.src = "red.png";
 			let boxImgb = new Image();
 			boxImgb.src = "blue.png";
@@ -101,7 +101,7 @@ if (canvas.height <= 525 ) {
 			triImgb.src = "blue3.png";
 			let triImgc = new Image();
 			triImgc.src = "yellow3.png";
-
+*/
 			let CirImga = new Image();
 			CirImga.src = "redc"+String(radiusball)+".png";
 			let CirImgb = new Image();
@@ -258,7 +258,7 @@ if (canvas.height <= 525 ) {
 		let type = b2Body.b2_dynamicBody;
 		//let x = 160;//Math.random() * 480;
 			let boxImga = new Image();
-			boxImga.src = "red.png";
+			//boxImga.src = "red.png";
 		let body = manager.createBody2(type, x, y, w, h, deg);//, boxImga);
 	}
 
