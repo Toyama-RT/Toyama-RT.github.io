@@ -45,9 +45,9 @@
 var path = `https://toyama-rt.github.io/web-toy/t05a1`;
 
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
+        navigator.serviceWorker.register(path + '/swa1.js', { scope: path + '/' })
           .then(function(registration) {
-                console.log('Service Worker Registered WebToy tumiki');
+                console.log('Service Worker Registered WebToy ball');
           });
 
         navigator.serviceWorker.ready.then(function(registration) {
