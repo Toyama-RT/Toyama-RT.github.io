@@ -13,10 +13,10 @@ const FIX_DENCITY     = 1.0;
 const FIX_FRICTION    = 0.5;
 const FIX_RESTITUTION = 0.5;
 
-			//let boxImg = new Image();
-			//boxImg.src = "red.png";
-			//let boxImg2 = new Image();
-			//boxImg2.src = "red3.png";
+			let boxImg = new Image();
+			boxImg.src = "red.png";
+			let boxImg2 = new Image();
+			boxImg2.src = "red3.png";
 
 //==========
 // Box2dManager
