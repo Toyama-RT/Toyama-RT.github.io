@@ -42,16 +42,16 @@
 <!-- for PWA servive worker  オフライン動作用サービスワーカー読み込み   -->
 
 <script>
-var path = `https://toyama-rt.github.io/web-toy/t05a1`;
+var path = `https://toyama-rt.github.io/web-toy/t06`;
 
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
           .then(function(registration) {
-                console.log('Service Worker Registered WebToy tumiki');
+                console.log('Service Worker Registered WebToy  t06 ball');
           });
 
         navigator.serviceWorker.ready.then(function(registration) {
-           console.log('Service Worker Ready WebToy tumiki');
+           console.log('Service Worker Ready WebToy t06 ball');
         });
       }
 </script>
@@ -62,7 +62,7 @@ var path = `https://toyama-rt.github.io/web-toy/t05a1`;
 	src="./libs/box2dweb/Box2d.min.js"></script>
 	<!-- Sketch -->
 	<script language="javascript" type="text/javascript" 
-	src="./js/utility.js"></script>
+	src="./js/utility3.js"></script>
 	<script language="javascript" type="text/javascript" 
 	src="./js/sketch3.js"></script>
 	<!-- CSS -->
