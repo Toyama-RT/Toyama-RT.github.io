@@ -42,10 +42,10 @@
 <!-- for PWA servive worker  オフライン動作用サービスワーカー読み込み   -->
 
 <script>
-var path = `https://toyama-rt.github.io/web-toy/t05a1`;
+var path = `https://toyama-rt.github.io/web-toy/t06`;
 
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register(path + '/sw3.js', { scope: path + '/' })
+        navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered WebToy tumiki');
           });
