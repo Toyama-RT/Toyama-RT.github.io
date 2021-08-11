@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't06';
-const CACHE_NAME = prefix + '00';
+const CACHE_NAME = prefix + '01';
 
 var path = 'https://toyama-rt.github.io/web-toy/t06';
 
@@ -27,7 +27,6 @@ self.addEventListener('install', e => {
       console.log('Opened cache');
       return cache.addAll([
         `/`,
-        path + `/index.html`,
         path + `/ball3.html`,
         path + `/js/sketch3.js`,
         path + `/js/utility3.js`,
