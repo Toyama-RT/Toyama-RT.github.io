@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't06';
-const CACHE_NAME = prefix + '02';
+const CACHE_NAME = prefix + '03';
 
 var path = 'https://toyama-rt.github.io/web-toy/t06';
 
@@ -27,60 +27,25 @@ self.addEventListener('install', e => {
       console.log('Opened cache');
       return cache.addAll([
         `/`,
-        path + `/ball3.html`,
-        path + `/js/sketch3.js`,
-        path + `/js/utility3.js`,
-        path + `/manifest3.json`,
+        path + `/index.html`,
+        path + `/js/sketch.js`,
+        path + `/js/utility.js`,
+        path + `/manifest.json`,
         path + `/libs/box2dweb/Box2d.min.js`,
 
         path + `/gameover.mp3`,
+        path + `/water-drop1.mp3`,
         path + `/bat1.mp3`,
 
         path + `/red.png`,
         path + `/red3.png`,
-        path + `/redc30.png`,
-        path + `/redc35.png`,
-        path + `/redc40.png`,
-        path + `/redc45.png`,
-        path + `/redc50.png`,
-        path + `/redc55.png`,
-        path + `/redc60.png`,
-        path + `/redc70.png`,
-        path + `/redc80.png`,
-        path + `/redc100.png`,
-        path + `/redc120.png`,
-        path + `/redc150.png`,
-        path + `/redc200.png`,
-        path + `/bluec30.png`,
-        path + `/bluec35.png`,
-        path + `/bluec40.png`,
-        path + `/bluec45.png`,
-        path + `/bluec50.png`,
-        path + `/bluec55.png`,
-        path + `/bluec60.png`,
-        path + `/bluec70.png`,
-        path + `/bluec80.png`,
-        path + `/bluec100.png`,
-        path + `/bluec120.png`,
-        path + `/bluec150.png`,
-        path + `/bluec200.png`,
-        path + `/yellowc30.png`,
-        path + `/yellowc35.png`,
-        path + `/yellowc40.png`,
-        path + `/yellowc45.png`,
-        path + `/yellowc50.png`,
-        path + `/yellowc55.png`,
-        path + `/yellowc60.png`,
-        path + `/yellowc70.png`,
-        path + `/yellowc80.png`,
-        path + `/yellowc100.png`,
-        path + `/yellowc120.png`,
-        path + `/yellowc150.png`,
-        path + `/yellowc200.png`,
-
+        path + `/blue.png`,
+        path + `/blue3.png`,
+        path + `/yellow.png`,
+        path + `/yellow3.png`,
         path + `/touchtostart.png`,
 
-        path + `/ico/webball.png`,
+        path + `/ico/webtoy.png`,
 
       ])
       .then(() => self.skipWaiting());
