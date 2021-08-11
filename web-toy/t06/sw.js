@@ -28,9 +28,11 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         path + `/ball3.html`,
+        path + `/ball3p.html`,
         path + `/js/sketch3.js`,
         path + `/js/utility3.js`,
         path + `/manifest3.json`,
+        path + `/manifest3p.json`,
         path + `/libs/box2dweb/Box2d.min.js`,
 
         path + `/gameover.mp3`,
