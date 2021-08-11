@@ -1,0 +1,16 @@
+{
+  "name": "WebBall3L",
+  "short_name": "WebBall3L",
+  "theme_color": "#00ff00",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./ball3.html",
+  "icons": [
+    {
+      "src": "./ico/webball.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
