@@ -28,24 +28,15 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         path + `/index.html`,
-        //path + `/ball2.html`,
         path + `/ball3.html`,
-        //path + `/ball3p.html`,
-        //path + `/js/sketch2.js`,
         path + `/js/sketch3.js`,
-        //path + `/js/utility.js`,
         path + `/js/utility3.js`,
         path + `/manifest3.json`,
-        //path + `/manifest3p.json`,
         path + `/libs/box2dweb/Box2d.min.js`,
-
         path + `/gameover.mp3`,
-        //path + `/water-drop1.mp3`,
         path + `/bat1.mp3`,
-
         path + `/red.png`,
         path + `/red3.png`,
-
         path + `/redc30.png`,
         path + `/redc35.png`,
         path + `/redc40.png`,
@@ -85,11 +76,8 @@ self.addEventListener('install', e => {
         path + `/yellowc120.png`,
         path + `/yellowc150.png`,
         path + `/yellowc200.png`,
-
         path + `/touchtostart.png`,
-
         path + `/ico/webball.png`,
-
       ])
       .then(() => self.skipWaiting());
     })
