@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't07';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
 var path = 'https://toyama-rt.github.io/web-toy/t07';
 
@@ -32,7 +32,7 @@ self.addEventListener('install', e => {
         path + `/js/utilitya1.js`,
         path + `/manifesta1.json`,
         path + `/libs/box2dweb/Box2d.min.js`,
-
+/*
         path + `/bat1.mp3`,
         path + `/water-drop1.mp3`,
         path + `/snare03.mp3`,
@@ -91,7 +91,7 @@ self.addEventListener('install', e => {
         path + `/touchtostart.png`,
 
         path + `/ico/webball.png`,
-
+*/
       ])
       .then(() => self.skipWaiting());
     })
