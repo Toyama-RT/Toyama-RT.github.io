@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't07';
-const CACHE_NAME = prefix + '02';
+const CACHE_NAME = prefix + '03';
 
 var path = 'https://toyama-rt.github.io/web-toy/t07';
 
@@ -28,11 +28,11 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         path + `/balla1.html`,
-        path + `/js/sketcha1.js`,
+/*        path + `/js/sketcha1.js`,
         path + `/js/utilitya1.js`,
         path + `/manifesta1.json`,
         path + `/libs/box2dweb/Box2d.min.js`,
-/*
+
         path + `/bat1.mp3`,
         path + `/water-drop1.mp3`,
         path + `/snare03.mp3`,
