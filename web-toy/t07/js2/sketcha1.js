@@ -147,7 +147,7 @@ if (canvas.height <= 525 ) {
 
 
 	let type = b2Body.b2_dynamicBody;
-	manager.createCircle(type, canvas.width * 25 / 100, canvas.height * 50 / 100, CirImga, radiusball, 0, null, null, null);
+	manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 50 / 100, CirImga, radiusball, 0, null, null, null);
 //	manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 50 / 100, CirImgc, radiusball, 0, null, null, null);
 //	manager.createCircle(type, canvas.width * 75 / 100, canvas.height * 10 / 100, CirImgb, radiusball, 0, null, null, null);
 	//manager.createCircle(type, canvas.width * 50 / 100, canvas.height * 20 / 100, CirImgb, 50, 0, null, null, null);
