@@ -13,4 +13,6 @@
       "type": "image/png"
     }
   ]
+  ,
+  "web_accessible_resources": ["water-drop1.mp3"]
 }
