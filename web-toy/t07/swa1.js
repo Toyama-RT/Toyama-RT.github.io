@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't07';
-const CACHE_NAME = prefix + '08';
+const CACHE_NAME = prefix + '09';
 
 var path = 'https://toyama-rt.github.io/web-toy/t07';
 
