@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 't06p';
-const CACHE_NAME = prefix + '00';
+const CACHE_NAME = prefix + '01';
 
 var path = 'https://toyama-rt.github.io/web-toy/t06';
 
@@ -38,6 +38,9 @@ self.addEventListener('install', e => {
         path + `/gameover.mp3`,
         path + `/water-drop1.mp3`,
         path + `/bat1.mp3`,
+        path + `/gameover.wav`,
+        path + `/water-drop1.wav`,
+        path + `/bat1.wav`,
 
         path + `/red.png`,
         path + `/red3.png`,

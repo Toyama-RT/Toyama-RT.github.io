@@ -346,7 +346,7 @@ console.log("deg =", deg, deg * DEG_TO_RAD);
 			//this._world.DestroyBody(destroy);
 console.log("Hello Destroy");
       audioElem = new Audio();
-      audioElem.src = "./bat1.mp3";
+      audioElem.src = "./bat1.wav";
       audioElem.play();
 
 
@@ -398,7 +398,7 @@ function handleMouseDown(e){
 console.log("Hello Click2!");
 
       audioElem = new Audio();
-      audioElem.src = "./water-drop1.mp3";
+      audioElem.src = "./water-drop1.wav";
       audioElem.play();
 
 }

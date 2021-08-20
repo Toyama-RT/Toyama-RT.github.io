@@ -10,7 +10,7 @@ var img = document.getElementById("image_place");
   await WaitForClick();
   //console.log("この行は、クリックされた後に実行されます。");
       audioElem = new Audio();
-      audioElem.src = "./bat1.mp3";
+      audioElem.src = "./bat1.wav";
       audioElem.play();
       document.getElementById("image_place").style.display="none";
 	abc();
@@ -85,7 +85,7 @@ if (canvas.height <= 525 ) {
     var audioElem;
 
       audioElem = new Audio();
-      audioElem.src = "./bat1.mp3";
+      audioElem.src = "./bat1.wav";
       audioElem.play();
 
 /*			let boxImga = new Image();
@@ -378,14 +378,14 @@ console.log("Hello Contact");
 
         window.addEventListener(Event.TOUCH_START, function() {
             //addBall();
-            //game.assets['./water-drop1.mp3'].play();  //お礼　効果音ラボ様
+            //game.assets['./water-drop1.wav'].play();  //お礼　効果音ラボ様
 
 console.log("Hello Click!");
 
     var audioElem;
 
       //audioElem = new Audio();
-      //audioElem.src = "./water-drop1.mp3";
+      //audioElem.src = "./water-drop1.wav";
   //    audioElem.play();
 
 
