@@ -112,7 +112,7 @@ if (canvas.height <= 525 ) {
 
 	
 	// World
-	world = new b2World(new b2Vec2(0, 20), true);
+	world = new b2World(new b2Vec2(0, 0), true);
 
 	// Manager
 	manager = new b2Manager(world);
