@@ -12,6 +12,7 @@ var img = document.getElementById("image_place");
       audioElem = new Audio();
       audioElem.src = "./bat1.mp3";
       audioElem.play();
+
       document.getElementById("image_place").style.display="none";
 /*
      // web audio API によるサウンド出力
@@ -20,6 +21,17 @@ var img = document.getElementById("image_place");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
         src.start();
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
 */
 	abc();
 }

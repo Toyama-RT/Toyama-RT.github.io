@@ -314,6 +314,14 @@ console.log("Hello pushDestroy");
       audioElem.src = "./snare03.mp3";
       audioElem.play();
 	}
+/*
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./drum03.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+*/
 
 	pushDestroys2(body){
 		//this._destroys.push(body);
@@ -370,10 +378,11 @@ console.log("Hello pushDestroy");
 		for(let destroy of this._destroys){
 			//this._world.DestroyBody(destroy);
 console.log("Hello Destroy");
+/*
       audioElem = new Audio();
       audioElem.src = "./snare03.mp3";
       audioElem.play();
-/*
+
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();
         const sound = await LoadSample(audioctx, "./snare03.mp3");
@@ -430,7 +439,7 @@ console.log("Hello Destroy2");
 // Mouse
 let mouseX, mouseY, mousePVec, isMouseDown, selectedBody, mouseJoint, canvasPosition;
 
-function handleMouseDown(e){
+async function handleMouseDown(e){
 
 	isMouseDown = true;
 	handleMouseMove(e);
@@ -442,14 +451,25 @@ console.log("Hello Click2!");
       audioElem = new Audio();
       audioElem.src = "./water-drop1.mp3";
       audioElem.play();
-/*
+
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();
-        const sound = await LoadSample(audioctx, "./water-drop1.mp3");
+        const sound = await LoadSample(audioctx, "./snare03.mp3");
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
         src.start();
-*/
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+      }
 
 }
 document.addEventListener("mousedown", handleMouseDown, true);
