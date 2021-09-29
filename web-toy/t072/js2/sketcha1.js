@@ -9,9 +9,9 @@ var img = document.getElementById("image_place");
   console.log("waiting for click");
   await WaitForClick();
   //console.log("この行は、クリックされた後に実行されます。");
-      audioElem = new Audio();
-      audioElem.src = "./bat1.mp3";
-      audioElem.play();
+      //audioElem = new Audio();
+      //audioElem.src = "./bat1.mp3";
+      //audioElem.play();
 
       document.getElementById("image_place").style.display="none";
 /*
@@ -46,6 +46,7 @@ let manager = null;
 
 // Main
 window.onload = function(){
+	//bat();
 
 WaitSample();
 
@@ -103,11 +104,11 @@ if (canvas.height <= 525 ) {
   console.log("radius of balls" + " %d", radiusball);
 
 
-    var audioElem;
+    //var audioElem;
 
-      audioElem = new Audio();
-      audioElem.src = "./bat1.mp3";
-      audioElem.play();
+      //audioElem = new Audio();
+     // audioElem.src = "./bat1.mp3";
+     // audioElem.play();
 /*
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();
@@ -115,7 +116,26 @@ if (canvas.height <= 525 ) {
         const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
         src.connect(audioctx.destination);
         src.start();
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+
+
 */
+
+	bat();
+
+	bat();
+	bat();
+
 			let boxImga = new Image();
 			boxImga.src = "red.png";
 			let boxImgb = new Image();
@@ -300,7 +320,6 @@ if (canvas.height <= 525 ) {
 	function createTriangle(x,y, deg, Img){
 		let type = b2Body.b2_dynamicBody;
 		let body = manager.createTri(type, x, y, deg, Img);
-
 /*
 // 多角形の試み
 	var vertexArray=new Array();
@@ -325,6 +344,26 @@ if (canvas.height <= 525 ) {
 */
 }
 
+	async function bat(){
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./bat1.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+	}
+}
 
 	// Contact
 	let listener = new b2ContactListener;
