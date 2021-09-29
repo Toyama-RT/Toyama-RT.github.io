@@ -325,11 +325,11 @@ console.log("Hello pushDestroy");
 
 	pushDestroys2(body){
 		//this._destroys.push(body);
-console.log("Hello pushDestroy");
+console.log("Hello pushDestroy2");
 
-      audioElem = new Audio();
-      audioElem.src = "./drum03.mp3";
-      audioElem.play();
+      //audioElem = new Audio();
+      //audioElem.src = "./drum03.mp3";
+      //audioElem.play();
 /*
      // web audio API によるサウンド出力
         const audioctx = new AudioContext();

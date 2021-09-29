@@ -46,7 +46,6 @@ let manager = null;
 
 // Main
 window.onload = function(){
-	//bat();
 
 WaitSample();
 
@@ -103,7 +102,6 @@ if (canvas.height <= 525 ) {
 
   console.log("radius of balls" + " %d", radiusball);
 
-
     //var audioElem;
 
       //audioElem = new Audio();
@@ -131,9 +129,6 @@ if (canvas.height <= 525 ) {
 
 */
 
-	bat();
-
-	bat();
 	bat();
 
 			let boxImga = new Image();
@@ -365,6 +360,49 @@ if (canvas.height <= 525 ) {
 	}
 }
 
+	async function drum(){
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./drum03.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+	}
+}
+
+	async function snare(){
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snare03.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+	}
+}
+
+
 	// Contact
 	let listener = new b2ContactListener;
 	listener.BeginContact = function(contact){
@@ -377,19 +415,21 @@ if (canvas.height <= 525 ) {
 		if(userDataA && userDataA.tag == TAG_REMOVER){
 console.log("Hello Contact");
 			manager.pushDestroys(contact.GetFixtureB().GetBody());
-
+                        snare();
 		}
 		if(userDataB && userDataB.tag == TAG_REMOVER){
 			manager.pushDestroys(contact.GetFixtureA().GetBody());
+                        snare();
 		}
 
 		if(userDataA && userDataA.tag == TAG_REMOVERB){
 console.log("Hello Contact2");
 			manager.pushDestroys2(contact.GetFixtureB().GetBody());
-
+                        drum();
 		}
 		if(userDataB && userDataB.tag == TAG_REMOVERB){
 			manager.pushDestroys2(contact.GetFixtureA().GetBody());
+                        drum();
 		}
 
 
