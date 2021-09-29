@@ -13,6 +13,14 @@ var img = document.getElementById("image_place");
       audioElem.src = "./bat1.mp3";
       audioElem.play();
       document.getElementById("image_place").style.display="none";
+
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./bat1.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
 	abc();
 }
 
@@ -88,6 +96,13 @@ if (canvas.height <= 525 ) {
       audioElem = new Audio();
       audioElem.src = "./bat1.mp3";
       audioElem.play();
+
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./bat1.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
 
 			let boxImga = new Image();
 			boxImga.src = "red.png";

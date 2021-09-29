@@ -322,6 +322,14 @@ console.log("Hello pushDestroy");
       audioElem = new Audio();
       audioElem.src = "./drum03.mp3";
       audioElem.play();
+
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./drum03.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
 	}
 
 
@@ -366,6 +374,12 @@ console.log("Hello Destroy");
       audioElem.src = "./snare03.mp3";
       audioElem.play();
 
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snare03.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
 
 		}
 		this._destroys = [];
@@ -428,6 +442,14 @@ console.log("Hello Click2!");
       audioElem = new Audio();
       audioElem.src = "./water-drop1.mp3";
       audioElem.play();
+
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./water-drop1.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
 
 }
 document.addEventListener("mousedown", handleMouseDown, true);
