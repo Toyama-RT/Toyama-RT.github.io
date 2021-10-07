@@ -9,9 +9,9 @@ var img = document.getElementById("image_place");
   console.log("waiting for click");
   await WaitForClick();
   //console.log("この行は、クリックされた後に実行されます。");
-      audioElem = new Audio();
-      audioElem.src = "./bat1.wav";
-      audioElem.play();
+      //audioElem = new Audio();//オフライン　効果音　改善　2021/10/07
+      //audioElem.src = "./bat1.wav";
+      //audioElem.play();
       document.getElementById("image_place").style.display="none";
 	abc();
 }
@@ -82,11 +82,13 @@ if (canvas.height <= 525 ) {
   console.log("radius of balls" + " %d", radiusball);
 
 
-    var audioElem;
+    //var audioElem;//オフライン　効果音　改善　2021/10/07
 
-      audioElem = new Audio();
-      audioElem.src = "./bat1.wav";
-      audioElem.play();
+      //audioElem = new Audio();
+      //audioElem.src = "./bat1.wav";
+      //audioElem.play();
+
+	bat();//オフライン　効果音　改善　2021/10/07
 
 /*			let boxImga = new Image();
 			boxImga.src = "red.png";
@@ -298,6 +300,28 @@ if (canvas.height <= 525 ) {
 	dHead3.CreateFixture(this.fixDef);
 */
 }
+//オフライン　効果音　改善　2021/10/07
+	async function bat(){
+     // web audio API によるサウンド出力
+        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./bat1.mp3");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+      function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+	}
+}
+
 
 
 	// Contact
