@@ -337,10 +337,11 @@ if (canvas.height <= 525 ) {
 console.log("Hello Contact");
 
 			manager.pushDestroys(contact.GetFixtureB().GetBody());
-
+	                bat();//オフライン　効果音　改善　2021/10/07
 		}
 		if(userDataB && userDataB.tag == TAG_REMOVER){
 			manager.pushDestroys(contact.GetFixtureA().GetBody());
+	                bat();//オフライン　効果音　改善　2021/10/07
 		}
 	}
 	listener.EndContact = function(contact){
