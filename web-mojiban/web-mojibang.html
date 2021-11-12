@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>Web 文字盤G｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>Web 文字盤　１４</h1>
+<h1>オフラインWebアプリの<br>キャッシュストレージ上限と<br>発生する不具合と対処のヒント<br>第一回</h1>
+<div style="text-align: center;"><img alt="Chromeの開発者ツール" src="img/Network falling back to cache.png" >
+<br>https://jakearchibald.com/2014/offline-cookbook/ より<br>
+</div>
+
+<h2>０　オフラインWebアプリとは何か？</h2>
+<p>
+こちらのサイトで紹介している『Web文字盤』はインターネットでホームページを閲覧するのと同じやり方で使用できる無料のアプリです。しかもインターネットが通じていないときにも、つまりオフラインでも使用できる機能を追加して、『オフラインWebアプリ』としてつくられています。
+</p><p>
+Webアプリは、ネット閲覧と同じやり方でアプリを利用できるので、操作方法がかなりシンプルで、初心者やあまり慣れていない人にも使いやすくなります。またもし使い方で迷っても、身近なスマホを使いなれている人に尋ねれば（多分）すぐ教えてもらえます。だから長続きしやすい特徴があります。
+</p><p>
+また、スマホ、タブレット、パソコン各種、インターネットにつながる機械ならどれでも使えます。Windows用、macOS用など区別はありません。（本当にすごいところはここです）これらをすでに持っている人は特に準備する必要はありません。買い換える必要もありません。だからお試しがやりやすい特徴もあります。ムダも減らせます。
+</p><p>
+ただし無線LANが通じていない場所やスマホの電波の圏外などインターネットが使用できないと使えないところがWebアプリの欠点になります。そこでこの欠点を補うために、インターネットがなくても使用できるオフライン機能を搭載したのが『オフラインWebアプリ』です。だからお家や病室や施設にインターネットがなくても使えます。
+</p><p>
+地図アプリとしてよく知られているGoogle マップ アプリもいまでは改良がすすみオンラインでルート検索をするとルート沿いの地図データがダウンロードされ、そのあとオフラインで使用するときにはこのデータでアプリを使用できるようになります。このため移動中の自動車内では通信できないwifi専用のタブレットでもGPS機能を利用してカーナビとして道案内に利用できます。しかも最新の地図データを次々入手できるところは専用カーナビよりも便利です。
+</p><p>
+このようにインターネットにつながっているときにだけ使えたアプリを改良して、オフラインでも使えるオフラインWebアプリにすることで、より便利にさらに広い用途で役立つようになっています。またさらに今後も新しい分野に次々とオフラインWebアプリが現れてくると予想されます。
+</p>
+<h2>１　オフラインWebアプリの仕組み</h2>
+<h3>十分に発達した科学技術は、魔法と見分けがつかない　アーサー・C・クラーク</h3>
+<p>
+ところでオフラインWebアプリは、もちろん魔法ではありません。科学技術はどちらかというとタネも仕掛けもある手品みたいなものです。
+</p><p>
+もしタネも仕掛けもわからないなら科学技術は魔法そのものかもしれません。しかしタネや仕掛けがわかれば、いろいろ役に立つ道具に利用できるかもしれません。さらにタネや仕掛けがわかれば、原因不明のトラブルも避けることができるかもしれません。
+</p><p>
+私もこれまでいくつかのオフラインWebアプリを作ってきました。このようなことをしているととかくありがちなことですが、案の定いくつかの原因不明のトラブルに遭遇しました。この問題を解決するためにいろいろやってみましたがその過程でトラブルが発生した理由や原因や仕組みがすこしずつわかってました。そしてもう同じ間違いは起こさない自信も出てきましたので、この機会に概要をまとめておくことにしました。
+</p><p>
+これは何よりも自分自身が同じ間違いを繰り返さないようにすること、そして後からやってくる人たちが同じ落とし穴に落ちないようにすること、これらの仕組みを作っている人たちに改善を働きかけるために、このような目的でこの作業に取り組むことにしました。
+</p><p>
+できるだけ誰にでもわかりやすい簡潔な文章を心がけます。しかし説明の足りないところは、読者各自がネット検索などで自習して補ってください。自分でやればそれもまた勉強になるでしょう。
+</p><p>
+それではオフラインWebアプリのタネと仕掛けを説明したいと思います。
+</p>
+<h2>２　基本はWebサイト（ホームページ）と同じ</h2>
+<p>
+従来のWebアプリは、一般のWebサイトと同様に、htmlファイルとcssファイルで画面表示を表現します。また動きや働きは、JavaScript（コンピュータ言語の一種）のプログラムをつかって表現します。
+</p><p>
+作り手はこれらのファイルをネット上のサーバーに置き（アップロードし）、ユーザはパソコンやスマホでブラウザを使いこれらをとりよせて（ダウンロードして）表示させたものを閲覧して利用します。このような仕組みですので、インターネットへの接続が途切れると、『とりよせ』ができなくなりますので、その結果使えなくなるわけです。
+</p><p>
+さてオフラインWebアプリは、途絶えた『とりよせ』の代わりの方法でファイルを用意します。
+</p>
+<h2>３　キャッシュの働きはとても大事</h2>
+<p>
+ブラウザには以前閲覧したWebサイトを記憶する機能があります。昨日見たサイトが今日は一発ですばやく表示されるなどというのもこの機能によるもので、よく経験することです。これはブラウザのキャッシュという機能です。必要なときにサインもなしにさっと用事が済むのでキャッシュ（現金）と呼ばれています。
+</p><p>
+このしかけは昨日閲覧したときにそのファイルをブラウザのキャッシュ記憶領域に保存しておき、そして翌日同じサイトを閲覧しようとするとネットにつなぐまえに記憶領域の保存してあるファイルを取り出し表示に使います。これで表示は素早くなりますし、通信コストは節約されます。しかしもしこの間に更新されていると、新しいファイルを取りに行きます。こんな仕組みですので、ニュースサイトを毎日見ていると、タイトルロゴや古い記事は表示が速いですが、新しい記事は表示までしばらくかかることも理解できるでしょう。
+</p><p>
+さてこのキャッシュ機能は、比較的古くからあるアイデアですがいくらか手直しすると、『とりよせ』の代替方法になります。つまり
+</p><p>
+１. 初めてそのサイトを閲覧したときに、必要なファイルを読み込み所定の場所に保存する。
+<br>
+２. 次回同じサイトにアクセスした際、インターネットへの接続状況を確認し、通信可能な場合はブラウザに『とりよせ』を許可し、（ここでこのページのトップ画像参照）通信が不通の場合は保存してあるファイルをブラウザに引き渡す。
+</p><p>
+という裏方の仕事をするプログラムをつくり、それまでのWebアプリのプログラムと共同作業をさせれば、インターネットが途切れていてもアプリがつかえるようになります。
+</p><p>
+2014年10月のW3Cによる、HTML5勧告により、この裏方プログラム（一般的にサービスワーカと呼ばれます）でそれまでひとりでやっていた仕事にもうひとり手伝いを追加できるようにして、オフラインでも使用できるWebアプリを実現する方針が出されました。その後数年間で、ブラウザをはじめ周辺の技術開発がこれに対応し、現在ではオフラインWebアプリが単なるプランではなく、実際に作って使えるようになりました。
+</p>
+<h2>４　オフラインWebアプリの興味深い特徴</h2>
+<p>
+このようなタネと仕組みですから、オンラインでは常に最新の情報が表示される一方でオフラインでは最後に通信できた時点でのやや古い情報が表示されることになります。そのため頻回に改良が行われるコンテンツでは、不具合が居残る場合もなきにしもあらずですが、安定時期以降はこの不具合が現れにくくなる特徴があります。
+</p><p>
+さらにまた何らかの理由でサイトが閉鎖されインターネットの通信が途切れたとしても、そのアプリをそれ以前と同様に継続して使用できるという、福祉機器としてたいへん興味深い特徴も持つことになります。
+</p>
+<h2>５　そして　とらぶる</h2>
+<p>
+ここまでの話は、あちこちに記事がありますので、すでにご存じの方もおられるでしょう。
+</p><p>
+私もあれこれ勉強していろいろな試みをしてきました。Web文字盤という名前でコミュニケーションエイドや不自由をもつひとのためのおもちゃなどをオフラインWebアプリとして作りました。試作品も含めると数十種類以上もつくり試運転を繰り返しました。
+</p><p>
+これらの試運転は、パソコンでプログラムを作り、まずローカル（パソコンの内部だけ）で動作を確認します。その後サーバにアップロードし、パソコンでオンラインとそしてオフラインで確認します。つぎにタブレットでオンライン、そしてオフラインの順番で確認作業を行います。
+</p><p>
+そんなとき、あるトラブルが発生するようになりました。はじめは私のプログラムのミスかと思いましたがいくら探しても間違いはみつかりません。ネットで類似のトラブルを検索しましたが、これも見あたりませんでした。
+</p><p>
+ここからのお話は第二回に続きます。
+</p>
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2021/11/12　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+</body></html>
