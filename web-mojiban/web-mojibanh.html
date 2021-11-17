@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82832782-3');
+</script>
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>Web 文字盤H｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>Web 文字盤　１５</h1>
+<h1>オフラインWebアプリの<br>キャッシュストレージ上限と<br>発生する不具合と対処のヒント<br>第二回</h1>
+<div style="text-align: center;"><img alt="オーバーフローした場合のオフラインWebアプリ概念図" src="img/Network falling back to overfilling cache.png" >
+<br>https://jakearchibald.com/2014/offline-cookbook/ の図にささやかに加筆<br>
+</div>
+
+<h2>０　オフラインWebアプリの記憶領域について考える</h2>
+<h3>どこまで記憶できるかが問題なのだ</h3>
+<p>
+さあ、第二回です。今回は記憶領域について考えます。
+</p><p>
+オフラインWebアプリは、オンラインの際に必要なファイルをブラウザの保存領域にあらかじめ保存し、オフラインではこれを読み出して使うという仕組みについては第一回ですでに説明しました。
+</p><p>
+ところがこのため、オフラインWebアプリをどんどん何種類もインストールすると、パソコンやスマホに保存されるファイルがだんだん増えてきます。またこれと同時に記憶領域の残りが少なくなってきます。ここではHDDやSSDなど記憶媒体の空きが少なくなってくるといろいろなトラブルが多くなるのはパソコンでもスマホでも同様です。やれ音楽、やれ動画と保存していくとあれほどたっぷりあったはずの記憶領域の空きもいつの間にか残り少なくなってきます。
+</p><p>
+何事にも限りがあります。これはおわかりですね。
+</p><p>
+親のスネはやがてやせ細り頼りにならなくなります。元気あふれる若者もやがて年寄りになります。しかし費やした何かの代わりに何を獲得したのかを考えたとき一応満足できれば、それはそれでいい人生だったと言えるのでしょう。ここでついほかの誰かと比較したくなりますが、そうなことして何の意味があるというのでしょう。人が生きるということは、ひとりひとりでずいぶん違っています。公平でも平等でも同じでもありません。病院で仕事をしているとよくわかります。このひとの一生とあの人の一生、そして自分の一生を考えさせられます。<br>
+
+みなさんの人生はいかがですか？うまくいっていますか？
+</p><p>
+おっと！いけない　何事にも限りがある話でしたね。だからいつかはこれ以上無理というところがきっとやってきます。
+</p><p>
+今時のパソコンではかなり大きな記憶容量を持つのが普通です。ですからその限界などはなかなか考えにくいところがあります。
+ところがスマホやタブレットでは、古いモデルでは、8GBとか16GBなどという機種もまだ現役です。そしてここに、システム、アプリケーション、写真や文章などが入るわけですので、ブラウザの記憶領域はそれほどたくさんありません。
+</p><p>
+このような事情は、オフラインWebアプリをつくるときに頭の片隅においておく必要があります。とあとになって考えればわかることなのですが全力でがんばってやっている最中には、こんなことまですっかり忘れて突き進みがちです。
+</p>
+<h2>１　限界は忘れた頃にやってくる</h2>
+<p>
+私もこれまでオフラインWebアプリを色々と作って来ましたので、そのうち『限界』が来るかもしれない、多分来るだろうとは思っていました。しかしその『限界』がいつどんな形で現れるのかはまるでわかりませんでした。もしかしたら警告かエラーメッセージが出るのではないかとかなり気楽に構えていました。しかし現実にはそのようなものは何もありませんでした。それどころかはじめは何が起きたのかまるでわかりませんでした。そのため何か別のトラブルではないかと思いました。
+</p><p>
+その日もいくつか作った試作品のテストしていました。そのうちの一つだけが、オフラインで効果音が出ないことに気が付きました。使用していたブラウザ、Google Chrome の開発者ツールのコンソールにはその試作品だけサービスワーカで音声ファイルの読み込みがうまくいかないことを表示しています。しかしキャッシュストレージの項目を見るとその音声ファイルは確かに存在しています。つまり存在するファイルが読み込めないので効果音が再生されないという状態になっていました。
+</p><p>
+このようなことに今まで遭遇したことはありません。まずプログラムミスのチェックからはじめましたがいくらやっても見つかりません。それまでの経験ではタイプミスなどすると普通は全く動作しません。これも何とも不親切でワイルドなことではありますが、わかりやすいといえばそのとおりです。しかし今回は音が出ないだけでほかは動いています。いつもとちょっと様子が違います。また音声ファイルの種類を変更したり、コードの書き順を変更したり試してみましたがまるで変化ありません。さらにこれら試作品は違いはほんの一部分であとはほとんど同じでしたのに、そのうちの一つの試作品だけこのような不具合が出ていることもわかってきました。またこのよう風変わりな現象は検索すればよく見つかるのですが、（困ったことはよそでも起きているものです）ところが検索しても同じような不具合はみつかりませんでした。
+</p>
+<h2>２　コツコツだけでは壁は破れない</h2>
+<p>
+ここで壁に突き当たりました。こんな場合お手上げになるのが普通なのですが、私も粘り強いというかあきらめが悪い困った性格なもので、かなり悪あがきをして食い下がることになりました。
+</p><p>
+まあこのような人間と一緒に仕事をする周囲はさぞかし苦労が多いことでしょう。特に難しいことは後回しにして、その時できることをコツコツやって仕事を進めるまじめな性格の人は特に嫌になると思います。これは善悪の問題ではなく、世の中にはどちらも必要なのですが、昨今は粘り強いしぶとい人間はどうも流行らないようです。
+</p><p>
+コツコツやるのは大事なことですが、目途がたたないことを長くやりすぎるとだんだん行き詰まって貧しくなってくるんです。皆さんの回りにもこんな話はありませんか？頑張っても頑張っても先が見えない、報われない、なんてひといませんか？いま『失われた何十年』とか言っています。しかし誰もが真面目にコツコツやって報われるのは世間に追い風が吹いているときだけで、とくに逆風の時はコツコツだけではなくそのほかに新しいなにかに取り組むことも必要なんです。
+</p>
+<h2>３　必要なのはリープ</h2>
+<p>
+リープ（飛躍）が必要な時ってあるんです。できることだけやっていると行き詰まる、こんなときはできないことをできるようにする。不可能を可能にするような飛躍が必要になります。
+</p><p>
+ここでふとおもいつきでブラウザをFireFox に変更してみました。これより少し前、FireFoxはそれまでいまいちだったオフラインWebアプリへの対応が一気に充実して一見するとChromeと見分けがつかないくらいになっていました。ものは試しとやってみると、まるで問題なく動作し、効果音もしっかり再生されることが確認できました。ここまでが前々回の記事を書いた時期です。
+</p><p>
+ブラウザなどはどれか一種類しか使わない人がほとんどでしょう。操作など覚えることがすくなくてすみますからこれが合理的です。ただし何事も順調で問題が起きていないときはそれでいいのです。しかし困難に直面しているときは違います。一見無駄に見えたことが役に立つこともあります。
+</p><p>
+オフラインWebアプリの動作確認のため、私のパソコンにはブラウザが何種類もインストールしてありました。これが問題解決の糸口になりましたが、まだ迷走は続きました。
+
+</p>
+<h2>４　これはChromeのbugじゃない</h2>
+<p>
+Firefoxで正常に動き、Chromeでは動きがおかしいということのなると、この原因はChromeにあると思うのが普通です。私もそう思いました。そこでしばらく『Chromeにバグが見つかった』などというニュースをさがしましたがそんなものは見つかりません。さらにしばらく待ちましたが何も起きません。
+</p><p>
+もしかしてこれら一連のドタバタの原因は、記憶容量の『限界』が原因ではないかと思い始めたのがこの頃です。
+</p><p>
+まず日本語のサイトを捜しましたがありませんでした。続いてcache storage limit service worker  で検索したところ、ついにというかあっさりというか、
+</p><p>
+ What is the Service Worker Cache Storage Limit? How Much Your Progressive Web App (PWA) Can Store
+</p><p>
+そのものズバリの記事にたどり着きました。今年初めのころの Chris Love さんの記事です。この記事で筆者は、オフラインWebアプリ（この記事ではPWAと表現されています）のキャッシュ保存容量の上限について説明しています。この記事によると2017年の9月に開催された会合でルールが下の図のように決められたそうです。
+</p>
+
+<div style="text-align: center;"><img alt="記憶容量の割り当てキャッシュの上限" src="img/consensus-storage-capacity-980x385.png" >
+</div>
+
+<p>
+まず、HDDなど記憶装置の大きさごとに、インデックスデータベースとキャッシュの上限がきまっています。
+</p><p>
+例えば1TBのHDDでは総量上限は4％＝40GBと20GBの小さい方で、20GB。単一のドメインはその20％ということで、4GBが上限になります。これはかなり余裕がありますね。しかしタブレットでよくある16GBの場合は、総量上限が500MB、単一のドメインはその20％、100MBが上限になります。あらあらの計算では今回のトラブルはこの数値に近い状況でした。またこれらの上限はブラウザごとに配分されていますので、あるブラウザで上限に達しても、別のブラウザを使えば大丈夫というちょっと変わったルールです。ブラウザを作っている人たちはもしかして仲が悪いのかもしれません。いやたぶんそうでしょう。それはさておき、
+これも今回、Chromeで起きたトラブルがFirefoxではまるで起きない経験と合致します。この記事はなかなかいいことがかいてあります。もしかしてこの記事を書いた Chris Love さんはえらい人なのかもしれません。（知らないのは自分だけってことよくありますね）
+</p><p>
+もうひとつこのルールには、ドメインごとに上限が設定してあります。特定のドメインのアプリが記憶容量を独占して他のドメインの新規進出を邪魔するのを防止するためでしょうか？独占禁止法的ですね。これはつまり、ドメインを変更すれば別枠の記憶容量を使えるので、今回のトラブルは回避できるという意味にも読み取れます。これらのルールが正しく働いているかを確認するためには、実際にやってみるのがいいでしょう。
+</p><p>
+幸いなことに、私は職場のサーバとgithubのサーバの二つを日常的に使っています。今回トラブルを起こしたアプリはgithubのサーバに置いています。これをそっくり職場のサーバにコピーを作りました。
+</p><p>
+一台のタブレットに、二つのサーバーから同じアプリを別々にインストールしたのに、片方はやっぱり音が出ないのに、もう片方は全く問題なく動きました。
+</p><p>
+ビンゴ！　一等賞！　おめでとう　不具合の原因がいまあきらかになりました。
+</p><p>
+参考のサイトに記載されたルールは、今目の前でその通り動いていることが確認できました。またそのルールを逆手に取れば、このトラブルの解決法もいくつか提案できるでしょう。
+
+</p>
+<h2>６　結論</h2>
+<p>
+今回のオフラインWebアプリの動作がオフラインで不具合が生じたのは、サービスワーカの動作を支えるキャッシュストレージがその上限を超え、保存と読みこみがうまくいかないのが原因とわかりました。
+</p><p>
+現在のところ、この不具合が発生する際、警告もエラーも出ません。ただファイルが読めない、見つからないとコンソールに表示され、関係する動作がスキップされるだけです。
+</p><p>
+これを知っているのは私とこの文を読んでいるあなただけです。チコちゃんも知りません。
+</p><p>
+オフラインWebアプリに興味関心をお持ちの方々、がんがんつくるのは結構なことですが、こんな見えない壁が存在することを忘れてはいけません。結局困るのはユーザです。
+</p><p>
+同様のトラブルに困り切ってここまでたどり着いたあなた。ご苦労様です。解決のヒントはここにあります。後は自分で考えて切り抜けてください。
+</p><p>
+また、これらの仕組みを作っている中の人たちには、このような場合にユーザーに警告を出すように改善を加えてくださるようにお願いします。例えば、『もうすぐ限界です、不要不急のオフラインWebアプリは消去しましょう。』とか言う具合にです。理由もわからずいきなり動かないのではユーザは困惑するばかりです。これではPWAの普及も近いうちに壁にぶつかることになるでしょう。 
+</p><p>
+大した技術なのですから、大切に育成することが肝要と思います。
+</p>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>What is the Service Worker Cache Storage Limit? How Much Your Progressive Web App (PWA) Can Store<br>
+<a target="_blank" href="https://love2dev.com/blog/what-is-the-service-worker-cache-storage-limit/">https://love2dev.com/blog/what-is-the-service-worker-cache-storage-limit/</a></li>
+
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2021/11/18　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+</body></html>
