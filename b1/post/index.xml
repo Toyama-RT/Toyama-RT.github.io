@@ -6,7 +6,16 @@
     <description>Recent content in Posts on あくまでも個人的な感想です</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Thu, 10 Jun 2021 10:25:25 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Nov 2021 16:03:23 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poisson Rouge　の帰還　211118</title>
+      <link>https://toyama-rt.github.io/b1/post/211118/</link>
+      <pubDate>Thu, 18 Nov 2021 16:03:23 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/211118/</guid>
+      <description>Poisson Rouge の帰還 いきさつ Poisson Rougeは赤い魚型の秒針が特徴的な自動巻のSwatchです。 自動車のなかで何かに引っかけたらリューズがとれ、時計も止まってしまったと私のところにやってきました。 私は町の時計屋さんではないのですが、預かることにしました。</description>
+    </item>
+    
     <item>
       <title>Figure</title>
       <link>https://toyama-rt.github.io/b1/post/figure/</link>
@@ -85,7 +94,7 @@
       <pubDate>Tue, 25 May 2021 18:47:22 +0900</pubDate>
       
       <guid>https://toyama-rt.github.io/b1/post/3rd/</guid>
-      <description>Hugoの使い方メモ 弐頭でのファイル構成 c;\Hugo\bin\ Hugo.exe LICENSE READ.me c:\Hugo\Sites ここにサイトをつくる。色々試しながら、古いサイトは順次、１，２，３とナンバリングしていく。 １ サイトの作り方 $ hugo new site サイト名 これで空のサイトが出来上がります。生成されたのはサイトの情報を入力す</description>
+      <description>Hugoの使い方メモ ０ コマンドライン（ターミナル）の開き方 Windowsの場合 エクスプローラのロケーションバーに cmd と打ち込むと、開いているフォルダをカレントフォルダとしてコマンドプロンプトが起動する。 特に事前の準備は必要ない。 弐頭でのファイ</description>
     </item>
     
     <item>
