@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>メモ on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/tags/%E3%83%A1%E3%83%A2/</link>
+    <description>Recent content in メモ on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 25 May 2021 14:14:55 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/tags/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1st</title>
+      <link>https://toyama-rt.github.io/b1/post/1st/</link>
+      <pubDate>Tue, 25 May 2021 14:14:55 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/1st/</guid>
+      <description>My first HUGO page. これは日本語です この文章はTyporaで作成しました。自動的に日本語が表示されます。文字コードが自動的にutf-8で保存されます。CONFIG.TOMLはterapadで作成しましたが、こちらがデフォルトでshiftJIS になるので</description>
+    </item>
+    
+  </channel>
+</rss>

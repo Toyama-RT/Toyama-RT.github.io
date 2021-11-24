@@ -3,33 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://toyama-rt.github.io/b1/categories/</loc>
-    <lastmod>2021-11-18T16:03:23+09:00</lastmod>
+    <lastmod>2021-11-24T14:21:34+09:00</lastmod>
   </url><url>
-    <loc>https://toyama-rt.github.io/b1/post/211118/</loc>
-    <lastmod>2021-11-18T16:03:23+09:00</lastmod>
+    <loc>https://toyama-rt.github.io/b1/post/211124/poissonrouge/</loc>
+    <lastmod>2021-11-24T14:21:34+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/posts/211124/poissonrouge/</loc>
+    <lastmod>2021-11-24T14:21:34+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/posts/</loc>
+    <lastmod>2021-11-24T14:21:34+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/post/</loc>
-    <lastmod>2021-11-18T16:03:23+09:00</lastmod>
+    <lastmod>2021-11-24T14:21:34+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/</loc>
-    <lastmod>2021-11-18T16:03:23+09:00</lastmod>
+    <lastmod>2021-11-24T14:21:34+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/categories/%E6%99%82%E8%A8%88/</loc>
+    <lastmod>2021-11-24T14:21:34+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/post/211118/</loc>
     <lastmod>2021-11-18T16:03:23+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/post/figure/</loc>
     <lastmod>2021-06-10T10:25:25+09:00</lastmod>
   </url><url>
+    <loc>https://toyama-rt.github.io/b1/categories/hugo/</loc>
+    <lastmod>2021-06-10T10:25:25+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/tags/</loc>
+    <lastmod>2021-06-10T10:25:25+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/tags/%E7%94%BB%E5%83%8F/</loc>
+    <lastmod>2021-06-10T10:25:25+09:00</lastmod>
+  </url><url>
     <loc>https://toyama-rt.github.io/b1/post/decomposition/</loc>
     <lastmod>2021-06-09T15:03:22+09:00</lastmod>
   </url><url>
-    <loc>https://toyama-rt.github.io/b1/tags/</loc>
+    <loc>https://toyama-rt.github.io/b1/tags/scansnap/</loc>
     <lastmod>2021-06-09T15:03:22+09:00</lastmod>
   </url><url>
-    <loc>https://toyama-rt.github.io/b1/tags/taxonomy/</loc>
-    <lastmod>2021-06-09T15:03:22+09:00</lastmod>
-  </url><url>
-    <loc>https://toyama-rt.github.io/b1/categories/%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88/</loc>
+    <loc>https://toyama-rt.github.io/b1/categories/%E6%83%85%E5%A0%B1%E6%A9%9F%E5%99%A8/</loc>
     <lastmod>2021-06-09T15:03:22+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/post/9th/</loc>
@@ -41,10 +56,13 @@
     <loc>https://toyama-rt.github.io/b1/tags/hugo/</loc>
     <lastmod>2021-05-27T09:53:53+09:00</lastmod>
   </url><url>
-    <loc>https://toyama-rt.github.io/b1/categories/hugo/</loc>
+    <loc>https://toyama-rt.github.io/b1/tags/taxonomy/</loc>
     <lastmod>2021-05-27T09:53:53+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/post/7th/</loc>
+    <lastmod>2021-05-26T18:06:22+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/tags/%E3%82%B5%E3%82%A4%E3%83%89%E3%83%90%E3%83%BC/</loc>
     <lastmod>2021-05-26T18:06:22+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/post/6th/</loc>
@@ -65,13 +83,25 @@
     <loc>https://toyama-rt.github.io/b1/post/4th/</loc>
     <lastmod>2021-05-26T15:36:04+09:00</lastmod>
   </url><url>
+    <loc>https://toyama-rt.github.io/b1/tags/%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC/</loc>
+    <lastmod>2021-05-26T15:36:04+09:00</lastmod>
+  </url><url>
     <loc>https://toyama-rt.github.io/b1/post/3rd/</loc>
+    <lastmod>2021-05-25T18:47:22+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/tags/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2021-05-25T18:47:22+09:00</lastmod>
   </url><url>
     <loc>https://toyama-rt.github.io/b1/post/2nd/</loc>
     <lastmod>2021-05-25T18:04:54+09:00</lastmod>
   </url><url>
+    <loc>https://toyama-rt.github.io/b1/tags/frontmatter/</loc>
+    <lastmod>2021-05-25T18:04:54+09:00</lastmod>
+  </url><url>
     <loc>https://toyama-rt.github.io/b1/post/1st/</loc>
+    <lastmod>2021-05-25T14:14:55+09:00</lastmod>
+  </url><url>
+    <loc>https://toyama-rt.github.io/b1/tags/%E3%83%A1%E3%83%A2/</loc>
     <lastmod>2021-05-25T14:14:55+09:00</lastmod>
   </url>
 </urlset>

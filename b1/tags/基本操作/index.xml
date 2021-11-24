@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基本操作 on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/tags/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+    <description>Recent content in 基本操作 on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 25 May 2021 18:47:22 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/tags/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3rd　Hugoの使い方メモ</title>
+      <link>https://toyama-rt.github.io/b1/post/3rd/</link>
+      <pubDate>Tue, 25 May 2021 18:47:22 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/3rd/</guid>
+      <description>Hugoの使い方メモ ０ コマンドライン（ターミナル）の開き方 Windowsの場合 エクスプローラのロケーションバーに cmd と打ち込むと、開いているフォルダをカレントフォルダとしてコマンドプロンプトが起動する。 特に事前の準備は必要ない。 弐頭でのファイ</description>
+    </item>
+    
+  </channel>
+</rss>

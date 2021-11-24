@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scansnap on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/tags/scansnap/</link>
+    <description>Recent content in scansnap on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 09 Jun 2021 15:03:22 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/tags/scansnap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10:SDecomposition　ScanSnapを分解して考える</title>
+      <link>https://toyama-rt.github.io/b1/post/decomposition/</link>
+      <pubDate>Wed, 09 Jun 2021 15:03:22 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/decomposition/</guid>
+      <description>分解について ある日職場で、『紙』の書類を提出することになりました。こんな時は、紙の書類をpdf化して、PDFｰviewerで必要事項を記入してメールに添付して送信するのが一番手間がかかりません。しかも手元にファイルが残りますので後で（多分来</description>
+    </item>
+    
+  </channel>
+</rss>

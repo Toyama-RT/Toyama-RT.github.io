@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>サマリー on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/tags/%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC/</link>
+    <description>Recent content in サマリー on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 26 May 2021 15:36:04 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/tags/%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4th サマリーの長さを調整</title>
+      <link>https://toyama-rt.github.io/b1/post/4th/</link>
+      <pubDate>Wed, 26 May 2021 15:36:04 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/4th/</guid>
+      <description>サマリーの長さを調整 デフォルトのままでは日本語記事のサマリーが長くなってしまいます。これは英語のように空白区切りで単語数をカウントしているためです。 これを防ぐには Hugo 設定ファイル config.toml でパラメータ hasCJKLanguage を true に設定します。 このサイトではさらに summaryLength でサマリ</description>
+    </item>
+    
+  </channel>
+</rss>

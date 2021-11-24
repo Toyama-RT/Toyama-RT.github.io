@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>サイドバー on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/tags/%E3%82%B5%E3%82%A4%E3%83%89%E3%83%90%E3%83%BC/</link>
+    <description>Recent content in サイドバー on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 26 May 2021 18:06:22 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/tags/%E3%82%B5%E3%82%A4%E3%83%89%E3%83%90%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7th　サイドバーを使う</title>
+      <link>https://toyama-rt.github.io/b1/post/7th/</link>
+      <pubDate>Wed, 26 May 2021 18:06:22 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/7th/</guid>
+      <description>サイドバーを使う [Params.logo] # image = &amp;#34;img/profile.PNG&amp;#34; # Logo image. Path relative to &amp;#34;static&amp;#34; title = &amp;#34;ポケ森攻略まとめブログ&amp;#34; # Logo title, otherwise will use site title subtitle = &amp;#34;ポケ森ファンが発信するまとめサイト&amp;#34; # Logo subtitle [Params.sidebar] home = &amp;#34;right&amp;#34; # Configure layout for home page list = &amp;#34;right&amp;#34; # Configure layout for list pages single = &amp;#34;right&amp;#34; # Configure layout for single pages # Enable widgets in given order widgets = [&amp;#34;search&amp;#34;,</description>
+    </item>
+    
+  </channel>
+</rss>

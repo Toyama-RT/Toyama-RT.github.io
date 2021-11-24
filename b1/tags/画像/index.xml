@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>画像 on あくまでも個人的な感想です</title>
+    <link>https://toyama-rt.github.io/b1/tags/%E7%94%BB%E5%83%8F/</link>
+    <description>Recent content in 画像 on あくまでも個人的な感想です</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 10 Jun 2021 10:25:25 +0900</lastBuildDate><atom:link href="https://toyama-rt.github.io/b1/tags/%E7%94%BB%E5%83%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Figure</title>
+      <link>https://toyama-rt.github.io/b1/post/figure/</link>
+      <pubDate>Thu, 10 Jun 2021 10:25:25 +0900</pubDate>
+      
+      <guid>https://toyama-rt.github.io/b1/post/figure/</guid>
+      <description>hugo で画像を追加する なかけんのHugoノート 画像の張り方 サイト内リンクの作り方 など</description>
+    </item>
+    
+  </channel>
+</rss>
