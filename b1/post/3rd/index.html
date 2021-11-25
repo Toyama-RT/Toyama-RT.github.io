@@ -108,11 +108,11 @@ languageCode = &quot;ja&quot;
 title = &quot;Hugo入門&quot;
 </code></pre><h2 id="２テーマのインストール">２　テーマのインストール</h2>
 <p>レイアウトを１から作るのは時間がかかるので、一般公開されているテーマを利用してみましょう。
-Hugo公式サイトの<a href="http://themes.gohugo.io/">テーマ一覧のページ</a>から好きなデザインを選択します。ここでは公式サイトの<a href="https://gohugo.io/overview/quickstart/">クイックスタート</a>と同じく <a href="http://themes.gohugo.io/hugo-uno/">hugo-uno</a> テーマを使ってみます。 まずはサイトのトップフォルダ（config.tomlがあるフォルダ）に themes というフォルダを作って、そこにhugo-unoテーマを設置します。gitコマンドが使える方は以下で。</p>
+Hugo公式サイトの<a href="http://themes.gohugo.io/" target="_blank">テーマ一覧のページ</a>から好きなデザインを選択します。ここでは公式サイトの<a href="https://gohugo.io/overview/quickstart/" target="_blank">クイックスタート</a>と同じく <a href="http://themes.gohugo.io/hugo-uno/" target="_blank">hugo-uno</a> テーマを使ってみます。 まずはサイトのトップフォルダ（config.tomlがあるフォルダ）に themes というフォルダを作って、そこにhugo-unoテーマを設置します。gitコマンドが使える方は以下で。</p>
 <pre><code>$ mkdir themes
 $ cd themes
 $ git clone https://github.com/SenjinDarashiva/hugo-uno.git
-</code></pre><p>git コマンドが使えない方は <a href="https://github.com/SenjinDarashiva/hugo-uno/archive/master.zip">ここ</a> からzipファイルをダウンロードして展開してください。フォルダ名は hugo-uno に変更してください。</p>
+</code></pre><p>git コマンドが使えない方は <a href="https://github.com/SenjinDarashiva/hugo-uno/archive/master.zip" target="_blank">ここ</a> からzipファイルをダウンロードして展開してください。フォルダ名は hugo-uno に変更してください。</p>
 <h2 id="３記事の追加">３　記事の追加</h2>
 <p>記事は content フォルダに置きます。以下のコマンドでからの記事ファイルを作ることができます。</p>
 <pre><code>$ hugo new ファイル名
@@ -128,7 +128,7 @@ title = &quot;hello&quot;
 
 +++
 </code></pre><p>先頭の半角 + 3文字から次の + 3文字の行までを <strong>フロントマター</strong> と呼び、記事のタイトルや日付、カテゴリ等ページの属性を指定します。
-title がページのタイトルです。draft は下書きかどうかの状態で true が指定されているとプレビューやページ生成がされませんので false に指定するか削除しましょう。本文はフロントマター以降（この場合は７行目以降）に <a href="https://ja.wikipedia.org/wiki/Markdown">Markdown記法</a> で記述します。</p>
+title がページのタイトルです。draft は下書きかどうかの状態で true が指定されているとプレビューやページ生成がされませんので false に指定するか削除しましょう。本文はフロントマター以降（この場合は７行目以降）に <a href="https://ja.wikipedia.org/wiki/Markdown" target="_blank">Markdown記法</a> で記述します。</p>
 <pre><code>+++
 date = &quot;2016-04-05T12:00:00+09:00&quot;
 title = &quot;Hugoを始めました&quot;
@@ -190,7 +190,6 @@ $ hugo server -D
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/b1/post/211124/poissonrouge/">Poisson Rouge　の帰還</a></li>
-			<li class="widget__item"><a class="widget__link" href="/b1/post/211118/">Poisson Rouge　の帰還　211118</a></li>
 			<li class="widget__item"><a class="widget__link" href="/b1/post/figure/">Figure</a></li>
 			<li class="widget__item"><a class="widget__link" href="/b1/post/decomposition/">10:SDecomposition　ScanSnapを分解して考える</a></li>
 			<li class="widget__item"><a class="widget__link" href="/b1/post/9th/">9th　ハイライト色を変更</a></li>
@@ -199,6 +198,7 @@ $ hugo server -D
 			<li class="widget__item"><a class="widget__link" href="/b1/post/6th/">6th　このサイトについてをつくる</a></li>
 			<li class="widget__item"><a class="widget__link" href="/b1/post/5th/">5th　メニューをつくる</a></li>
 			<li class="widget__item"><a class="widget__link" href="/b1/post/4th/">4th サマリーの長さを調整</a></li>
+			<li class="widget__item"><a class="widget__link" href="/b1/post/3rd/">3rd　Hugoの使い方メモ</a></li>
 		</ul>
 	</div>
 </div>
