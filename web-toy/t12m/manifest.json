@@ -1,0 +1,16 @@
+{
+  "name": "WebToy Guru4m",
+  "short_name": "WebToy Guru4m",
+  "theme_color": "#00ffff",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./guruguru4m.html",
+  "icons": [
+    {
+      "src": "./ico/naruto3.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

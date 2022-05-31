@@ -1,0 +1,539 @@
+console.log("Hello UtilityGURU!!");
+
+const DEG_TO_RAD = Math.PI / 180;
+
+const PTM_RATIO  = 30.0;
+
+const C_WIDTH  = window.innerWidth;//640;
+const C_HEIGHT = window.innerHeight;//640;
+
+const C_NAME   = "canvas";
+
+const FIX_DENSITY     = 1.0;
+const FIX_FRICTION    = 0.5;//0.5;
+const FIX_RESTITUTION = 0.5;//1.0;
+
+			/*let boxImg = new Image();
+			boxImg.src = "red.png";
+			let boxImg2 = new Image();
+			boxImg2.src = "red3.png";*/
+
+//==========
+// Box2dManager
+
+let b2Vec2          = Box2D.Common.Math.b2Vec2;
+let b2AABB          = Box2D.Collision.b2AABB;
+let b2BodyDef       = Box2D.Dynamics.b2BodyDef;
+let b2Body          = Box2D.Dynamics.b2Body;
+let b2FixtureDef    = Box2D.Dynamics.b2FixtureDef;
+let b2Fixture       = Box2D.Dynamics.b2Fixture;
+let b2World         = Box2D.Dynamics.b2World;
+let b2MassData      = Box2D.Collision.Shapes.b2MassData;
+let b2PolygonShape  = Box2D.Collision.Shapes.b2PolygonShape;
+let b2CircleShape   = Box2D.Collision.Shapes.b2CircleShape;
+let b2DebugDraw     = Box2D.Dynamics.b2DebugDraw;
+
+// Joint
+let b2MouseJointDef     = Box2D.Dynamics.Joints.b2MouseJointDef;
+let b2WeldJointDef      = Box2D.Dynamics.Joints.b2WeldJointDef;
+let b2RevoluteJointDef  = Box2D.Dynamics.Joints.b2RevoluteJointDef;
+let b2PrismaticJointDef = Box2D.Dynamics.Joints.b2PrismaticJointDef;
+let b2GearJointDef      = Box2D.Dynamics.Joints.b2GearJointDef;
+let b2ContactListener   = Box2D.Dynamics.b2ContactListener;
+
+class b2Manager{
+
+	constructor(world){
+		this._world = world;
+
+		this._fixDef = new b2FixtureDef;
+		this._fixDef.density     = 10.0;
+		this._fixDef.friction    = 1.0;//0.5;
+		this._fixDef.restitution = 0.95;//0.5;
+		 
+		this._bodyDef  = new b2BodyDef;
+
+		this._destroys = [];
+
+		this.init();
+	}
+
+	init(){
+
+		// CanvasPosition
+		canvasPosition = getElementPosition(document.getElementById(C_NAME));
+
+		//let type = b2Body.b2_staticBody;
+		//	let img = new Image();
+		//	img.src = "red.png";
+		//	img.onload = (e)=>{
+		//		createBodyImage(type, 160, 160, e.target);
+
+		// Create ground
+		this._bodyDef.type = b2Body.b2_staticBody;
+		this._fixDef.shape = new b2PolygonShape;
+
+		// Bottom, Top
+		this._fixDef.shape.SetAsBox(C_WIDTH / PTM_RATIO / 2, 0.5);
+		this._bodyDef.position.Set(C_WIDTH / PTM_RATIO / 2, 0);
+		this._world.CreateBody(this._bodyDef).CreateFixture(this._fixDef);
+		this._bodyDef.position.Set(C_WIDTH / PTM_RATIO / 2, C_HEIGHT / PTM_RATIO);
+		this._world.CreateBody(this._bodyDef).CreateFixture(this._fixDef);
+
+		// Option gazousounyuuno kokoromi
+
+		//this._bodyDef.position.Set(C_WIDTH / PTM_RATIO / 2, C_HEIGHT / PTM_RATIO /2);
+		//this._bodyDef.userData = {shape_type: 'box', img: boxImg, width: 30, height: 60};//img;//null;
+		//this._world.CreateBody(this._bodyDef).CreateFixture(this._fixDef);
+
+		//let body = this._world.CreateBody(this._bodyDef);
+		//body.CreateFixture(this._fixDef);
+		//	staticに画像を貼るのはできないようだ　2021/03/24
+
+
+		//let type = b2Body.b2_dynamicBody;
+			//let img = new Image();
+			//img.src = "red.png";
+			//this._world.CreateBodyImage(type, 160, 80, img);
+
+		// Left, Right
+		this._fixDef.shape.SetAsBox(0.5, C_HEIGHT / PTM_RATIO / 2);
+		this._bodyDef.position.Set(0, C_HEIGHT / PTM_RATIO / 2);
+		this._world.CreateBody(this._bodyDef).CreateFixture(this._fixDef);
+		this._bodyDef.position.Set(C_WIDTH / PTM_RATIO, C_HEIGHT / PTM_RATIO / 2);
+		this._world.CreateBody(this._bodyDef).CreateFixture(this._fixDef);
+
+		// DebugDraw
+		let debugDraw = new b2DebugDraw();
+		debugDraw.SetSprite(document.getElementById(C_NAME).getContext("2d"));
+		debugDraw.SetDrawScale(PTM_RATIO);
+		debugDraw.SetFillAlpha(0.5);
+		debugDraw.SetLineThickness(1.0);
+		debugDraw.SetFlags(b2DebugDraw.e_shapeBit | b2DebugDraw.e_jointBit);
+		this._world.SetDebugDraw(debugDraw);
+	}
+	// 四角形その１
+	createBody(type, x, y, w, h, deg=0){
+
+		// Box
+		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
+		this._bodyDef.angle = deg * DEG_TO_RAD;
+		this._bodyDef.type = type;
+		//this._bodyDef.userData = {shape_type: 'box', img: boxImg, width: 25, height: 25};//img;//null;
+		//this._bodyDef.allowSleep = false;
+		this._bodyDef.awake = true;
+
+		// Shape
+		this._fixDef.shape = new b2PolygonShape;
+		this._fixDef.shape.SetAsBox(w / PTM_RATIO / 2, h / PTM_RATIO / 2);
+		let body = this._world.CreateBody(this._bodyDef);
+		body.CreateFixture(this._fixDef);
+		return body;
+	}
+	// 四角形その２
+	createBody2(type, x, y, w, h, deg){
+
+		// Box
+		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
+		this._bodyDef.angle = deg * DEG_TO_RAD;
+		this._bodyDef.type = type;
+		this._bodyDef.userData = {shape_type: 'box', img: boxImg, width: 25, height: 25};//img;//null;
+console.log("deg =", deg, deg * DEG_TO_RAD);
+
+		// Shape
+		this._fixDef.shape = new b2PolygonShape;
+		this._fixDef.shape.SetAsBox(w / PTM_RATIO / 2, h / PTM_RATIO / 2);
+		let body = this._world.CreateBody(this._bodyDef);
+		body.CreateFixture(this._fixDef);
+		return body;
+	}
+	// 四角形その３
+	createBody3(type, x, y, w, h, figwidth, deg, boxImg){
+
+		// Box
+		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
+		this._bodyDef.angle = deg * DEG_TO_RAD;
+		this._bodyDef.type = type;
+		this._bodyDef.userData = {shape_type: 'box', img: boxImg, width: figwidth, height: figwidth};//img;//null;
+		//this._bodyDef.allowSleep = false;
+		this._bodyDef.awake = true;
+
+		// Shape
+		this._fixDef.shape = new b2PolygonShape;
+		this._fixDef.shape.SetAsBox(w / PTM_RATIO / 2, h / PTM_RATIO / 2);
+		let body = this._world.CreateBody(this._bodyDef);
+		body.CreateFixture(this._fixDef);
+		return body;
+	}
+	// 三角形その１
+	createTri(type, x, y, deg, Img){
+
+	var vertexArray=new Array();
+
+	//Setting up Vertices in an Array   
+	var ver1=new b2Vec2( -2, -2);
+	var ver2=new b2Vec2( +2, -2);
+	var ver3=new b2Vec2( +2, +2);
+	//var ver4=new b2Vec2( -1, +1);
+
+	//Push in order
+	vertexArray.push(ver1, ver2, ver3);
+
+		// Box
+		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
+		this._bodyDef.angle = deg * DEG_TO_RAD;
+		this._bodyDef.type = type;
+		this._bodyDef.userData = {shape_type: 'box', img: Img, width: 120, height: 120};//img;//null;
+
+		// Shape
+		this._fixDef.shape = new b2PolygonShape;
+		this._fixDef.shape.SetAsArray(vertexArray, vertexArray.length);
+		let body = this._world.CreateBody(this._bodyDef);
+		body.CreateFixture(this._fixDef);
+		return body;
+	}
+
+	// 四角形その４
+	createBodyImage(type, x, y, img, deg=0){
+
+		// Box
+		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
+		this._bodyDef.angle = deg * DEG_TO_RAD;
+		this._bodyDef.type = type;
+		this._bodyDef.userData = null;
+
+		let w = img.width;
+		let h = img.height;
+		this._bodyDef.userData = {shape_type: "box", img: img, width: w, height: h};
+		this._fixDef.shape = new b2PolygonShape;
+		this._fixDef.shape.SetAsBox(w / PTM_RATIO / 2, h / PTM_RATIO / 2);
+		let body = this._world.CreateBody(this._bodyDef);
+		body.CreateFixture(this._fixDef);
+		return body;
+	}
+
+	// 丸その１
+	createCircle(type, x, y, img, w, deg=0, 
+		density=FIX_DENSITY, friction=FIX_FRICTION, restitution=FIX_RESTITUTION){
+
+		// Box
+		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
+		this._bodyDef.angle = deg * DEG_TO_RAD;
+		this._bodyDef.type = type;
+		this._bodyDef.userData = {shape_type: "circle", img: img, radius: w};
+
+		// Shape
+		this._fixDef.shape = new b2CircleShape(w / PTM_RATIO);
+		this._fixDef.density = 10.0;//density;
+		this._fixDef.friction = 0.0;//friction;
+		this._fixDef.restitution = 0.9;//FIX_RESTITUTION;//このあたりの係数の設定のしかたに不備がある
+  console.log("density" + " %f", this._fixDef.density);
+  console.log("friction" + " %f", this._fixDef.friction);
+  console.log("restitution" + " %f", this._fixDef.restitution);
+		let body = this._world.CreateBody(this._bodyDef);
+		body.CreateFixture(this._fixDef);
+		return body;
+	}
+
+	// 丸その２　画像貼り付け付き
+	createCircleImage(type, x, y, img, deg=0, 
+		dencity=FIX_DENCITY, friction=FIX_FRICTION, restitution=FIX_RESTITUTION){
+
+		// Box
+		this._bodyDef.position.Set(x / PTM_RATIO, y / PTM_RATIO);
+		this._bodyDef.angle = deg * DEG_TO_RAD;
+		this._bodyDef.type = type;
+		this._bodyDef.userData = null;
+
+		let w = img.width;
+		let h = img.height;
+		let radius = ((w < h) ? w : h) / 2;
+		this._bodyDef.userData = {shape_type: "circle", img: img, radius: radius};
+		this._fixDef.shape = new b2CircleShape(radius / PTM_RATIO);
+		this._fixDef.dencity = dencity;
+		this._fixDef.friction = friction;
+		this._fixDef.restitution = restitution;
+		let body = this._world.CreateBody(this._bodyDef);
+		body.CreateFixture(this._fixDef);
+		return body;
+	}
+
+	//ウェルドジョイント
+	createWeldJoint(bodyA, bodyB, aX, aY){
+		let weldJointDef = new b2WeldJointDef();
+		let anchor = new b2Vec2(aX/PTM_RATIO, aY/PTM_RATIO);
+		weldJointDef.Initialize(bodyA, bodyB, anchor);
+		let weldJoint = this._world.CreateJoint(weldJointDef);
+		//world.DestroyJoint(weldJoint);
+		return weldJoint;
+	}
+	//レボリューションジョイント
+	createRevoluteJoint(bodyA, bodyB, aX, aY, lowerAngle, upperAngle){
+		let revJointDef = new b2RevoluteJointDef();
+		let anchor = new b2Vec2(aX/PTM_RATIO, aY/PTM_RATIO);
+		revJointDef.Initialize(bodyA, bodyB, anchor);
+		revJointDef.lowerAngle  = lowerAngle * DEG_TO_RAD; // 可動範囲の最小値
+		revJointDef.upperAngle  = upperAngle * DEG_TO_RAD; // 可動範囲の最大値
+		revJointDef.enableLimit = true; // 可動範囲を可動有効化
+		let revoluteJoint = this._world.CreateJoint(revJointDef);
+		return revoluteJoint;
+	}
+	//トルクジョイント
+	createTorqueJoint(bodyA, bodyB, aX, aY, torque, speed){
+		let revJointDef = new b2RevoluteJointDef();
+		let anchor = new b2Vec2(aX/PTM_RATIO, aY/PTM_RATIO);
+		revJointDef.Initialize(bodyA, bodyB, anchor);
+		revJointDef.maxMotorTorque = torque;// トルク力
+		revJointDef.motorSpeed = speed; // 回転速度
+		revJointDef.enableMotor = true; // モーターを有効化
+		let revoluteJoint = this._world.CreateJoint(revJointDef);
+		return revoluteJoint;
+	}
+	//プリズマチックジョイント
+	createPrismaticJoint(bodyA, bodyB, aX, aY, lowerTranslation, upperTranslation){
+		var prisJointDef = new b2PrismaticJointDef();
+		let anchor = new b2Vec2(aX/PTM_RATIO, aY/PTM_RATIO);
+		let axis = new b2Vec2(0, 1);
+		prisJointDef.Initialize(bodyA, bodyB, anchor, axis);
+		prisJointDef.lowerTranslation = lowerTranslation;
+		prisJointDef.upperTranslation = upperTranslation;
+		prisJointDef.enableLimit = true;
+		let prismaticJoint = this._world.CreateJoint(prisJointDef);
+		return prismaticJoint;
+	}
+	//ギアジョイント
+	createGearJoint(bodyA, bodyB, jointA, jointB){
+		var gearJointDef = new b2GearJointDef();
+		gearJointDef.bodyA = bodyA;
+		gearJointDef.bodyB = bodyB;
+		gearJointDef.joint1 = jointA;
+		gearJointDef.joint2 = jointB;
+		gearJointDef.ratio = 1;
+		let gearJoint = this._world.CreateJoint(gearJointDef);
+		return gearJoint;
+	}
+
+
+        // sound
+	pushDestroys(body){
+		//this._destroys.push(body);
+console.log("Hello pushDestroy");
+
+      audioElem = new Audio();
+      audioElem.src = "./snare03.mp3";
+      audioElem.play();
+	}
+
+	pushDestroys2(body){
+		//this._destroys.push(body);
+console.log("Hello pushDestroy2");
+
+      audioElem = new Audio();
+      audioElem.src = "./drum03.mp3";
+      audioElem.play();
+	}
+
+	pushDestroys3(body){
+		//this._destroys.push(body);
+console.log("Hello pushDestroy3");
+
+      audioElem = new Audio();
+      audioElem.src = "./symbal1.mp3";
+      audioElem.play();
+	}
+
+
+
+	update(){
+
+		// Mouse
+		if(isMouseDown && (!mouseJoint)){
+			let body = getBodyAtMouse();
+			if(body){
+				let md = new b2MouseJointDef();
+				md.bodyA = world.GetGroundBody();
+				md.bodyB = body;
+				md.target.Set(mouseX, mouseY);
+				md.collideConnected = true;
+				md.maxForce = 300.0 * body.GetMass();
+				mouseJoint = world.CreateJoint(md);
+				body.SetAwake(true);
+		   }
+		}
+		
+		if(mouseJoint){
+			if(isMouseDown){
+				mouseJoint.SetTarget(new b2Vec2(mouseX, mouseY));
+			}else{
+				world.DestroyJoint(mouseJoint);
+				mouseJoint = null;
+			}
+		}
+
+		// Step
+		this._world.Step(1 / 30, 10, 10);
+		this._world.DrawDebugData();
+		this._world.ClearForces();
+
+		// Destroy
+		for(let destroy of this._destroys){
+			//this._world.DestroyBody(destroy);
+console.log("Hello Destroy");
+      audioElem = new Audio();
+      audioElem.src = "./snare03.mp3";
+      audioElem.play();
+
+
+		}
+		this._destroys = [];
+/*
+		// Destroy2
+		for(let destroy of this._destroys2){
+			//this._world.DestroyBody(destroy);
+console.log("Hello Destroy2");
+      audioElem = new Audio();
+      audioElem.src = "./snare03.mp3";
+      audioElem.play();
+
+
+		}
+		this._destroys2 = [];
+
+*/
+		// Images
+		let context = document.getElementById(C_NAME).getContext("2d");
+		for(let bodyItem = this._world.GetBodyList(); bodyItem; bodyItem = bodyItem.GetNext()){
+			if(bodyItem.GetType() == b2Body.b2_dynamicBody){
+				let position = bodyItem.GetPosition();
+				let userData = bodyItem.GetUserData();
+				context.save();
+				if(userData && userData.img && userData.img.complete){
+					if(userData.shape_type && userData.shape_type == "circle"){
+						let slideX = position.x * PTM_RATIO;
+						let slideY = position.y * PTM_RATIO;
+						context.translate(slideX, slideY);
+						context.rotate(bodyItem.GetAngle());
+						context.drawImage(userData.img, -userData.radius, -userData.radius);
+					}
+					if(userData.shape_type && userData.shape_type == "box"){
+						let slideX = position.x * PTM_RATIO;
+						let slideY = position.y * PTM_RATIO;
+						context.translate(slideX, slideY);
+						context.rotate(bodyItem.GetAngle());
+						context.drawImage(userData.img, -userData.width / 2.0, -userData.height / 2.0);
+					}
+				}
+				context.restore();
+			}
+		}
+	}
+}
+
+//==========
+// Mouse
+let mouseX, mouseY, mousePVec, isMouseDown, selectedBody, mouseJoint, canvasPosition;
+/*
+function handleMouseDown(e){
+
+      if (event.button == 0) {
+        //target.innerHTML = "左ボタンが押されました。";
+                console.log("Hello Click!LEFT");
+		let rjRot = manager.createTorqueJoint(cBody, rBody, 240, 130, 100, 5);
+		let rjRot2 = manager.createTorqueJoint(cBody, rBody, 240, 130, 100, 5);
+      }
+      else if (event.button == 1) {
+        //target.innerHTML = "中ボタンが押されました。";
+      }
+      else if (event.button == 2) {
+                console.log("Hello Click!RIGHT");
+
+rBody.SetAwake(true); // sleepstate  make awake here
+		let rjRot = manager.createTorqueJoint(cBody, rBody, 240, 130, 100, 0);
+		let rjRot2 = manager.createTorqueJoint(cBody, rBody, 240, 130, 100, 0);
+
+        //target.innerHTML = "右ボタンが押されました。";
+      }
+
+
+
+
+
+	isMouseDown = true;
+	handleMouseMove(e);
+	document.addEventListener("mousemove", handleMouseMove, true);
+	document.addEventListener("touchmove", handleMouseMove, true);
+
+//console.log("Hello Click2!");
+
+      audioElem = new Audio();
+      audioElem.src = "./water-drop1.mp3";
+      audioElem.play();
+
+}
+document.addEventListener("mousedown", handleMouseDown, true);
+document.addEventListener("touchstart", handleMouseDown, true);
+
+function handleMouseUp(){
+	document.removeEventListener("mousemove", handleMouseMove, true);
+	document.removeEventListener("touchmove", handleMouseMove, true);
+	isMouseDown = false;
+	mouseX = undefined;
+	mouseY = undefined;
+}
+document.addEventListener("mouseup", handleMouseUp, true);
+document.addEventListener("touchend", handleMouseUp, true);
+
+function handleMouseMove(e){
+	let clientX, clientY;
+	if(e.clientX){
+		clientX = e.clientX; clientY = e.clientY;
+	}else if(e.changedTouches && e.changedTouches.length > 0){
+		let touch = e.changedTouches[e.changedTouches.length - 1];
+		clientX = touch.clientX; clientY = touch.clientY;
+	}else{
+	   return;
+	}
+	mouseX = (clientX - canvasPosition.x) / PTM_RATIO;
+	mouseY = (clientY - canvasPosition.y) / PTM_RATIO;
+	e.preventDefault();
+};
+*/
+//==========
+// Get body
+function getBodyAtMouse(){
+	mousePVec = new b2Vec2(mouseX, mouseY);
+	let aabb = new b2AABB();
+	aabb.lowerBound.Set(mouseX - 0.001, mouseY - 0.001);
+	aabb.upperBound.Set(mouseX + 0.001, mouseY + 0.001);
+	
+	// Query the world for overlapping shapes.
+	selectedBody = null;
+	world.QueryAABB(getBodyCB, aabb);
+	return selectedBody;
+}
+
+function getBodyCB(fixture){
+	if(fixture.GetBody().GetType() != b2Body.b2_staticBody){
+		if(fixture.GetShape().TestPoint(fixture.GetBody().GetTransform(), mousePVec)){
+			selectedBody = fixture.GetBody();
+			return false;
+		}
+	}
+	return true;
+}
+
+//==========
+// Utility
+function getElementPosition(element){
+	let elem = element;
+	let tagName = "", x = 0, y = 0;
+	while((typeof(elem) == "object") && (typeof(elem.tagName) != "undefined")){
+		y += elem.offsetTop; x += elem.offsetLeft;
+		tagName = elem.tagName.toUpperCase();
+		if(tagName == "BODY") elem=0;
+		if(typeof(elem) == "object"){
+			if(typeof(elem.offsetParent) == "object") elem = elem.offsetParent;
+		}
+	}
+	return {x: x, y: y};
+ }
