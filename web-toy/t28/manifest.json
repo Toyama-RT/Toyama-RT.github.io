@@ -1,0 +1,16 @@
+{
+  "name": "WebToy DOGCANTER",
+  "short_name": "WebToy DOGCANTER",
+  "theme_color": "#00ffff",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "./ico/dog.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
