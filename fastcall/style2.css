@@ -1,0 +1,39 @@
+p	{
+      font-size: 30px;
+      font: 20px/1.5 "ƒqƒ‰ƒMƒmŠpƒSPro W3","Hiragino Kaku Gothic Pro",Osaka,gƒƒCƒŠƒIh,Meiryo,"‚l‚r ‚oƒSƒVƒbƒN","MS PGothic",Arial,Helvetica,Verdana,sans-seri
+      line-height : 1.5 ;
+      margin: 5px 100px 15px 100px;
+	}
+
+p.button_wrapper {
+ width: 100%;
+}
+
+.flex{
+  padding: 0.2% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.flex img{
+   width: 600px;
+}
+
+input{
+font-size: 30px;
+} 
+
+body {
+touch-action: none; /* ƒ^ƒbƒ`ƒpƒlƒ‹‚Ì‘€ì‚ğ–³Œø‰» */
+}
+
+@media (min-width: 1024px) {
+a[href^="tel:"] {
+pointer-events: none;
+cursor: default;
+text-decoration: none;
+}
+}
+
