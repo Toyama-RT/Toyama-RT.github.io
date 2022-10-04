@@ -16,7 +16,7 @@
  */
 
 //'use strict';
-const prefix = 'hcjlc31';
+const prefix = 'hcjlc31a';
 const CACHE_NAME = prefix + '01';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc31a';
