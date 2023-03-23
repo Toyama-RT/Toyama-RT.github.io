@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+    <meta charset="utf-8"/>
+<!--スマホ環境でビューポートを端末サイズに合わせ -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!--mndwebdecs スタイルと色の適用
+https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+-->
+
+    <title>Blink Green Light</title>
+    <script>
+var c1 =0;
+let timer1;
+
+function draw() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw1",c1 );
+
+      ctx.fillStyle = 'rgb(0, 0, 0)';
+      ctx.fillRect(0, 0, 300, 300);
+}
+
+function draw2() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw2" );
+
+      ctx.fillStyle = 'rgb(0, 255, 0)';
+      ctx.fillRect(0, 0, 300, 300);
+      window.setTimeout(draw3, 1000 );
+}
+
+function draw3() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw3");
+      ctx.fillStyle = 'rgb(0, 0, 0)';
+      ctx.fillRect(0, 0, 300, 300);
+}
+
+window.addEventListener( "DOMContentLoaded" , ()=> {
+      const cvs = document.getElementById("canvas");
+      cvs.addEventListener("click",e=>{
+      const rect = e.target.getBoundingClientRect();
+
+                    // ブラウザ上での座標を求める
+                const   viewX = e.clientX - rect.left,
+                        viewY = e.clientY - rect.top;
+
+                    // 表示サイズとキャンバスの実サイズの比率を求める
+                const   scaleWidth =  cvs.clientWidth / cvs.width,
+                        scaleHeight =  cvs.clientHeight / cvs.height;
+
+                    // ブラウザ上でのクリック座標をキャンバス上に変換
+                const   canvasX = Math.floor( viewX / scaleWidth ),
+                        canvasY = Math.floor( viewY / scaleHeight );
+
+                console.log( canvasX,canvasY,c1 );
+
+     c1 = c1+1;
+     if (c1 == 1){
+        timer1 = setInterval(draw2, 2000);
+     }
+     if (c1 == 2){
+        clearInterval(timer1);
+     }
+     if (c1 >=2){
+       c1=0;
+     }
+     });
+});
+
+    </script>
+    <style>
+    canvas { border: 1px solid black; }
+    html, body, #canvas {
+       display: block;
+       width: 100%;
+       height: 100%;
+       margin: 0;
+       padding: 0;
+}
+    </style>
+  </head>
+  <body  onload="draw();">
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
