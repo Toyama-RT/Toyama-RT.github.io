@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>Toy24｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    canvas { border: 1px solid black; }
+
+
+-->
+  </style>
+    <script>
+var c1 =0;
+let timer1;
+
+function draw() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw1",c1 );
+
+      ctx.fillStyle = 'rgb(0, 0, 0)';
+      ctx.fillRect(0, 0, 600, 300);
+}
+
+function draw2() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw2" );
+
+      ctx.fillStyle = 'rgb(255, 0, 0)';
+      ctx.fillRect(0, 0, 600, 300);
+      window.setTimeout(draw3, 1000 );
+}
+
+function draw3() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw3");
+      ctx.fillStyle = 'rgb(0, 0, 0)';
+      ctx.fillRect(0, 0, 600, 300);
+}
+
+window.addEventListener( "DOMContentLoaded" , ()=> {
+      const cvs = document.getElementById("canvas");
+      cvs.addEventListener("click",e=>{
+      const rect = e.target.getBoundingClientRect();
+
+                    // ブラウザ上での座標を求める
+                const   viewX = e.clientX - rect.left,
+                        viewY = e.clientY - rect.top;
+
+                    // 表示サイズとキャンバスの実サイズの比率を求める
+                const   scaleWidth =  cvs.clientWidth / cvs.width,
+                        scaleHeight =  cvs.clientHeight / cvs.height;
+
+                    // ブラウザ上でのクリック座標をキャンバス上に変換
+                const   canvasX = Math.floor( viewX / scaleWidth ),
+                        canvasY = Math.floor( viewY / scaleHeight );
+
+                console.log( canvasX,canvasY,c1 );
+
+     c1 = c1+1;
+     if (c1 == 1){
+        timer1 = setInterval(draw2, 2000);
+     }
+     if (c1 == 2){
+        clearInterval(timer1);
+     }
+     if (c1 >=2){
+       c1=0;
+     }
+     });
+});
+
+    </script>
+
+</head><body  onload="draw();">
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>障害をもつこどもたちのためのおもちゃ　２４</h1>
+<h1>覚醒と外界への注意　のおもちゃ　のつくりかた</h1>
+
+<div style="text-align: center;">
+    <canvas id="canvas" width="600" height="300"></canvas> <br>
+<p>上の黒い四角をクリックすると点滅します。<br>
+もう一度クリックすると止まります。<br>
+赤点滅おもちゃをこのページに組み込んでみました。
+</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+前回はスマホの画面を点滅させるアプリを使い、対象の方の「覚醒を上げ外界への注意を促す」ことについて紹介しました。
+</p><p>
+しかしこの種の仕事では、うまくいくこともまたうまくいかないこともあります。うまくいかない場合には、アイデアと創意工夫をこらして失敗の原因を改善して再挑戦する、世間でよく言われる、『PDCAサイクル』のやり方が必要になります。つまり手を変え品を変え次々と挑戦できる準備が必要です。またこどもさんが相手では、どうしても飽きやすいですからそのためにも予めネタの準備や蓄えも大事です。この問題に対して、市販品で何とかしようとするととかく費用で苦労します。また手作り品では人手不足と種類不足と数不足と時間不足の苦労がいつもついてまわります。
+</p><p>
+スマホを点滅させるアプリは、もう何人かの方がお使いになっているようです。今後さらに多くの人がご使用になってもとくに私は忙しくならない工夫がしてあります。職場のサーバーが不眠不休で動いていますので、アプリ配布の仕事は他の仕事のついでにやってくれています。
+</p><p>
+みんなで大勢で力を合わせ汗もかいて目標に向かって努力するのも結構なのですが。ひとりひとりが忙しいならなおのこと、仕事のやり方の工夫も必要だと思います。
+</p><p>
+さて今回は、まずスマホ点滅アプリの概要について説明します。そのなかで改良改善や創意工夫について追加して説明したいと思います。
+</p>
+<h2>１　動作の仕組み</h2>
+<p>
+スマホ赤点滅アプリを起動すると、はじめに画面が黒くなります。そこで画面をクリック（スマホではタップ、以下省略）すると画面が赤くなりその後一秒間隔で交互に赤、黒と点滅します。その状態で画面をクリックすると画面は黒くなり点滅は終了します。スマホ黄色点滅アプリでは黄黒点滅をスマホ緑点滅アプリでは緑黒点滅をします。
+</p><p>
+ここでは上のような働きを実現する仕組みについて考えてみましょう。
+</p><p>
+まず、画面に色を表示する方法を考えます。この基本がおろそかでは先々苦労します。どんな色でも部分的にも画面全体にも自由に表現したいですね。これが第一目標です。JavaScriptではCanvas要素を使うとこのようなことができます。
+</p><p>
+次の段階では画面クリックで色表示をするようにします。これができたらまた工夫してクリックごとに色が変わる仕組みも作ります。ここでクリックが自由に使えると表現方法に幅ができます。また操作も簡単でわかりやすくなります。これが第二目標です。
+ここまででクリックするたびに点滅させることができるようになりますがこれでは指が疲れます。また手動では正確な点滅ができず判断に困るケースも起こるかもしれません。
+</p><p>
+そこでもうひと工夫して、正確な時間間隔でしかも自動で点滅するようにします。これが第三目標です。
+</p><p>
+このようにステップバイステップで部分的に作って少しづつ目的に近づいていくと失敗と無駄が少なくなります。また目標達成のためのこのような仕組みを『アルゴリズム』といいます。ちいさいおともだちはまだ覚えなくてもいいです。
+</p>
+<h2>２　プログラムをつくる</h2>
+<p>
+このような準備を踏まえて下記のファイルindex.htmlを作りました。
+
+<pre class="brush:html;">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    <meta charset="utf-8"/>
+    <!--スマホ環境でビューポートを端末サイズに合わせ -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!--mndwebdecs スタイルと色の適用
+https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+-->
+
+    <title>Blink Red Light</title>
+<script>
+var c1 =0;
+let timer1;
+
+function draw() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw1",c1 );
+      ctx.fillStyle = 'rgb(0, 0, 0)';
+      ctx.fillRect(0, 0, 300, 300);
+}
+
+function draw2() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw2" );
+      ctx.fillStyle = 'rgb(255, 0, 0)';
+      ctx.fillRect(0, 0, 300, 300);
+      window.setTimeout(draw3, 1000 );
+}
+
+function draw3() {
+var ctx = document.getElementById('canvas').getContext('2d');
+      console.log( "draw3");
+      ctx.fillStyle = 'rgb(0, 0, 0)';
+      ctx.fillRect(0, 0, 300, 300);
+}
+
+window.addEventListener( "DOMContentLoaded" , ()=> {
+      const cvs = document.getElementById("canvas");
+      cvs.addEventListener("click",e=>{
+      const rect = e.target.getBoundingClientRect();
+
+                    // ブラウザ上での座標を求める
+                const   viewX = e.clientX - rect.left,
+                        viewY = e.clientY - rect.top;
+
+                    // 表示サイズとキャンバスの実サイズの比率を求める
+                const   scaleWidth =  cvs.clientWidth / cvs.width,
+                        scaleHeight =  cvs.clientHeight / cvs.height;
+
+                    // ブラウザ上でのクリック座標をキャンバス上に変換
+                const   canvasX = Math.floor( viewX / scaleWidth ),
+                        canvasY = Math.floor( viewY / scaleHeight );
+
+                console.log( canvasX,canvasY,c1 );
+     c1 = c1+1;
+     if (c1 == 1){
+        timer1 = setInterval(draw2, 2000);
+     }
+     if (c1 == 2){
+        clearInterval(timer1);
+     }
+     if (c1 >=2){
+       c1=0;
+     }
+     });
+});
+</script>
+    <style>
+    canvas { border: 1px solid black; }
+    html, body, #canvas {
+       display: block;
+       width: 100%;
+       height: 100%;
+       margin: 0;
+       padding: 0;
+}
+    </style>
+&lt;/head>
+&lt;body  onload="draw();">
+    <canvas id="canvas"></canvas>
+&lt;/body>
+&lt;/html>
+
+</pre>
+</p><p>
+
+このアプリはwebアプリですから、ホームページ作成で使用するhtml言語で作っています。（いまご覧になっているページも同じくhtml言語で作っていますので、このページのトップに赤点滅アプリと同じものをくっつける事ができます）
+何しろコンパクトなアプリですので、通常は外部ファイルにして読み込むことも多いStyleSheetもプログラム本体のJavaScriptもhtmlのなかに、&lt;style>, &lt;script>タグで埋め込みました。これで全体で80行程度の大きさにおさまりました。
+</p><p>
+それでは、少し説明します。
+</p><p>
+はじめの方は、htmlのお約束、お決まりの行で始まります。<br>
+6行目はスマホ使用時の設定です。<br>
+参考にしたサイトのURLをメモとして残しています。後々役に立ちます。<br>
+11行はタイトルです。表示するとブラウザのタブに表示されます。スマホでは表示されません。<br>
+12行目の<script>から68行目の</script>まで全体の半分以上が JavaScript 言語のプログラムで、色や動きなどが書かれています。<br>
+69行目から78行目まで表示スタイルが記載してあります。とはいえここではcabvasしか使っていませんので中身は少しです。<br>
+何が書いてあるかというと、canvas要素は1ピクセルの実線で境界線で囲む。ブロックとして定義し、幅は画面の100%、高さも同じ。マージンもパディングもゼロ。つまり画面いっぱいにcanvasが設定してあります。画面に一部に色をつけたいときは、ここを書き換えるとできます。<br>
+80行目から82行目まで表示内容が記載されています。<br>
+何が書いてあるかというと、canvasというなまえのcanvasを表示せよ。その前に関数draw()を動かせ。ただそれだけです。プログラムはここから動き始めます。<br>
+</p><p>
+関数 draw()は16行から21行目まで書いてあります。<br>
+17行目は、これからcanvasに2次元描画をするぞという意味です<br>
+18行目にはdrawが始まったとコンソールに文字を表示します。パソコンでプログラムの動きを監視できます。スマホではできません。<br>
+19行目では色をカラーコードで指定しています。 rgb(0, 0, 0)は黒です。ちなみに rgb(255, 0, 0) は赤で、 rgb(0, 255, 0) は緑です。かっこの中には0から255の3つの数字が入ります。これで16777216種類の色を表現できます。これだけたくさんなら通常の用途には不足することはまずないでしょう。<br>
+20行目では、前の行で指定した色を塗る座標を指定しています。通常画面の左上が原点で右方向にｘ、下方向にｙと定義されています。この場合は画面左上から、300ドット、下に300ドットの位置に色を塗ります。しかしcanvasは画面全体に設定してありますので、結果として画面全体がこの色になります。このように、17，19，20行が画面を黒くします。数字を変更すれば   別の色に変えることもできます。<br>これで第一目標が達成できました。
+</p><p>
+さて draw()の下にほとんど同じ draw2() と draw3() があります。まず draw3() をみるとなんと、中身は draw()と全く同じです。だから働きも同じ、画面を黒くします。次に draw2() をみるとまず色が違います。黒ではなく赤です。もうひとつ違うところがあります。28行です。これは、1000ミリ秒後に draw3() へ行けと書いてあります。つまり draw2() に来ると画面が赤くなり1秒（＝1000ミリ秒）後に黒くなります。これで第三目標の半分が達成できました。
+</p><p>
+ここまではピタゴラ装置アカデミア中級編でした。ここまでおわかりになりましたか。<br>
+つぎはちょいむずの上級編に進みます。
+</p><p>
+38行目から66行目はひとかたまりです。<br>
+38，39，40行でcanvas（ここでは＝画面です）をクリックしたら、ここに飛んでこいと書いてあります。<br>
+41から53行ではクリックした位置の座標値を求めています。この部分は点滅するスマホのアプリとは無関係です。もし将来タッチする場所によって動きを変えたくなったり、タッチの位置の正確さを評価したくなったときに使うための秘密（？）兵器です。きちんと動きますのでよろしかったらお使いください。<br>
+これで第二目標がほとんど達成できました。<br>
+変数c1は、13行目で0にしてあります。<br>
+56行目ではc1を＋1しています。つまりクリックするたびに1づつ増えます。<br>
+クリックするたびに、0, 1, 2 と増えて行きますが、63,64,65行目でc1が2以上になると0になります。つまりクリックするたびにc1は　1,2,1,2,を繰り返します。55行目では0,1と変わるのを確認できます。<br>
+c1が1のときは58行目をやります。2のときは61行目をやります。<br>
+58行目は、2000ミリ秒（＝2秒）ごとに draw2() を実行せよと書いてあります。<br>
+61行目にはそれを停止せよと書いてあります。<br>
+ draw2() は前にみたように、画面を赤くして1秒後に黒くします。これを2秒ごとに実行すると、1秒ごとに赤黒を繰り返すことになります。これで第二目標は達成できました。<br>
+以上をまとめると、目標どおりクリックするたびに赤黒点滅と黒い消灯画面を交互に繰り返しすことができるようになりました。
+</p>
+<h2>３　おわりに　自由と責任</h2>
+<p>
+画面の表示色は1600万色以上から自由に選べることはもう説明しました。また点灯消灯時間は1000分の1秒刻みで自由に設定できることもおわかりになったと思います。これでかなり自由にかつ正確に動くものが手作りできます。これで、「今週は疲れ気味だから、2%速度を下げよう」とか「先々週の同じ曜日より5%いいね」などとわかるようになります。
+</p><p>
+ある重度麻痺の方は、午前中は調子が良くて午後は悪くなり夕方はまるでだめになるとか月火水と調子が上がり木金で下がるといった、結果に波があることがわかりました。そのため難しい訓練は調子のいいとき合わせてスケジュールできるようになりました。<br>
+また「前はできたのに今日はできない。。。」「今日は金曜ですから気にしないでください」調子が悪いときはうまくできなくて当たり前だと気づき、余分な悩みがなくなりました。
+</p><p>
+正確に動く課題を使うとこのような比較が可能になります。人間業（わざ）では太刀打ちできない世界です。（文明開化みたいなものです）
+</p><p>
+とはいえ、自由と責任はいつもペアになっていることも忘れてはいけません。<br>
+このような分野の仕事をしている人たちやこのページをご覧になる人たちのほとんどはすでにご存知のことだと思います。しかし若い人はもしかして初めて聞く話かもしれませんのですこし説明します。
+</p><p>
+ある特定の周波数域のある特定の色の光の点滅を見ると体調を崩したり最悪の場合は光過敏性発作を起こし救急搬送が必要になる場合があります。これは体調の優れないひとや関係する疾患のある人の場合に危険性はさらに高まると考えられます。これまで国内外を問わず映画やテレビ番組による集団発作の事件が発生しています。（参考URL、ポケモンショック参照）その結果、それまで普通に生活して健康と思われていた人も含め一定割合のひとがこのような被害に合いやすいことがわかっています。
+</p><p>
+今回紹介しているアプリはパトカー回転灯の周波数よりもさらに低い周波数、0.5Hzで点滅させています。一般生活で見かけるイルミネーションも高周波数の光の点滅に弱い人への配慮と注意がなされています。今回紹介している技術を活用しようとする方は、被害が起きないように起こさないように、自分の責任で配慮、努力する必要があります。
+</p><p>
+「そんなこと習っていないので知りませんでした」はおとなでは多分もう通用しないと思います。また被害に会われた方々とそのご家族は許してくれないと思います。
+</p><p>
+学校で習ったことだけでその先を生きていくのは簡単ではありません。ですから大人になっても自分でがんばって勉強していかないといけないのです。
+</p><p>
+またがんばるのがつらいとか責任を問われるのがいやだとか時間がないとかいう理由で昔ながらのやりかたを続けていても、やがて行き詰まってやっぱり許してもらえないことになるのが、とかくありがちな現代のパターンなのです。
+</p>
+
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>光過敏性発作　Wikipedia<br>
+<a target="_blank" href="https://ja.wikipedia.org/wiki/光過敏性発作">https://ja.wikipedia.org/wiki/光過敏性発作</a></li>
+
+  <li>ポケモンショック　Wikipedia<br>
+<a target="_blank" href="https://ja.wikipedia.org/wiki/ポケモンショック">https://ja.wikipedia.org/wiki/ポケモンショック</a></li>
+
+  <li>厚生科学特別研究　光感受性発作に関する臨床研究　（速報版）厚生労働省<br>
+<a target="_blank" href="https://www.mhlw.go.jp/www1/houdou/1004/h0414-2.html">https://www.mhlw.go.jp/www1/houdou/1004/h0414-2.html</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2023/03/31　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
