@@ -1834,9 +1834,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = 'きのう';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "昨日";
       } else if (CBoard0 == 2 ){
         synthes.text = '恥ずかしい';
         speechSynthesis.speak(synthes);
@@ -1855,9 +1855,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = 'きょう';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "きょう";
       } else if (CBoard0 == 2 ){
         synthes.text = '好き';
         speechSynthesis.speak(synthes);
@@ -1876,9 +1876,9 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
         speechSynthesis.speak(synthes);
       text1.value = text1.value + "";
       } else if (CBoard0 == 1 ){
-        synthes.text = '';
+        synthes.text = 'あした';
         speechSynthesis.speak(synthes);
-      text1.value = text1.value + "";
+      text1.value = text1.value + "あした";
       } else if (CBoard0 == 2 ){
         synthes.text = '';
         speechSynthesis.speak(synthes);
@@ -2197,9 +2197,9 @@ function CBoardChange(param1){
           elemru.src = "./img8/00.png";
           elemre.src = "./img8/00.png";
           elemro.src = "./img8/00.png";
-          elemwa.src = "./img8/00.png";
-          elemwo.src = "./img8/00.png";
-          elemnn.src = "./img8/00.png";
+          elemwa.src = "./img8/kinou.png";
+          elemwo.src = "./img8/kyou.png";
+          elemnn.src = "./img8/asita.png";
           elemnn2.src = "./img8/00.png";
           elemnn3.src = "./img8/00.png";
           break;
