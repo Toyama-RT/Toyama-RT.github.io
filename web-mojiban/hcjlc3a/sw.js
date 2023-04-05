@@ -17,7 +17,7 @@
 
 //'use strict';
 const prefix = 'hcjlc3a';
-const CACHE_NAME = prefix + '01';
+const CACHE_NAME = prefix + '02';
 
 var path = 'https://toyama-rt.github.io/web-mojiban/hcjlc3a';
 
@@ -30,7 +30,7 @@ self.addEventListener('install', e => {
         path + `/hcj.html`,
         path + `/style.css`,
         path + `/test.js`,
-        path + `/manifest2.json`,
+        path + `/manifest2.webmanifest`,
         path + `/img/talk0.png`,
         path + `/img/000.png`,
         path + `/img/00.png`,
