@@ -1,49 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-82832782-3');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z7DXKP3EBK');
-</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82832782-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-82832782-1');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBWHCYHSD6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NBWHCYHSD6');
-</script>
 
 <!-- for iOS  アドレスバー等のブラウザのUIを非表示 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <!-- ホーム画面に表示されるアプリ名 -->
-<meta name="apple-mobile-web-app-title" content="Web Mojiban 4d">
+<meta name="apple-mobile-web-app-title" content="Web Mojiban4test">
 <!-- ホーム画面に表示されるアプリアイコン -->
 <link rel="apple-touch-icon" href="./ico/talk192.png">
 
@@ -51,7 +15,7 @@
     <title>HCJLC4test</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 <!-- for PWA マニフェストファイル読み込み -->
-    <link rel="manifest" href="./manifest2.webmanifest">
+    <link rel="manifest" href="./manifest2.json">
 <!-- ios icon 表示対策 pwacompat -->
 <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
     integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
@@ -64,7 +28,7 @@ var path = `https://toyama-rt.github.io/web-mojiban/hcjlc4`;
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register(path + '/sw.js', { scope: path + '/' })
           .then(function(registration) {
-                console.log('Service Worker Registered lc3');
+                console.log('Service Worker Registered lc4');
           });
 
         navigator.serviceWorker.ready.then(function(registration) {
