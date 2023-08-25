@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>WebApp１｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    canvas { border: 1px solid black; }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>ウェブアプリのつくりかた　１</h1>
+<h1>はじめに</h1>
+
+<div style="text-align: center;">
+<img alt="what is Web App ?" src="img/webapp1.png" >
+
+<p>なんだか大変なことを始めてしまった気がするなぁ
+</p>
+</div>
+
+<h2>０　はじめに　ウェブアプリとは何か？</h2>
+<p>
+このウェブサイトの<a href="../index.html" target="_self">トップページ</a>
+では、『Web文字盤』というコミュニケーション支援アプリを紹介しています。これはどなたでも無料で自由にお使いいただけるように作って、最も目につく場所におきました。この文書をお読みのみなさんはもうお試しいただけましたか？
+</p><p>
+ここでお話するのは、この『Web文字盤』にまつわる話です。この話は、もう試してみた方はそうでない方よりも、いくらかわかりやすくなりますので、まだの方は是非早めにお試しになってください。
+</p><p>
+さてこの『Web文字盤』は『ウェブアプリ』という種類に属するアプリです。まずはじめにWeb文字盤の特徴の説明から始めましょう。
+</p>
+<h2>１　特徴その１</h2>
+<p>
+Web文字盤の特徴その1はインストールせずに利用できることです。
+このためスマホまたはパソコンとインターネット環境があれば、ごく短時間（およそ15秒くらい）で使い始めることができます。
+またスマホやパソコンにはインストールしていませんので、利用をやめるときにアンインストールなどせずに、そのままやめることができます。このように使いはじめも使いおわりも両方『簡単』なところが一番目の特徴です。
+</p><p>
+このため、コミュニケーションエイドなどのとかくわかりにくい説明を長々と、患者さんとご家族にするかわりに、自分のスマホをちょっと出して、実際に動かして、『こういうものなんです。見てください』と説明できるようになります。とても楽でしかもわかりやすいです。
+</p><p>
+そしてもし、しばらく試してみたいということになった場合は、身近な誰かのスマホ（タブレット、パソコンなども可）を借りて実際の生活の場面で試していただくこともできます。普通コミュニケーションは複数の人間でやるものですから、このうちだれかがスマホを持っているなら即、開始できます。
+</p>
+<h2>２　特徴その２</h2>
+<p>
+Web文字盤の特徴その2は、いろいろな機械で動くことです。例えば、スマホやタブレットでは、AndroidでもiPhoneやiPadでも動きます。パソコンならWindowsでもMacでもlinuxでも動きます。このような機能を『マルチプラットフォーム』と言います。この機能のため『このアプリはMac専用なのでWindowsでは使えません』などということはありません。Web文字盤はなんでもOKです。
+</p><p>
+またこのような特徴があるので、従来のコミュニケーションエイドのように、特定の会社の特定の機械でないと使えないため、生産中止や販売中止を心配したり、故障に備えて予め予備を買っておくといった特別な配慮も必要ありません。
+Web文字盤は特別な仕事を普通の機械（スマホやタブレットやパソコンなど）でやっています。もし機械が故障しても、別の会社の別のスマホ、タブレット、パソコンでも動いて使えます。普通の人のように普通に買い換えることもできます。すでに何かお持ちなら有効活用できることもあります。普通だから無駄と心配が少なくなります。これが二番目の特徴です。
+</p>
+<h2>３　特徴その３</h2>
+<p>
+なんでも動くということは、使う人に合った機器が選べることにつながります。例えば画面の大きさはスマホの5インチからタブレットの7から10インチ、パソコンなら25インチ以上までありますが、そのなかから見やすいものや使いやすいものが選べます。みなさんご存知の有名なあの機械もこの道具も、サイズは一種類しかありませんがこれは違います。
+</p><p>
+また、在宅時はパソコン、外出時にはタブレットといった使い分けができます。『コミュニケーションエイドは一人一台だけ』といった規則もここではありませんので、必要に合わせて使う人が自分で決められます。もし故障したら他の人と同じく普通に自分で考えて、普通に自分で買い換えれば、普通にまた同じことができます。これこそが本当の普通です。特別な道具ではなく、普通の道具であるところが、Web文字盤の三番目の特徴です。
+</p><p>
+このような、コミュニケーション支援の現場でよくある、よく聞く困った話をもとにWeb文字盤の開発を進めてきました。
+</p><p>
+また、インターネットがないご家庭もまだたくさんありますが、
+インターネット環境があるところで使い始めると、その後は圏外などインターネットが使えない場所でも使用できる技術がすでに開発されていて、Web文字盤にもそれが組み込まれています。
+</p>
+<h2>４　特徴その４</h2>
+<p>
+またWeb文字盤は無料で利用できます。これが四番目の特徴です。
+</p><p>
+Ａ町のａさん、Ｂ市のｂさん、同じ病気で同じくらい困っているのに、片方はコミュニケーションエイドが支給され、片方がなかなか支給されないこともあります。そんな時に『不公平』とか『差別』とかいう話になりそうになって困ったことはありませんか。そのほかのお金があるとかないとかいう話になるとつらいですね。これもなんとかしたいので、10年くらい前の中古の安いスマホ、タブレットでも動くようにWeb文字盤を作りました。これならいくらか話しやすくなるでしょう。
+</p><p>
+そのためにいろいろと工夫をしています。まずWeb文字盤を作る際に利用した知識や情報は、インターネットで無料で集めたもの。いうなるアルテクです。配信には、余力がかなりある職場（富山県リハビリテーション病院・こども支援センター）のサーバーを利用しています。これもアルテク。（実際は、githubのサーバーを使っています。信頼性や持続性が期待できる？アルテクです）
+受信して利用するパソコンやスマホは、使う人のものです。その昔、情報機器は高価で貴重でしたが、いまでは多くの人が使っているありふれたものになりました。これもアルテクです。あくまでも私物ですので心ないことばを気にする必要もありません。
+このような理由で、当方にはこの件でお金をいただく筋合いや必然性はありませんので、Web文字盤は無料でいいのです。これが四番目の特徴です。
+</p>
+<h2>５　特徴その５</h2>
+<p>
+これまでのやり方では、練習をはじめて、申請などの手続きをして、コミュニケーションエイドが患者さんのところに届くまで何ヶ月もかかかります。それが、手元にあるパソコンやスマホが利用できると、15秒くらいで利用開始できるようになります。そしてなによりもこのために、世界のどこかの誰かが人知れず、低賃金や長時間労働で苦労したり、劣悪な労働環境で苦しんだりする必要がまるでありません。誰かさんの苦労や犠牲や貢献は必要ありません。誰かがいなくても止まりません。これも大事なところです。また景気が悪くなっても何かが起きても多分、止まることなく動き続けるでしょう。これが五番目の特徴です。
+</p><p>
+患者さんやご家族には、どうしたらいいのかどうなるのかと思い悩むことは他にもたくさんあります。ですから必要のあまりない悩みはどんどんパスして先へ進んでいただきたいものだと思います。
+</p>
+<h2>６　特徴その６</h2>
+<p>
+Web文字盤のこのような特徴は、インターネットの特徴とウェブアプリの特徴から実現できたものです。YouTubeやWikiPediaのようにどこにあるのかわからないけれど、使いたい時にすぐ使えるものです。
+そしてこれらは、優れた科学者と大企業がコラボした一大プロジェクトといったドラマのような話ではなく、個人のアイデアを手持ちのパソコンとインターネットでの学習や知識や技術を使って、ごくごく小規模個人的に実現できる方法、例えば日曜大工や家庭料理のようなものです。もしうまく行かなくても、木くずなどのゴミも食品のムダもなくエコな知的ゲームのような側面もあります。また参加者や協力者が多すぎるとかえってうまくいかない特徴があります。
+</p><p>
+また、ボランティアというと力仕事のイメージを持ちがちですが、困っている人の助けになる方法としてこのようなやり方で取り組んでいる人々はたくさんいるようです。
+このようなところが六番目の特徴です。
+</p><p>
+まだまだほかにも特徴がありますが、以上が主な特徴と考えています。
+</p>
+<h2>７　今回の取り組みの目的</h2>
+<p>
+本文はまず、このようなインターネットとパソコンとプログラムを活用した取り組みについてより多くの方々に紹介し理解を深めていただきたいと思います。
+</p><p>
+次に、パソコンとインターネットと知識を活用して、乏しい人的組織、資本、資金でできる活動を紹介します。そして類似の課題を抱えながら、様々な活動に取り組んでいる方々に何らかの参考にしていただきたいと考えています。
+</p><p>
+また金儲けしようとさえしなければ（非営利活動）、あまり金はかからず
+ボランティでいいとなるとやり方は色々あるを紹介しようと思います。
+</p><p>
+このようなことを考えた上で、今回Web文字盤を例にしてウェブアプリの作り方をまとめて紹介し、そしてこのようなひとびとに役立ててもらえるようにすることにしました。
+参考にしていただきたいと思います。
+</p>
+<h2>８　おわりに</h2>
+<p>
+最近は、多くの小中高校生も情報科目として、プログラムに取り組んでいるようです。そして少なくないこどもたちは次のような疑問を口にするだろうと想像します。
+『せんせい。こんなプログラムの勉強してなんのやくにたつんですかーーー』
+こどもたちからこんな話をきいたら、どうぞやさしく説明してあげてください。
+</p><p>
+パソコンは、とても速く、とても長く動き続けます。
+パソコンに、人の役にたつけれど苦労の多い仕事をさせると、人々の苦労が少なくなります。どうすれば苦労を減らすことができるかを考えるのにプログラムは役に立つのです。
+</p><p>
+思い出してください。『人間は道具を使いはじめてから、他の動物とは違いが出てきた。』という話を。これは、遠い所に速く楽に行くなら乗り物に乗るといいと同じで、特に変わった話ではないのです。
+</p><p>
+天気の良い日に、のんびりてくてく歩いて行くのもいいものですが、いつも徒歩では困ります。
+
+</p>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>ウェブアプリケーション　ウィキペディア<br>
+<a target="_blank" href="https://ja.wikipedia.org/wiki/ウェブアプリケーション">https://ja.wikipedia.org/wiki/ウェブアプリケーション</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2023/08/25　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
