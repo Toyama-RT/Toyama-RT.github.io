@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>WebApp３｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 15px 100px 15px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    canvas { border: 1px solid black; }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>ウェブアプリのつくりかた　３</h1>
+<h1>HTMLをつくる</h1>
+
+<div style="text-align: center;">
+<img alt="what is Web App ?" src="img/html.svg" >
+</div>
+
+<h2>－１　用語について　「ホームページ」「Webページ」「Webサイト」の違い</h2>
+<p>
+今ご覧になっている、モニターに表示されたページのことを「Webページ」と言います。
+いくつかのWebページが集まって一冊の本のようになっている Webページ群を「Webサイト」と言います。またその表紙にあたるWebページを「トップページ」と言います。
+</p><p>
+ところが、これらをぜんぶひっくるめて「ホームページ」と呼ぶことがよくあります。厳密にはこれは正しくありませんが、特に話の本筋に影響が少ない場合には、わかりやすさを優先するために、本文でも「ホームページ」の言葉を適宜使っています。
+</p>
+<h2>０　はじめに</h2>
+<p>
+インターネットで検索すると一瞬のうちに何百万ものページがヒットすることがあります。このように世の中にはかなりたくさんのウェブページがあります。
+</p><p>
+1990年頃の初期のウェブページは文章と簡単な写真やイラストくらいしかありませんでしたが、その後色彩豊かになり、動画を表示し、音がでるようになり表現が豊かになりました。最近ではマイクに話しかけると返事をしたり、計算したり、翻訳したりいろいろできます。買い物をしていると、商品の最中にお勧め商品が表示されることもあります。
+</p><p>
+この30年間で様々な技術が開発され、ウェブサイトでいろいろなことができるようになりました。そしてついにアプリ（アプリケーションソフト）にかなり近いこともできるようになってきました。これがウェブアプリのはじまりになります。
+</p><p>
+このようにウェブアプリはウェブページの改善により誕生したため、ウェブページの技術が基本になっています。そのためウェブアプリの作り方の話は、まずウェブページの作り方から始めるのが良いと思います。
+</p><p>
+ただ、長い話ばかりでは退屈ですので、すこし作業と体験をしながら進めていこうと思います。また、初心者の方にはわかりにくい言葉はその都度説明しますので、知っている方はどうか読み飛ばしてください。
+
+</p>
+<h2>１　htmlのつくり方</h2>
+<p>
+html（hyper text markup langurage）はウェブページをつくるために使用する『ことば』（langurage）です。言い換えるならパソコンやスマホの画面にどんな文字や画像を表示するのか、そして何をどう表現するのかをhtmlという言葉をつかって書き記していきます。これは建築家が図面で建物を表現するのとよく似ています。
+
+このhtmlで書き記したhtmlファイルをブラウザが解読して、画面に文章が表示され、画像が表示され、スピーカーからは音が聞こえてくるのです。
+</p>
+<blockquote>
+ブラウザ　　ウェブページを閲覧するために使用するアプリケーションです。例えばchromeやedgeやfirefoxやoperaやsafariなどいくつか種類があります。これらをまとめてブラウザと呼びます。
+</blockquote>
+<p>
+幸いなことに、私達が日常的に使用している『言葉』とはことなり、htmlは世界共通で、多くの人が同じやり方でウェブページを作っています。このため知識や経験がインターネット上に沢山蓄積されていて、これらを利用したり参考にしたりできます。よその国の言葉はわからなくても、その人が作ったhtmlやプログラムは読むことができます。
+たとえば、test.html　とい名前のファイルを次のように作り保存します。</p>
+
+<blockquote>
+拡張子　　ファイル名のピリオドより後ろの文字を拡張子といいます。主にファイルの種類を表示します。拡張子htmlはhtml言語で書かれたファイルであることを示しています。
+<br>
+通常windowsでは、ファイルの拡張子は表示されません。 
+表示させる手順は、『拡張子の表示方法』と検索してください。 Windowsの種類により手順が異なりますので記憶するより検索するほうがうまくいくようです。ただし拡張子などのキーワードは覚える必要があります。検索をうまく使えると記憶力を節約できます。
+</blockquote>
+<p>
+さて、test.htmlファイルを以下のように作ります。
+
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<blockquote>
+このファイル作成には通常テキストエディタを使います。Windowsのメモ帳をはじめ、各種のテキストエディタがありますので、皆さんお好みに合わせて選ぶのがいいでしょう。ここを右クリック、名前をつけてリンク先を保存でファイルはダウンロードもできます。
+</blockquote>
+<p>
+さて、上記の文字を入力してtest.htmlという名称で保存します。そしてこのファイルのアイコンをダブルクリックするとブラウザが起動し、真っ白な画面が表示されます。真っ白なのは中身が何もないからです。
+</p><p>
+次に、以下のように&lt;body&gtと&lt;/body&gtの間に、『こんにちは』と入力し保存します。
+</p>
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+こんにちは
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+先程と同じようにこのhtmlファイルのアイコンをダブルクリックしてブラウザで開くと、さきほど真っ白だった画面に、『こんにちは』の文字が下のように表示されます。
+</p>
+<div style="text-align: center;">
+<img alt="図１" src="img/f1.png" border="1">
+</div>
+<p>
+htmlファイルを書き換えて保存し、ブラウザで開くと、書き換えた部分がきちんと表示されます。あなたの操作に従ってパソコンが動いているのです。（あなたの命令どおりにパソコンが動いているとも言えます）
+</p><p>
+またブラウザの画面上で右クリックすると、『ページのソースを表示する』メニューが表示されこれで自分が作ったhtmlファイルを見ることができます。同じことがほかのウェブページでできます。このようにすればよそのウェブページがどんな作り方をしているのか知ることができます。
+</p><p>
+このように、&lt;body&gtと&lt;/body&gtの間には、文字や記号や画像などのモニターに表示される事柄について記入します。つまり&lt;body&gtはカッコ開く、&lt;/body&gtはカッコ閉じるのように範囲を表していることがわかります。
+片や&lt;head&gtと&lt;/head&gtの間には画面に表示されない、例えばページのタイトルやメタデータ（HTML を誰が書いたのかとかその HTML を表現する重要なキーワードなど）の情報などを記載します。
+</p><p>
+そして&lt;html&gtと&lt;/html&gtは、全体の始まりと終わりを示します。一番上の、&lt;!DOCTYPE html&gt;はこのファイル全体がhtml形式であることを表現しています。
+</p><p>
+『ありがとう』の代わりに別の言葉を入力し保存しダブルクリックするとそのようにブラウザに表示されます。さあこれで、文章を書けるようになりました。おめでとうございます。
+</p><p>
+でも実際に長い文章を書いてみるとあることに気がつきます。そう読みにくいのです。このやり方では、文字が並びますが改行しません。また一行が画面の左から右までいっぱいになります。文字サイズも小さくメリハリがありません。
+まず下のように文章を&lt;p&gtと&lt;/p&gtで区切って見ましょう。
+
+
+</p>
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+本来なら下のように&lt;p&gtと&lt;/p&gtの間には段落が入ります。
+</p>
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<p>1番目の段落</p>
+<p>2番目の段落</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+そうです、ｐはパラグラフ（Paragraph）のｐです。
+段落のはじめに一文字下げないとか前後で行の間隔が広がるなどいくらか日本語のルールとはことなりますがこれで段落ごとに配置される様になります。
+</p>
+<h2>２　styleのつくり方</h2>
+<p>
+さてここで『ワープロでやるようなフォントや書式の設定はどうやるのか』と思っている方もおいでのことと思います。
+</p><p>
+書式設定は、&lt;head&gtと&lt;/head&gtの間にさらに&lt;style&gtと&lt;/style&gtをつくりそこに記載します。
+</p>
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+これをブラウザで表示すると
+</p>
+<div style="text-align: center;">
+<img alt="図２" src="img/f2.png" border="1">
+</div>
+<p>
+と表示されます。`color:red;`で、フォントの色が赤く、`font:“メイリオ”;`で、フォントがメイリオに、また`font-size:20px;`で、フォントサイズが20ピクセルに指定しています。これらがpに関する指定事項としてまとめられています。これでフォントの色、種類、大きさを自由に変更できるようになりました。
+</p><p>
+他の設定について知りたいという方は、「styleタグ」や「style属性」で検索してください。ただし量が多いですので全部しっかり覚えてから次に進むのはお勧めしません。（辞書を暗記しなくても語学の勉強はできます）必要になったらその都度調べて使って行くのがお勧めです。
+</p><p>
+さてここにいぬの画像があります。
+</p>
+<div style="text-align: center;">
+<img alt="図３" src="img/dog.jpg" border="1">
+</div>
+<p>
+次はこのいぬの画像を表示してみましょう。
+まずtest.htmlファイルに14行目を追記します。
+</p>
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+<img src="dog.jpg">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+そして上のいぬの画像にマウスを合わせて、右クリックして「名前をつけて画像を保存」でこの画像ファイルをdog.jpgで保存してください。ブラウザの設定によって保存場所を訪ねて来ますので適切に対応してください。何も出ないときは、ダウンロードに保存されます。
+このdog.jpgをtest.htmlと同じ場所（フォルダ）にコピーします。
+そこでtest.htmlをダブルクリックすると以下のように表示されます。
+</p>
+<div style="text-align: center;">
+<img alt="図４" src="img/f3.png" border="1">
+</div>
+<p>
+これで文章も画像も表示できるようになりました。
+</p><p>
+さて次は、10行から13行を追加し、18行目を書き換えます。
+
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+  .image1{
+    width: 300px;
+    height: 150px;    
+}
+</style>
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+<img src="dog.jpg" class="image1">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+またtest.htmlをダブルクリックすると今度は以下のように表示されます。
+</p>
+<div style="text-align: center;">
+<img alt="図５" src="img/f4.png" border="1">
+</div>
+<p>
+ダックスフンドになりました。（ちがいます）<br>
+18行でいぬの画像にimage1と名前をつけました。そしてstyleで、image1は幅300ピクセル高さ150ピクセルと寸法を指定しました。
+</p><p>
+画像のスタイル指定も文字に劣らずたくさんあります。色々と凝ったことをしようとしすると、styleがどんどん行が増えていき、読みにくくなります。そうなったら、拡張子.cssのファイルを別に作って、htmlファイルから読み込むようにしますがこれはまた別の機会にお話いたします。
+</p>
+<h2>３　おわりに</h2>
+<p>
+さて今回は、htmlを最低限の方法でつくるやり方をご紹介しました。また皆さんには実習のようなことをやっていただきました。いかがだったでしょうか。
+この実習の目的は、パソコンは人間の命令どおりに動かすことができる機械だということを体験して頂くことです。ご紹介したようにhtmlを書くことで多様な表現が可能になるのです。
+</p><p>
+世界中の人たちが今回ご紹介したやり方をでホームページを作っています。なかには色々な工夫を考えつく人たちがいたり、困ったときはこうすればいいとか、間違えやすい文法を整理してまとめようなどと考えたりします。
+そしてそれを自分がいつでも簡単に見られる方法で記録しようとします。どうやって？もちろんそんなホームページをつくるわけです。
+</p><p>
+このような理由で、ホームページを作るために参考になる情報は、ネット上にたくさん存在します。私も、『html　〇〇のやり方』などと検索をよくします。簡単な説明から詳しい説明までたくさん見つけることができるのでとても助かります。
+</p><p>
+もしこれらの作業を自分でやらずに誰かに依頼するとしたら、かなり高額の請求が届くことでしょう。こんなやりかたではお金がいくらあっても足りません。
+</p><p>
+また開発というものは失敗がつきもので、結果はある意味で運次第です。そのため努力しても報われないことはよくあります。
+このような取り組みを維持し継続するには、はじめからお金がかからないようなやり方を工夫する必要があります。
+</p><p>
+ここでご紹介する方法は、時間はかかります。苦労はします。すべてが水の泡になるかもしれませんが、お金はあまりかかりません。
+大金持ちになる可能性はとても低いですが、どん底におちる可能性も低いです。
+</p><p>
+例えば生活するための収入があり、空いた時間を使って、困っている人の助けになるとか、そのほかの目的のために何事かを企画実行しようとする人には、ここでご紹介するような方法が適していると思います。
+</p><p>
+今回ご紹介したのは、初めての方々を対象とした最低限でhtmlをつくるやり方です。
+そのため
+&lt;html lang="ja"&gt;
+<html lang="ja">
+や
+&lt;meta charset="utf-8"&gt;
+<meta charset="utf-8">
+は、省略しました。初めての方々も自分で勉強を進めていけば、まもなくこれらも学ぶことになるでしょう。最初はゆっくりあるきだすのが長続きするコツだと思います。
+
+</p>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>マルチプラットフォーム ? プログラミング用語解説 - G学院<br>
+<a target="_blank" href="https://gimo.jp/glossary/details/multi_platform.html">https://gimo.jp/glossary/details/multi_platform.html</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2023/09/15　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
