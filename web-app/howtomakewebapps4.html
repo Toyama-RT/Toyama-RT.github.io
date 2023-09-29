@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>WebApp４｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 15px 100px 15px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    canvas { border: 1px solid black; }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>ウェブアプリのつくりかた　４</h1>
+<h1>JavaScriptでうごかす</h1>
+
+<div style="text-align: center;">
+<img alt="what is javascript ?" src="img/javascript.png" >
+<p>JavaScriptらしい画像ってありませんね　しかしロゴすらないなんて</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+ウェブアプリをつくる話も4回目になります。
+これまではメリットについて、そして前回はウェブアプリの基本となるhtml作りのホンの基本についてお話ししました。いかがだったでしょうか。
+</p><p>
+さて、どこかのサイトをパソコンで表示して、マウス右クリックからページのソースを表示させると、そのサイトのhtmlファイルが表示されます。みなさんも一度試してみてください。予想以上に大きなhtmlファイルが表示されて驚かれるかもしれません。ですがここで興味をひかれるのは、世界じゅうの人たちが同じ言葉でホームページを作っていることと、それが誰にでも丸見えなことです。
+</p><p>
+ですから自分でホームページを作る際には、このようにしてどこか好みのページを参考にすることができます。実はこれがなかなかためになります。
+</p><p>
+またhtmlファイルをこつこつとエディタで作ってもいいのですが、
+ホームページビルダーやAdobe Dreamweaverなどのウェブオーサリングツールを使えば、見た目の美しいホームページを比較的楽に作れると言われています。
+</p><p>
+実は私もはじめの頃、ホームページビルダーを使ってみました。ところが完成したhtmlファイルをテキストエディタで開いてみると、いろいろと余分なものがついているのが見つかりましたのでこれらを削除しました。するとスッキリとシンプルなhtmlができました。
+このようなわけで、シンプルなホームページを作るなら、ソフトの使い方を勉強するよりもhtmlを勉強したほうが話が早いと考えるようになりました。それ以来ホームページのデザインもほぼ変えることなく、もう長いことテキストエディタばかり使って更新しているのです。
+</p><p>
+もし情報発信が目的で、作業量も学習量も費用も少なくしたいならブログの方が適しているでしょう。しかしウェブアプリを作るならここはがんばって、htmlやJavaScriptの勉強をしていくほうが早道と考えています。
+</p><p>
+さて今回は、JavaScriptをつかって、
+前回画面に表示した犬をほえさせたり動かしたりする方法について説明していきたいと思います。
+よろしくおねがいします。
+
+</p>
+<h2>１　いぬをほえさせる方法</h2>
+<p>
+さてこれが前回の最後から二番目の作品です。
+</p>
+<div style="text-align: center;">
+<img alt="図１" src="img/f3.png" border="1">
+</div>
+<p>
+これを表示するhtmlファイルは次のようになります。
+</P> 
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+<img src="dog.jpg">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+これからこのいぬを吠えるようにします。
+</p> 
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+<script type="text/javascript">
+console.log("Hello WhiteDog!");
+window.onload = function(){
+	// Mouse
+	var isMouseDown;
+	function handleMouseDown(e){
+		isMouseDown = true;
+      console.log("MouseDown");
+      audioElem = new Audio();
+      audioElem.src = "./dog2.mp3";
+      audioElem.play();
+	}
+	document.addEventListener("mousedown", handleMouseDown, true);
+};
+</script>
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+<img src="dog.jpg">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+まず11行から25行を追加しました。また犬の鳴き声の音声ファイルdog2.mp3を作りhtmlと同じ場所に保存しました。
+<a target="_blank" href="./snd/dog2.mp3">ここ</a>
+に犬の鳴きこえの音声ファイルdog2.mp3がありますので右クリックからダウンロードしてください。
+これでマウスをクリックするたびにワンワン吠えるようになります
+</p><p>
+それでは、すこし説明します。<br>
+11行の&lt;script type="text/javascript"&gt;と25行の&lt;/script&gt;の間は、
+スクリプト（簡易なコンピュータ・プログラム）を書き込む部分を示しています。また11行では使用するスクリプトはJavaScriptだと指定しています。<br>
+12行目のconsole.log("Hello WhiteDog!");は、スクリプトが開始した際に、コンソールに"Hello WhiteDog!"と表示して動作を確認できます。プログラムの動きを確認するコツです。<br>
+13行から24行は、読み込み終了後に自動的に開始する関数です。<br>
+14行は、マウス動作を記載してあるというメモ（コメント）です。見やすくするコツです。<br>
+15行は、isMouseDownという変数を定義しています。マウスの押下を監視するのに使います。
+16行から22行は、マウスを押下（ダウン）したときに動く関数です。<br>
+17行では、変数isMouseDownをtrueにしています。<br>
+18行では、コンソールに"MouseDown"を表示します。これでマウスやタッチパネルの正常動作を確認できます。故障したときもここでわかります。<br>
+19行では、新しい音を定義しています。<br>
+20行では、htmlと同じ場所にある音声ファイルdog2.mp3をセットしています。<br>
+21行では、音を再生しています。つまりここで「わん」とないています。<br>
+23行では、マウスの動きを見張る仕組みを動かしています。<br>
+以上により、マウスを押下（ダウン）するたびに、16行から22行が何回も何回も動きます。
+</p><p>
+このようにして、前回まで動かなかったしろいいぬが動くようになりました。いかがだったでしょうか？
+</p><p>
+えー、そこのあなた、何かご意見がありますか？えーなになに、いぬのなきごえは聞こえるが、いぬはうごいていない。なるほどたしかにそうですね。
+
+では、もうすこし手を入れてみましょう。
+</p>
+<h2>２　いぬをうごかす方法</h2>
+<p>
+
+</p><p>
+さてここにもう一枚、別のいぬの画像があります。こちらは口を開いてしっぽをあげています。そのほかの部分はみんな前の画像と同じです。
+</p>
+<div style="text-align: center;">
+<img alt="図２" src="img/dog2.jpg" border="1">
+</div>
+<p>
+前回と同じく上のいぬの画像にマウスを合わせて、右クリックして「名前をつけて画像を保存」でこの画像ファイルをdog2.jpgで保存してください。ブラウザの設定によって保存場所を訪ねて来ますので適切に対応してください。何も出ないときは、ダウンロードに保存されます。
+このdog2.jpgも同じくtest.htmlと同じ場所（フォルダ）にコピーします。
+</p><p>
+さて上のhtmlファイルに更に手を入れて以下のように変更します。
+</p>
+
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+<script type="text/javascript">
+console.log("Hello WhiteDog!");
+window.onload = function(){
+	// Mouse
+	var isMouseDown;
+	function handleMouseDown(e){
+		isMouseDown = true;
+      console.log("MouseDown");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog2.jpg";
+      audioElem = new Audio();
+      audioElem.src = "./dog2.mp3";
+      audioElem.play();
+	}
+	document.addEventListener("mousedown", handleMouseDown, true);
+	function handleMouseUp(){
+      console.log("MouseUp");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog.jpg";
+	}
+	document.addEventListener("mouseup", handleMouseUp, true);
+};
+</script>
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+<img id="image_dog" src="dog.jpg">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>
+また何行か追加しました。追加変更した部分を中心にすこし説明します。<br>
+37行に、id="image_dog"を追加しました。これでいぬの画像に"image_dog"と名前をつけました。<br>
+マウス押下関数に、19行と20行を追加しました。この文を和訳すると、"image_dog"の画像ファイルをdog2.jpgに変更しろ。となります。これでクリックボタンを押す（ダウン）と口を閉じたいぬの画像が口を開けてしっぽを上げた画像に切り替わります。<br>
+さらに、26行から30行にマウスアップの関数を追加しました。これはマウスボタンをはなしたときに作動します。そして28行29行があります。この文を和訳すると、"image_dog"の画像ファイルをdog.jpgに変更しろ。となります。これでクリックボタンをはなす（アップ）と口を開いたいぬの画像が口を閉じてしっぽを下げた画像に切り替わります。<br>
+あとは、変更していません。
+</p><p>
+えー、さきほどのかた、これでよろしいですか？よろしいようですね。ありがとうございます。
+</p><p>
+さあこのようにして、前回までは動かなかったしろいいぬが動いてほえるようになりました。動くようになったのはスクリプトを使ったからです。今回ご紹介したのはJavaScriptというスクリプト言語です。
+</p><p>
+マウスの動きを検知するとか音を再生するとか画像を切り替えたりなどの機能は、数多いJavaScriptの働きのなかのほんの一部です。また新しい機能も次々と開発されていますので、機能はますます増えています。Web文字盤もこれと同じ方法で作られています。そしてさらに他の福祉機器も様々なアプリもつくることができるでしょう。
+</p><p>
+さあ次回はなにをご覧にいれましょうか。おたのしみに。
+</p><p>
+
+
+</p>
+<h2>３　おわりに</h2>
+<p>
+htmlを勉強してやがて文章や画像の表示ができるようになると、みなさん別のことが気になり始めます。例えば、『もっといい文章が書けるようになりたい』とか『もっとうまく写真を撮影したい』とか『描画ソフトを使いこなしてイラストの質を上げたい』などです。
+どうも多くの人が同じように感じるようです。やはり人に見せるとなるといろいろ気を使うようですが皆さんはいかがでしょうか。
+</p><p>
+じつはこれと同じことが、JavaScriptにもあてはまります。
+ご覧いただいたように、画像を動かしたり音をだしたりするためには、やるべきことをきちんとやればそれでできます。
+</p><p>
+そのためにはまず実際にどんな事ができるのか一通り知ること大事です。できないことを悩まずできることを実行することが重要です。
+
+そしてそれらを大きくしたり小さくしたり、早くしたり遅くしたり、長くしたり短くしたりと自由自在に変化できるようにならないと仕事になりません。これもがんばってやればできます。
+
+そして次にこれらの画像や音のひとつひとつの動きや動作を組み合わせて、不自由のある人がそれぞれが持つ特定の目的を実現する方法を考えだすわけですが、これがなかなか簡単ではありません。
+</p><p>
+例えばことばや書字が苦手でうまくいかない人が自分の意思を相手に伝える
+方法について考えてみましょう。
+</p><p>
+日本でもこれまで何種類かのコミュニケーションエイドが登場してきました。
+これらの目標はお互いよく似ていますが、それでもそれぞれが多様性も特徴も持っています。
+あるものは、シンプルで使いやすさをめざし、あるものは高度な機能を目指しています。
+
+</p><p>
+普通の人の歩き方はほどほど似ていますが、不自由のある人の歩き方はそれぞれかなり特徴的です。これと同じことがコミュニケーションでもあります。
+
+『言葉が苦手』、『コミュニケーションが苦手』とひとことで言いますがじつは
+それぞれ人の苦手も事情も目的もかなりかなり違って多様です。
+</p><p>
+難病の方のおうちを訪問すると他所とは違う透明文字盤を見かけることがよくあります。
+これを見ると、それぞれが違っているのが普通なんだと気づかされます。
+
+ではコミュニケーションエイドではこれができないのはなぜでしょう。
+
+ひとりひとりにあった多種多様なコミュニケーションエイドを提供するには、もう作り方から変えていかないといけないように思っています。
+</p><p>
+もう『ハイテク』とか呼んでたてまつっている時代ではありません。こちらの望むように動かして仕事をさせるべきなのです。
+
+そこでこのようなことを可能にする方法についていろいろ考えてきました。
+
+その結果、お金や人手がなくてもなんとかなることがわかってきました。またいくらか勉強して努力すればたったひとりでも、まんざらできない訳ではないことをこのように紹介しているのです。
+</p><p>
+</p>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>JavaScript - MDN Web Docs - Mozilla<br>
+<a target="_blank" href="https://developer.mozilla.org/ja/docs/Web/JavaScript">https://developer.mozilla.org/ja/docs/Web/JavaScript</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2023/09/29　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
