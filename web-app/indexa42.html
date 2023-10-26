@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  <title>WebApp５EnUS</title>
+
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+<script>
+console.log("Hello WhiteDog!");
+let countup = 0;
+// Main
+window.onload = function(){
+	// Mouse
+	var isMouseDown;
+	function handleMouseDown(e){
+		isMouseDown = true;
+      console.log("MouseDown");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog2.jpg";
+
+      //audioElem = new Audio();
+      //audioElem.src = "./dog2.mp3";
+      //audioElem.play();
+
+    // unsupported.
+    if (!'SpeechSynthesisUtterance' in window) {
+        alert('お使いのブラウザは Web Speech API には未対応です.');
+        return;
+    }
+
+    var msg = new SpeechSynthesisUtterance();
+    msg.volume = 1;
+    msg.rate = 1;
+    msg.pitch = 1;
+    msg.text = 'that this nation, under God, shall have a new birth of freedom - and that government of the people, by the people, for the people, shall not perish from the earth.';
+    msg.lang = 'en-US';
+    msg.onend = function (event) {
+        console.log('speech end. time=' + event.elapsedTime + 's');
+    }
+    speechSynthesis.speak(msg);
+
+
+	}
+	document.addEventListener("mousedown", handleMouseDown, true);
+	//document.addEventListener("touchstart", handleMouseDown, true);
+	
+	function handleMouseUp(){
+      console.log("MouseUp");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog.jpg";
+	}
+	document.addEventListener("mouseup", handleMouseUp, true);
+	//document.addEventListener("touchend", handleMouseUp, true);
+};
+</script>
+
+
+</head>
+<body>
+<p>that this nation, under God, shall have a new birth of freedom - and that government of the people, by the people, for the people, shall not perish from the earth.</p>
+<img id="image_dog" src="dog.jpg">
+</body>
+</html>

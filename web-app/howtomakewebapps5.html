@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>WebApp５｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 15px 100px 15px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    canvas { border: 1px solid black; }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>ウェブアプリのつくりかた　５</h1>
+<h1>JavaScriptでしゃべる</h1>
+
+<div style="text-align: center;">
+<img alt="what is javascript ?" src="img/inudearu.png" >
+<p>言われなくても見りゃわかるって</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+さてウェブアプリのつくり方の第5回です。
+前回はJavaScriptを使ってマウスクリックでしろいいぬが吠えたり動いたりしました。いかがだったでしょうか。
+</p><p>
+ご覧になったようにこれは簡単なアニメーションです。アニメーションは年齢の低い人（時にあまり低くない人も含む）の興味や関心に強く作用する効果があることはすでに広く知られています。
+</p>
+<h3>もしもアニメが自分でつくれたら</h3>
+<p>
+もしアニメーションを自分で思うように自由に作れるとしたら、
+無関心な誰かさんの気持ちを引きつけたり、
+機嫌の良くない誰かさんをニコニコさせたり、
+やる気のない誰かさんのやる気を引き出したり、
+そんなことができるかもしれません。
+</p><p>
+またアニメが持っている見る人への影響に興味があって、
+どんなアニメにどんな効果があるかを研究してみたい、
+心理や学習などの研究にアニメを利用したいと考える人もいるでしょう。
+しかし、市販の既製アニメだけでは研究結果に十分な検討や考察を加えるのはおそらく容易ではないだろうと想像できます。
+</p><p>
+おそらく、研究の目的に相応しいアニメを用意するところから始めないと、<br>
+『XXアニメを視聴した直後は、OOが急激に上昇しその後沈静化する。一方XOアニメでは...これらの比較から...』<br>
+といった話にまでたどり着くのはかなり難しいだろうと思います。
+</p><p>
+歌舞音曲に限らず、何かを自分でできると相手へのアピール力はかなり強力になります。夏のホタルや秋のムシと同じことです。
+</p>
+<h3>けがの少ない良い道具</h3>
+<p>
+いまでは、パソコンもタブレットも普及がすすみ、身の回りにたくさんあります。これらを利用できるなら従来の手作業よりずっと簡単に目的にかなったアニメを作ることができるでしょう。
+</p><p>
+手作りを成功させるポイントは今も昔も道具をつかいこなすことです。
+道具を使いこなせないようではまず見込みはありません。
+昔は刃物やバーナーやハンマーやキリのような道具もよく使いました。
+うまく使うため練習も手入れもしました。ときには失敗や怪我もしました。今ではパソコンもなかなか使える道具になっています。
+</p><p>
+そして少なくともパソコンは怪我がとてもすくないという長所があります。
+</p>
+<h3>簡単にできる別のやり方</h3>
+<p>
+また、スクリプトやプログラムが苦手でも、別のアプローチがあります。
+例えば、前回紹介したスクリプトには手を入れずにそのまま使用して、いぬの画像ファイルと鳴き声の音声ファイルを
+同じ名前の別の画像や音声のファイルに置き換えれば、猫が泣いたり騒いだり、カラスが喧嘩したりなど、一人で何十種類もつくるのもそれほど難しいはなしではありません。
+</p><p>
+このような話題ではとかくプログラミングに目が行きがちですが、パソコンの理解がいくらかあるとこのような工夫もできます。これで画像ファイルや音声ファイルを自由に作れ扱って、アニメの量産が可能になります。ただこのやり方ではある意味でワンパターンになりやすくなります。
+</p>
+<h3>手作りでできることできないこと</h3>
+<p>
+またさらに工夫をすれば、だれかの写真と声を使ってアニメーションをつくることもできます。これでモニターの中でそのだれかが動き話します。
+</p><p>
+多くの人に喜こばれるアニメを作るにはもちろん才能が必要です。
+しかしよく知っている特定のあるひとが喜ぶアニメを作るには、そのひとに合わせてそのひとが喜ぶように作ればいいわけですから、まんざら不可能ではありません。似たようなことは多くのお父さんお母さんが昔からやっています。
+</p><p>
+このような取り組みではは手作りの強みやメリットが発揮されやすくなります。このように手作りだからできることはいろいろな分野でみつかります。このように手作りでできることとできないことをよく考えるのが大切です。
+</p>
+<h2>１　いぬが言葉をしゃべるようにする方法</h2>
+<p>
+さて今回は、JavaScriptをつかって、
+前回、吠えたりしっぽをふったりしていた犬に人間の言葉をしゃべらせる方法について説明していきたいと思います。今回もよろしくおねがいします。
+</p><p>
+さてこれが前回の作品です。画面上でクリックすると犬が吠えました。
+</p>
+<div style="text-align: center;">
+<img alt="図１" src="img/f3.png" border="1">
+</div>
+<p>
+これを表示するhtmlファイルは次のようなものでした。
+</P> 
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+<script type="text/javascript">
+console.log("Hello WhiteDog!");
+window.onload = function(){
+	// Mouse
+	var isMouseDown;
+	function handleMouseDown(e){
+		isMouseDown = true;
+      console.log("MouseDown");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog2.jpg";
+      audioElem = new Audio();
+      audioElem.src = "./dog2.mp3";
+      audioElem.play();
+	}
+	document.addEventListener("mousedown", handleMouseDown, true);
+	function handleMouseUp(){
+      console.log("MouseUp");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog.jpg";
+	}
+	document.addEventListener("mouseup", handleMouseUp, true);
+};
+</script>
+&lt;/head&gt;
+&lt;body&gt;
+<p>こんにちは</p>
+<img id="image_dog" src="dog.jpg">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>
+今回これに手を加えて、以下のようにします。
+</p>
+<pre class="brush:html;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+<style>
+p{
+ color:red;
+ font:“メイリオ”;
+ font-size:20px;
+}
+</style>
+<script type="text/javascript">
+console.log("Hello WhiteDog!");
+window.onload = function(){
+	// Mouse
+	var isMouseDown;
+	function handleMouseDown(e){
+		isMouseDown = true;
+      console.log("MouseDown");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog2.jpg";
+
+    // unsupported.
+    if (!'SpeechSynthesisUtterance' in window) {
+        alert('お使いのブラウザは Web Speech API には未対応です.');
+        return;
+    }
+
+    var msg = new SpeechSynthesisUtterance();
+    msg.volume = 1;
+    msg.rate = 1;
+    msg.pitch = 1;
+    msg.text = '吾輩は犬である';
+    msg.lang = 'ja-JP';
+    msg.onend = function (event) {
+        console.log('speech end. time=' + event.elapsedTime + 's');
+    }
+    speechSynthesis.speak(msg);
+	}
+	document.addEventListener("mousedown", handleMouseDown, true);
+	function handleMouseUp(){
+      console.log("MouseUp");
+      var elemdog = document.getElementById("image_dog");
+          elemdog.src = "./dog.jpg";
+	}
+	document.addEventListener("mouseup", handleMouseUp, true);
+};
+</script>
+&lt;/head&gt;
+&lt;body&gt;
+<p>吾輩は犬である</p>
+<img id="image_dog" src="dog.jpg">
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>
+変更前から21-23行を削除しました。ここはいぬのなきごえを出していた部分です。
+そして、変更後の22-45行を追加しました。この部分で日本語を喋っています。
+</p><p>
+説明はたったこれだけです。少なすぎますか？ではもう少し説明しましょう。
+</p><p>
+ここで紹介しているのは、ブラウザに搭載されている、Web Speech APIを利用して発話しています。お使いのブラウザによっては、これに未対応のものがあります。
+</p><p>
+22－26行は、未対応のブラウザを検出して、警告文を表示します<br>
+28行では、発話機能の宣言をしています<br>
+29行では、音量<br>
+30行では、レート<br>
+31行では、ピッチ<br>
+32行では、発話する言葉<br>
+33行では、使用する言語<br>
+34-36行では、発話時刻をコンソールに記録します<br>
+37行では、発話しています<br>
+さらに50行では、表示文字を変更しています。<br>
+
+以上が今回変更した部分です。これ以外の部分は前回説明しましたのでそちらを参照してください。
+</p><p>
+さてこのような変更すると、このページのトップ画像のように表示されます。
+また実際に動かしてみたい方は、
+<a target="_blank" href="./indexa41.html">こちらをクリック</a>すると動くサンプルを試すことができます。
+</p>
+<h2>２　いぬが英語をしゃべるようにする方法</h2>
+<p>
+いままで黙っていましたが、じつはこのしろいいぬは英語もしゃべることができるのです。
+ここではその方法について簡単に説明したいと思います。
+</p><p>
+まず33行の、'ja-JP'を'en-US'に変更します。<br>
+また32行の、'吾輩は犬である'を'that this nation, under God, shall have a new birth of freedom - and that government of the people, by the people, for the people, shall not perish from the earth.'に変更します。<br>
+これでかの有名な、アイブラハムリンカーンの演説の一節をしゃべるようになります。このしろいいぬが。（アメリカのみなさん。ご無礼お許しください）
+</p><p>
+こちらもまたた実際に動かしてみたい方は、
+<a target="_blank" href="./indexa42.html">こちらをクリック</a>すると動くサンプルを試すことができます。
+</p>
+<h2>３　いぬがフランス語をしゃべるようにする方法</h2>
+<p>
+いままで黙っていましたが、じつはこのしろいいぬはフランス語もしゃべることができるのです。
+ここではその方法について簡単に説明したいと思います。
+</p><p>
+まず33行の、'ja-JP'を'fr-FR'に変更します。<br>
+また32行の、'吾輩は犬である'を'On ne voit bien qu'avec le coeur. L'essentiel est invisible pour les yeux'に変更します。<br>
+これでかの有名な、星の王子さまの一節、『人は心でのみはっきりと見ることができる。大切なものは目には見えない』をしゃべるようになります。またこのしろいいぬが。（原作ではこれはキツネの台詞ですから、まあちょうどいいような気もします）
+</p><p>
+こちらもまたた実際に動かしてみたい方は、
+<a target="_blank" href="./indexa43.html">こちらをクリック</a>すると動くサンプルを試すことができます。（ご注意：firefoxではアメリカ訛？のフランス語が聞こえてきます。Chrome かEdgeならきれいに発音します）
+
+</p>
+<h2>３　おわりに</h2>
+<p>
+コミュニケーションエイドを作る際の難関のひとつが『読み上げ』です。
+</p><p>
+無料のコミュニケーションエイドを作ろうとするときに、有料の読み上げソフトを使用するわけにはいきません。かつてエンチャント文字盤で使わせていただいたAquesTalkもこの時期には有料化されていましたので、しかたなく断念しました。
+</p><p>
+長いことあちこち調べ回って見つけたのが、今回ご紹介した、Web Speech APIです。これは各社のブラウザに組み込まれていますので、すでに世界中の人が持っていて将来もおいそれとは消えてなくなることはなさそうです。開発したWeb文字盤は日本語しか使っていませんが今回ご紹介したように、多くの言葉が使用できます。
+</p><p>
+このページの末尾の参考URLのサイトによると、
+62カ国語（日本語１、英語７（米、英、オーストラリア、カナダ、インド、ニュージランド、南アフリカ）、スペイン語２０、中国語４など）で使用可能なようです。これをみてもかなりの資金と人材を注ぎ込んで開発されただろうと推測できます。しかもこれが、無料でだれでも使用できるのですから驚きです。
+</p><p>
+こんな素敵な話は多くの人たちに知ってほしいものです。とくにコミュニケーションに困難を持つひとがたくさんいるけれど、自国語のコミュニケーションエイドがまだ十分でないところも世界にはあるでしょう。熱意はあっても経済的に困っているひともいるでしょう。そんな人達に『日本じゃこんなことやって、タダで配っているぞ』と知らせたい。こんな気持ちが、Web文字盤開発の目標に加わったのは、Web Speech APIのおかげです。
+</p><p>
+本当にWeb Speech APIを作ったひとたち、作ると決めたひとたちは偉いものだと思います。
+</p><p>
+莫大なお金がかかったと思いますが、それが何倍にもなって世界に戻って来るのですから。
+
+</p>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>What are the supported languages for Web Speech API in HTML5? - stack overflow<br>
+<a target="_blank" href="https://stackoverflow.com/questions/23733537/what-are-the-supported-languages-for-web-speech-api-in-html5">https://stackoverflow.com/questions/23733537/what-are-the-supported-languages-for-web-speech-api-in-html5</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2023/10/26　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
