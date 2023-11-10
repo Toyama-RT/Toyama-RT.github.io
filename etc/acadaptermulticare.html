@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>ACアダプタ断線対策｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+  }
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>ACアダプタの工夫で</h1>
+<h1>マルチケアコールの故障改善</h1>
+
+<div style="text-align: center;"><img alt="マルチケアコールのACアダプタ" src="img/f1.png" >
+<p>
+ケアコムのマルチケアコール<br>
+ACアダプタが壊れるのを予防しましょう
+</p>
+</div>
+
+<h2>０　はじめに　ケアコムのマルチケアコール</h2>
+<p>
+ケアコム社のマルチケアコールは、麻痺などのため通常のナースコールボタンの操作が難しい場合に、顔など他の部分での軽いタッチや息や声などでナースコールを操作できる製品です。
+
+1983年、新星電機工業株式会社（現在の株式会社ケアコム）が開発し、ナショナル（現在のパナソニック株式会社）ブランドでブレスコールRB-720Fが発売されました。これを発展させた製品がマルチケアコールです。もうすでに40年を超える長い実績を持っています。
+</p><p>
+当院も開院当初よりブレスコールとその後はマルチケアコールを使用し、多くの患者さんのお役に立ててきました。
+この長い間にはいろいろなトラブルも起きました。そしてこれらを通じてこの製品の弱いところが少しづつわかってきました。
+</p>
+<h2>１　マルチケアコールの弱いところ</h2>
+<p>
+そのひとつがACアダプタです。
+</p><p>
+通常ACアダプタのケーブルは一般にこのページのトップ写真のように細身です。特に大きな電流が流れるわけでもありませんし巻き取って収納する際も小さくできますから普通なら細いケーブルは合理的と考えられます。
+</p><p>
+しかし、医療現場では話が違ってきます。特にベッド周辺ではいろいろことが起きます。スタッフが足を引っ掛ける。ベッドを動かす際にキャスタで踏みつぶす。電動ギャッジアップなどの際に引っ掛けて強い力で引っ張る。このようないきさつでＡＣアダプタが破損することがよくありました。このように表現すると単なる不注意を連想しますが、実際は他にも注意すべきこと、つまり患者さんの身体、各種チューブ、ケーブル、医療機器が周辺にあまりに多くあることと、人手と時間があまりに少ない現実があります。
+</p><p>
+また一般的に看護師といえば優しく丁寧で慎重なイメージを、また医療機関も安全安心のイメージを持たれる方が多いようですが、上のようなことがありますので実際の現場ではそうともいいきれないことも少なくありません。
+</p><p>
+写真のような一般のＡＣアダプタを使用し、ケーブルを足で引っ掛けると運が良ければコンセントが外れ、運が中くらいならＡＣアダプタが破損し、運が悪ければマルチケアコール本体が破損します。
+</p><p>
+また、ACアダプタの故障などで電気の供給が止まるとマルチケアコールは鳴りっぱなしになります。これは故障に気づかず使い続けることがないようにするための『フェイルセーフ』という工夫です。これ自体は正しい設計なのですが、お使いになっている患者さんと現場スタッフにとっては『困ったこと』に違いはありません。
+</p><p>
+実際にかつて当院でも、このような故障や破損が何回かありました。本来ならメーカーが太いケーブルのACアダプタを採用すればこの問題もいくらか解決に近づくだろうと思われますが、この部品のコストと変更のコストは結局ユーザが引き受けることになります。とかく安心安全はコストがかかります。それをあれもこれもと要望すると悪くすると商品もろとも会社も消滅することもあります。このようなところは消費者として気をつけたいところです。
+</p><p>
+さて当院では今回ご紹介するような対策を行い、それ以降このような破損事例は見られなくなりました。もし同様の問題でお困りの方はどうぞ参考になさってください。またこの方法はACアダプタを使用するその他の機器にも応用できると思われます。
+</p>
+<h2>２　対策の概要</h2>
+<p>
+本体にACアダプタを接続する部分からACアダプタ本体までに破損の危険性があります。まず問題のACアダプタとケーブルをコンパクトにまとめ電源延長ケーブルと一体化し、マルチケアコールの本体にガムテープで固定します。これでACアダプタとそのケーブルに荷重がかかることは少なくなります。
+</p>
+<div style="text-align: center;"><img alt="ACアダプタ周辺の補強" src="img/f2.png" >
+<p>
+ACアダプタ周辺をまとめガムテープで固定
+</p>
+</div>
+</p><p>
+最近のモデルのマルチケアコールでは、スマホの充電器並みにACアダプタが小型化されこの作業がやりやすくなりました。
+</p><p>
+ホームセンターなどで入手できる市販のコネクタボディ（約200円）に電源ケーブルを取り付けると小型の延長ケーブルができます。これをACアダプタとつなぎ、写真のようにガムテープで固定します。
+</p><p>
+これでケーブルに力がかかると、コンセントプラグが外れたり、ガムテープがバリバリと剥がれますので気がつきます。これでACアダプタを気にせずに本業のもっと大事なところに注意を集中できます。これが反対になってはよろしくありません。またとかくありがちですが、『あれにもこれにも全部気をつけましょう』といったマニュアルを作ると現場の人材が無駄に消耗しますので気をつけたいところです。
+</p><p>
+またこのような簡単な作り方ですから、壊れても修理も容易にでき患者さんの利用中断も少なくできます。これは、毎月こわれるけれど５分で修理できる道具と、５年に一回故障するけれど修理に一週間かかりお金もかかる道具ではどちらがいいのか考えてみればわかるでしょう。
+現場では簡単に修理できることに価値があります。
+そしてこのように困ったことが起きても、現場で迅速に修理して復旧できるなら仕事も進みますし、患者さんの安心感も増すことができます。
+</p><p>
+また、在宅介護の場面ではコンビニやホームセンターで入手できる材料で
+修理できるとご家族の安心感は大きく向上できます。
+このような意味での安全安心はこれからも進めて行きたいと思います。
+</p>
+<h2>３　おわりに</h2>
+<p>
+今回ご紹介したのは、多くの人たちが実際にできそうな工夫の話でした。
+しかしみなさんがご自分の職場の問題を見つけて、解決方法を考えて、それを実行するのは簡単ではありません。
+</p><p>
+色々なひとが色々なことを言うでしょう。
+中には責任がどうしたなどと言う人もいるでしょう。
+</p><p>
+しかし、自分たちの職場の問題を自分たちで考えて解決していこう、より良く改善していこうとしない、あるいはできないようでは、働き方改革も、人手不足解消も実現できるわけがありません。
+</p><p>
+上から言われたように働けばそれで万事うまく行った時代は、もうふるいふるい昔ばなしになってしまったのです。
+</p>
+<h2>参考URL</h2>
+<ul>
+  <li>マルチケアコール｜ケアコム<br>
+<a target="_blank" href="https://www.carecom.jp/products/bedside02/rb-780/">https://www.carecom.jp/products/bedside02/rb-780/</a></li>
+
+  <li>ブレスコール　RB-720F｜産業技術史資料データベース　産業技術史資料情報センター<br>
+<a target="_blank" href="https://sts.kahaku.go.jp/sts/detail.php?no=111511400036&c=&y1=&y2=&id=&pref=&city=&org=&word=&p=1073">https://sts.kahaku.go.jp/sts/detail.php?no=111511400036&c=&y1=&y2=&id=&pref=&city=&org=&word=&p=1073</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2023/11/10　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
