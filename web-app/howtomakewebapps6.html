@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>WebApp６｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 15px 100px 15px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    canvas { border: 1px solid black; }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>ウェブアプリのつくりかた　６</h1>
+<h1>ウェブサーバを手に入れる</h1>
+
+<div style="text-align: center;">
+<img alt="WEB SERVER ?" src="img/webserver.png" >
+<p>インターネットってどうして雲なんだろう？</p>
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+前回までいろいろなサンプルを紹介し、やろうと思えばいくつもの外国語も話せるというところをお話しました。電話をかける助けをするサンプルも昨年作りましたが、ネットで検索するとJavaScriptを使えば他にもいろいろとできることがあるようです。関心のある方はぜひ試してみてください。
+</p><p>
+JavaScriptのこれらの機能は一般の有用性のために作られたもので、特に不自由を持つ人たちを想定して作られたわけではありません。
+しかしこのように『つかいようによって役に立つ話』はとかく道具ではよくあることです。すでに存在する手段や方法（略してアルテク）を利用して想定外の問題を解決できるならばそれに越したことはありません。
+</p><p>
+さて今回は、せっかく作った自信作を他の多くの人たちにも使ってもらえるようにするにはどうしたらいいのかというお話をします。
+</p>
+<h2>１　アプリを作るということ</h2>
+<p>
+前回までいくつかのサンプルをつくる話をしました。つまるところアプリをつくるとは、特定のファイルをいくつか作ることです。それをパソコンに保存してブラウザでそれらを開くと、目的のものが表示され、動いたり、音が出たりするのです。
+</p><p>
+これはワープロで文書を作ったり、表計算ソフトでグラフや表を作ったりするのと基本的には違いはありません。きちんと守るべき基本的規則や手順を守り、そのうえで創意工夫を盛り込めば従来にない良いものができるかもしれません。何でもいいからやればいいとかやればできるというものではないことは、パソコンをお使いになっている人にはわかっていただけると思います。
+</p><p>
+ここでひとつ問題があります。上で説明したような、保存したアプリを動かすことはパソコンでできますが、スマホやタブレットでは通常できません。これはスマホやタブレットにはより強力なセキュリティ保護があるためです。このような理由で作ったアプリをスマホやタブレットで動かすには、もうひと仕事必要です。
+</p><p>
+昔から便利な道具にはこのような制限がとかくつきものです。おとなの世界ではよくありますので、くじけずに行きましょう。
+</p><p>
+さて、がんばってつくったアプリでもこのままではあなたのパソコンでした動かすことができません。個人とか家庭内とか限られた範囲で使用するならそれでもいいかもしれません。知人や友人だけが使うなら、CDや電子メールで配ってもいいでしょう。
+</p><p>
+しかしもっと多くの人たちに使ってもらおうとするなら、インターネットを利用するのがよいでしょう。手間や費用は節約できますがそのための準備は必要です。
+</p><p>
+もしあなたが、ウェブサイト（よくホームページとよばれるあれ）をすでに開設しているなら、どこかにひとつページを作ってアプリの説明とアプリへのリンクを作って公開すればそれで完了です。あとはどこかで宣伝すればいいアプリなら自然に人が集まってきます。（反対なら来ません）これは私もこのサイトで何回もやっている方法です。このやり方なら、スマホやタブレットでもパソコンと同様にアプリを動かすことができます。
+</p><p>
+またウェブアプリ試作品の動作チェックをするなら内緒の非公開のページを作り、それでテストできます。ですからウェブアプリを作るためにはウェブサイトを開設するとこれらの開発作業が楽に円滑に進めるようになります。
+</p><p>
+もしあなたの家族や友達がウェブサイトを開設しているなら、すこしだけ手助けを頼んでもいいかもしれません。しかしこれも度が過ぎると人間関係にも影響しますのでやはりご自分でなんとかするのがいいと思います。
+</p>
+<h2>２　ウェブサーバを手にいれる方法</h2>
+<p>
+みなさんがご覧になっているページは私の職場のウェブサーバから配信されています。その証拠に、ブラウザのURL欄には<br>
+
+https://www.toyama-reha.or.jp/techno/engineering/web-app/howtomakewebapps6.html
+<br>
+と表示されているはずです。これが富山県リハビリテーション病院・こども支援センターのウェブサーバのURLです。<br>
+もしかしたら<br>
+https://toyama-rt.github.io/web-app/howtomakewebapps6.html<br>
+と表示されているかもしれません。これについては後の方で説明します。
+</p><p>
+私のパソコンは許可を受けて職場のウェブサーバと接続できるように設定してあります。このパソコンで作成したウェブページのファイルを職場のウェブサーバに転送（アップロード）し、それをみなさんが閲覧できる仕組みになっています。
+このように、職場や学校など所属先のウェブサーバに接続するには組織ごとにそれぞれ規則がありますのでそれに沿って申請手続きをして認められる必要があります。しかし最近は感染や情報流出の事故や事件が心配される時代ですので、それほど簡単にいくとは思えません。
+</p><p>
+このほかに自宅で個人的にウェブサーバを立ち上げているひともいますがこれも最近ではあまり聞かなくなりました。それ以外の人はほとんどレンタルサーバを利用していると思います。
+</p><p>
+5年前、当時の職場のサイトはhttp（普通セキュリティサイト）でしたが、PWA「Progressive Web Apps」の開発のために、httpsのサイト（高セキュリティサイト）が必要になりました。予算もないので無料レンタルサーバを探しました。しかし当時は無料となるといろいろ制限があり、なかでもスクリプトを動かせないというのが殆どで、実に困りました。JavaScriptが動かないではまるで意味がありません。
+</p><p>
+そんなとき偶然、GitHubが運営するGitHub Pagesが見つかりました。ここにもいくつか制限もありますが、JavaScriptが動いて、無料でしたので私には文句はありません。
+英語が多くSSL暗号やgitの勉強も必要でしたがまあなんとかtoyama-rtというアカウントも取得して扱えるようになりました。GitHub Pagesは当初の目的のPWAの開発とテストが済んだあとは、このサイトのミラーサイト（そっくり同じ内容の別サイト）として利用しています。私も退職したらもう職場のウェブサーバにはアクセスできなくなりますので、この機会にその準備がこれでできました。
+</p><p>
+最近、GitHub Pagesを見直してみると、5年前と随分様子が変わっていて、いまではずいぶん改善されわかりやすくなっていました。ですからここで私の昔話をこれ以上しても若い皆さんにはご迷惑なだけですのでもうやめることにします。これをお読みのみなさんがそれぞれの事情に合わせて勉強していってください。
+</p>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>GitHub Pages について- GitHub Docs<br>
+<a target="_blank" href="https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages">https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages</a></li>
+  <li>GitHub Pages サイトを作成する- GitHub Docs<br>
+<a target="_blank" href="https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site">https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2023/12/08　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
