@@ -1,0 +1,16 @@
+{
+  "name": "Web Mojiban 4dT",
+  "short_name": "Web Moji 4dT",
+  "theme_color": "#2196f3",
+  "background_color": "#c0c0c0",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./hcj.html",
+  "icons": [
+    {
+      "src": "./ico/talk192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
