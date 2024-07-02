@@ -19,7 +19,7 @@
 const prefix = 'hcjlc3T';
 const CACHE_NAME = prefix + '00';
 
-var path = 'https://toyama-rt.github.io/web-mojiban/t/hcjlc3';
+var path = 'https://toyama-rt.github.io/web-mojiban/T/hcjlc3';
 
 self.addEventListener('install', e => {
   e.waitUntil(
