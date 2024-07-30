@@ -1,5 +1,3 @@
-// 変数の宣言
- //文書ファイル保存のための機能
    var SERVICE_NAME0 = 'SERVICE_NAME0';
    var storage00;
    var storage0;
@@ -25,19 +23,124 @@
    var storage10 = null;
 
 document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み終わってから以下を実行せよ
-//画面サイズ表示部分
+//画面大きさ表示部分　テスト用
   //読み込み時の表示
    window_load();
   //ウィンドウサイズ変更時に更新
    window.onresize = window_load;
-  //画面サイズの表示ファンクション 
+  //画面サイズの表示 
    function window_load() {
 	var sW,sH,s;
 	sW = window.innerWidth;
 	sH = window.innerHeight;
 	s = 'windows size 巾 ' + sW + ' 高 ' + sH;
-	//document.getElementById("winsize2").innerHTML = s; //コンソールに表示する部分
+	//document.getElementById("winsize2").innerHTML = s;
    }
+
+//文書ファイル保存機能
+  //local storage 関係宣言 グローバル変数化のため、文頭へ移動した
+/*   var SERVICE_NAME0 = 'SERVICE_NAME0';
+   var storage00;
+   var storage0;
+   var SERVICE_NAME1 = 'SERVICE_NAME1';
+   var storage1 = null;
+   var SERVICE_NAME2 = 'SERVICE_NAME2';
+   var storage2 = null;
+   var SERVICE_NAME3 = 'SERVICE_NAME3';
+   var storage3 = null;
+   var SERVICE_NAME4 = 'SERVICE_NAME4';
+   var storage4 = null;
+   var SERVICE_NAME5 = 'SERVICE_NAME5';
+   var storage5 = null;
+   var SERVICE_NAME6 = 'SERVICE_NAME6';
+   var storage6 = null;
+   var SERVICE_NAME7 = 'SERVICE_NAME7';
+   var storage7 = null;
+   var SERVICE_NAME8 = 'SERVICE_NAME8';
+   var storage8 = null;
+   var SERVICE_NAME9 = 'SERVICE_NAME9';
+   var storage9 = null;
+   var SERVICE_NAME10 = 'SERVICE_NAME10';
+   var storage10 = null;
+*/
+  //開始時　local storage  から読み込み
+/*        storage00 = localStorage.getItem('SERVICE_NAME0');
+
+            if (storage00 == 1 ){  //初回起動時にstrage0=nullとなるのを1にして不具合を回避している
+               storage0 =  1;
+            } else if (storage00 == 2 ) {
+               storage0 =  2;
+            } else if (storage00 == 3 ) {
+               storage0 =  3;
+            } else if (storage00 == 4 ) {
+               storage0 =  4;
+            } else if (storage00 == 5 ) {
+               storage0 =  5;
+            } else if (storage00 == 6 ) {
+               storage0 =  6;
+            } else if (storage00 == 7 ) {
+               storage0 =  7;
+            } else if (storage00 == 8 ) {
+               storage0 =  8;
+            } else if (storage00 == 9 ) {
+               storage0 =  9;
+            } else if (storage00 == 10 ) {
+               storage0 =  10;
+            } else {
+               storage0 =  1;
+            }
+
+    try {
+        storage1 = JSON.parse(localStorage[SERVICE_NAME1] || '');
+    } catch(e) {
+        storage1 = '';
+    }
+    try {
+        storage2 = JSON.parse(localStorage[SERVICE_NAME2] || '');
+    } catch(e) {
+        storage2 = '';
+    }
+    try {
+        storage3 = JSON.parse(localStorage[SERVICE_NAME3] || '');
+    } catch(e) {
+        storage3 = '';
+    }
+    try {
+        storage4 = JSON.parse(localStorage[SERVICE_NAME4] || '');
+    } catch(e) {
+        storage4 = '';
+    }
+    try {
+        storage5 = JSON.parse(localStorage[SERVICE_NAME5] || '');
+    } catch(e) {
+        storage5 = '';
+    }
+    try {
+        storage6 = JSON.parse(localStorage[SERVICE_NAME6] || '');
+    } catch(e) {
+        storage6 = '';
+    }
+    try {
+        storage7 = JSON.parse(localStorage[SERVICE_NAME7] || '');
+    } catch(e) {
+        storage7 = '';
+    }
+    try {
+        storage8 = JSON.parse(localStorage[SERVICE_NAME8] || '');
+    } catch(e) {
+        storage8 = '';
+    }
+    try {
+        storage9 = JSON.parse(localStorage[SERVICE_NAME9] || '');
+    } catch(e) {
+        storage9 = '';
+    }
+    try {
+        storage10 = JSON.parse(localStorage[SERVICE_NAME10] || '');
+    } catch(e) {
+        storage10 = '';
+    }
+*/
 
 // フォーカス時にローカルストレージを読み込みなおす　　マルチWeb文字盤機能
    window.onload = window.onfocus = function() {
@@ -148,11 +251,78 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
 
    }
 
+
+  //終了時　local storage  へ保存//localstorage対策３2020/02/19　入力後カーソル移動ファンクション部分へ移動
+/*   window.onunload = window.onbeforeunload = function() {
+            if (storage0 == 1 ){
+               storage1 = text1.value;
+            } else if (storage0 == 2 ) {
+               storage2 = text1.value;
+            } else if (storage0 == 3 ) {
+               storage3 = text1.value;
+            } else if (storage0 == 4 ) {
+               storage4 = text1.value;
+            } else if (storage0 == 5 ) {
+               storage5 = text1.value;
+            } else if (storage0 == 6 ) {
+               storage6 = text1.value;
+            } else if (storage0 == 7 ) {
+               storage7 = text1.value;
+            } else if (storage0 == 8 ) {
+               storage8 = text1.value;
+            } else if (storage0 == 9 ) {
+               storage9 = text1.value;
+            } else if (storage0 == 10 ) {
+               storage10 = text1.value;
+            } else {
+            }
+
+       localStorage.setItem('SERVICE_NAME0', storage0 );
+
+       localStorage[SERVICE_NAME1] = JSON.stringify(storage1);
+       localStorage[SERVICE_NAME2] = JSON.stringify(storage2);
+       localStorage[SERVICE_NAME3] = JSON.stringify(storage3);
+       localStorage[SERVICE_NAME4] = JSON.stringify(storage4);
+       localStorage[SERVICE_NAME5] = JSON.stringify(storage5);
+       localStorage[SERVICE_NAME6] = JSON.stringify(storage6);
+       localStorage[SERVICE_NAME7] = JSON.stringify(storage7);
+       localStorage[SERVICE_NAME8] = JSON.stringify(storage8);
+       localStorage[SERVICE_NAME9] = JSON.stringify(storage9);
+       localStorage[SERVICE_NAME10] = JSON.stringify(storage10);
+   }  */
+//文書ファイル保存機能ここまで
+
 //文字盤判別番号
    var CBoard0 = 0;  // 0=> hiragana 1=> katakana
 
       location.href = '#text1';
 
+//テキストボックスへの初期文字列の書き込み部
+/*     var text1 = document.getElementById("text1");
+
+            if (storage0 == 1 ){       // 文書番号storage0に指定された番号の文書をtext1に読み込んで表示する
+               text1.value = storage1;
+            } else if (storage0 == 2 ){
+               text1.value = storage2;
+            } else if (storage0 == 3 ){
+               text1.value = storage3;
+            } else if (storage0 == 4 ){
+               text1.value = storage4;
+            } else if (storage0 == 5 ){
+               text1.value = storage5;
+            } else if (storage0 == 6 ){
+               text1.value = storage6;
+            } else if (storage0 == 7 ){
+               text1.value = storage7;
+            } else if (storage0 == 8 ){
+               text1.value = storage8;
+            } else if (storage0 == 9 ){
+               text1.value = storage9;
+            } else if (storage0 == 10 ){
+               text1.value = storage10;
+            }
+               setCursorend();
+*/
 //文書切り替えボタンを表示文番号にあわせて変更する
     Bunnum(storage0);
 //テキストボックスクリック時のカーソル出現＞Androidでのキーボード出現防止
@@ -292,6 +462,25 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
      var obj = document.getElementById('mojiban');
 	 obj.addEventListener("click", async function() {
       new Audio('./snd/se2.mp3').play();
+     // web audio API によるサウンド出力
+/*        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/se2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+*/
       CBoardChange(CBoard0);
              if (CBoard0 == 0 ){
                CBoard0 = 1;
@@ -1409,6 +1598,26 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                    text1.value = text1.value + 'ボ';
                  } else {
       new Audio('./snd/incorrect2.mp3').play();
+     // web audio API によるサウンド出力
+/*        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+*/
+
                 } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'ええーと';
@@ -1573,6 +1782,25 @@ document.addEventListener("DOMContentLoaded", function(){ // htmlを読み込み
                  } else {
                    //document.getElementById("sound3").play();
       new Audio('./snd/incorrect2.mp3').play();
+     // web audio API によるサウンド出力
+/*        const audioctx = new AudioContext();
+        const sound = await LoadSample(audioctx, "./snd/incorrect2.wav");
+        const src = new AudioBufferSourceNode(audioctx, {buffer:sound});
+        src.connect(audioctx.destination);
+        src.start();
+
+       function LoadSample(actx, url) {
+        return new Promise((resolv)=>{
+            fetch(url).then((response)=>{
+                return response.arrayBuffer();
+            }).then((arraybuf)=>{
+                return actx.decodeAudioData(arraybuf);
+            }).then((buf)=>{
+                resolv(buf);
+            })
+        });
+       }
+*/
                  } 
       } else if (CBoard0 == 2 ){
                    synthes.text = 'あはははは';
