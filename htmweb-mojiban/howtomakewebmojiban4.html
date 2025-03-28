@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>HTMWebMoji４｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+	}
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 15px 100px 15px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    canvas { border: 1px solid black; }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>Web文字盤のつくりかた　４</h1>
+<h1>Webアプリでのファイルの読み書きについて</h1>
+
+<div style="text-align: center;">
+<img title="HTML5　LOCAL STORAGE" alt="ローカルストレージ" src="https://www.narindersingh.in/wp-content/uploads/2021/03/localstorage.png">
+
+
+<p>今回の話題にふさわしい画像ってあまりないですね</P> 
+</div>
+
+<h2>０　はじめに</h2>
+<p>
+Web文字盤をつかった作文を途中でやめても、後で再起動すると前の文が残っています。これは自動的に保存しているからです。
+とくに「保存の操作」をしなくても大丈夫です。あっちの文を書いて、こっちの文を直しても次々にどんどん自動で保存しています。Web文字盤にはそもそも「保存の操作」自体がありません。
+</p><p>
+これには理由があります。Web文字盤をお使いになる方のなかにはエネルギが十分ではなく疲れやすい人がよくおられます。そこで力を節約するためにこのようにしました。また操作を間違えやすい人にもこれは便利でしょう。
+今回はこのような保存や読み込みについてお話します。
+
+</p>
+<h2>１　Webアプリのファイル読み書きにおける問題と制限</h2>
+<p>
+文を保存するとは、文書ファイルの保存すること、文の読み込みとは文書ファイルの読み込むことです。
+このように文書ファイルの読み書きは、パソコンやスマホでは自由にできます。また多くのアプリでも文書以外のファイルでも保存、読み込み、コピー、消去が普通に自由にできるように作られています。
+みなさん「そんなのあたりまえ」と思われるでしょう。しかしこのあたりまえのことが
+苦手なひとのために自動的に自由自在にできるようにするのはあまりあたりまえではありません。こんなあたりまえのようであたりまえではないヤヤコシイ話が今回のテーマです。
+</p><p>
+ところがWeb文字盤をはじめとしたWebアプリでは、後で説明するある理由でパソコンのようにファイル操作を自由にはできません。ある制限やルールを守ってこれらを行う必要があります。まずこのお話から始めたいと思います。
+</p><p>
+まずWebアプリは、特定のURLにアクセスするだけで起動します。
+QRコードやリンクも使えます（このサイトのトップページ参照）ので、初心者でもとても簡単に起動でき便利です。お使いになればわかりますが、Web文字盤も簡単に使いはじめることができます。それがWeb文字盤の一番の特徴なのです。
+</p><p>
+しかし悪意を持つ人がこのような技術を使うと、利用者が知らないうちに悪事を働くこともできます。怪しいWebサイトに迷い込んだら、画面におかしな画像が表示されたり、おかしな音が聞こえてきたりした経験はありませんか。このようなこともWebアプリと同じ技術を利用すれば作ることができます。
+</p><p>
+昔から技術というものは使う人によって、良くも悪くも使えます。SNSも自由で便利ですが、使い方によっては誰かをひどく傷つけることもできます。またそのような目的で使っている人も少なくないようです。そこで利用制限、規制などの話がでて賛否の意見が対立するけれど騒ぐ割には何も決まらず学習もしないといったパターンがまたまた繰り返されるようです。
+</p><p>
+さて、もし利用している人のパソコンやスマホの中のファイルを、Webアプリから読み書きできるなら、その人の個人情報や秘密はとても守りきれません。Web文字盤開発のはじめの頃、このような理由でWebアプリでのファイルの読み書きはできないだろうと私も考えてしばらく手を付けませんでした。
+</p><p>
+ところが有名オンラインショップＡ社のWebサイトでオススメ商品を表示する仕組み、つまり前に興味をもったけれど購入しなかった商品の関連商品の「おすすめ」とかを不意に表示するやや気味の悪いあの機能のこと、これを実現するには閲覧履歴をどこかに保存し参照する必要がありますが、これをどうやっているかについて調べてみると偶然このあたりの事情がわかってきました。
+</p><p>
+このように無関係に思えることや一見して何の役に立つかわからないようなことでも一応勉強しておくと後でこんな具合に役にたつことがよくありますので油断できません。
+</p><p>
+つまり様々な悪用を防止するために、Webアプリで扱えるファイルにはある規制がつけられているのです。このためWebアプリでファイル操作にはちょっと特殊なところがありますがその規制を理解してうまくやればファイル読み書きができることがわかりました。
+</p><p>
+このように『安全安心』は多くの人が求めますがどれもこれもタダではありません。実現するためにはそれぞれ苦労も工夫も必要になります。ただ単に『安全安心』を願っているだけではただ危険なだけです。このような障壁を理解したうえで技術をつかえば安全にアプリを利用できるようになるのです。
+</p><p>
+さてその規制とは次のようなものです。<b>読み書きできるのは使用しているブラウザのキャッシュ領域内のファイルに限られその領域以外のファイルを扱うことはできない。</b>というものです。ところでキャッシュってご存知ですか？
+</p>
+<h2>２　キャッシュって何？</h2>
+<p>
+キャッシュとはCASH、つまり現金です。</p><p>
+その昔、インターネット通信速度が低かったとき、誰もが遅い表示にイライラしていました。これを解決するために考案された表示を早くする方法があります。
+これは、多くのユーザはお気に入りのサイトを繰り返し閲覧する傾向がある一方で多くのサイトの更新はそれほど頻回ではない。つまり前回と同じものが表示される割合がかなり多いところに注目しています。
+</p><p>
+具体的には、一度閲覧したサイトの情報をHDDなどに保存しておき、次に閲覧したとき、速度が遅く時間のかかる通信では更新されたデータのみ取得し、更新されていないデータは以前保存されたデータを再利用して、通信を節約し表示も早くするという方法が考案され、今でも広く使われています。
+</p><p>
+この文をお読みのみなさんも、同じサイトを初めて閲覧するときよりも二回目以降の閲覧では表示が速いことに気付いておられると思いますが、背景にはこのような仕組みがあるのです。
+</p><p>
+決済が短時間ですむところが現金払いに似ているので、この仕組みをCASHをよぶことになったらしいですが本当でしょうか？
+</p><p>
+余談ですが、そのむかしwindowsには、Temporary Internet Files という場所があってそこにはいろいろ保存されていました。中はゴミ箱というか個人情報というかのかたまりで、世の中は「ボォーっと生きていてはいけない」との教訓がいっぱい中に詰まっているのは知っている人は知っている話です。
+</p><p>
+話をもとに戻します。このcashはブラウザの機能として今も備わっています。各社それぞれHDDなどの記憶媒体の中に領域を設けてcashに使っています。この領域なら、JavaScriptでファイル操作ができることになっています。
+</p><p>
+以上のような説明でCASHキャッシュの概要はおわかりいただけたと思います。
+
+</p>
+<h2>３　普通の人と普通でない人</h2>
+<p>
+またまた余談です。このようなcashなどということは「普通の人」は知りません。何しろ小中高校で教えることではありません。しかし他の人たちがやらないことを色々勉強している「普通でない人」はあちこちにいて、様々な分野に取り組みまた人数もどんどん増えています。その結果お互いよく似ていてわかりやすい「普通の人」は徐々に減り、それぞれ分野で専門的な取り組みをしている「普通でない人」「変わった人」は急速に増えています。
+</p><p>
+これは世の中がどんどん変化し多様化して、「必須科目」だけでは間に合わなくなり、たくさんの「選択科目」が必要になっているからです。今どきのスマホや自動車には大きなマニュアルがついています。皆さんは自分の使っている機械でわからないことありませんか？家族に聞いてもわからないことありませんか？何十年か昔ならお父さんやお母さんに尋ねれば解決できたのに、最近ではそうはいかないことがますます多くなりました。
+</p><p>
+日本では長い間、個性的な能力よりも集団の中で協調性や標準的な業務をこなせる能力の人材が求められました。つまり平均的で人並で、よく似た人材の集団が必要とされ、それらがケンカせずに仲良く働けばみんなで豊かになれた時代が確かにありました。
+</p><p>
+その昔は、見渡す限り数百人が働く大工場や沢山の人が働くオフィスといった職場がたくさんありました。このような職場では、多くの人の協調協力で業務を行うため、人間関係の安定した人員配置や異動しやすい人材が必要でした。このため、学校では「平均的な人材」が大切にされ、就職しても重宝されました。一方で変わり者は煙たがられました。
+</p><p>
+しかし今では、大工場にはたくさんのロボットが働き、大きな事務所では省人化が進み、スーパーのレジも無人です。もう「平均的な人」はこれまでのようにそれほどたくさん必要ではなくなりました。人口が減っているのに守備範囲が広くなれば、ひとりの守備範囲を広くするしかありません。
+また労働生産性が上がると、それまで100人でやった仕事が10人でできるようになります。その結果人が余り、給料は下がり、特徴のあまりない同質な人たちは厳しい選別に巻き込まれてしまいます。誰でもできる簡単なお仕事は急速に消え、その一方で、複数以上の「特殊技能」や「資格」が求められることが多くなっています。
+みなさんの身近にも思い当たるところはありませんか？
+大勢で力を合わせてやる仕事がめっきり少なくなったと。
+</p><p>
+資本主義のはずなのに、人手不足で給料が上がらないのはなぜでしょう。
+それは、不足しているのは「平均的な人」ではなく、「他の人がいやがることやできないことややらないことをやる人できる人」だからなのです。
+</p><p>
+このような仕事さえできるなら、もう平均的でなくても他人と違っていてもあまり構わない世に中になりました。若い方も若くない方もみなさんもそのつもりで勉強するのが肝心です。ですから「誰かと一緒でないと勉強できない」というのは守備範囲が狭いということですからかなり困ります。他の人とは違うこと、人のやらないこと（少なくとも近くには同じことをしている人がいないといったこと）を自分ひとりでもコツコツとすすめていけることが大切になります。インターネットはこんなとき大きく役立ちます。
+</p><p>
+余談が長くなりましたので話をもとに戻し、具体的な話に進みます。
+</p>
+<h2>４　JavaScriptでのファイルの取り扱い</h2>
+<p>
+WebサイトやWebアプリでファイルを取り扱う方法はいくつかありますが、まずは簡単なところとしてHTML5で加わったWEBAPIのLocal Strageを利用するのが良いようです。（このページのトップ画像をごらんください　ただ大した意味はありません）
+</p><p>
+</p><p>
+Local Strageは、データの保存をWebサーバーではなくユーザが利用しているパソコンやスマホなど端末の保存領域にします。（CASHなどとも呼ばれます）保存容量は使用するブラウザによって異なりますが、目安として5MBです。Web文字盤のような文章の保存でしたらこれで十分でしょう。
+</p><p>
+ただ、保存されている内容の読み取りは普通の人はできません。しかしそうでない人も増えていますので、「普通の人は出来ないから大丈夫」というのはやめたほうがいいでしょう。このため大事なこと、個人情報、機密事項などをこのやり方での保存はお勧めできません。
+この話のように、知識や技能をどんどん習得する人がいる一方で、とんと御縁のない人もいますので、あちらでもこちらでも人の格差はますます大きくなり、不特定の人々の取りまとめてなにかやるのはますます苦労するようになりました。
+</p>
+<h2>５　Local Strageの基本的使い方</h2>
+<p>変数を用いて、数字などの値を扱う場合と、文字列などを扱う場合でファイル操作のやり方が異なります。
+</p>
+
+<h3>数値の場合</h3>
+<p>
+<b>保存　書き込み</b>
+`localStorage.setItem('key', 'value')`あるいは`localStorage.saveKey = 'value'`と書くだけで保存ができます。
+</p><p>
+<pre class="brush:js first-line:1;">
+localStorage.setItem('key', 'value1');
+localStorage.saveKey = 'value2';
+</pre>
+</p><p>
+<b>取得　読み込み</b>
+`localStorage.getItem('Key')`あるいは`localStorage.saveKey`でvalueを取得することができます。
+</p><p>
+<pre class="brush:js first-line:1;">
+var value1 = localStorage.getItem('Key')
+var value2 = localStorage.saveKey;
+</pre>
+</p><p>
+<b>削除</b>  
+`localStorage.removeItem('key')`で指定したキーのデータを削除するか、`localStorage.clear()`ですべてのデータを削除します。
+</p><p>
+<pre class="brush:js first-line:1;">
+localStorage.removeItem('key');
+localStorage.clear();
+</pre>
+</p>
+<h3>テキスト変数の場合</h3>
+<p>
+テキストは、<b>JavaScriptオブジェクト⇔JSON文字列の変換</b>が行うところがポイントです。
+数値の場合と同じやり方では、テキストでは動きませんので下のように変えます
+</p><p>
+<pre class="brush:js first-line:1;">
+// 書き込み ※JavaScriptオブジェクト -> JSON文字列に変換
+localStorage.setItem("myObject", JSON.stringify(object));
+
+// 読み込み ※JSON文字列 -> JavaScriptオブジェクトに変換
+JSON.parse(localStorage.setItem("myObject"));
+
+// 削除 ※変わらず
+localStorage.removeItem("myObject");
+</pre>
+<p>
+更に詳しくお知りになりたい方は、文末の参考URLを参照してください。
+次に、この基本をWeb文字盤でどのように使用しているか見てみましょう。
+
+</p>
+<h2>５　Web文字盤でのLocal　Storageの利用例</h2>
+<p>
+Web文字盤では上で説明した基礎を発展させ、Local Storageを使って10種類（または20種類）の文書ファイルの保存読み出しを行っています。Web文字盤での該当箇所を抜粋して説明します。
+</p><p>
+<h3>変数の定義</h3>
+<pre class="brush:js first-line:1;">
+   var SERVICE_NAME0 = 'SERVICE_NAME0';
+   var storage00;
+   var storage0;
+   var SERVICE_NAME1 = 'SERVICE_NAME1';
+   var storage1 = null;
+   var SERVICE_NAME2 = 'SERVICE_NAME2';
+   var storage2 = null;
+   var SERVICE_NAME3 = 'SERVICE_NAME3';
+   var storage3 = null;
+   var SERVICE_NAME4 = 'SERVICE_NAME4';
+   var storage4 = null;
+   var SERVICE_NAME5 = 'SERVICE_NAME5';
+   var storage5 = null;
+   var SERVICE_NAME6 = 'SERVICE_NAME6';
+   var storage6 = null;
+   var SERVICE_NAME7 = 'SERVICE_NAME7';
+   var storage7 = null;
+   var SERVICE_NAME8 = 'SERVICE_NAME8';
+   var storage8 = null;
+   var SERVICE_NAME9 = 'SERVICE_NAME9';
+   var storage9 = null;
+   var SERVICE_NAME10 = 'SERVICE_NAME10';
+   var storage10 = null;
+</pre>
+</p><p>
+Web文字盤では、文書ファイル保存読み込み用変数10種類と
+文書ファイル書き換え用変数10種類、（文書20種類拡張版ではそれぞれ20種類）
+さらに使用中の文書番号を保存するための変数と書き換えのための変数２つを使用しています。
+
+このようにひとつの文書について、保存や読み込みなどファイル操作用の変数と、書き込み用の変数の二種類を使い分けています。
+</p><p>
+var SERVICE_NAME0 = 'SERVICE_NAME0';は、
+は、使用中の文書番号を管理する変数で、
+storage00 = localStorage.getItem('SERVICE_NAME0');
+</p><p>
+これでstoraga00に読み込み
+これを判別して、storage0の値を決めています。
+</p><p>
+このように、ファイル操作に使用する変数と、プログラム内で使用する変数を使い分けしています。手間のかかることですがこれで変数の型によるエラーを回避できます。
+</p><p>
+このひと手間がないとどんなエラーが起きるのか興味のある方は実際におやりになってみるといいでしょう。苦労はありますが理解は深まります。
+</p><p>
+<h3>変数の読み替え</h3>
+<pre class="brush:js first-line:1;">
+            if (storage00 == 1 ){  //初回起動時にstrage0=nullとなるのを1にして不具合を回避している
+               storage0 =  1;
+            } else if (storage00 == 2 ) {
+               storage0 =  2;
+            } else if (storage00 == 3 ) {
+               storage0 =  3;
+            } else if (storage00 == 4 ) {
+               storage0 =  4;
+            } else if (storage00 == 5 ) {
+               storage0 =  5;
+            } else if (storage00 == 6 ) {
+               storage0 =  6;
+            } else if (storage00 == 7 ) {
+               storage0 =  7;
+            } else if (storage00 == 8 ) {
+               storage0 =  8;
+            } else if (storage00 == 9 ) {
+               storage0 =  9;
+            } else if (storage00 == 10 ) {
+               storage0 =  10;
+            } else {
+               storage0 =  1;
+            }
+</pre>
+<h3>文書ファイルの読み込み</h3>
+
+<pre class="brush:js first-line:1;">
+	try {
+        storage1 = JSON.parse(localStorage[SERVICE_NAME1] || '');
+    } catch(e) {
+        storage1 = '';
+    }
+    try {
+        storage2 = JSON.parse(localStorage[SERVICE_NAME2] || '');
+    } catch(e) {
+        storage2 = '';
+    }
+    try {
+        storage3 = JSON.parse(localStorage[SERVICE_NAME3] || '');
+    } catch(e) {
+        storage3 = '';
+    }
+    try {
+        storage4 = JSON.parse(localStorage[SERVICE_NAME4] || '');
+    } catch(e) {
+        storage4 = '';
+    }
+    try {
+        storage5 = JSON.parse(localStorage[SERVICE_NAME5] || '');
+    } catch(e) {
+        storage5 = '';
+    }
+    try {
+        storage6 = JSON.parse(localStorage[SERVICE_NAME6] || '');
+    } catch(e) {
+        storage6 = '';
+    }
+    try {
+        storage7 = JSON.parse(localStorage[SERVICE_NAME7] || '');
+    } catch(e) {
+        storage7 = '';
+    }
+    try {
+        storage8 = JSON.parse(localStorage[SERVICE_NAME8] || '');
+    } catch(e) {
+        storage8 = '';
+    }
+    try {
+        storage9 = JSON.parse(localStorage[SERVICE_NAME9] || '');
+    } catch(e) {
+        storage9 = '';
+    }
+    try {
+        storage10 = JSON.parse(localStorage[SERVICE_NAME10] || '');
+    } catch(e) {
+        storage10 = '';
+    }
+</pre>
+</p><p>
+変数　storage* (*は1から10)　に10種類の文字列を、Local Strageから読み込んでいる部分です。最初起動時はファイルが存在しませんので、その時は空白を入れています。
+</p><p>
+<pre class="brush:js first-line:1;">
+
+//テキストボックスへの初期文字列の書き込み部
+     var text1 = document.getElementById("text1");
+
+            if (storage0 == 1 ){       // 文書番号storage0に指定された番号の文書をtext1に読み込んで表示する
+               text1.value = storage1;
+            } else if (storage0 == 2 ){
+               text1.value = storage2;
+            } else if (storage0 == 3 ){
+               text1.value = storage3;
+            } else if (storage0 == 4 ){
+               text1.value = storage4;
+            } else if (storage0 == 5 ){
+               text1.value = storage5;
+            } else if (storage0 == 6 ){
+               text1.value = storage6;
+            } else if (storage0 == 7 ){
+               text1.value = storage7;
+            } else if (storage0 == 8 ){
+               text1.value = storage8;
+            } else if (storage0 == 9 ){
+               text1.value = storage9;
+            } else if (storage0 == 10 ){
+               text1.value = storage10;
+            }
+               setCursorend();
+      Bunnum(storage0);
+
+   }
+</pre>
+</p><p>
+strage0の番号によって、text1.valueに文書が代入されます。その後これが画面に表示され、文字列が編集されます。
+</p><p>
+そして、変数 storage* (*は1から10)に記憶されている10種類の文字列を
+編集中の文章番号storage0に従って、編集中の文字列text1.valueを
+変数 storage* (*は1から10　storage0に等しい)にコピーし、
+それを
+localStorage[SERVICE_NAME*]
+に保存しているぶぶんです。
+下記の全体をひとつの関数にして、文章の切り替えや複数のWeb文字盤の切り替えなどのタイミングで稼働させることで、文章の自動保存を行っています。
+
+
+<pre class="brush:js first-line:1;">
+            if (storage0 == 1 ){
+               storage1 = text1.value;
+               localStorage[SERVICE_NAME1] = JSON.stringify(storage1);
+            } else if (storage0 == 2 ){
+               storage2 = text1.value;
+               localStorage[SERVICE_NAME2] = JSON.stringify(storage2);
+            } else if (storage0 == 3 ){
+               storage3 = text1.value;
+               localStorage[SERVICE_NAME3] = JSON.stringify(storage3);
+            } else if (storage0 == 4 ){
+               storage4 = text1.value;
+               localStorage[SERVICE_NAME4] = JSON.stringify(storage4);
+            } else if (storage0 == 5 ){
+               storage5 = text1.value;
+               localStorage[SERVICE_NAME5] = JSON.stringify(storage5);
+            } else if (storage0 == 6 ){
+               storage6 = text1.value;
+               localStorage[SERVICE_NAME6] = JSON.stringify(storage6);
+            } else if (storage0 == 7 ){
+               storage7 = text1.value;
+               localStorage[SERVICE_NAME7] = JSON.stringify(storage7);
+            } else if (storage0 == 8 ){
+               storage8 = text1.value;
+               localStorage[SERVICE_NAME8] = JSON.stringify(storage8);
+            } else if (storage0 == 9 ){
+               storage9 = text1.value;
+               localStorage[SERVICE_NAME9] = JSON.stringify(storage9);
+            } else if (storage0 == 10 ){
+               storage10 = text1.value;
+               localStorage[SERVICE_NAME10] = JSON.stringify(storage10);
+            }
+</pre>
+</p><p>
+変数の定義からファイルの保存や読み出しについてひととおり説明しました。
+Web文字盤では、変数の定義に続いてファイルの読み出しを行い、
+編集途中で適宜保存し、終了前にも保存しています。
+
+また複数のWeb文字盤を切り替えて使用するマルチWeb文字盤機能は、
+アプリの切り替え前後にも切り替え元で保存し、切り替え先で読み込みを
+させることで、実現しています。
+
+アプリを自作している途中ではこのようなアイデアがよく出ます。
+工夫すれば実現することもよくあります。
+</p>
+<h2>おわりに</h2>
+<p>
+今回はWebアプリにおけるファイル操作の方法について説明しましたがいかがだったでしょうか。このようにWebアプリではいくらか条件はありますがファイルの扱いは基本的に可能です。
+またこのような機能をひとつひとつ実際に自分で動かしてみると徐々にできることが増えてきます。できることが増えてくると可能性も広がってきます。自分でできればまず費用の心配が少なくなります。百科事典を暗記するなど知識を単に知っているだけでは特に何も起きません。
+</p><p>
+例えばタブレットなど初めてのころは誰でも操作がおぼつかないですが使い慣れるにつれてだんだん上手になります。
+</p><p>
+不自由のある方が練習を進めるときには、上達が実感できるとモチベーションが上がります。また体調や時刻や曜日などで出来不出来の波の存在を把握しておけば、ある日うまく行かなくても無意味に落ち込むことを防ぎ精神的に安定して練習することができます。（この話は音声認識のところですでにしました）
+</p><p>
+このような評価をするには、タップ動作の時刻と座標値が欲しくなります。情報機器の内部には高精度の時計があり数値の読み取りは可能です。またタップの際にその位置座標を読み取ることは、イベントリスナーのところですでに説明しました。それらの数値を、順にファイルに書き込むことは、今回説明しました。これをゲームなどのアプリに組み込んで日々のデータを自動で収集すればかなり面白いことができるかもしれません。
+もちろんこんな計測は人間ではなく機械にやらせればいいのです。きつい仕事でも文句も言わず実行します。
+人間は目標をもってこれらの成果を利用して創造的な仕事に取り組むのがよろしいと思います。
+</p><p>
+またあの中国でも人口が減り始めました。これは世界的な傾向だそうです。こうなると、みんなで力を合わせてなにかしようとするとまず人集めで苦労し、次に集めた人のマネジメントで苦労することになります。
+そんなことなら、少ない人数で機械を思い通りに動かして十人力、百人力を発揮させたほうがよほど仕事になる時代が、農林漁業、土木建築、小売業にはとっくに来ているようです。
+</p>
+<h2>参考URL</h2>
+<p>
+<ul>
+  <li>Local Storageを使ってみる｜Qiita <br>
+<a target="_blank" href="https://qiita.com/masuda-sankosc/items/cff6131efd6e1b5138e6">https://qiita.com/masuda-sankosc/items/cff6131efd6e1b5138e6</a></li>
+  <li>【localStorage】オブジェクトを読み書きしたいときの基本構文｜Qiita<br>
+<a target="_blank" href="https://qiita.com/terufumi1122/items/6ddd9c520a9d0a19896a">https://qiita.com/terufumi1122/items/6ddd9c520a9d0a19896a</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2025/3/28　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
