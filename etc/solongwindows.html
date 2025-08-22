@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7DXKP3EBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z7DXKP3EBK');
+</script>
+  
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  <script type="text/javascript" src="../sh/scripts/shCore.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushXml.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushPlain.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushJScript.js"></script>
+  
+  <script type="text/javascript" src="../sh/scripts/shBrushVb.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="../sh/styles/shCoreDefault.css">
+  
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+  <title>Windowsからubuntuへ変更した話｜富山県リハ病院こども支援センター</title>
+  
+  <style type="text/css">
+<!--
+      
+p	{
+      font-size: 20px;
+      line-height : 1.75 ;
+      margin: 15px 100px 15px 100px;
+  }
+h1 {
+    text-align: center;
+    }
+h2 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h3 {
+    text-align: left;
+      margin-left: 100px;
+    }
+h4 {
+    text-align: left;
+      margin-left: 120px;
+    }
+pre {
+    font-size: 20px;
+    margin: 5px 100px 15px 100px;
+    }
+address{
+	margin:5px 100px 15px 100px;
+}      
+blockquote {
+    position: relative;
+      font-size: 20px;
+      line-height : 1.5 ;
+    padding: 5px 150px 8px 100px;
+    box-sizing: border-box;
+    font-style: italic;
+}
+ol {
+}
+ul {
+}
+li {
+  margin-top: 5px; /* 上余白指定 */
+  margin-bottom: 5px; /* 下余白指定 */
+  margin-left: 100px; /* 左余白指定*/
+  margin-right: 100px; /* 右余白指定 */
+  font-size: 20px; /*リストのフォントの大きさ*/
+}
+button{
+  margin-bottom:1rem;
+  width:150px;
+  height:100px;
+}
+
+span.samples {font-size: small; }
+.syntaxhighlighter {
+  width: 80% !important;
+  margin: 1em 100px 1em 100px !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1.3em !important;
+}
+
+    #text1 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn1 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice1 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text2 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn2 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice2 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+    #text3 {
+        width: 50%;
+        height: 3em;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    #btn3 {
+        background: -webkit-linear-gradient(top,#008dfd 30%,#0370ea 100%);
+        color: white;
+        text-shadow: 1px 1px 1px #076bd2;
+        border-radius: 3px;
+        border: 1px solid #076bd2;
+        padding: 2px 25px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    #selectVoice3 {
+        width: 200px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+
+-->
+  </style>
+
+</head><body>
+<p align="center"><font size="5"><font size="5"><font size="3"><font color="#ff0000">かならずお読みください</font>→<a href="../cyuui.html" target="_self"><img alt="注意事項" src="../cyuuijikou.gif" border="0" height="29" width="78"></a></font></font></font></p>
+
+<h1>Windowsからubuntuへ変更した話</h1>
+<h1>さよならWindows</h1>
+
+<div style="text-align: center;"><img alt="サポート停止します" src="img/001b_l.jpg" >
+
+</div>
+
+<h2>０　はじめに</h2>
+<h3>さよならWindows</h3>
+<p>
+2025年10月14日でWindows10のサポートが終了します。
+これ以降はWindows10は安全に利用できなくなると言われています。
+これまでのWindows7、8、ではサポート終了時に比較的簡単にWindows10にアップグレードできましたが、今回は比較的新しいパソコンでないとWindows11にアップグレードできないことになりました。
+このためパソコンを買い替えたひとも多いようです。また会社などでは出費がかさみ大変なのかもしれません。
+</p><p>
+しかしこの他に古いパソコンを使い続ける方法がないわけでもありません。いまさら新しいパソコンに買い換えるのも、古いパソコンを捨てるのもイヤだし。そんな出費する気もないとなると。この際、Windowsにサヨナラするのいいのかなと考えて、10月14日を目標に着々と準備を進めてきました。
+</p>
+<h3>こんにちはubuntu</h3>
+<p>
+ことの始まりは、20年以上前に大阪のあるところでの『WindowsのようだがWindowsではないシステム』で動作しているシステムの見学でした。今思えば『Red Hat linux』だったようで、これが私とlinuxとのファーストコンタクトでした。その後、ふとしたきっかけでlinuxの一種のubuntuの存在を知りました。とかくお金のかかるパソコンで、ubuntuは無料で入手できるというところに惹かれました。一体どんな仕組みなのでしょう？
+</p><p>
+当時、仕事用に一台win7パソコンを自作したところでした。そのついでに、余った部品をやりくりしてもう一台組み立てて試しにubuntu11.10をインストールしてみました。すると予想外にまともに動いたのでびっくりしました。これが2011年でした。ほんのお試しのつもりでしたが、結局そのまま使い続けることになりました。まあこれが御縁というものでしょうか。
+</p><p>
+当時は、職場と家庭でノートパソコンを持ち運んでいました。軽量のモバイルパソコンも試しましたが重いことに変わりありませんでした。
+理想的にはＯＳやアプリなど同じ環境のWindowsパソコンが職場と家で2台あればいいのですがこれはお金がかかります。しかしもしこれがubuntuなら低コストで実現できそうです。また古いパソコンでもubuntuなら快適に動作するところも見逃せません。それに私はもう引退も近いのでパソコンのためのお金も節約することにしました。
+</p>
+<h2>１　パソコンの引っ越し準備</h2>
+<p>
+通常は、古いパソコンからデータをバックアップして、新しいパソコンに入れて引っ越し完了ですが、今回はお仕事用で、またWindowsからubuntuへの引っ越しです。もちろん似たことを日常的に職場と家庭の間でやっていますので、だいたいのことはできるとはわかっていますが、みなさんご存知のように、これまでも肝心なところで予想外のことが起きてえらいことになった経験がたくさんありますので用心深く進めます。具体的にはwindowsで仕事をしながら、同じことをとなりのubuntuでもできるようになってから、徐々にしごとを移していくといった手順をとることにしました。このため一時的に二台のパソコンが必要になります。
+</p><p>
+このようないきさつでもう一台パソコンを準備しました。これまでのubuntuの経験から能力的に古いパソコンで十分ですので、2013年製のNECの省スペースデスクトップを安く手に入れ、中古のcpu、メモリ、SSDを追加してubuntuの24.04を標準でインストールしました。10年以上まえのパソコンですが約5000円で十分快適なパソコンが準備できました。このパソコンで従来のWindowsと同じことをできるようにします。
+</p>
+<h2>２　アプリケーションの準備</h2>
+<p>
+まずブラウザとメーラです。従来Windowsではfirefoxとthunderbirdを使っていました。時々chromeも使いましたが、これらにはWindows版とubuntu版があります。ubuntuのパソコンにはubuntu版のアプリをインストールしてネット関連の設定をWindows版と同じようにすればそれだけで同じことができます。
+</p><p>
+次にオフィスです、Windowsで使用したMSofficeと『互換性がある』と言われている、libreofficeを使用します。互換性があるといっても完全互換ではありません。このため作成したファイルをWindowsユーザと共有するような用途ではうまく行かないことがおきるかもしれません。
+</p><p>
+私の場合は、業務でmsword形式のファイルを求められることが時々あります。このような場合には、MS関係フォント（MS明朝やMSゴシックなど）をubuntuに移植して、libreoffice、Writerでこのフォントを使用してmsword形式のファイルを作成すれば、レイアウトなどでよほど変わったことをしなければ違いはほとんどわからないくらいにまでできます。
+このほかExcelとCalc、PowerPointとImpressでは特にファイルのやり取りをする機会はありませんでした。ですので個人的に使用する範囲では特に困ったことはありませんでした。
+もし頻回にWindowsユーザとファイルのやり取りをする場合にはここでも問題が起きるかもしれません。しかし世間ではubuntuにmsoffice365をインストールして使っている人もいるそうですので、やってできないことはないようです。このようにofficeの利用は個人差があります。私も最近は使う機会が少なくなりました。
+</p><p>
+とはいえ、msofficeとlibreofficeでは、メニュウの配置や操作は同じではありませんのでここは頑張りましょう。libreofficeはWindows版もありますので、事前にWindowsで使い方の習熟しておくと良いでしょう。
+</p><p>
+text editorはそれぞれ優れたものがありますので、とくに困りません、またatomやcodeならWindowsやubuntuでそれぞれの版がありますので、全く同じことができます。
+</p><p>
+Windowsでは、webページのメンテナンスにFFFTPを使っていました。一方ubuntu用のFTPアプリとしてfilezillaがあります。両者はデザインなど違いはありますが、特に困ることはありません。
+</p><p>
+githubpagesの管理には、Windowsでにはgit for Windowsを使っていました。ubuntuでは、ブラウザから操作するように変更しました。大掛かりな仕事はもう殆どないので、この機会にかんたんに済ませることにしました。
+</p><p>
+Windowsでの日本語入力には長くatokを使って来ました。またubuntuの日本語入力にはMozcを使います。MozcはWindows版のgoogle日本語入力から、google独自の辞書が外されたものです。net経由の辞書学習機能がついていませんので変換効率がいまいちです。そこで使い慣れたatok辞書をエキスポートし、Mozcにインポートしたら変換効率がかなり改善できました。同じことがMSIMEの辞書でもできるようですので、日本入力はこのやり方がお勧めです。もちろんMozcの入力設定もatok方式にすればなれた使い方で入力できます。MSIME方式も設定で選べます。
+</p><p>
+紙に手書きのメモも手軽で便利なのですが、数が増えると紛失と探索が困るので、電子化してPDFにしています。
+PDFファイルにメモを追加するのに、Windowsではpdf-exchangeを使っていました。同様のアプリをubuntuで探すと、okularが見つかりました。古いバージョンではタイプライタ機能がいまいちでしたが、新しいバージョンではこれが改善されました。
+</p><p>
+プリンタ　スキャナ　など外部機器との接続について。10年くらい前までは、ubuntuを始めとしたlinuxでは、プリンタースキャナなどの外部機器との接続には苦労がつきものでした。数年前でもネットワークプリンタの設定に苦労しましたが、今では問題なくできます。最新の周辺機器への対応にやや時間がかかりますが、それ以外は特に気にしなくて良くなったようです。
+また今では古今東西のスキャナがubuntuにUSBで接続しただけで、即刻認識できるようになっていてこれには驚かされました。
+</p>
+<h2>３　データの引っ越し</h2>
+<p>
+ubuntuパソコンにデータ用NTFSフォーマットのHDDを追加しました。これでなにかトラブルが起きても、ubuntuとWindows両方から読み書きできますのでいろいろな復旧ツールが使えて便利です。
+これはさておき、ここに従来のデータをコピーしました。
+</p><p>
+しばらく２台のパソコンを並べて、どちらでも同じ仕事ができることを確認しました。細かな設定の修正も行いました。
+このような手順で、Windowsからubuntuへの切り替えを行いました。
+いまのところ大きな問題もなく仕事はできています。
+</p>
+<h2>４　おわりに　よかったこと　わるかったこと</h2>
+<p>
+一番よかったことは、これでパソコンにかかるお金が少なくなったことです。
+ubuntu本体と多くのアプリが無料でそれに加えて、Windows11非対応の中古のWindowsパソコンが最近格安で手に入ります。またパーツも安いのでアップグレードも安くできます。
+</p><p>
+二番目によかったことは、例によってサポート終了間際には動作が重くなるWindowsから乗り換えると、パソコンが快適に動いてくれるところです。
+またubuntuならcore2duoマシンも現役です。データさえきちんと保存しておけば、たとえパソコンがどうにかなっても、控えのパソコンがすぐに使えますので安心です。パソコンの調子がおかしくなってももう気にしなくていいので精神的に楽です。
+</p><p>
+Windowsと比較するとubuntuにはいろいろ変わったところもあります。日本語表示が不完全で英語で表示されることもあります。こんなちいさな不都合が時々見つかりますが、しばらくすると修正されていたりします。またアップデートは自動で開始されません。最近はお知らせも表示されるようになったようですが、基本的には自分で操作するが必要があります。これなどは、自分で判断してやりたい人には向いているかもしれません。
+
+これらは良し悪しというよりも、文化の違いによる向き不向きと言ったほうがいいかもしれません。</p><p>
+今回、Windows10のサポート停止を機会に、パソコン業務をubuntuに変更したお話をしました。このような問題に興味をお持ちの皆さんは、どうぞ参考になさってください。
+
+</p>
+<h2>参考URL</h2>
+<ul>
+  <li>ubuntu　japanese　team<br>
+<a target="_blank" href="https://www.ubuntulinux.jp/">https://www.ubuntulinux.jp/</a></li>
+
+</ul>
+</p>
+
+<hr style="width: 60%; height: 5%; color: black;">
+<p><span class="samples">2025/08/22　公開
+</span></p>
+
+<a href="../index.html" target="_self">
+<p align="center">研究企画課リハ工学科にもどる</a>　←もくじはこちらです</p>
+
+</body></html>
